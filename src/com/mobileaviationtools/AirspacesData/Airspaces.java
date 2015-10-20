@@ -42,8 +42,8 @@ public class Airspaces extends ArrayList<Airspace> {
 
 
 
-        //insertIntoDatabase();
-        //Log.i(TAG, "Database Insert Finished");
+        insertIntoDatabase();
+        //Log.i(TAG, "AirspaceDataSource Insert Finished");
     }
 
     public void OpenOpenAirTextFile(String filename)
@@ -55,18 +55,18 @@ public class Airspaces extends ArrayList<Airspace> {
 
 
 
-//    private void insertIntoDatabase()
-//    {
-//        AirspacesDataSource dataSource = new AirspacesDataSource(context);
-//        dataSource.open();
-//
-//        for (Airspace airspace : this)
-//        {
-//            dataSource.insertAirspace(airspace);
-//        }
-//
-//        dataSource.close();
-//    }
+    private void insertIntoDatabase()
+    {
+        AirspaceDataSource dataSource = new AirspaceDataSource();
+        dataSource.Open();
+
+        for (Airspace airspace : this)
+        {
+            dataSource.insertAirspace(airspace);
+        }
+
+        dataSource.Close();
+    }
 
     private void readOpenAirText(String text)
     {
