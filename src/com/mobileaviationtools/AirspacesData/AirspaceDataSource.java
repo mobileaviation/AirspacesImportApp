@@ -1,5 +1,7 @@
 package com.mobileaviationtools.AirspacesData;
 
+import com.vividsolutions.jts.io.WKTWriter;
+
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
@@ -41,9 +43,9 @@ public class AirspaceDataSource {
     public void insertAirspace(Airspace airspace)
     {
         String q = "INSERT INTO tbl_Airspaces (name, version, "
-                + "category, id, country, altLimit_top, altLimit_top_unit, "
-                + "altLimit_top_ref, altLimit_bottom, altLimit_bottom_unit, "
-                + "altLimit_bottom_ref) VALUES (?,?,?,?,?,?,?,?,?,?,?)";
+                + "category, airspace_id, country, altLimit_top, altlimit_top_unit, "
+                + "altlimit_top_ref, altlimit_bottom, altlimit_bottom_unit, "
+                + "altlimit_bottom_ref, geometry) VALUES (?,?,?,?,?,?,?,?,?,?,?, ST_GeomFromText(?))";
         PreparedStatement pst = null;
         try {
             pst = conn.prepareStatement(q);
@@ -58,6 +60,7 @@ public class AirspaceDataSource {
             pst.setLong(9, airspace.AltLimit_Bottom);
             pst.setString(10, airspace.AltLimit_Bottom_Unit.toString());
             pst.setString(11, airspace.AltLimit_Bottom_Ref.toString());
+            pst.setString(12, new WKTWriter().write(airspace.Geometry));
 
             pst.executeUpdate();
             pst.close();
@@ -70,16 +73,25 @@ public class AirspaceDataSource {
 
     }
 }
-//"_ID" bigint,
-// 1       name text,
-// 2       version text,
-// 3       category text,
-// 4       id bigint,
-// 5       country text,
-// 6       "altLimit_top" bigint,
-// 7       "altLimit_top_unit" text,
-// 8       "altLimit_top_ref" text,
-// 9       "altLimit_bottom" bigint,
-// 10       "altLimit_bottom_unit" bigint,
-// 11       "altLimit_bottom_ref" bigint,
-// 12       geometry geometry
+//CREATE TABLE tbl_airspaces
+//        (
+//                id SERIAL NOT NULL,
+//                name text,
+//                version text,
+//                category text,
+//                airspace_id bigint,
+//                country text,
+//                altlimit_top bigint,
+//                altlimit_top_unit text,
+//                altlimit_top_ref text,
+//                altlimit_bottom bigint,
+//                altlimit_bottom_unit text,
+//                altlimit_bottom_ref text,
+//                geometry geometry,
+//                CONSTRAINT airspaces_pkey PRIMARY KEY (id)
+//)
+//        WITH (
+//        OIDS=FALSE
+//        );
+//        ALTER TABLE tbl_airspaces
+//        OWNER TO postgres;
