@@ -1,0 +1,875 @@
+* Open Air format (OpenAirtm)
+*
+* Airspace for Estonia
+* Courtesy of Christoph Gauss
+*
+* This file is allowed to distribute for non commercial purpose.
+* It is strictly forbidden to use this file as a part or update for commercial software.
+*
+* Update 03 June 2015
+* source: eAIS Package for Estonia
+*         http://eaip.eans.ee
+*         Part 2 EN-ROUTE
+*
+* Always consult the relevant publications
+* for current and correct information. This
+* service is provided free of charge with
+* NO WARRANTEES, expressed or implied.
+* User assumes all risk of use.
+* Do not use for navigation, for flight verification only, may content errors.
+*
+* Airspace is shown up to FL95. 
+* If you need the airspace above, remove the * , first in line of the TRAs from FL95 up to FL270.
+*
+* Tallinn FIR is NOT included
+*
+* airspace covered: TMA, CTR/RMZ, Restricted, Danger, Low Level, Sporting and Recreational
+* ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+*
+*
+***************
+*    TMA      *
+***************
+*
+*AC C
+*AN Tallinn TMA 1 EEEI
+*AL 1700
+*AH 2500
+**V D=+
+*V X=59:15:37 N 024:12:31 E
+*DB 59:04:40 N 024:45:49, 59:35:36 N 024:16:34 E
+*V X=59:24:48 N 024:49:58 E
+*DB 59:35:36 N 024:16:34 E, 59:04:40 N 024:45:49
+*
+AC C
+AN Tallinn TMA 1 EEEI
+AL 1700
+AH 2500
+*V D=+
+V X=59:15:37 N 024:12:31 E
+DB 58:57:55 N 024:32:15 E, 59:35:36 N 024:16:34 E
+V X=59:24:48 N 024:49:58 E
+DB 59:35:36 N 024:16:34 E, 59:04:40 N 024:45:49 E
+DP 59:04:40 N 024:45:49 E
+DP 59:04:57 N 024:41:29 E
+DP 59:03:48 N 024:36:21 E
+DP 59:01:23 N 024:32:37 E
+DP 58:57:55 N 024:32:15 E
+*
+AC C
+AN Tallinn TMA 2
+AL 2500
+AH FL115
+DP 59:28:29 N 022:58:57 E
+DP 59:53:00 N 024:51:00 E
+DP 59:54:30 N 025:20:00 E
+DP 59:53:00 N 025:52:00 E
+DP 59:30:06 N 026:01:20 E
+DP 59:16:21 N 023:06:56 E
+DP 59:28:29 N 022:58:57 E
+*
+AC C
+AN Tallinn TMA 3
+AL 2500
+AH FL115
+DP 59:16:21 N 023:06:56 E
+DP 59:30:06 N 026:01:20 E
+DP 59:26:16 N 026:02:50 E
+DP 59:06:55 N 026:02:15 E
+DP 58:56:33 N 025:34:37 E
+DP 58:43:21 N 024:35:13 E
+DP 58:50:36 N 023:23:33 E
+DP 59:16:21 N 023:06:56 E
+*
+AC D
+AN Tartu TMA
+AL 1500
+AH FL95
+DP 58:41:54 N 027:23:51 E
+DP 58:02:19 N 027:36:34 E
+DP 57:54:44 N 027:29:10 E
+DP 57:59:09 N 026:05:19 E
+DP 58:17:29 N 025:46:55 E
+DP 58:42:04 N 026:01:22 E
+DP 58:41:54 N 027:23:51 E
+*
+***************
+* CTR and RMZ *
+***************
+*
+AC CTR
+AN Ämari CTR
+AL SFC
+AH 1700
+DP 59:22:04 N 023:49:45 E
+DP 59:23:35 N 024:17:43 E
+DP 59:19:42 N 024:24:54 E
+DP 59:14:17 N 024:28:13 E
+DP 59:11:17 N 024:19:16 E
+DP 59:06:31 N 024:07:38 E
+DP 59:11:04 N 024:00:03 E
+DP 59:16:43 N 023:54:28 E
+*
+AC RMZ
+AN KÄRDLA FIZ/RMZ
+AL SFC
+AH 5000
+V X=58:59:27 N 022:49:51 E
+DC 12
+*
+AC RMZ
+AN KURESSAARE FIZ/RMZ
+AL SFC
+AH 5000
+V X=58:13:48 N 022:30:34 E
+DC 16
+*
+AC RMZ
+AN PÄRNU FIZ/RMZ
+AL SFC
+AH 5000
+V X=58:25:08 N 024:28:22 E
+DC 14
+*
+AC CTR
+* "AC C" is official, but for better drawing on map marked as "AS CTR"
+AN TALLINN CTR
+AL SFC
+AH 1700
+DP 59:30:02 N 024:30:35 E
+DP 59:32:27 N 024:33:51 E
+DP 59:31:42 N 024:58:04 E
+DP 59:30:12 N 025:11:34 E
+DP 59:19:18 N 025:11:10 E
+DP 59:17:18 N 024:58:34 E
+DP 59:18:00 N 024:39:34 E
+DP 59:19:08 N 024:32:31 E
+DP 59:21:54 N 024:30:44 E
+DP 59:30:02 N 024:30:35 E
+*
+AC CTR
+AN TARTU CTR
+AL SFC
+AH 1500
+V X=58:18:27 N 026:41:13 E
+DC 11
+*
+***************
+* RESTRICTED  *
+***************
+*
+AC R
+AN EER1 PIIRIALA Border Area
+AL SFC
+AH 1000
+DP 57:33:11 N 027:11:10 E
+DP 57:31:04 N 027:21:02 E
+DP 57:47:08 N 027:31:09 E
+DP 57:52:31 N 027:44:52 E
+DP 58:06:03 N 027:37:55 E
+DP 58:13:33 N 027:29:40 E
+DP 58:18:14 N 027:29:30 E
+DP 58:21:56 N 027:33:23 E
+DP 58:47:12 N 027:22:09 E
+DP 58:58:39 N 027:45:55 E
+DP 59:14:27 N 027:55:33 E
+DP 59:17:24 N 028:08:51 E
+DP 59:22:42 N 028:12:48 E
+DP 59:28:18 N 028:02:36 E
+DP 59:35:28 N 027:39:30 E
+DP 59:37:56 N 026:55:04 E
+DP 59:45:19 N 026:43:17 E
+DP 59:51:06 N 026:04:42 E
+DP 59:48:47 N 026:01:08 E
+DP 59:43:00 N 026:39:00 E
+DP 59:35:00 N 026:52:00 E
+DP 59:33:00 N 027:39:00 E
+DP 59:25:00 N 028:00:00 E
+DP 59:22:00 N 028:04:00 E
+DP 59:18:00 N 027:50:00 E
+DP 59:00:00 N 027:37:00 E
+DP 58:48:00 N 027:16:00 E
+DP 58:30:00 N 027:24:00 E
+DP 58:12:00 N 027:24:00 E
+DP 57:58:00 N 027:33:00 E
+DP 57:33:11 N 027:11:10 E
+*
+AC R
+AN EER3 VILSANDI National Park
+AL SFC
+AH 3500
+DP 58:32:12 N 021:46:18 E
+DP 58:29:18 N 021:56:07 E
+DP 58:22:01 N 022:01:46 E
+DP 58:19:50 N 022:01:31 E
+DP 58:14:04 N 021:55:06 E
+DP 58:19:15 N 021:45:43 E
+DP 58:32:12 N 021:46:18 E
+*
+AC R
+AN EER4 MATSALU National Park
+AL SFC
+AH 3500
+DP 58:52:00 N 023:21:00 E
+DP 58:52:00 N 023:23:00 E
+DP 58:48:27 N 023:32:39 E
+DP 58:49:16 N 023:45:48 E
+DP 58:45:47 N 023:59:22 E
+DP 58:43:47 N 023:58:22 E
+DP 58:38:58 N 023:23:25 E
+DP 58:44:58 N 023:18:01 E
+DP 58:52:00 N 023:21:00 E
+*
+***************
+*   DANGER    *
+***************
+*
+AC Q
+AN EED1 SIRGALA 1 Gunfire
+AL SFC
+AH 2200
+DP 59:17:25 N 027:41:32 E
+DP 59:18:27 N 027:44:09 E
+DP 59:18:26 N 027:46:21 E
+DP 59:15:25 N 027:46:19 E
+DP 59:15:16 N 027:41:31 E
+DP 59:17:25 N 027:41:32 E
+*
+AC Q
+AN EED2 UNIKÜLA	Gunfire
+AL SFC
+AH 1900
+DP 58:15:10 N 026:56:16 E
+DP 58:16:19 N 026:54:14 E
+DP 58:16:47 N 026:55:11 E
+DP 58:15:34 N 026:57:13 E
+DP 58:15:10 N 026:56:16 E
+*
+AC Q
+AN EED3 NURSIPALU 1 Gunfire
+AL SFC
+AH 2300
+DP 57:49:30 N 026:50:02 E
+DP 57:48:54 N 026:51:14 E
+DP 57:47:37 N 026:49:01 E
+DP 57:48:16 N 026:47:50 E
+DP 57:49:30 N 026:50:02 E
+*
+AC Q
+AN EED4 NURSIPALU 2 Gunfire
+AL SFC
+AH 9200
+DP 57:46:55 N 026:46:23 E
+DP 57:50:08 N 026:43:50 E
+DP 57:50:14 N 026:51:43 E
+DP 57:47:16 N 026:52:43 E
+DP 57:46:55 N 026:46:23 E
+*
+AC Q
+AN EED5 KILTSI	Gunfire
+AL SFC
+AH 2100
+DP 58:54:38 N 023:31:05 E
+DP 58:52:57 N 023:31:10 E
+DP 58:52:57 N 023:29:51 E
+DP 58:54:38 N 023:30:10 E
+DP 58:54:38 N 023:31:05 E
+*
+AC Q
+AN EED6 PAHKLA	Gunfire
+AL SFC
+AH 2300
+DP 59:11:50 N 024:48:55 E
+DP 59:11:14 N 024:49:26 E
+DP 59:12:02 N 024:52:11 E
+DP 59:12:36 N 024:52:04 E
+DP 59:11:50 N 024:48:55 E
+*
+AC Q
+AN EED7 PIIRSALU Gunfire
+AL SFC
+AH 2200
+DP 59:03:46 N 024:04:18 E
+DP 59:05:05 N 024:05:59 E
+DP 59:04:42 N 024:06:57 E
+DP 59:03:29 N 024:04:57 E
+DP 59:03:46 N 024:04:18 E
+*
+AC Q
+AN EED8 RUTJA Gunfire
+AL SFC
+AH 2200
+DP 59:31:15 N 026:16:29 E
+DP 59:34:04 N 026:17:40 E
+DP 59:32:40 N 026:21:20 E
+DP 59:31:15 N 026:16:29 E
+*
+AC Q
+AN EED9 VÄLUSTE	Gunfire
+AL SFC
+AH 2200
+DP 58:19:40 N 025:50:08 E
+DP 58:19:43 N 025:51:40 E
+DP 58:21:36 N 025:51:43 E
+DP 58:21:34 N 025:50:34 E
+DP 58:19:40 N 025:50:08 E
+*
+AC Q
+AN EED10 UTSALI	Gunfire
+AL SFC
+AH 2200
+DP 58:32:00 N 026:12:03 E
+DP 58:30:26 N 026:11:46 E
+DP 58:30:24 N 026:14:00 E
+DP 58:31:56 N 026:16:05 E
+DP 58:32:00 N 026:12:03 E
+*
+AC Q
+AN EED11 METSNIKU Gunfire
+AL SFC
+AH 2300
+DP 57:50:13 N 026:04:31 E
+DP 57:50:12 N 026:03:44 E
+DP 57:50:49 N 026:03:40 E
+DP 57:51:56 N 026:04:36 E
+DP 57:51:43 N 026:05:39 E
+DP 57:50:13 N 026:04:31 E
+*
+AC Q
+AN EED12 POTSEPA Gunfire
+AL SFC
+AH 2200
+DP 58:22:18 N 024:08:57 E
+DP 58:19:55 N 024:07:47 E
+DP 58:21:10 N 024:12:12 E
+DP 58:22:45 N 024:11:16 E
+DP 58:22:18 N 024:08:57 E
+*
+AC Q
+AN EED13 TAPA 1	Gundfire
+AL SFC
+AH 2400
+DP 59:14:36 N 025:52:19 E
+DP 59:15:13 N 025:52:08 E
+DP 59:15:26 N 025:56:31 E
+DP 59:14:55 N 025:56:14 E
+DP 59:14:36 N 025:52:19 E
+*
+AC Q
+AN EED14 TAPA 2	Gunfire
+AL SFC
+AH 14700
+DP 59:17:49 N 025:46:28 E
+DP 59:16:17 N 025:55:27 E
+DP 59:26:37 N 025:53:50 E
+DP 59:27:30 N 025:43:13 E
+DP 59:17:49 N 025:46:28 E
+*
+AC Q
+AN EED16 KLOOGA 1 Gunfire
+AL SFC
+AH 2100
+DP 59:17:48 N 024:11:25 E
+DP 59:19:16 N 024:09:14 E
+DP 59:19:50 N 024:09:27 E
+DP 59:19:28 N 024:13:08 E
+DP 59:17:37 N 024:14:53 E
+DP 59:17:11 N 024:13:03 E
+DP 59:17:48 N 024:11:25 E
+*
+AC Q
+AN EED17 SIRGALA 2 Gunfire
+AL SFC
+AH 9000
+DP 59:17:28 N 027:33:36 E
+DP 59:20:37 N 027:36:23 E
+DP 59:17:33 N 027:50:43 E
+DP 59:14:13 N 027:46:33 E
+DP 59:17:28 N 027:33:36 E
+*
+AC Q
+AN EED18 TSIATSUNGÕLMAA	Gunfire
+AL SFC
+AH 2400
+DP 57:48:23 N 026:57:00 E
+DP 57:48:19 N 026:54:00 E
+DP 57:48:59 N 026:53:59 E
+DP 57:48:51 N 026:56:58 E
+DP 57:48:23 N 026:57:00 E
+*
+AC Q
+AN EED20 MÄNNIKU Gunfire
+AL SFC
+AH 1700
+DP 59:18:42 N 024:40:24 E
+DP 59:18:40 N 024:46:02 E
+DP 59:20:50 N 024:46:04 E
+DP 59:21:49 N 024:43:53 E
+DP 59:18:42 N 024:40:24 E
+*
+AC Q
+AN EED23 NAISSAAR Gunfire
+AL SFC
+AH 4000
+DP 59:36:36 N 024:17:18 E
+DP 59:39:00 N 024:17:18 E
+DP 59:39:00 N 024:26:30 E
+DP 59:33:36 N 024:26:30 E
+DP 59:36:36 N 024:17:18 E
+*
+AC Q
+AN EED24 KLOOGA 2 Gunfire
+AL SFC
+AH 2100
+DP 59:19:43 N 024:10:17 E
+DP 59:19:26 N 024:13:07 E
+DP 59:19:00 N 024:12:57 E
+DP 59:19:10 N 024:10:10 E
+DP 59:19:43 N 024:10:17 E
+*
+AC Q
+AN EED25 MURU Gunfire
+AL SFC
+AH 2200
+DP 59:01:01 N 026:48:34 E
+DP 59:02:15 N 026:50:29 E
+DP 59:01:49 N 026:51:22 E
+DP 59:00:42 N 026:49:10 E
+DP 59:01:01 N 026:48:34 E
+*
+AC Q
+AN EED26 VIRU Gunfire
+AL SFC
+AH 1700
+DP 59:21:20 N 027:26:19 E
+DP 59:21:28 N 027:29:24 E
+DP 59:20:50 N 027:29:24 E
+DP 59:20:53 N 027:26:20 E
+DP 59:21:20 N 027:26:19 E
+*
+AC Q
+AN EED27 KARUJÄRVE Gunfire
+AL SFC
+AH 2200
+DP 58:24:21 N 022:12:02 E
+DP 58:25:06 N 022:14:57 E
+DP 58:24:30 N 022:15:25 E
+DP 58:23:54 N 022:12:28 E
+DP 58:24:21 N 022:12:02 E
+*
+AC Q
+AN EED29 KAPASTU Gunfire
+AL SFC
+AH 2200
+DP 58:54:02 N 022:40:01 E
+DP 58:53:28 N 022:40:37 E
+DP 58:54:25 N 022:43:17 E
+DP 58:54:50 N 022:42:59 E
+DP 58:54:02 N 022:40:01 E
+*
+AC Q
+AN EED30 TOOTSI	Gunfire
+AL SFC
+AH 2200
+DP 58:36:17 N 024:45:37 E
+DP 58:37:13 N 024:47:56 E
+DP 58:36:23 N 024:49:16 E
+DP 58:35:24 N 024:46:49 E
+DP 58:36:17 N 024:45:37 E
+*
+*
+********************
+* TSA/TRA and ADIZ *
+********************
+*
+AC R
+AN EE TSA 1 - NOTAM on the day before OPS.
+AL 5000
+AH UNL
+DP 59:45:00 N 025:50:00 E
+DP 59:45:00 N 026:18:00 E
+DP 59:21:00 N 026:58:00 E
+DP 59:12:00 N 026:12:00 E
+DP 59:16:00 N 025:54:00 E
+DP 59:45:00 N 025:50:00 E
+*
+*AC R
+*AN EE TSA 2 - NOTAM on the day before OPS.
+*AL FL 95
+*AH FL 270
+*DP 58:22:47 N 025:44:44 E
+*DP 58:22:00 N 026:45:00 E
+*DP 57:55:00 N 027:10:00 E
+*DP 57:06:00 N 026:50:00 E
+*DP 57:29:55 N 024:27:58 E
+*DP 57:51:00 N 024:35:00 E
+*DP 58:14:03 N 025:02:14 E
+*DP 58:22:47 N 025:44:44 E
+*
+*AC R
+*AN EE TSA 4 - NOTAM on the day before OPS.
+*AL FL 95
+*AH FL 270
+*DP 57:47:15 N 027:06:55 E
+*DP 57:38:00 N 026:35:10 E
+*DP 57:54:30 N 026:09:40 E
+*DP 58:12:05 N 025:13:18 E
+*DP 58:16:25 N 025:13:20 E
+*DP 58:22:47 N 025:44:44 E
+*DP 58:22:00 N 026:45:00 E
+*DP 57:55:03 N 027:10:03 E
+*DP 57:47:15 N 027:06:55 E
+*
+*AC R	
+*AN EE TSA 5 - NOTAM on the day before OPS.
+*AL FL 95
+*AH FL 245
+*DP 59:07:34 N 023:12:27 E
+*DP 59:18:18 N 024:13:25 E
+*DP 59:13:42 N 024:15:39 E
+*DP 58:54:00 N 023:26:00 E
+*DP 59:07:34 N 023:12:27 E	
+*
+*AC R
+*AN EE TSA 6 - NOTAM on the day before OPS.
+*AL FL 95
+*AH FL 245
+*DP 59:13:42 N 024:15:39 E
+*DP 59:05:04 N 024:20:06 E
+*DP 58:36:00 N 022:47:00 E
+*DP 58:54:00 N 023:26:00 E
+*DP 59:13:42 N 024:15:39 E
+*
+*AC R	
+*AN EE TSA 7 - NOTAM on the day before OPS.
+*AL FL 95
+*AH FL 245
+*DP 58:52:00 N 021:47:00 E
+*DP 59:07:34 N 023:12:27 E
+*DP 58:54:00 N 023:26:00 E
+*DP 58:36:00 N 022:47:00 E
+*DP 58:31:00 N 022:01:00 E
+*DP 58:52:00 N 021:47:00 E	
+*
+*AC R
+*AN TSA 8 - NOTAM on the day before OPS.
+*AL FL 270
+*AH FL 330
+*DP 58:32:18 N 022:08:54 E
+*DP 58:15:37 N 024:15:02 E
+*DP 57:38:48 N 023:57:53 E
+*DP 57:54:42 N 021:52:27 E
+*DP 58:32:18 N 022:08:54 E
+*
+*AC R
+*AN EE TSA 9 - NOTAM on the day before OPS.
+*AL FL 95
+*AH FL 270
+*DP 59:16:00 N 025:54:00 E
+*DP 59:12:00 N 026:12:00 E
+*DP 59:21:00 N 026:58:00 E
+*DP 58:22:00 N 026:45:00 E
+*DP 58:22:47 N 025:44:44 E
+*DP 59:16:00 N 025:54:00 E
+*
+*
+***************
+* LOW-LEVEL   *
+***************
+*
+* military jet aircraft up to 550 kt IAS
+* between 500 and 2000 ft AGL (!)
+* areas activated by NOTAM
+*
+*
+*
+AC R
+AN SW - South-West
+AL 500
+AH 2000
+DP 58:11:11 N 024:29:31 E
+DP 57:52:28 N 024:22:53 E
+DP 57:53:00 N 024:20:00 E
+DP 57:56:27 N 022:42:27 E
+DP 58:00:34 N 022:47:28 E
+DP 58:11:04 N 023:00:22 E
+DP 58:26:41 N 023:19:52 E
+DP 58:26:38 N 023:40:44 E
+DP 58:15:23 N 024:09:20 E
+DP 58:11:11 N 024:29:31 E
+*
+AC R
+AN C - Central
+AL 500
+AH 2000
+DP 58:58:09 N 023:54:41 E
+DP 58:55:09 N 024:12:27 E
+DP 58:57:55 N 024:32:15 E
+DP 59:01:23 N 024:32:37 E
+DP 59:03:48 N 024:36:21 E
+DP 59:04:37 N 024:41:29 E
+DP 59:04:48 N 024:49:26 E
+DP 59:06:35 N 025:08:30 E
+DP 59:12:56 N 025:23:08 E
+DP 59:19:41 N 025:29:42 E
+DP 59:27:10 N 025:28:51 E
+DP 59:25:23 N 026:16:36 E
+DP 59:21:29 N 026:20:06 E
+DP 58:54:57 N 025:36:50 E
+DP 58:32:43 N 024:50:46 E
+DP 58:37:27 N 024:42:14 E
+DP 58:39:17 N 024:29:31 E
+DP 58:37:16 N 024:14:48 E
+DP 58:31:28 N 024:05:03 E
+DP 58:31:19 N 024:04:28 E
+DP 58:41:06 N 023:48:29 E
+DP 58:42:18 N 023:47:29 E
+DP 58:45:47 N 023:59:22 E
+DP 58:58:09 N 023:54:41 E
+*
+AC R
+AN E - East
+AL 500
+AH 2000
+DP 59:25:23 N 026:16:36 E
+DP 59:31:13 N 026:31:58 E
+DP 59:25:38 N 027:30:45 E
+DP 59:20:49 N 027:24:22 E
+DP 59:00:00 N 027:13:39 E
+DP 58:59:23 N 027:14:11 E
+DP 58:42:00 N 027:09:00 E
+DP 58:42:04 N 026:01:22 E
+DP 58:39:47 N 025:59:23 E
+DP 58:55:04 N 025:36:45 E
+DP 59:21:29 N 026:20:06 E
+DP 59:25:23 N 026:16:36 E
+*
+AC R
+AN S - South
+AL 500
+AH 2000
+DP 58:32:43 N 024:50:46 E
+DP 58:55:04 N 025:36:45 E
+DP 58:39:47 N 025:59:23 E
+DP 58:36:39 N 025:58:02 E
+DP 58:37:08 N 025:50:07 E
+DP 58:34:30 N 025:48:56 E
+DP 58:33:12 N 025:56:07 E
+DP 58:01:16 N 026:03:13 E
+DP 57:51:07 N 026:08:04 E
+DP 57:46:56 N 026:01:36 E
+DP 58:03:51 N 025:14:58 E
+DP 57:52:28 N 024:22:53 E
+DP 58:11:11 N 024:29:31 E
+DP 58:11:55 N 024:39:13 E
+DP 58:15:40 N 024:48:46 E
+DP 58:20:26 N 024:54:11 E
+DP 58:27:12 N 024:55:29 E
+*
+DP 58:32:43 N 024:50:46 E
+*
+*
+***************
+* EXERCISE    *
+***************
+* EXERCISE AND TRAINING ZONES
+* ENR 5.3 OTHER ACTIVITIES OF A DANGEROUS NATURE AND OTHER POTENTIAL HAZARDS 
+*
+AC R
+AN ZONE 1 - Training flights
+AL SFC
+AH 1200
+V X=59:19:55 N 023:57:00 E
+DC 2.5
+*
+AC R
+AN ZONE 6 - Acrobatic and training flights
+AL SFC
+AH 1700
+DP 59:15:23 N 024:57:17 E
+DP 59:11:40 N 025:00:03 E
+DP 59:10:55 N 024:46:03 E
+DP 59:15:50 N 024:47:34 E
+DP 59:15:23 N 024:57:17 E
+*
+AC R
+AN ZONE 7 - Training flights
+AL SFC
+AH 1000
+DP 58:08:45 N 026:31:27 E
+DP 58:12:18 N 026:34:51 E
+DP 58:10:24 N 026:41:28 E
+DP 58:07:28 N 026:41:42 E
+DP 58:08:45 N 026:31:27 E
+*
+AC R
+AN ZONE 8 - Training flights
+AL SFC
+AH 1000
+DP 58:22:04 N 026:53:00 E
+DP 58:23:05 N 026:44:32 E
+DP 58:27:18 N 026:40:25 E
+DP 58:27:44 N 026:47:05 E
+DP 58:24:30 N 026:53:40 E
+DP 58:22:04 N 026:53:00 E
+*
+***************
+*  SPORTING   *
+***************
+* ENR 5.5 AERIAL SPORTING AND RECREATIONAL ACTIVITIES
+*
+AC W
+AN AREA G2 (RIDALI)
+AL SFC
+AH FL 80
+DP 58:03:18 N 026:29:23 E
+DP 58:03:00 N 027:03:35 E
+DP 57:49:47 N 027:24:26 E
+DP 57:38:00 N 027:14:00 E
+DP 57:39:03 N 026:17:45 E
+DP 57:51:19 N 026:10:11 E
+DP 58:03:18 N 026:29:23 E
+*
+AC W
+AN AREA G4 (VILJANDI)
+AL SFC
+AH FL 80
+DP 58:31:55 N 025:28:00 E
+DP 58:31:15 N 025:39:37 E
+DP 58:23:27 N 025:49:13 E
+DP 58:10:22 N 025:39:42 E
+DP 58:12:51 N 025:11:54 E
+DP 58:27:42 N 024:59:03 E
+DP 58:31:55 N 025:28:00 E
+*
+AC W
+AN AREA G5 (NARVA)
+AL SFC
+AL FL80
+DP 59:23:32 N 028:07:58 E
+DP 59:19:24 N 027:47:31 E
+DP 59:00:33 N 027:33:05 E
+DP 58:59:23 N 027:13:43 E
+DP 59:21:20 N 027:23:56 E
+DP 59:25:16 N 027:30:42 E
+DP 59:27:00 N 028:03:00 E
+DP 59:23:32 N 028:07:58 E
+*
+AC W
+AN KUUSIKU Parachute
+AL SFC
+AH FL 130
+V X=58:59:11 N 024:43:28 E
+DC 6
+*
+AC RMZ
+* original ATZ not RMZ
+AN RAPLA ATZ
+AL SFC
+AH 3000
+V X=58:59:11 N 024:43:28 E
+DC 6
+*
+AC W 
+AN NARVA Parachute
+AL SFC
+AH FL 80
+V X=59:23:23 N 028:06:42 E
+DC 1.25
+*
+AC W
+AN NURMSI Parachute
+AL SFC
+AH FL130
+V X=58:51:46 N 025:44:51 E
+DC 6
+*
+***************
+*  Paramotor  *
+***************
+*
+AC W
+AN Zone 3 (Lasnamägi) Paramotoring
+AL SFC
+AH 300
+DP 59:26:40 N 024:47:10 E
+DP 59:26:57 N 024:49:59 E
+DP 59:27:25 N 024:50:00 E
+DP 59:27:17 N 024:48:20 E 
+*
+AC W
+AN Zone 4 (Pirita - Viimsi) Paramotoring
+AL SFC
+AH 300
+DP 59:27:17 N 024:48:20 E
+DP 59:27:50 N 024:54:30 E
+DP 59:33:00 N 024:53:00 E
+DP 59:33:00 N 024:46:30 E 
+*
+AC W
+AN Zone 5 (Jägala) Paramotoring
+DP 59:25:30 N 025:06:30 E
+DP 59:29:30 N 025:06:30 E
+DP 59:30:00 N 025:11:30 E
+DP 59:25:30 N 025:11:30 E
+*
+*
+*
+*
+******* OPEN AIR (tm) TERRAIN and AIRSPACE DESCRIPTION LANGUAGE *************
+*    Version 1.0
+*    December 10, 1998
+*    Updated October 15, 1999
+*    Send comments to jerryp@winpilot.com
+*
+*
+*  AIRSPACE related record types:
+*  ==============================
+*
+* AC class    ;    class = Airspace Class, see below:
+*     R restricted
+*     Q danger
+*     P prohibited
+*     A Class A
+*     B Class B
+*     C Class C
+*     D Class D
+*     GP glider prohibited
+*     CTR CTR
+*     W Wave Window
+*
+*
+*  AN string        ;     string = Airspace Name
+*  AH string        ;     string = Airspace Ceiling
+*  AL string        ;     string = Airspace Floor
+*  AT coordinate    ;    coordinate = Coordinate of where to place a name label on the map (optional)
+*                     ;     NOTE: there can be multiple AT records for a single airspace segment
+*   
+*   
+*    TERRAIN related record types (WinPilot version 1.130 and newer):
+*    ==============================
+*
+*    TO    {string}                 ; Declares Terrain Open Polygon; string = name (optional)
+*    TC    {string}                 ; Declares Terrain Closed Polygon; string = name (optional)
+*    SP style, width, red, green, blue    ; Selects Pen to be used in drawing
+*    SB red, green, blue                         ; Selects Brush to be used in drawing
+*
+*
+*    Record types common to both TERRAIN and AIRSPACE
+*    =================================================
+*
+*    V x=n             ;     Variable assignment.
+*                     ;     Currently the following variables are supported:
+*                     ;     D={+|-}    sets direction for: DA and DB records
+*                     ;                     '-' means counterclockwise direction; '+' is the default
+*                     ;                     automatically reset to '+' at the begining of new airspace segment   
+*                     ;     X=coordinate    : sets the center for the following records: DA, DB, and DC   
+*                     ;     W=number        : sets the width of an airway in nm (NYI)
+*                     ;      Z=number         : sets zoom level at which the element becomes visible (WP version 1.130 and newer)
+*
+*    DP coordinate                     ; add polygon pointC
+*    DA radius, angleStart, angleEnd    ; add an arc, angles in degrees, radius in nm (set center using V X=...)
+*    DB coordinate1, coordinate2         ; add an arc, from coordinate1 to coordinate2 (set center using V X=...)
+*    DC radius                         ; draw a circle (center taken from the previous V X=...  record, radius in nm
+*    DY coordinate                     ; add a segment of an airway (NYI)
+*

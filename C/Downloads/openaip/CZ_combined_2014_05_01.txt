@@ -1,0 +1,2808 @@
+********************************************************************************
+*
+*                     Airspace for the Czech Republic
+*                       Courtesy of Petr Koutny 
+*                         Dated 01 May 2014
+*
+*           >>>>>>>>>> UNOFFICIAL, USE AT YOUR OWN RISK <<<<<<<<<<
+*
+*         Do not use for navigation, for flight verification only.
+*
+*                  Always consult the relevant publications
+*                  for current and correct information. This
+*                   service is provided free of charge with
+*                    no warrantees, expressed or implied.
+*                        User assumes all risk of use.
+*
+* * Airspace files combined on Sunday, 29 June 2014 at 02:21 GMT               *
+* *                                                                            *
+* 1: CzCTR                                                                     *
+* 2: CzFIR                                                                     *
+* 3: CzTMA                                                                     *
+* 4: CzTRA                                                                     *
+* 5: CzTSA                                                                     *
+* 6: CzD                                                                       *
+* 7: CzP                                                                       *
+* 8: CzR                                                                       *
+*                                                                              *
+**  -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+*
+***** CZ (LKAA) Airspace file *****
+***** Last update AIP CZ 24JAN13 *****
+***** (c) 2013 Petr Koutny LKKA CZ *****
+***** CZ (LKAA) Airspace readme file *****
+***** Effective 01MAY14 *****
+***** Last update AIP CZ 01MAY14 *****
+**  -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+***** (c) 2014 Petr Koutny LKKA CZ *****
+*
+***** Changes History *****
+* AIRAC 11SEP08: Zruseni/Cancelled MCTR Line
+* AIRAC 2/09 09APR09: Zruseni/Cancelled TRA53,60,68,75, nove/new TRA76-87, zmena/change TRA54,R6*
+* AIRAC 04JUN09: Oprava nazvu/Change of title TRA71, zmena/change FREQ TWR LKPD 120,15*
+* AIRAC 10SEP09: Zmena/Change FREQ TWR LKNA 126,50 od/from 22OCT09*
+* AIRAC 01OCT09: Drobne zmeny hranic/Minor border changes CTA Brno a/and CTA Ostrava*
+* AIRAC 2/09 25FEB10: Zrizeni/New TRA88 Merklin, uprava/change TRA62 Vodochody a/and TRA70 Paka, zruseni/cancelled TRA63 Benatky a/and TRA69 Jablonec*
+* AIRAC 2/10 25FEB10: Zruseni/Cancelled LKR7 As, LKR8 Temelin, LKR14 Dukovany*
+* AIRAC 2/10 25FEB10: Zmena/Change CTR Ruzyne, Kbely, Vodochody*
+* AIRAC 2/10 25FEB10: Zmena/Change TMA Praha, nove/new MTMA I a/and II Kbely, nove/new TMA I a/and II Vodochody*
+* AIRAC 2/10 25FEB10: Zmena/Change LKP5 Prcice, LKP8 Most*
+* AIRAC 07APR11 Rozdeleni/Split of LKR5 na sektory/to sectors R5A, R5B, R5C, prejmenovani/renamed z/from Jince na/to Brdy, Rozdeleni CTA Praha na sektory E a W/Split of CTA Praha to sectors E and W*
+* AIRAC 3/12 23FEB12: Zmena/change FREQ ATIS Vodochody, zuseno/cancelled LKP3, zmeny vodorovnych hranic prostoru/horizontal borders change LKP7, LKR3A, LKD7, LKTRA 52, 58, 62, 64, 65, 79, zmeny vertikalnich hranic prostoru/vertikal borders change LKTRA 50, 51, 52, 55, 58, 61, 62, 64, 65, 66, 67, 74, 76, 77, 78, 79, 80, 81, 86, 87*
+* AIRAC 8/12 28JUN12: Zmena/Change FREQ MTWR Caslav*
+* AIRAC 2/13 24JAN13: Zmena hranic/Change of borders LKTRA58, LKTRA66*
+* AIRAC 5/13 01OCT13: Zruseni/cancellation MCTR/MTMA Prerov, zmeny v/changes in CTA/TMA Brno a/and Ostrava*
+* AIRAC 4/14 01MAY14: Changes: CTA1 and CTA2 Brno, CTA1 and CTA2 Ostrava, CTA1 and CTA2 Praha, CTA Karlovy Vary, FIR Sector Cechy Parts E and W, Sector Morava Parts N and S, minor CZ border changes according to coordinates changes in CTA and TMA, cancellation of TMA VIII Brno, changes in TMA Brno and Ostrava, changes in responsible FREQ*
+*****
+*
+*-----
+*Souradnice zemepisnych bodu jednotlivych SUA (Special Use Airspace) jsou odecteny z platneho AIPu CZ.*
+*Souradnice bodu jsou zaokrouhleny na cele uhlove sekundy  (hh:mm:ss).*
+*Maximalni polohova chyba dana zaokrouhlovanim souradnic na velke zemepisne kruznici (dle koule FAI R=6371km, kde jeden uhlovy stupen je 111,195km teto velke kruznice, jedna uhlova minuta je 1853,25m (1NM) a jedna uhlova sekunda je 30,885m) pri dodrzeni pravidel pro zaokrouhlovani je 16m.*
+*
+*SUA (Special Use Airpsace) geographical coordinates are derived from valid AIP of Czech Republic.*
+*Coordinates are rounded to nearest angle second.*
+*Maximum positional error caused by coordinates rounding taking into account radius of big Earth circle (according to FAI sphere R=6371km, where one angle degree is 111,195km of this big circle, one angle minute is 1853,25m (1NM) and one angle second is 30,885m) and maintaining rounding rules is 16m.*
+*
+*-----
+* SUA prostory jsou rozdeleny do nekolika souboru, kazdy soubor obsahuje prostory stejne kategorie:*
+* - CZ hranice                         - CzBorder.txt*
+* - CTR                                - CzCTR.txt*
+* - TMA                                - CzTMA.txt*
+* - FIR Praha - sektory		       - CzFIR.txt*
+* - CTA (pro rizene lety)              - CzCTA.txt*
+* - nebezpecne prostory (D)            - CzD.txt*
+* - zakazane prostory (P)              - CzP.txt*
+* - omezene prostory (R)               - CzR.txt*
+* - docasne rezervovane prostory (TRA) - CzTRA.txt*
+* - docasne vyhrazene prostory (TSA)   - CzTSA.txt*
+*
+* CZ SUAs are splitted to separated files. Each single file contains the same category SUAs:*
+* - CZ Border                          - CzBorder.txt*
+* - CTR (Control Zones)                - CzCTR.txt*
+* - TMA (Terminal Control Areas)       - CzTMA.txt*
+* - FIR Praha - sectors		       - CzFIR.txt*
+* - CTA 			       - CzCTA.txt*
+*   (Control Areas, for controlled flights)*
+* - Dangerous Areas (D)                - CzD.txt*
+* - Prohibited Areas (P)               - CzP.txt*
+* - Restricted Areas (R)               - CzR.txt*
+* - Temporary Reserved Areas (TRA)     - CzTRA.txt*
+* - Temporary Segregated Areas (TSA)   - CzTSA.txt*
+*
+*----
+*K zobrazeni prostoru CTA a FIR aktivujte zobrazeni prostoru tridy E.*
+*To show CTA and FIR SUA activate E class airspace.*
+*
+* Soubor CTA je doporuèeno pouívat pouze pro øízené lety, pro bezmotorové lety nedoporuèuji pouívat*
+* Usage of CTA file is recommended just for controlled flights, not recommended for soaring flights*
+*
+* Pro zobrazení CZ hranic je moné pouít buï soubor CzBorder, který se bude hlásit jako omezený prostor pøi letu zevnitø CZ hranic smìrem ven, nebo soubor CzFIR, který se podle jednotlivých FIR sektorù bude hlásit jako prostor tøídy G a E uvnitø CZ hranic. Tato varianta je novì pouita pøi exportu do souborù Cz.cub a CzG.cub.*
+* To show CZ Border is possible to use either CzBorder file, that behaves as a restricted aisrpace during flight from inside of Czech territory to outside, or CzFIR file that behaves according to defined FIR sectors as G and E airspace inside the Czech territory. This option was used to export the Cz and CzG CUB files.*
+*
+* Cz.cub is export of CzCTR, CzTMA, CzFIR, CzD, CzP, CzR, CzTRA and CzTSA files.*
+* CzG.cub is export of CzCTR, CzTMA, CzFIR, CzD, CzP, CzR, CzTRA files.*
+* CE.cub is export of CzCTR, CzTMA, CzFIR, CzD, CzP, CzR, CzTRA files and SUA files of Austria, Germany, Poland, Slovakia nad Hungary valid and published till 28APR14. 
+* ============================================================================ *
+*                                                                              *
+*     This file contains all CZ Control Zones (CTR) SUA.*
+*
+***** CZ (LKAA) Airspace file *****
+***** Effective 01MAY14 *****
+***** Last update AIP CZ 01MAY14 *****
+*                                                                              *
+* ============================================================================ *
+*                                                                              *
+*This file contains all FIR CZ sectors up to FL95.*
+*
+***** CZ (LKAA) Airspace file *****
+***** Effective 01MAY14 *****
+***** Last update AIP CZ 01MAY14 *****
+*                                                                              *
+* ============================================================================ *
+*                                                                              *
+*     This file contains all CZ Terminal Areas (TMA).*
+*                                                                              *
+* ============================================================================ *
+*                                                                              *
+*    This file contains all CZ SUA Temporary Reserved Areas (LK TRA) up to FL95.*
+*                                                                              *
+* ============================================================================ *
+*                                                                              *
+*    This file contains all CZ SUA Temporary Segregated Areas (LK TSA).*
+*                                                                              *
+* ============================================================================ *
+*                                                                              *
+*     This file contains all CZ SUA Dangerous Areas (LK D).*
+*                                                                              *
+* ============================================================================ *
+*                                                                              *
+*   This file contains all CZ SUA Prohibited Areas (LK P).*
+*                                                                              *
+* ============================================================================ *
+*                                                                              *
+**  This file contains all CZ SUA Restricted Areas (LK R).*
+*                                                                              *
+* ============================================================================ *
+*                                                                              *
+*                                                                              *
+* Start of CzCTR header<<<<<<<<<<<<<<<<<<<<                                    *
+**  -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+*     This file contains all CZ Control Zones (CTR) SUA.*
+*
+***** CZ (LKAA) Airspace file *****
+***** Effective 01MAY14 *****
+***** Last update AIP CZ 01MAY14 *****
+**  -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+***** (c) 2014 Petr Koutny LKKA CZ *****
+*
+***** Changes *****
+* AIRAC 11SEP08: Zruseni/Cancelled MCTR Line
+* AIRAC 2/10 25FEB10: Zmena/Change CTR Ruzyne, Kbely, Vodochody
+* AIRAC 8/12 28JUN12: Zmena/Change FREQ MTWR Caslav
+* AIRAC 5/13 01OCT13: Zruseni MCTR Prerov
+*****
+*
+*Souradnice zemepisnych bodu jednotlivych SUA (Special Use Airspace) jsou odecteny z platneho AIPu CZ.*
+*Souradnice bodu jsou zaokrouhleny na cele uhlove sekundy  (hh:mm:ss).*
+*Maximalni polohova chyba dana zaokrouhlovanim souradnic na velke zemepisne kruznici (dle koule FAI R=6371km, kde jeden uhlovy stupen je 111,195km teto velke kruznice, jedna uhlova minuta je 1853,25m (1NM) a jedna uhlova sekunda je 30,885m) pri dodrzeni pravidel pro zaokrouhlovani je 16m.*
+*
+*SUA (Special Use Airpsace) geographical coordinates are derived from valid AIP of Czech Republic.*
+*Coordinates are rounded to nearest angle second.*
+*Maximum positional error caused by coordinates rounding taking into account radius of big Earth circle (according to FAI sphere R=6371km, where one angle degree is 111,195km of this big circle, one angle minute is 1853,25m (1NM) and one angle second is 30,885m) and maintaining rounding rules is 16m.*
+*
+*V tomto souboru jsou uvedena vsechna CZ CTR.*
+*This file contains all CZ Control Zones (CTR) SUA.*
+*
+********************
+***** LKAA CTR *****
+********************
+* End of CzCTR header<<<<<<<<<<<<<<<<<<<<                                      *
+*                                                                              *
+* Start of CzFIR header<<<<<<<<<<<<<<<<<<<<                                    *
+**  -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+*This file contains all FIR CZ sectors up to FL95.*
+*
+***** CZ (LKAA) Airspace file *****
+***** Effective 01MAY14 *****
+***** Last update AIP CZ 01MAY14 *****
+**  -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+***** (c) 2014 Petr Koutny LKKA CZ *****
+*
+***** Changes *****
+* 01MAY14: Changes: FIR Sector Cechy Parts E and W, Sector Morava Parts N and S 
+*****
+*
+*
+*Souradnice zemepisnych bodu jednotlivych SUA (Special Use Airspace) jsou odecteny z platneho AIPu CZ.*
+*Souradnice bodu jsou zaokrouhleny na cele uhlove sekundy  (hh:mm:ss).*
+*Maximalni polohova chyba dana zaokrouhlovanim souradnic na velke zemepisne kruznici (dle koule FAI R=6371km, kde jeden uhlovy stupen je 111,195km teto velke kruznice, jedna uhlova minuta je 1853,25m (1NM) a jedna uhlova sekunda je 30,885m) pri dodrzeni pravidel pro zaokrouhlovani je 16m.*
+*
+*SUA (Special Use Airpsace) geographical coordinates are derived from valid AIP of Czech Republic.*
+*Coordinates are rounded to nearest angle second.*
+*Maximum positional error caused by coordinates rounding taking into account radius of big Earth circle (according to FAI sphere R=6371km, where one angle degree is 111,195km of this big circle, one angle minute is 1853,25m (1NM) and one angle second is 30,885m) and maintaining rounding rules is 16m.*
+*
+*V tomto souboru jsou uvedeny sektory FIR CZ do FL95.*
+*This file contains all FIR CZ sectors up to FL95.*
+*
+********************
+***** LKAA FIR *****
+********************
+* End of CzFIR header<<<<<<<<<<<<<<<<<<<<                                      *
+*                                                                              *
+* Start of CzTMA header<<<<<<<<<<<<<<<<<<<<                                    *
+**  -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+*     This file contains all CZ Terminal Areas (TMA).*
+**  -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+*
+***** CZ (LKAA) Airspace file *****
+***** Effective 01MAY14 *****
+***** Last update AIP CZ 01MAY14 *****
+***** (c) 2014 Petr Koutny LKKA CZ *****
+*
+***** Changes *****
+* AIRAC 2/10 25FEB10
+* AIRAC 4/11 16JUN11
+* AIRAC 3/12 23FEB12
+* AIRAC 8/12 28JUN12: Zmena/Change FREQ MTWR Caslav
+* AIRAC 5/13 01OCT13: Zruseni/cancellation MTMA Prerov, upravy/changes TMA Brno a Ostrava
+* AIRAC 4/14 01MAY14: Zruseni/cancellation TMA VIII Brno, zmeny/changes in TMA Brno and Ostrava, zmeny/changes in FREQ
+*****
+*
+*Souradnice zemepisnych bodu jednotlivych SUA (Special Use Airspace) jsou odecteny z platneho AIPu CZ.*
+*Souradnice bodu jsou zaokrouhleny na cele uhlove sekundy  (hh:mm:ss).*
+*Maximalni polohova chyba dana zaokrouhlovanim souradnic na velke zemepisne kruznici (dle koule FAI R=6371km, kde jeden uhlovy stupen je 111,195km teto velke kruznice, jedna uhlova minuta je 1853,25m (1NM) a jedna uhlova sekunda je 30,885m) pri dodrzeni pravidel pro zaokrouhlovani je 16m.*
+*
+*SUA (Special Use Airpsace) geographical coordinates are derived from valid AIP of Czech Republic.*
+*Coordinates are rounded to nearest angle second.*
+*Maximum positional error caused by coordinates rounding taking into account radius of big Earth circle (according to FAI sphere R=6371km, where one angle degree is 111,195km of this big circle, one angle minute is 1853,25m (1NM) and one angle second is 30,885m) and maintaining rounding rules is 16m.*
+*
+*V tomto souboru jsou uvedena vsechna CZ TMA.*
+*This file contains all CZ Terminal Areas (TMA).*
+*
+********************
+***** LKAA TMA *****
+********************
+* End of CzTMA header<<<<<<<<<<<<<<<<<<<<                                      *
+*                                                                              *
+* Start of CzTRA header<<<<<<<<<<<<<<<<<<<<                                    *
+**  -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+*    This file contains all CZ SUA Temporary Reserved Areas (LK TRA) up to FL95.*
+**  -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+***** CZ (LKAA) Airspace file *****
+***** Effective 01MAY14 *****
+***** Last update AIP CZ 01MAY14 *****
+***** (c) 2014 Petr Koutny LKKA CZ *****
+*
+***** Changes *****
+* AIRAC 2/09 09APR09
+* AIRAC 2/09 25FEB10
+* AIRAC 4/11 16JUN11
+* AIRAC 3/12 23FEB12
+* AIRAC 2/13 24JAN13: Zmena hranic/Change of borders LKTRA58, LKTRA66
+* AIRAC 3/13 21MAR13: Zmena hranice/Change of border LKTRA70
+* AIRAC 4/14 01MAY14: Changes in responsible FREQ
+***** Changes *****
+*
+*Souradnice zemepisnych bodu jednotlivych SUA (Special Use Airspace) jsou odecteny z platneho AIPu CZ.*
+*Souradnice bodu jsou zaokrouhleny na cele uhlove sekundy  (hh:mm:ss).*
+*Maximalni polohova chyba dana zaokrouhlovanim souradnic na velke zemepisne kruznici (dle koule FAI R=6371km, kde jeden uhlovy stupen je 111,195km teto velke kruznice, jedna uhlova minuta je 1853,25m (1NM) a jedna uhlova sekunda je 30,885m) pri dodrzeni pravidel pro zaokrouhlovani je 16m.*
+*
+*SUA (Special Use Airpsace) geographical coordinates are derived from valid AIP of Czech Republic.*
+*Coordinates are rounded to nearest angle second.*
+*Maximum positional error caused by coordinates rounding taking into account radius of big Earth circle (according to FAI sphere R=6371km, where one angle degree is 111,195km of this big circle, one angle minute is 1853,25m (1NM) and one angle second is 30,885m) and maintaining rounding rules is 16m.*
+*
+*V tomto souboru jsou uvedeny vsechny CZ docasne rezervovane prostory (LK TRA) do FL95.*
+*Jednotlive prostory jsou denne aktivovany zpravou AUP.*
+*
+*This file contains all CZ SUA Temporary Reserved Areas (LK TRA) up to FL95.*
+*Single TRA areas are activated daily by AUP (Airspace Update Plan) report.*
+*
+****************************************************
+***** LKAA Temporary Reserved Areas up to FL95 *****
+****************************************************
+* End of CzTRA header<<<<<<<<<<<<<<<<<<<<                                      *
+*                                                                              *
+* Start of CzTSA header<<<<<<<<<<<<<<<<<<<<                                    *
+**  -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+*    This file contains all CZ SUA Temporary Segregated Areas (LK TSA).*
+**  -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+***** CZ (LKAA) Airspace file *****
+***** Effective 01MAY14 *****
+***** Last update AIP CZ 01MAY14 *****
+***** (c) 2014 Petr Koutny LKKA CZ *****
+*
+***** Changes *****
+* AIRAC 4/14 01MAY14: Changes in responsible FREQ
+*****
+*
+*Souradnice zemepisnych bodu jednotlivych SUA (Special Use Airspace) jsou odecteny z platneho AIPu CZ.*
+*Souradnice bodu jsou zaokrouhleny na cele uhlove sekundy  (hh:mm:ss).*
+*Maximalni polohova chyba dana zaokrouhlovanim souradnic na velke zemepisne kruznici (dle koule FAI R=6371km, kde jeden uhlovy stupen je 111,195km teto velke kruznice, jedna uhlova minuta je 1853,25m (1NM) a jedna uhlova sekunda je 30,885m) pri dodrzeni pravidel pro zaokrouhlovani je 16m.*
+*
+*SUA (Special Use Airpsace) geographical coordinates are derived from valid AIP of Czech Republic.*
+*Coordinates are rounded to nearest angle second.*
+*Maximum positional error caused by coordinates rounding taking into account radius of big Earth circle (according to FAI sphere R=6371km, where one angle degree is 111,195km of this big circle, one angle minute is 1853,25m (1NM) and one angle second is 30,885m) and maintaining rounding rules is 16m.*
+*
+*V tomto souboru jsou uvedeny vsechny CZ docasne vyhrazene prostory (LK TSA).*
+*Jednotlive prostory jsou denne aktivovany zpravou AUP.*
+*
+*This file contains all CZ SUA Temporary Segregated Areas (LK TSA).*
+*Single TSA areas are activated daily by AUP (Airspace Update Plan) report.*
+*
+*******************************************
+***** LKAA Temporary Segregated Areas *****
+*******************************************
+* End of CzTSA header<<<<<<<<<<<<<<<<<<<<                                      *
+*                                                                              *
+* Start of CzD header<<<<<<<<<<<<<<<<<<<<                                      *
+**  -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+*     This file contains all CZ SUA Dangerous Areas (LK D).*
+**  -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+*
+***** CZ (LKAA) Airspace file *****
+***** Effective 01MAY14 *****
+***** Last update AIP CZ 01MAY14 *****
+***** CZ (LKAA) Airspace file *****
+***** Effective 01MAY14 *****
+***** Last update AIP CZ 01MAY14 *****
+***** (c) 2014 Petr Koutny LKKA CZ *****
+*
+***** Changes *****
+* AIRAC 3/12 23FEB12: Zmena/change LKD7
+*****
+*
+*Souradnice zemepisnych bodu jednotlivych SUA (Special Use Airspace) jsou odecteny z platneho AIPu CZ.*
+*Souradnice bodu jsou zaokrouhleny na cele uhlove sekundy  (hh:mm:ss).*
+*Maximalni polohova chyba dana zaokrouhlovanim souradnic na velke zemepisne kruznici (dle koule FAI R=6371km, kde jeden uhlovy stupen je 111,195km teto velke kruznice, jedna uhlova minuta je 1853,25m (1NM) a jedna uhlova sekunda je 30,885m) pri dodrzeni pravidel pro zaokrouhlovani je 16m.*
+*
+*SUA (Special Use Airpsace) geographical coordinates are derived from valid AIP of Czech Republic.*
+*Coordinates are rounded to nearest angle second.*
+*Maximum positional error caused by coordinates rounding taking into account radius of big Earth circle (according to FAI sphere R=6371km, where one angle degree is 111,195km of this big circle, one angle minute is 1853,25m (1NM) and one angle second is 30,885m) and maintaining rounding rules is 16m.*
+*
+*V tomto souboru jsou uvedeny vsechny CZ nebezpecne prostory (LK D).*
+*This file contains all CZ SUA Dangerous Areas (LK D).*
+*
+********************************
+***** LKAA Dangerous Areas *****
+********************************
+* End of CzD header<<<<<<<<<<<<<<<<<<<<                                        *
+*                                                                              *
+* Start of CzP header<<<<<<<<<<<<<<<<<<<<                                      *
+**  -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+*   This file contains all CZ SUA Prohibited Areas (LK P).*
+**  -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+*
+***** CZ (LKAA) Airspace file *****
+***** Effective 01MAY14 *****
+***** Last update AIP CZ 01MAY14 *****
+***** (c) 2014 Petr Koutny LKKA CZ *****
+*
+***** Changes *****
+* AIRAC 2/10 25FEB10: Zmena/Change LKP5 Prcice, LKP8 Most
+* AIRAC 3/12 23FEB12: Zruseno/cancelled LKP3, zmena/change LKP7
+*****
+*
+*
+*Souradnice zemepisnych bodu jednotlivych SUA (Special Use Airspace) jsou odecteny z platneho AIPu CZ.*
+*Souradnice bodu jsou zaokrouhleny na cele uhlove sekundy  (hh:mm:ss).*
+*Maximalni polohova chyba dana zaokrouhlovanim souradnic na velke zemepisne kruznici (dle koule FAI R=6371km, kde jeden uhlovy stupen je 111,195km teto velke kruznice, jedna uhlova minuta je 1853,25m (1NM) a jedna uhlova sekunda je 30,885m) pri dodrzeni pravidel pro zaokrouhlovani je 16m.*
+*
+*SUA (Special Use Airpsace) geographical coordinates are derived from valid AIP of Czech Republic.*
+*Coordinates are rounded to nearest angle second.*
+*Maximum positional error caused by coordinates rounding taking into account radius of big Earth circle (according to FAI sphere R=6371km, where one angle degree is 111,195km of this big circle, one angle minute is 1853,25m (1NM) and one angle second is 30,885m) and maintaining rounding rules is 16m.*
+*
+*V tomto souboru jsou uvedeny vsechny CZ zakazane prostory (LK P).*
+*This file contains all CZ SUA Prohibited Areas (LK P).*
+*
+*********************************
+***** LKAA Prohibited Areas *****
+*********************************
+* End of CzP header<<<<<<<<<<<<<<<<<<<<                                        *
+*                                                                              *
+* Start of CzR header<<<<<<<<<<<<<<<<<<<<                                      *
+**  -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+**  This file contains all CZ SUA Restricted Areas (LK R).*
+**  -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+*****
+***** CZ (LKAA) Airspace file *****
+***** Effective 01MAY14 *****
+***** Last update AIP CZ 01MAY14 *****
+**  -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+***** (c) 2014 Petr Koutny LKKA CZ *****
+*
+***** Changes *****
+* AIRAC 2/09 09APR09
+* AIRAC 2/10 25FEB10
+* AIRAC 07APR11
+* AIRAC 3/12 23FEB12
+* AIRAC 5/13 01OCT13
+* AIRAC 4/14 01MAY14: Changes in responsible FREQ
+*****
+*
+*Souradnice zemepisnych bodu jednotlivych SUA (Special Use Airspace) jsou odecteny z platneho AIPu CZ.*
+*Souradnice bodu jsou zaokrouhleny na cele uhlove sekundy  (hh:mm:ss).*
+*Maximalni polohova chyba dana zaokrouhlovanim souradnic na velke zemepisne kruznici (dle koule FAI R=6371km, kde jeden uhlovy stupen je 111,195km teto velke kruznice, jedna uhlova minuta je 1853,25m (1NM) a jedna uhlova sekunda je 30,885m) pri dodrzeni pravidel pro zaokrouhlovani je 16m.*
+*
+*SUA (Special Use Airpsace) geographical coordinates are derived from valid AIP of Czech Republic.*
+*Coordinates are rounded to nearest angle second.*
+*Maximum positional error caused by coordinates rounding taking into account radius of big Earth circle (according to FAI sphere R=6371km, where one angle degree is 111,195km of this big circle, one angle minute is 1853,25m (1NM) and one angle second is 30,885m) and maintaining rounding rules is 16m.*
+*
+*V tomto souboru jsou uvedeny vsechny CZ omezene prostory (LK R).*
+*Jednotlive prostory jsou denne aktivovany zpravou AUP.*
+*
+*This file contains all CZ SUA Restricted Areas (LK R).*
+*Single restricted areas are activated daily by AUP (Airspace Update Plan) report.*
+*
+*********************************
+***** LKAA Restricted Areas *****
+*********************************
+* End of CzR header<<<<<<<<<<<<<<<<<<<<                                        *
+*                                                                              *
+* ============================================================================ *
+*                                                                              *
+* ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ *
+* Start of CzCTR airspace<<<<<<<<<<<<<<<<<<<<                                  *
+*
+*
+*Setting colour and line of CTR airspace
+AC CTR
+SP 0,2,255,0,0
+SB -1,-1,-1
+*
+*
+AC CTR
+AN CTR Brno Turany (119.6 TWR)
+AT 49:11:00 N 016:42:00 E
+AH 5000ft MSL
+AL GND
+V X=49:09:05 N 016:41:38 E *ARP Brno Turany
+V D=+
+DB 49:13:20 N 016:33:05 E, 49:10:56 N 016:51:59 E
+DP 49:10:31 N 016:57:11 E
+DP 49:05:10 N 016:56:08 E
+V X=49:09:05 N 016:41:38 E *ARP Brno Turany
+V D=+
+DB 49:05:35 N 016:50:57 E, 49:07:15 N 016:31:16 E
+DP 49:07:49 N 016:26:41 E
+DP 49:14:20 N 016:27:57 E
+DP 49:13:20 N 016:33:05 E
+*
+*
+AC CTR
+AN MCTR Caslav (136.65 TWR)
+AT 49:53:00 N 015:25:00 E
+AH 5000ft MSL
+AL GND
+DP 50:06:11 N 015:14:37 E
+DP 50:03:23 N 015:24:26 E
+DP 49:55:48 N 015:35:12 E
+DP 49:50:18 N 015:37:24 E
+DP 49:46:39 N 015:31:14 E
+DP 49:49:32 N 015:21:28 E
+DP 49:56:06 N 015:12:05 E
+DP 50:00:17 N 015:11:42 E
+DP 50:02:30 N 015:08:27 E
+DP 50:06:11 N 015:14:37 E
+*
+*
+AC CTR
+AN CTR Karlovy Vary (121.225 TWR)
+AT 50:15:00 N 012:55:00 E
+AH 5000ft MSL
+AL GND
+DP 50:13:32 N 012:39:17 E
+DP 50:19:18 N 012:43:29 E
+V X=50:12:11 N 012:54:54 E *ARP Karlovy Vary
+V D=+
+DB 50:17:24 N 012:50:30 E, 50:13:16 N 013:04:00 E
+DP 50:11:31 N 013:10:25 E
+DP 50:05:55 N 013:07:13 E
+V X=50:12:11 N 012:54:54 E *ARP Karlovy Vary
+V D=+
+DB 50:07:38 N 013:00:53 E, 50:11:49 N 012:45:39 E
+DP 50:13:32 N 012:39:17 E
+*
+*
+AC CTR
+AN MCTR Kbely (120.875 TWR)
+AT 50:04:00 N 014:36:00 E
+AH 2000ft MSL
+AL GND
+DP 50:13:29 N 014:47:42 E
+DP 50:09:05 N 014:49:44 E
+DP 49:58:48 N 014:37:28 E
+DP 50:00:58 N 014:33:01 E
+DP 50:03:10 N 014:28:30 E
+DP 50:04:28 N 014:25:50 E
+DP 50:06:53 N 014:25:52 E
+DP 50:09:16 N 014:33:43 E
+DP 50:10:14 N 014:33:01 E
+DP 50:12:04 N 014:38:28 E
+DP 50:10:58 N 014:39:22 E
+DP 50:11:33 N 014:41:17 E
+DP 50:13:29 N 014:47:42 E
+*
+*
+AC CTR
+AN CTR Kunovice (120.1 TWR)
+AT 49:00:00 N 017:25:00 E
+AH 5000ft MSL
+AL GND
+V X=49:01:46 N 017:26:23 E *ARP Kunovice
+V D=-
+DB 48:55:50 N 017:26:42 E, 49:03:36 N 017:34:59 E
+DP 49:11:12 N 017:40:31 E
+DP 49:13:03 N 017:34:34 E
+DP 49:09:17 N 017:27:12 E
+V X=49:01:46 N 017:26:23 E *ARP Kunovice
+V D=-
+DB 49:07:42 N 017:26:04 E, 48:58:08 N 017:19:15 E
+DP 48:56:07 N 017:17:49 E
+DP 48:54:26 N 017:25:42 E
+DP 48:55:50 N 017:26:42 E
+*
+*
+AC CTR
+AN CTR Mosnov (120.8 TWR)
+AT 49:45:00 N 018:08:00 E
+AH 5000ft MSL
+AL GND
+V X=49:41:46 N 018:06:39 E *ARP Mosnov
+V D=+
+DB 49:44:16 N 018:16:43 E, 49:35:22 N 018:02:20 E
+DP 49:33:05 N 017:58:41 E
+DP 49:36:59 N 017:52:56 E
+V X=49:41:46 N 018:06:39 E *ARP Mosnov
+V D=+
+DB 49:39:16 N 017:56:36 E, 49:48:12 N 018:10:53 E
+DP 49:50:30 N 018:14:46 E
+DP 49:46:38 N 018:20:30 E
+DP 49:44:16 N 018:16:43 E
+*
+*
+AC CTR
+AN MCTR Namest (126.5 TWR)
+AT 49:15:00 N 016:00:00 E
+AH 5000ft MSL
+AL GND
+DP 49:18:53 N 015:57:19 E
+DP 49:17:37 N 016:07:46 E
+DP 49:17:07 N 016:08:44 E
+DP 49:14:35 N 016:13:36 E
+DP 49:13:48 N 016:15:07 E
+DP 49:12:28 N 016:17:39 E
+DP 49:05:50 N 016:22:47 E
+DP 49:01:04 N 016:17:37 E
+DP 49:03:00 N 016:07:27 E
+DP 49:08:48 N 015:56:48 E
+DP 49:14:49 N 015:52:06 E
+DP 49:18:53 N 015:57:19 E
+*
+*
+AC CTR
+AN MCTR Pardubice (120.15 TWR)
+AT 49:58:00 N 015:45:00 E
+AH 5000ft MSL
+AL GND
+DP 50:06:00 N 015:51:34 E
+DP 50:02:59 N 016:01:17 E
+DP 49:57:35 N 016:00:53 E
+DP 49:55:17 N 015:50:47 E
+DP 49:55:48 N 015:35:12 E
+DP 50:03:23 N 015:24:26 E
+DP 50:06:21 N 015:37:45 E
+DP 50:06:00 N 015:51:34 E
+*
+*
+AC CTR
+AN CTR Ruzyne (118.1 TWR)
+AT 50:09:00 N 014:15:00 E
+AH 3500ft MSL
+AL GND
+DP 50:14:03 N 014:10:33 E
+DP 50:13:22 N 014:14:52 E
+DP 50:10:32 N 014:32:47 E
+DP 50:09:16 N 014:33:43 E
+DP 50:06:53 N 014:25:52 E
+DP 50:04:28 N 014:25:50 E
+V X=50:05:45 N 014:15:56 E *OKL
+V D=+
+DB 50:03:10 N 014:28:30 E, 49:58:49 N 014:23:34 E
+V X=50:05:45 N 014:15:56 E *OKL
+V D=+
+DB 50:00:06 N 014:20:55 E, 50:01:42 N 014:08:02 E
+V X=50:05:45 N 014:15:56 E *OKL
+V D=+
+DB 50:00:39 N 014:04:25 E, 50:05:23 N 014:01:58 E
+DP 50:06:53 N 014:06:59 E
+V X=50:05:45 N 014:15:56 E *OKL
+V D=+
+DB 50:08:55 N 014:02:50 E, 50:14:03 N 014:10:33 E
+DP 50:14:03 N 014:10:33 E
+*
+*
+AC CTR
+AN CTR Vodochody (133.075 TWR)
+AT 50:15:00 N 014:25:00 E
+AH 3500ft MSL
+AL GND
+DP 50:18:46 N 014:20:07 E
+DP 50:14:05 N 014:34:08 E
+DP 50:10:32 N 014:32:47 E
+DP 50:13:22 N 014:14:52 E
+DP 50:17:12 N 014:16:20 E
+DP 50:18:46 N 014:20:07 E
+* End of CzCTR <<<<<<<<<<<<<<<<<<<<                                            *
+* Start of CzFIR airspace<<<<<<<<<<<<<<<<<<<<                                  *
+*
+*
+*Setting colour and line of E airspace
+AC E
+SP 0,2,127,127,127
+SB -1,-1,-1
+*
+*
+AC E *G*
+AN FIR Praha Cechy W (126.1 Praha Information) G,E
+AH FL95
+AL GND
+DP 50:49:25 N 014:47:33 E
+DP 50:13:29 N 014:47:42 E
+DP 50:09:05 N 014:49:44 E
+DP 49:58:48 N 014:37:28 E
+DP 49:31:56 N 014:52:29 E
+DP 48:58:49 N 015:22:09 E
+*CZ-AT Border
+DP 48:58:48 N 015:21:51 E
+DP 48:58:32 N 015:19:18 E
+DP 48:59:06 N 015:17:28 E
+DP 48:59:39 N 015:16:51 E
+DP 48:58:44 N 015:17:05 E
+DP 48:57:53 N 015:16:06 E
+DP 48:57:16 N 015:15:46 E
+DP 48:57:25 N 015:12:48 E
+DP 48:56:53 N 015:10:46 E
+DP 48:57:27 N 015:09:51 E
+DP 48:58:26 N 015:09:42 E
+DP 48:59:08 N 015:09:11 E
+*CTA Karlovy Vary
+DP 48:59:52 N 015:07:44 E
+DP 48:59:56 N 015:06:51 E
+DP 49:00:54 N 015:03:58 E
+DP 49:00:41 N 015:02:20 E
+DP 49:00:48 N 015:00:28 E
+DP 49:00:23 N 014:59:35 E
+DP 48:59:38 N 014:59:54 E
+DP 48:58:45 N 014:58:56 E
+DP 48:56:02 N 014:59:23 E
+DP 48:54:14 N 014:59:47 E
+DP 48:53:32 N 014:59:35 E
+DP 48:52:28 N 014:58:25 E
+DP 48:50:48 N 014:59:15 E
+DP 48:50:16 N 014:58:20 E
+DP 48:48:19 N 014:57:51 E
+DP 48:46:36 N 014:58:59 E
+DP 48:45:39 N 014:56:22 E
+DP 48:46:22 N 014:54:00 E
+DP 48:46:57 N 014:52:15 E
+DP 48:46:58 N 014:49:45 E
+DP 48:46:22 N 014:48:34 E
+DP 48:44:56 N 014:48:09 E
+DP 48:43:48 N 014:47:50 E
+DP 48:42:37 N 014:45:53 E
+DP 48:41:59 N 014:44:21 E
+DP 48:38:20 N 014:43:27 E
+DP 48:35:59 N 014:43:10 E
+DP 48:34:55 N 014:42:18 E
+DP 48:34:51 N 014:39:44 E
+DP 48:36:10 N 014:38:01 E
+DP 48:37:36 N 014:36:25 E
+DP 48:36:12 N 014:34:02 E
+DP 48:36:52 N 014:31:41 E
+DP 48:37:23 N 014:29:42 E
+DP 48:38:51 N 014:28:17 E
+DP 48:37:39 N 014:27:31 E
+DP 48:36:45 N 014:27:05 E
+DP 48:35:18 N 014:25:58 E
+DP 48:35:38 N 014:23:34 E
+DP 48:34:16 N 014:23:26 E
+DP 48:34:25 N 014:22:04 E
+DP 48:33:54 N 014:21:15 E
+DP 48:33:07 N 014:19:45 E *CZ South Point
+DP 48:34:27 N 014:16:41 E
+DP 48:34:40 N 014:14:23 E
+DP 48:35:24 N 014:09:58 E
+DP 48:35:21 N 014:07:01 E
+DP 48:36:00 N 014:04:35 E
+DP 48:36:25 N 014:04:17 E
+DP 48:36:46 N 014:02:42 E
+DP 48:37:34 N 014:01:44 E
+DP 48:39:07 N 014:01:34 E
+DP 48:39:53 N 014:03:45 E
+DP 48:40:36 N 014:02:00 E
+DP 48:42:07 N 014:00:43 E
+DP 48:42:49 N 013:57:51 E
+DP 48:46:20 N 013:51:33 E
+*CZ-AT Border
+DP 48:46:18 N 013:50:22 E
+*CZ-DE Border
+DP 48:46:24 N 013:49:09 E
+DP 48:48:20 N 013:48:23 E
+DP 48:49:56 N 013:47:11 E
+DP 48:51:43 N 013:44:59 E
+DP 48:53:11 N 013:43:39 E
+DP 48:52:42 N 013:41:12 E
+DP 48:53:45 N 013:39:57 E
+DP 48:55:04 N 013:38:14 E
+DP 48:56:53 N 013:38:02 E
+DP 48:56:20 N 013:36:43 E
+DP 48:58:13 N 013:34:57 E
+DP 48:58:18 N 013:33:50 E
+DP 48:58:33 N 013:32:06 E
+DP 48:56:43 N 013:30:37 E
+DP 48:57:54 N 013:27:29 E
+DP 48:58:36 N 013:25:36 E
+DP 49:00:17 N 013:24:40 E
+DP 49:01:25 N 013:24:25 E
+DP 49:02:54 N 013:23:59 E
+DP 49:03:26 N 013:22:43 E
+DP 49:05:28 N 013:20:21 E
+DP 49:07:15 N 013:16:13 E
+DP 49:07:27 N 013:12:30 E
+DP 49:10:47 N 013:09:48 E
+DP 49:13:03 N 013:06:54 E
+DP 49:14:43 N 013:04:28 E
+DP 49:15:57 N 013:02:47 E
+DP 49:18:17 N 013:01:45 E
+DP 49:20:04 N 012:58:32 E
+DP 49:20:36 N 012:55:18 E
+DP 49:19:53 N 012:53:34 E
+DP 49:20:23 N 012:49:27 E
+DP 49:21:35 N 012:46:59 E
+DP 49:22:36 N 012:45:28 E
+DP 49:24:40 N 012:44:04 E
+DP 49:25:25 N 012:42:41 E
+DP 49:26:52 N 012:39:23 E
+DP 49:28:09 N 012:38:36 E
+DP 49:29:00 N 012:38:18 E
+DP 49:31:58 N 012:38:23 E
+DP 49:31:32 N 012:37:28 E
+DP 49:33:18 N 012:35:03 E
+DP 49:34:54 N 012:34:42 E
+DP 49:36:55 N 012:33:31 E
+DP 49:37:05 N 012:31:56 E
+DP 49:37:38 N 012:31:37 E
+DP 49:38:30 N 012:31:40 E
+DP 49:40:05 N 012:31:54 E
+DP 49:41:15 N 012:31:08 E
+DP 49:41:12 N 012:29:13 E
+DP 49:42:08 N 012:26:38 E
+DP 49:44:02 N 012:24:46 E
+DP 49:47:08 N 012:27:59 E
+DP 49:48:15 N 012:28:18 E
+DP 49:49:59 N 012:28:25 E
+DP 49:51:28 N 012:30:03 E
+DP 49:53:27 N 012:32:18 E
+DP 49:55:32 N 012:32:22 E
+DP 49:56:14 N 012:29:40 E
+DP 49:57:32 N 012:28:51 E
+DP 49:58:27 N 012:29:52 E
+DP 49:59:28 N 012:28:14 E
+DP 49:59:02 N 012:26:04 E
+DP 50:00:04 N 012:26:01 E
+DP 50:00:26 N 012:23:51 E
+DP 50:01:16 N 012:22:46 E
+DP 50:02:13 N 012:20:53 E
+DP 50:02:53 N 012:19:10 E
+DP 50:03:19 N 012:16:38 E
+DP 50:03:47 N 012:15:39 E
+DP 50:05:24 N 012:14:50 E
+DP 50:05:49 N 012:13:47 E
+DP 50:06:40 N 012:12:08 E
+DP 50:08:06 N 012:11:53 E
+DP 50:08:47 N 012:12:11 E
+DP 50:09:45 N 012:12:56 E
+DP 50:10:24 N 012:12:35 E
+DP 50:12:05 N 012:11:11 E
+DP 50:12:52 N 012:10:23 E
+DP 50:13:05 N 012:09:48 E
+DP 50:14:16 N 012:06:43 E
+DP 50:14:56 N 012:05:35 E
+DP 50:15:12 N 012:05:29 E *CZ West Point
+DP 50:15:50 N 012:06:03 E
+DP 50:16:35 N 012:08:22 E
+DP 50:17:28 N 012:07:26 E
+DP 50:18:35 N 012:07:27 E
+DP 50:19:01 N 012:06:04 E
+DP 50:19:00 N 012:06:59 E
+DP 50:19:20 N 012:08:59 E
+DP 50:19:02 N 012:11:06 E
+DP 50:18:35 N 012:12:05 E
+DP 50:16:35 N 012:12:21 E
+DP 50:16:16 N 012:13:54 E
+DP 50:16:15 N 012:15:15 E
+DP 50:14:58 N 012:16:02 E
+DP 50:15:19 N 012:15:09 E
+DP 50:14:33 N 012:15:16 E
+DP 50:13:58 N 012:16:30 E
+DP 50:12:50 N 012:17:06 E
+DP 50:12:32 N 012:17:24 E
+DP 50:11:54 N 012:16:39 E
+DP 50:11:25 N 012:17:18 E
+DP 50:10:23 N 012:18:52 E
+DP 50:10:24 N 012:20:22 E
+DP 50:10:58 N 012:19:24 E
+DP 50:11:49 N 012:20:03 E
+DP 50:12:27 N 012:19:32 E
+DP 50:13:06 N 012:20:04 E
+DP 50:13:58 N 012:19:58 E
+DP 50:14:38 N 012:19:56 E
+DP 50:14:35 N 012:21:35 E
+DP 50:16:19 N 012:21:50 E
+DP 50:17:21 N 012:22:57 E
+DP 50:18:14 N 012:24:12 E
+DP 50:19:17 N 012:23:56 E
+DP 50:19:28 N 012:25:34 E
+DP 50:20:02 N 012:26:15 E
+DP 50:20:55 N 012:27:33 E
+DP 50:20:51 N 012:29:05 E
+DP 50:21:59 N 012:29:18 E
+DP 50:23:12 N 012:30:13 E
+*TMA II Karlovy Vary
+DP 50:23:45 N 012:30:56 E
+*TMA II Karlovy Vary
+DP 50:23:59 N 012:32:09 E
+DP 50:23:58 N 012:33:22 E
+DP 50:24:30 N 012:35:45 E
+DP 50:24:59 N 012:36:58 E
+DP 50:24:42 N 012:38:34 E
+DP 50:25:01 N 012:40:42 E
+DP 50:23:55 N 012:42:33 E
+DP 50:25:25 N 012:44:05 E
+DP 50:25:54 N 012:48:47 E
+DP 50:26:45 N 012:48:31 E
+DP 50:27:07 N 012:50:47 E
+DP 50:25:47 N 012:53:56 E
+DP 50:24:44 N 012:56:14 E
+DP 50:25:27 N 012:59:27 E
+DP 50:27:21 N 013:01:33 E
+DP 50:29:48 N 013:01:43 E
+DP 50:30:43 N 013:02:43 E
+DP 50:30:00 N 013:04:59 E
+DP 50:30:55 N 013:07:22 E
+DP 50:30:25 N 013:08:27 E
+DP 50:30:26 N 013:11:45 E
+DP 50:31:50 N 013:12:35 E
+DP 50:33:39 N 013:13:19 E
+DP 50:34:51 N 013:14:04 E
+DP 50:35:30 N 013:14:55 E
+DP 50:35:39 N 013:16:46 E
+DP 50:34:53 N 013:18:02 E
+DP 50:35:48 N 013:19:25 E
+DP 50:36:29 N 013:20:18 E
+DP 50:37:31 N 013:22:22 E
+DP 50:39:01 N 013:22:21 E
+DP 50:38:42 N 013:23:37 E
+DP 50:36:59 N 013:25:04 E
+DP 50:36:40 N 013:26:32 E
+DP 50:38:20 N 013:31:22 E
+DP 50:39:19 N 013:30:42 E
+DP 50:40:27 N 013:32:26 E
+DP 50:41:58 N 013:31:49 E
+DP 50:42:38 N 013:32:51 E
+DP 50:42:43 N 013:34:19 E
+DP 50:42:54 N 013:36:35 E
+DP 50:43:33 N 013:38:18 E
+DP 50:43:26 N 013:41:10 E
+DP 50:43:35 N 013:42:45 E
+DP 50:43:43 N 013:44:59 E
+*CTA Karlovy Vary
+*CTA 1 Ostrava
+DP 50:44:04 N 013:46:02 E
+DP 50:43:54 N 013:46:20 E
+DP 50:44:00 N 013:48:38 E
+DP 50:43:31 N 013:50:40 E
+DP 50:44:36 N 013:52:15 E
+DP 50:45:13 N 013:54:09 E
+DP 50:47:09 N 013:54:01 E
+DP 50:47:28 N 013:55:08 E
+DP 50:47:38 N 013:56:55 E
+DP 50:48:28 N 013:57:18 E
+DP 50:48:56 N 013:58:59 E
+DP 50:48:42 N 014:00:26 E
+DP 50:48:17 N 014:01:51 E
+DP 50:48:45 N 014:03:19 E
+DP 50:49:01 N 014:04:47 E
+DP 50:49:46 N 014:06:24 E
+DP 50:50:54 N 014:09:49 E
+DP 50:51:50 N 014:13:59 E
+DP 50:53:11 N 014:14:34 E
+DP 50:53:28 N 014:15:38 E
+DP 50:53:06 N 014:17:44 E
+DP 50:53:26 N 014:20:12 E
+DP 50:54:00 N 014:21:23 E
+DP 50:54:32 N 014:23:20 E
+DP 50:55:02 N 014:23:44 E
+DP 50:56:01 N 014:24:08 E
+DP 50:56:34 N 014:22:19 E
+DP 50:56:56 N 014:21:00 E
+DP 50:57:17 N 014:18:44 E
+DP 50:58:21 N 014:18:51 E
+DP 50:59:13 N 014:19:22 E
+DP 50:59:13 N 014:15:36 E
+DP 51:00:32 N 014:15:50 E
+DP 51:01:57 N 014:17:08 E
+DP 51:02:37 N 014:17:28 E
+DP 51:03:24 N 014:19:04 E *CZ North Point
+DP 51:02:29 N 014:20:56 E
+DP 51:02:20 N 014:23:04 E
+DP 51:01:09 N 014:25:21 E
+DP 51:02:08 N 014:28:07 E
+DP 51:02:52 N 014:30:11 E
+DP 51:01:17 N 014:30:06 E
+DP 51:00:09 N 014:31:58 E
+DP 51:00:01 N 014:34:42 E
+DP 50:58:49 N 014:36:04 E
+DP 50:57:36 N 014:35:50 E
+DP 50:56:11 N 014:34:26 E
+DP 50:54:50 N 014:35:07 E
+DP 50:55:58 N 014:39:02 E
+DP 50:53:53 N 014:38:20 E
+DP 50:51:32 N 014:37:18 E
+DP 50:50:27 N 014:41:10 E
+DP 50:49:55 N 014:43:20 E
+DP 50:49:35 N 014:44:16 E
+DP 50:49:31 N 014:45:15 E
+DP 50:49:19 N 014:46:59 E
+*CZ-DE Border
+DP 50:49:25 N 014:47:33 E
+*
+*
+AC E *G*
+AN FIR Praha Cechy E (136.175 Praha Information) G,E
+AH FL95
+AL GND
+DP 50:49:25 N 014:47:33 E
+*CZ-DE Border
+DP 50:49:28 N 014:48:11 E
+*CZ-DE Border
+DP 50:52:14 N 014:49:24 E
+*CZ-PL Border
+DP 50:51:58 N 014:49:35 E
+DP 50:52:13 N 014:51:58 E
+DP 50:52:39 N 014:52:11 E
+DP 50:52:38 N 014:52:59 E
+DP 50:52:03 N 014:54:01 E
+DP 50:51:46 N 014:58:11 E
+DP 50:52:13 N 015:00:21 E
+DP 50:55:14 N 014:59:26 E
+DP 50:57:02 N 015:01:05 E
+DP 50:59:10 N 015:00:33 E
+DP 51:00:27 N 014:59:04 E
+DP 51:00:38 N 014:59:57 E
+DP 51:01:19 N 015:02:07 E
+DP 51:00:51 N 015:04:56 E
+DP 51:00:20 N 015:06:05 E
+DP 50:59:32 N 015:08:11 E
+DP 51:01:17 N 015:10:32 E
+DP 50:58:50 N 015:11:28 E
+DP 50:59:36 N 015:12:25 E
+DP 50:59:57 N 015:14:24 E
+DP 50:58:50 N 015:14:56 E
+DP 50:57:42 N 015:16:41 E
+DP 50:56:49 N 015:17:39 E
+DP 50:55:19 N 015:16:12 E
+DP 50:52:56 N 015:17:27 E
+DP 50:50:59 N 015:21:25 E
+DP 50:48:10 N 015:22:09 E
+DP 50:46:46 N 015:22:07 E
+DP 50:47:22 N 015:24:53 E
+DP 50:48:10 N 015:27:20 E
+DP 50:47:18 N 015:29:57 E
+DP 50:46:50 N 015:32:29 E
+DP 50:46:46 N 015:34:35 E
+DP 50:45:36 N 015:39:56 E
+DP 50:44:17 N 015:42:27 E
+DP 50:44:29 N 015:45:01 E
+DP 50:44:53 N 015:47:28 E
+DP 50:44:46 N 015:49:30 E
+DP 50:42:32 N 015:51:05 E
+DP 50:40:13 N 015:53:12 E
+DP 50:41:13 N 015:57:01 E
+DP 50:40:46 N 015:59:32 E
+DP 50:38:43 N 016:00:18 E
+DP 50:37:27 N 016:00:32 E
+DP 50:36:29 N 016:00:14 E
+DP 50:36:11 N 016:01:50 E
+DP 50:37:07 N 016:03:35 E
+DP 50:39:46 N 016:06:21 E
+DP 50:39:11 N 016:08:58 E
+DP 50:37:38 N 016:11:23 E
+DP 50:38:29 N 016:13:21 E
+DP 50:39:43 N 016:17:07 E
+DP 50:39:58 N 016:19:02 E
+DP 50:38:50 N 016:21:21 E
+DP 50:38:13 N 016:23:01 E
+DP 50:37:02 N 016:24:37 E
+DP 50:36:01 N 016:25:55 E
+DP 50:34:04 N 016:25:08 E
+DP 50:32:31 N 016:23:27 E
+DP 50:30:03 N 016:21:54 E
+DP 50:30:18 N 016:18:42 E
+DP 50:28:45 N 016:18:01 E
+DP 50:28:04 N 016:15:43 E
+DP 50:27:30 N 016:13:34 E
+DP 50:26:32 N 016:13:34 E
+DP 50:26:45 N 016:12:14 E
+DP 50:24:43 N 016:12:56 E
+DP 50:24:20 N 016:15:15 E
+DP 50:23:41 N 016:15:45 E
+DP 50:22:36 N 016:16:46 E
+DP 50:22:55 N 016:18:11 E
+DP 50:22:50 N 016:20:52 E
+DP 50:21:28 N 016:22:11 E
+DP 50:19:37 N 016:23:19 E
+DP 50:19:34 N 016:26:08 E
+DP 50:17:12 N 016:28:05 E
+DP 50:15:43 N 016:30:27 E
+DP 50:14:23 N 016:32:16 E
+DP 50:12:51 N 016:33:13 E
+DP 50:12:14 N 016:33:32 E
+DP 50:10:51 N 016:34:07 E
+DP 50:09:12 N 016:35:05 E
+DP 50:08:26 N 016:35:59 E
+DP 50:07:13 N 016:37:46 E
+DP 50:05:58 N 016:41:40 E
+DP 50:07:04 N 016:44:06 E
+DP 50:08:46 N 016:47:12 E
+DP 50:10:42 N 016:48:03 E
+DP 50:11:28 N 016:49:41 E
+DP 50:12:27 N 016:50:49 E
+DP 50:12:11 N 016:53:15 E
+DP 50:13:06 N 016:53:55 E
+DP 50:13:21 N 016:57:09 E
+DP 50:14:20 N 016:57:46 E
+DP 50:14:07 N 016:59:05 E
+DP 50:13:13 N 017:00:57 E
+DP 50:14:35 N 017:00:46 E
+DP 50:15:41 N 017:00:54 E
+DP 50:18:10 N 017:00:22 E
+DP 50:18:48 N 016:57:54 E
+DP 50:20:01 N 016:56:22 E
+DP 50:22:15 N 016:55:14 E
+DP 50:23:24 N 016:54:06 E
+DP 50:25:03 N 016:52:09 E
+DP 50:26:13 N 016:52:57 E
+DP 50:26:41 N 016:53:49 E
+DP 50:26:39 N 016:55:25 E
+DP 50:25:08 N 016:58:46 E
+DP 50:25:08 N 017:01:09 E
+DP 50:24:28 N 017:03:12 E
+DP 50:24:29 N 017:06:25 E
+DP 50:23:43 N 017:07:19 E
+DP 50:22:54 N 017:09:41 E
+DP 50:23:13 N 017:12:31 E
+DP 50:20:45 N 017:13:38 E
+DP 50:19:03 N 017:17:03 E
+DP 50:19:53 N 017:21:03 E
+DP 50:18:53 N 017:20:36 E
+DP 50:17:19 N 017:21:08 E
+DP 50:16:00 N 017:21:54 E
+DP 50:17:04 N 017:23:12 E
+DP 50:16:42 N 017:25:21 E
+DP 50:15:06 N 017:26:28 E
+DP 50:16:31 N 017:29:54 E
+DP 50:16:44 N 017:35:37 E
+DP 50:16:36 N 017:39:02 E
+DP 50:19:45 N 017:41:19 E
+DP 50:18:17 N 017:43:57 E
+DP 50:16:39 N 017:44:21 E
+DP 50:14:11 N 017:46:02 E
+DP 50:12:06 N 017:44:43 E
+DP 50:11:14 N 017:42:31 E
+DP 50:10:14 N 017:36:30 E
+DP 50:08:33 N 017:36:29 E
+DP 50:06:48 N 017:38:58 E
+DP 50:07:15 N 017:41:52 E
+DP 50:04:40 N 017:44:58 E
+DP 50:01:13 N 017:46:38 E
+*CZ-PL Border
+DP 50:01:03 N 017:47:14 E
+DP 49:42:24 N 017:45:08 E
+DP 49:35:00 N 017:44:19 E
+DP 49:34:14 N 017:37:41 E
+DP 49:33:23 N 017:32:40 E
+DP 49:33:25 N 017:31:51 E
+DP 49:33:39 N 017:26:10 E
+DP 49:29:13 N 017:25:58 E
+DP 49:27:30 N 017:29:01 E
+DP 49:18:42 N 017:15:34 E
+DP 49:15:30 N 017:00:03 E
+DP 49:15:31 N 016:56:27 E
+DP 49:21:24 N 016:27:25 E
+DP 49:22:17 N 016:23:02 E
+V X=49:09:00 N 016:41:33 E *BNO
+V D=-
+DB 49:23:55 N 016:14:50 E, 49:17:07 N 016:08:44 E
+DP 49:17:37 N 016:07:46 E
+DP 49:22:12 N 015:58:54 E
+DP 49:23:08 N 015:52:38 E
+DP 49:21:53 N 015:47:52 E
+DP 49:16:23 N 015:42:25 E
+DP 49:11:09 N 015:46:54 E
+DP 49:08:17 N 015:52:50 E
+DP 48:53:07 N 016:24:00 E
+DP 48:48:32 N 016:27:36 E
+*CZ-AT Border
+DP 48:47:53 N 016:26:55 E
+DP 48:46:19 N 016:26:41 E
+DP 48:44:36 N 016:24:38 E
+DP 48:43:48 N 016:23:06 E
+DP 48:44:19 N 016:21:33 E
+DP 48:43:56 N 016:20:07 E
+DP 48:44:18 N 016:17:58 E
+DP 48:44:14 N 016:15:47 E
+*CTA 2 Brno
+DP 48:44:23 N 016:14:57 E
+DP 48:44:43 N 016:08:26 E
+DP 48:44:44 N 016:06:53 E
+DP 48:46:17 N 016:01:21 E
+DP 48:47:57 N 015:57:53 E
+DP 48:49:20 N 015:57:41 E
+DP 48:49:25 N 015:55:34 E
+DP 48:50:07 N 015:53:57 E
+DP 48:50:16 N 015:54:20 E
+DP 48:50:38 N 015:53:08 E
+DP 48:51:46 N 015:52:24 E
+DP 48:51:29 N 015:51:32 E
+DP 48:52:37 N 015:50:32 E
+DP 48:52:33 N 015:46:54 E
+DP 48:51:28 N 015:42:55 E
+DP 48:51:33 N 015:42:13 E
+DP 48:52:58 N 015:39:32 E
+DP 48:53:46 N 015:37:13 E
+DP 48:54:19 N 015:33:56 E
+DP 48:55:22 N 015:30:35 E
+DP 48:56:34 N 015:29:17 E
+DP 48:56:43 N 015:27:34 E
+DP 48:57:00 N 015:26:15 E
+DP 48:57:53 N 015:23:45 E
+*CZ-AT Border
+DP 48:58:49 N 015:22:09 E
+DP 49:31:56 N 014:52:29 E
+DP 49:58:48 N 014:37:28 E
+DP 50:09:05 N 014:49:44 E
+DP 50:13:29 N 014:47:42 E
+DP 50:49:25 N 014:47:33 E
+*
+*
+AC E *G*
+AN FIR Praha Morava S (127.35 Brno Radar) G,E
+AH FL95
+AL GND
+DP 49:27:30 N 017:29:01 E
+DP 49:23:50 N 017:35:30 E
+DP 49:22:18 N 017:47:02 E
+DP 49:18:14 N 018:16:54 E
+*CZ-SK Border
+DP 49:17:55 N 018:15:31 E
+DP 49:17:17 N 018:11:11 E
+DP 49:15:13 N 018:09:44 E
+DP 49:13:43 N 018:09:23 E
+DP 49:12:18 N 018:09:04 E
+DP 49:11:14 N 018:07:49 E
+DP 49:10:31 N 018:07:09 E
+DP 49:09:21 N 018:08:00 E
+DP 49:08:07 N 018:06:39 E
+DP 49:07:09 N 018:07:29 E
+DP 49:05:30 N 018:07:05 E
+DP 49:02:47 N 018:04:59 E
+DP 49:01:32 N 018:02:20 E
+DP 49:01:18 N 018:00:34 E
+DP 49:01:22 N 017:59:11 E
+DP 49:01:25 N 017:56:02 E
+DP 48:59:28 N 017:54:58 E
+DP 48:57:42 N 017:54:22 E
+DP 48:57:04 N 017:53:45 E
+DP 48:55:43 N 017:53:21 E
+DP 48:55:39 N 017:51:21 E
+DP 48:55:32 N 017:47:09 E
+DP 48:54:45 N 017:46:30 E
+DP 48:52:42 N 017:43:57 E
+DP 48:51:40 N 017:42:21 E
+DP 48:51:46 N 017:41:43 E
+DP 48:51:28 N 017:40:35 E
+DP 48:51:28 N 017:40:34 E
+DP 48:51:17 N 017:40:19 E
+DP 48:50:55 N 017:37:22 E
+DP 48:50:17 N 017:36:07 E
+DP 48:49:28 N 017:34:29 E
+DP 48:49:06 N 017:32:32 E
+DP 48:49:45 N 017:31:09 E
+DP 48:50:25 N 017:29:06 E
+DP 48:50:16 N 017:26:49 E
+DP 48:49:45 N 017:25:29 E
+DP 48:49:43 N 017:24:18 E
+DP 48:49:43 N 017:24:18 E
+DP 48:48:48 N 017:24:04 E
+DP 48:49:17 N 017:21:25 E
+DP 48:50:39 N 017:19:25 E
+DP 48:51:51 N 017:15:21 E
+DP 48:52:18 N 017:13:29 E
+DP 48:51:50 N 017:10:58 E
+DP 48:50:12 N 017:08:48 E
+DP 48:50:12 N 017:08:48 E
+DP 48:50:18 N 017:07:22 E
+DP 48:48:35 N 017:06:38 E
+DP 48:47:05 N 017:05:34 E
+DP 48:46:23 N 017:03:45 E
+*TMA III Brno
+DP 48:43:42 N 017:00:48 E
+DP 48:40:22 N 016:58:36 E
+DP 48:38:23 N 016:57:50 E
+*CZ-SK Border
+DP 48:37:00 N 016:56:25 E
+*CZ-AT Border
+DP 48:37:11 N 016:55:24 E
+DP 48:39:01 N 016:55:04 E
+DP 48:40:29 N 016:54:41 E
+DP 48:42:08 N 016:55:02 E
+DP 48:43:02 N 016:53:21 E
+DP 48:42:42 N 016:51:25 E
+DP 48:42:43 N 016:48:29 E
+DP 48:42:46 N 016:47:34 E
+DP 48:43:05 N 016:46:04 E
+DP 48:44:00 N 016:45:00 E
+*TMA IV Brno
+DP 48:43:55 N 016:44:09 E
+DP 48:43:44 N 016:41:15 E
+DP 48:46:12 N 016:40:43 E
+DP 48:47:03 N 016:39:12 E
+DP 48:46:55 N 016:36:01 E
+DP 48:47:31 N 016:34:05 E
+DP 48:47:50 N 016:31:14 E
+*CZ-AT Border
+DP 48:48:32 N 016:27:36 E
+DP 48:53:07 N 016:24:00 E
+DP 49:08:17 N 015:52:50 E
+DP 49:11:09 N 015:46:54 E
+DP 49:16:23 N 015:42:25 E
+DP 49:21:53 N 015:47:52 E
+DP 49:23:08 N 015:52:38 E
+DP 49:22:12 N 015:58:54 E
+DP 49:17:37 N 016:07:46 E
+V X=49:09:00 N 016:41:33 E *BNO
+V D=+
+DB 49:17:07 N 016:08:44 E, 49:23:55 N 016:14:50 E
+DP 49:22:17 N 016:23:02 E
+DP 49:21:24 N 016:27:25 E
+DP 49:15:31 N 016:56:27 E
+DP 49:15:30 N 017:00:03 E
+DP 49:18:42 N 017:15:34 E
+DP 49:27:30 N 017:29:01 E
+*
+*
+AC E *G*
+AN FIR Praha Morava N (119.375 Ostrava Radar) G,E
+AH FL95
+AL GND
+DP 50:01:03 N 017:47:14 E
+*CZ-PL Border
+DP 50:01:17 N 017:47:15 E
+DP 50:00:15 N 017:50:18 E
+DP 49:58:21 N 017:52:19 E
+DP 49:58:46 N 017:55:31 E
+DP 50:00:24 N 017:59:07 E
+DP 50:00:40 N 018:00:32 E
+DP 50:00:32 N 018:02:59 E
+DP 50:02:11 N 018:02:53 E
+DP 50:01:49 N 018:00:43 E
+DP 50:03:58 N 018:02:11 E
+DP 50:03:32 N 018:03:54 E
+DP 50:01:58 N 018:05:21 E
+DP 49:59:55 N 018:06:29 E
+DP 49:59:29 N 018:09:04 E
+DP 49:59:51 N 018:10:13 E
+DP 49:59:32 N 018:12:41 E
+*TMA III Ostrava
+*TMA I Ostrava
+DP 49:59:06 N 018:12:58 E
+DP 49:58:15 N 018:13:56 E
+DP 49:57:51 N 018:16:48 E
+DP 49:55:41 N 018:17:30 E
+DP 49:56:06 N 018:20:03 E
+DP 49:56:26 N 018:20:03 E
+DP 49:56:05 N 018:23:46 E
+DP 49:55:42 N 018:26:14 E
+DP 49:54:08 N 018:30:22 E
+DP 49:54:45 N 018:32:37 E
+DP 49:55:08 N 018:33:46 E
+DP 49:54:38 N 018:34:41 E
+DP 49:53:01 N 018:34:02 E
+DP 49:51:43 N 018:36:45 E
+DP 49:50:47 N 018:35:38 E
+*TMA I Ostrava
+*TMA II Ostrava
+DP 49:49:05 N 018:34:56 E
+DP 49:45:59 N 018:36:39 E
+DP 49:45:37 N 018:36:27 E
+*TMA II Ostrava
+DP 49:42:58 N 018:38:01 E
+DP 49:42:15 N 018:40:16 E
+DP 49:41:49 N 018:42:47 E
+DP 49:41:03 N 018:43:59 E
+DP 49:41:04 N 018:45:51 E
+DP 49:40:17 N 018:48:54 E
+DP 49:35:48 N 018:49:47 E
+DP 49:35:00 N 018:49:45 E
+DP 49:33:44 N 018:50:30 E
+DP 49:33:00 N 018:51:44 E *CZ East Point
+DP 49:31:59 N 018:50:43 E
+DP 49:31:05 N 018:51:15 E
+*CZ-PL Border
+DP 49:31:02 N 018:51:03 E
+*CZ-SK Border
+DP 49:30:36 N 018:48:08 E
+DP 49:29:17 N 018:44:35 E
+DP 49:30:04 N 018:41:11 E
+DP 49:30:10 N 018:40:00 E
+DP 49:29:55 N 018:38:10 E
+DP 49:30:27 N 018:36:25 E
+DP 49:30:29 N 018:34:35 E
+DP 49:28:44 N 018:32:40 E
+DP 49:27:51 N 018:32:31 E
+DP 49:26:30 N 018:30:25 E
+DP 49:24:38 N 018:28:37 E
+DP 49:23:35 N 018:26:21 E
+DP 49:23:04 N 018:24:52 E
+DP 49:21:24 N 018:24:04 E
+DP 49:19:46 N 018:22:56 E
+DP 49:18:36 N 018:18:14 E
+*CZ-SK Border
+DP 49:18:14 N 018:16:54 E
+DP 49:22:18 N 017:47:02 E
+DP 49:23:50 N 017:35:30 E
+DP 49:27:30 N 017:29:01 E
+DP 49:29:13 N 017:25:58 E
+DP 49:33:39 N 017:26:10 E
+DP 49:33:25 N 017:31:51 E
+DP 49:33:23 N 017:32:40 E
+DP 49:34:14 N 017:37:41 E
+DP 49:35:00 N 017:44:19 E
+DP 49:42:24 N 017:45:08 E
+DP 50:01:03 N 017:47:14 E
+* End of CzFIR <<<<<<<<<<<<<<<<<<<<                                            *
+* Start of CzTMA airspace<<<<<<<<<<<<<<<<<<<<                                  *
+*
+*
+*Setting colour and line of C airspace
+AC C
+SP 0,2,255,0,0
+SB -1,-1,-1
+*
+*
+*Setting colour and line of D airspace
+AC D
+SP 0,2,0,0,255
+SB -1,-1,-1
+*
+*
+AC D
+AN TMA I Brno (127.35 Radar)
+AT 49:00:00 N 016:45:00 E
+AH FL125
+AL 1000ft AGL
+DP 49:21:24 N 016:27:25 E
+DP 49:15:31 N 016:56:27 E
+DP 49:15:30 N 017:00:03 E
+V X=49:09:00 N 016:41:33 E *BNO
+V D=+
+DB 49:15:28 N 017:03:52 E, 48:57:32 N 016:58:29 E
+V X=49:09:00 N 016:41:33 E *BNO
+V D=+
+DB 48:57:53 N 016:54:27 E, 48:55:43 N 016:48:10 E
+DP 48:57:14 N 016:30:03 E
+DP 49:02:09 N 016:37:17 E
+V X=49:09:00 N 016:41:33 E *BNO
+V D=+
+DB 49:12:04 N 016:18:24 E, 49:21:24 N 016:27:25 E
+*
+*
+AC D
+AN TMA II Brno (127.35 Radar)
+AT 48:54:00 N 017:09:00 E
+AH FL125
+AL 3500ft MSL
+DP 49:15:28 N 017:03:52 E
+DP 49:15:15 N 017:29:46 E
+DP 49:14:42 N 017:35:22 E
+DP 49:07:05 N 017:16:27 E
+DP 48:56:16 N 017:14:12 E
+DP 48:51:03 N 016:55:59 E
+V X=49:09:00 N 016:41:33 E *BNO
+V D=-
+DB 48:55:43 N 016:48:10 E, 48:57:53 N 016:54:27 E
+V X=49:09:00 N 016:41:33 E *BNO
+V D=-
+DB 48:57:32 N 016:58:29 E, 49:15:28 N 017:03:52 E
+*
+*
+AC D
+AN TMA III Brno (127.35 Radar)
+AT 49:01:00 N 017:05:00 E
+AH FL125
+AL 5000ft MSL
+DP 49:14:42 N 017:35:22 E
+DP 49:14:03 N 017:42:03 E
+DP 49:06:18 N 017:47:45 E
+DP 48:51:28 N 017:40:34 E
+*SK Border
+DP 48:51:17 N 017:40:19 E
+DP 48:50:55 N 017:37:22 E
+DP 48:50:17 N 017:36:07 E
+DP 48:49:28 N 017:34:29 E
+DP 48:49:06 N 017:32:32 E
+DP 48:49:45 N 017:31:09 E
+DP 48:50:25 N 017:29:06 E
+DP 48:50:16 N 017:26:49 E
+DP 48:49:45 N 017:25:29 E
+DP 48:49:43 N 017:24:18 E
+DP 48:49:43 N 017:24:18 E
+DP 48:48:48 N 017:24:04 E
+DP 48:49:17 N 017:21:25 E
+DP 48:50:39 N 017:19:25 E
+DP 48:51:51 N 017:15:21 E
+DP 48:52:18 N 017:13:29 E
+DP 48:51:50 N 017:10:58 E
+DP 48:50:12 N 017:08:48 E
+DP 48:50:12 N 017:08:48 E
+DP 48:50:18 N 017:07:22 E
+DP 48:48:35 N 017:06:38 E
+DP 48:47:05 N 017:05:34 E
+*SK Border
+DP 48:46:23 N 017:03:45 E
+DP 48:51:03 N 016:55:59 E
+DP 48:56:16 N 017:14:12 E
+DP 49:07:05 N 017:16:27 E
+DP 49:14:42 N 017:35:22 E
+*
+*
+AC D
+AN TMA IV Brno (127.35 Radar)
+AT 48:50:00 N 016:40:00 E
+AH FL125
+AL FL65
+DP 48:57:14 N 016:30:03 E
+DP 48:55:43 N 016:48:10 E
+DP 48:51:03 N 016:55:59 E
+DP 48:43:55 N 016:44:09 E
+*AT Border
+DP 48:43:44 N 016:41:15 E
+DP 48:46:12 N 016:40:43 E
+DP 48:47:03 N 016:39:12 E
+DP 48:46:55 N 016:36:01 E
+DP 48:47:31 N 016:34:05 E
+DP 48:47:50 N 016:31:14 E
+*AT Border
+DP 48:48:32 N 016:27:36 E
+DP 48:53:07 N 016:24:00 E
+DP 48:57:14 N 016:30:03 E
+*
+*
+AC D
+AN TMA V Brno (127.35 Radar)
+AT 49:18:00 N 016:22:00 E
+AH FL125
+AL 5000ft MSL
+DP 49:22:17 N 016:23:02 E
+V X=49:09:00 N 016:41:33 E *BNO
+V D=-
+DB 49:21:24 N 016:27:25 E, 49:12:04 N 016:18:24 E
+V X=49:09:00 N 016:41:33 E *BNO
+V D=+
+DB 49:13:48 N 016:15:07 E, 49:22:17 N 016:23:02 E
+*
+*
+AC D
+AN TMA VI Brno (127.35 Radar)
+AT 49:20:00 N 016:15:00 E
+AH FL125
+AL FL65
+DP 49:23:55 N 016:14:50 E
+V X=49:09:00 N 016:41:33 E *BNO
+V D=-
+DB 49:22:17 N 016:23:02 E, 49:13:48 N 016:15:07 E
+V X=49:09:00 N 016:41:33 E *BNO
+V D=+
+DB 49:17:07 N 016:08:44 E, 49:23:55 N 016:14:50 E
+*
+*
+AC D
+AN TMA VII Brno (127.35 Radar)
+AT 49:15:00 N 017:16:00 E
+AH FL125
+AL FL75
+DP 49:15:30 N 017:00:03 E
+DP 49:18:42 N 017:15:34 E
+DP 49:27:30 N 017:29:01 E
+DP 49:23:50 N 017:35:30 E
+DP 49:22:18 N 017:47:02 E
+DP 49:14:42 N 017:35:22 E
+DP 49:15:15 N 017:29:46 E
+DP 49:15:28 N 017:03:52 E
+DP 49:15:30 N 017:00:03 E
+*
+*
+AC D
+AN MTMA Caslav (130.275 MAPP, 136.65 MTWR)
+AT 49:45:00 N 015:35:00 E
+AH FL125
+AL 1000ft AGL
+DP 50:11:09 N 015:22:56 E
+DP 50:09:07 N 015:22:52 E
+DP 50:03:23 N 015:24:26 E
+DP 49:55:48 N 015:35:12 E
+DP 49:50:39 N 015:42:30 E
+DP 49:46:09 N 015:50:59 E
+DP 49:36:33 N 015:39:26 E
+DP 49:50:06 N 015:07:55 E
+V X=50:05:45 N 014:15:56 E *OKL
+V D=-
+DB 49:55:04 N 014:56:04 E, 50:11:08 N 014:58:39 E
+DP 50:11:09 N 015:22:56 E
+*
+*
+AC D
+AN TMA I Karlovy Vary (118.65 Radar, 121.225 TWR)
+AT 50:03:00 N 013:00:00 E
+AH FL95
+AL 3500ft MSL
+DP 50:23:45 N 012:30:56 E
+DP 50:18:35 N 012:52:20 E
+DP 50:17:50 N 013:01:19 E
+DP 50:11:31 N 013:10:25 E
+DP 50:12:52 N 013:15:50 E
+DP 50:05:22 N 013:19:35 E
+DP 49:58:44 N 013:13:17 E
+DP 49:58:13 N 012:52:50 E
+DP 50:11:02 N 012:33:19 E
+DP 50:09:27 N 012:20:03 E
+DP 50:21:11 N 012:29:49 E
+DP 50:23:45 N 012:30:56 E
+*
+*
+AC D
+AN TMA II Karlovy Vary (118.65 Radar, 121.225 TWR)
+AH FL95
+AL FL55
+DP 50:11:02 N 012:33:19 E
+DP 49:58:13 N 012:52:50 E
+DP 49:57:54 N 012:40:42 E
+DP 49:59:52 N 012:27:50 E
+DP 50:09:27 N 012:20:03 E
+DP 50:11:02 N 012:33:19 E
+*
+*
+AC D
+AN MTMA I Kbely (124.675 MAPP)
+AT 50:03:00 N 014:50:00 E
+AH 3500ft MSL
+AL 2000ft MSL
+DP 50:14:56 N 014:47:02 E
+DP 50:14:33 N 014:52:20 E
+DP 50:09:05 N 014:49:44 E
+DP 49:58:48 N 014:37:28 E
+DP 50:00:58 N 014:33:01 E
+DP 50:03:10 N 014:28:30 E
+DP 50:04:28 N 014:25:50 E
+DP 50:06:53 N 014:25:52 E
+DP 50:09:16 N 014:33:43 E
+DP 50:11:33 N 014:41:17 E
+DP 50:13:13 N 014:41:56 E
+DP 50:14:56 N 014:47:02 E
+*
+*
+AC D
+AN MTMA II Kbely (124.675 MAPP)
+AH 4500ft MSL
+AL 2500ft MSL
+DP 50:14:33 N 014:52:20 E
+V X=50:05:45 N 014:15:56 E *OKL
+V D=+
+DB 50:14:09 N 014:57:29 E, 50:11:08 N 014:58:39 E
+V X=50:05:45 N 014:15:56 E *OKL
+V D=+
+DB 50:11:08 N 014:58:39 E, 49:55:04 N 014:56:04 E
+V X=50:05:45 N 014:15:56 E *OKL
+V D=+
+DB 49:55:04 N 014:56:04 E, 49:51:10 N 014:52:58 E
+DP 49:53:00 N 014:49:16 E
+DP 49:58:48 N 014:37:28 E
+DP 50:09:05 N 014:49:44 E
+DP 50:14:33 N 014:52:20 E
+*
+*
+AC D
+AN MTMA I Namest (118.15 MAPP, 126.5 MTWR)
+AT 49:02:00 N 016:24:00 E
+AH FL125
+AL 1000ft AGL
+DP 49:22:12 N 015:58:54 E
+DP 49:17:37 N 016:07:46 E
+DP 49:17:07 N 016:08:44 E
+DP 49:14:35 N 016:13:36 E
+DP 49:13:48 N 016:15:07 E
+DP 49:12:28 N 016:17:39 E
+DP 49:12:04 N 016:18:24 E
+DP 49:02:09 N 016:37:17 E
+DP 48:57:14 N 016:30:03 E
+DP 48:53:07 N 016:24:00 E
+DP 49:08:17 N 015:52:50 E
+DP 49:11:09 N 015:46:54 E
+DP 49:17:53 N 015:52:01 E
+DP 49:22:12 N 015:58:54 E
+*
+*
+AC D
+AN MTMA II Namest (118.15 MAPP, 126.5 MTWR)
+AH FL125
+AL 3000ft MSL
+DP 49:23:08 N 015:52:38 E
+DP 49:22:12 N 015:58:54 E
+DP 49:17:53 N 015:52:01 E
+DP 49:11:09 N 015:46:54 E
+DP 49:16:23 N 015:42:25 E
+DP 49:21:53 N 015:47:52 E
+DP 49:23:08 N 015:52:38 E
+*
+*
+AC D
+AN TMA I Ostrava (119.375 Radar)
+AT 49:52:00 N 018:15:00 E
+AH FL125
+AL 1000ft AGL
+DP 49:59:32 N 018:12:41 E
+*PL Border
+DP 49:59:06 N 018:12:58 E
+DP 49:58:15 N 018:13:56 E
+DP 49:57:51 N 018:16:48 E
+DP 49:55:41 N 018:17:30 E
+DP 49:56:06 N 018:20:03 E
+DP 49:56:26 N 018:20:03 E
+DP 49:56:05 N 018:23:46 E
+DP 49:55:42 N 018:26:14 E
+DP 49:54:08 N 018:30:22 E
+DP 49:54:45 N 018:32:37 E
+DP 49:55:08 N 018:33:46 E
+DP 49:54:38 N 018:34:41 E
+DP 49:53:01 N 018:34:02 E
+DP 49:51:43 N 018:36:45 E
+DP 49:50:47 N 018:35:38 E
+*PL Border
+DP 49:49:05 N 018:34:56 E
+V X=49:41:51 N 018:06:33 E *OTA
+V D=+
+DB 49:26:39 N 017:58:56 E, 49:35:00 N 017:44:19 E
+DP 49:42:24 N 017:45:08 E
+DP 49:59:32 N 018:12:41 E
+*
+*
+AC D
+AN TMA II Ostrava (119.375 Radar)
+AT 49:33:00 N 018:13:00 E
+AH FL125
+AL 4000ft MSL
+DP 49:49:05 N 018:34:56 E
+*PL Border
+*PL Border
+DP 49:45:59 N 018:36:39 E
+V X=49:41:51 N 018:06:33 E *OTA
+V D=+
+DB 49:25:55 N 018:04:32 E, 49:26:39 N 017:58:56 E
+DP 49:49:05 N 018:34:56 E
+*
+*
+AC D
+AN TMA III Ostrava (119.375 Radar)
+AH FL125
+AL 4000ft MSL
+DP 50:01:03 N 017:47:14 E
+*CZ-PL Border
+DP 50:01:17 N 017:47:15 E
+DP 50:00:15 N 017:50:18 E
+DP 49:58:21 N 017:52:19 E
+DP 49:58:46 N 017:55:31 E
+DP 50:00:24 N 017:59:07 E
+DP 50:00:40 N 018:00:32 E
+DP 50:00:32 N 018:02:59 E
+DP 50:02:11 N 018:02:53 E
+DP 50:01:49 N 018:00:43 E
+DP 50:03:58 N 018:02:11 E
+DP 50:03:32 N 018:03:54 E
+DP 50:01:58 N 018:05:21 E
+DP 49:59:55 N 018:06:29 E
+DP 49:59:29 N 018:09:04 E
+DP 49:59:51 N 018:10:13 E
+*CZ-PL Border
+DP 49:59:32 N 018:12:41 E
+DP 49:42:24 N 017:45:08 E
+DP 50:01:03 N 017:47:14 E
+*
+*
+AC D
+AN TMA IV Ostrava (119.375 Radar)
+AH FL125
+AL 4500ft MSL
+DP 49:35:00 N 017:44:19 E
+V X=49:41:51 N 018:06:33 E *OTA
+V D=-
+DB 49:35:00 N 017:44:19 E, 49:26:39 N 017:58:56 E
+DP 49:22:54 N 017:47:58 E
+DP 49:31:24 N 017:35:00 E
+DP 49:34:14 N 017:37:41 E
+DP 49:35:00 N 017:44:19 E
+*
+*
+AC D
+AN TMA V Ostrava (119.375 Radar)
+AH FL125
+AL FL65
+DP 49:33:39 N 017:26:10 E
+DP 49:33:25 N 017:31:51 E
+DP 49:33:23 N 017:32:40 E
+DP 49:34:14 N 017:37:41 E
+DP 49:31:24 N 017:35:00 E
+DP 49:22:54 N 017:47:58 E
+DP 49:22:18 N 017:47:02 E
+DP 49:23:50 N 017:35:30 E
+DP 49:27:30 N 017:29:01 E
+DP 49:29:13 N 017:25:58 E
+DP 49:33:39 N 017:26:10 E
+*
+*
+AC D
+AN MTMA Pardubice (127.65 MAPP)
+AT 49:54:00 N 016:00:00 E
+AH FL125
+AL 1000ft AGL
+DP 50:09:07 N 015:22:52 E
+DP 50:08:48 N 015:44:25 E
+DP 50:08:15 N 015:58:05 E
+DP 50:06:32 N 016:21:59 E
+DP 49:52:15 N 016:18:48 E
+DP 49:50:39 N 015:42:30 E
+DP 49:55:48 N 015:35:12 E
+DP 50:03:23 N 015:24:26 E
+DP 50:09:07 N 015:22:52 E
+*
+*
+AC C
+AN TMA I Praha (120.525 Radar)
+AT 49:55:00 N 014:28:00 E
+AH 3500ft MSL
+AL 2500ft MSL
+DP 50:15:03 N 014:04:09 E
+V X=50:05:45 N 014:15:56 E *OKL
+V D=-
+DB 50:14:03 N 014:10:33 E, 50:08:55 N 014:02:50 E
+DP 50:06:53 N 014:06:59 E
+V X=50:05:45 N 014:15:56 E *OKL
+V D=-
+DB 50:05:23 N 014:01:58 E, 50:00:39 N 014:04:25 E
+V X=50:05:45 N 014:15:56 E *OKL
+V D=-
+DB 50:01:42 N 014:08:02 E, 50:00:06 N 014:20:55 E
+V X=50:05:45 N 014:15:56 E *OKL
+V D=-
+DB 49:58:49 N 014:23:34 E, 50:03:10 N 014:28:30 E
+V X=50:05:45 N 014:15:56 E *OKL
+V D=+
+DB 50:00:58 N 014:33:01 E, 49:56:50 N 014:28:23 E
+V X=50:05:45 N 014:15:56 E *OKL
+V D=+
+DB 49:59:14 N 014:00:18 E, 50:15:03 N 014:04:09 E
+DP 50:15:03 N 014:04:09 E
+*
+*
+AC C
+AN TMA II Praha (120.525 Radar)
+AT 50:05:00 N 013:53:00 E
+AH FL165
+AL 3500ft MSL
+DP 50:23:31 N 014:01:41 E
+DP 50:23:25 N 014:36:20 E
+V X=50:05:45 N 014:15:56 E *OKL
+V D=+
+DB 50:21:29 N 014:46:11 E, 50:14:33 N 014:52:20 E
+DP 50:09:05 N 014:49:44 E
+DP 49:58:48 N 014:37:28 E
+V X=50:05:45 N 014:15:56 E *OKL
+V D=+
+DB 49:53:00 N 014:49:16 E, 49:48:17 N 014:43:37 E
+DP 49:50:09 N 014:03:11 E
+DP 49:50:28 N 013:55:49 E
+DP 49:52:19 N 013:52:52 E
+V X=50:05:45 N 014:15:56 E *OKL
+V D=+
+DB 49:53:16 N 013:42:22 E, 49:58:54 N 013:38:37 E
+V X=50:05:45 N 014:15:56 E *OKL
+V D=+
+DB 50:05:36 N 013:44:52 E, 50:23:31 N 014:01:41 E
+DP 50:23:31 N 014:01:41 E
+*
+*
+AC C
+AN TMA III Praha (120.525 Radar)
+AT 49:47:00 N 014:30:00 E
+AH FL165
+AL 4500ft MSL
+DP 50:14:33 N 014:52:20 E
+V X=50:05:45 N 014:15:56 E *OKL
+V D=+
+DB 50:14:09 N 014:57:29 E, 50:11:08 N 014:58:39 E
+V X=50:05:45 N 014:15:56 E *OKL
+V D=+
+DB 50:11:08 N 014:58:39 E, 49:55:04 N 014:56:04 E
+V X=50:05:45 N 014:15:56 E *OKL
+V D=+
+DB 49:55:04 N 014:56:04 E, 49:51:10 N 014:52:58 E
+DP 49:53:00 N 014:49:16 E
+DP 49:58:48 N 014:37:28 E
+DP 50:09:05 N 014:49:44 E
+DP 50:14:33 N 014:52:20 E
+*
+*
+AC C
+AN TMA IV Praha (120.525 Radar)
+AT 50:10:00 N 013:40:00 E
+AH FL165
+AL FL65
+DP 49:53:00 N 014:49:16 E
+V X=50:05:45 N 014:15:56 E *OKL
+V D=+
+DB 49:51:10 N 014:52:58 E, 49:43:06 N 014:41:22 E
+DP 49:44:15 N 014:17:53 E
+DP 49:50:09 N 014:03:11 E
+V X=50:05:45 N 014:15:56 E *OKL
+V D=-
+DB 49:48:17 N 014:43:37 E, 49:53:00 N 014:49:16 E
+DP 49:53:00 N 014:49:16 E
+*
+*
+AC C
+AN TMA V Praha (120.525 Radar)
+AT 49:38:00 N 014:51:00 E
+AH FL165
+AL FL65
+DP 50:31:57 N 014:00:38 E
+V X=50:05:45 N 014:15:56 E *OKL
+V D=+
+DB 50:32:02 N 014:30:56 E, 50:14:09 N 014:57:29 E
+V X=50:05:45 N 014:15:56 E *OKL
+V D=-
+DB 50:14:33 N 014:52:20 E, 50:21:29 N 014:46:11 E
+DP 50:23:25 N 014:36:20 E
+V X=50:05:45 N 014:15:56 E *OKL
+V D=-
+DB 50:23:31 N 014:01:41 E, 50:05:36 N 013:44:52 E
+V X=50:05:45 N 014:15:56 E *OKL
+V D=-
+DB 49:58:54 N 013:38:37 E, 49:53:16 N 013:42:22 E
+DP 49:52:19 N 013:52:52 E
+DP 49:50:28 N 013:55:49 E
+V X=50:05:45 N 014:15:56 E *OKL
+V D=+
+DB 49:46:48 N 013:44:02 E, 50:02:56 N 013:32:40 E
+V X=50:05:45 N 014:15:56 E *OKL
+V D=+
+DB 50:02:56 N 013:32:40 E, 50:31:57 N 014:00:38 E
+DP 50:31:57 N 014:00:38 E
+*
+*
+AC C
+AN TMA VI Praha (120.525 Radar)
+AT 50:00:00 N 013:25:00 E
+AH FL165
+AL FL75
+DP 50:02:56 N 013:32:40 E
+V X=50:05:45 N 014:15:56 E *OKL
+V D=-
+DB 50:02:56 N 013:32:40 E, 49:46:48 N 013:44:02 E
+V X=50:05:45 N 014:15:56 E *OKL
+V D=+
+DB 49:43:45 N 013:33:49 E, 49:59:58 N 013:22:22 E
+DP 50:02:56 N 013:32:40 E
+*
+*
+AC C
+AN TMA VII Praha (120.525 Radar)
+AH FL165
+AL FL75
+DP 49:55:04 N 014:56:04 E
+V X=50:05:45 N 014:15:56 E *OKL
+V D=+
+DB 49:47:42 N 015:02:22 E, 49:38:54 N 014:50:38 E
+DP 49:39:58 N 014:28:27 E
+DP 49:44:15 N 014:17:53 E
+V X=50:05:45 N 014:15:56 E *OKL
+V D=-
+DB 49:43:06 N 014:41:22 E, 49:51:10 N 014:52:58 E
+V X=50:05:45 N 014:15:56 E *OKL
+V D=-
+DB 49:51:10 N 014:52:58 E, 49:55:04 N 014:56:04 E
+DP 49:55:04 N 014:56:04 E
+*
+*
+AC C
+AN TMA VIII Praha (120.525 Radar)
+AH 3500ft MSL
+AL 2000ft MSL
+DP 50:18:46 N 014:20:07 E
+DP 50:14:05 N 014:34:08 E
+DP 50:13:13 N 014:41:56 E
+DP 50:11:33 N 014:41:17 E
+DP 50:09:16 N 014:33:43 E
+DP 50:10:14 N 014:33:01 E
+DP 50:10:32 N 014:32:47 E
+DP 50:13:22 N 014:14:52 E
+DP 50:17:12 N 014:16:20 E
+DP 50:18:46 N 014:20:07 E
+*
+*
+AC D
+AN TMA I Vodochody (133.075 TWR, 127.475 Radar)
+AH 3500ft MSL
+AL 2000ft MSL
+DP 50:23:31 N 014:01:41 E
+V X=50:05:45 N 014:15:56 E *OKL
+V D=+
+DB 50:23:25 N 014:36:20 E, 50:14:56 N 014:47:02 E
+DP 50:13:13 N 014:41:56 E
+DP 50:14:05 N 014:34:08 E
+DP 50:18:46 N 014:20:07 E
+DP 50:17:12 N 014:16:20 E
+DP 50:13:22 N 014:14:52 E
+DP 50:14:03 N 014:10:33 E
+DP 50:15:03 N 014:04:09 E
+DP 50:23:31 N 014:01:41 E
+*
+*
+AC D
+AN TMA II Vodochody (133.075 TWR, 127.475 Radar)
+AH 3500ft MSL
+AL 2000ft MSL
+DP 50:14:05 N 014:34:08 E
+DP 50:13:13 N 014:41:56 E
+DP 50:11:33 N 014:41:17 E
+DP 50:09:16 N 014:33:43 E
+DP 50:10:14 N 014:33:01 E
+DP 50:10:32 N 014:32:47 E
+DP 50:14:05 N 014:34:08 E
+* End of CzTMA <<<<<<<<<<<<<<<<<<<<                                            *
+* Start of CzTRA airspace<<<<<<<<<<<<<<<<<<<<                                  *
+*
+*
+*Setting colour and line of R airspace
+AC R
+SP 0,2,0,127,0
+SB -1,-1,-1
+*
+*
+AC R
+AN LK TRA50 Vrchlabi (136.175 Praha Info E, 119.375 Ostrava Radar, ACC Praha)
+AH FL245
+AL 5000ft MSL
+DP 50:43:35 N 015:30:18 E
+DP 50:32:21 N 016:02:28 E
+DP 50:31:54 N 016:08:56 E
+DP 50:26:31 N 016:05:46 E
+DP 50:21:32 N 016:10:18 E
+DP 50:25:46 N 015:34:42 E
+DP 50:43:35 N 015:30:18 E
+*
+*
+AC R
+AN LK TRA51 Jesenik (136.175 Praha Info E, 119.375 Ostrava Radar, ACC Praha)
+AH FL245
+AL 5000ft MSL
+DP 50:21:32 N 017:03:46 E
+DP 50:13:28 N 017:19:03 E
+DP 50:09:15 N 017:31:25 E
+DP 50:04:00 N 017:38:00 E
+DP 49:59:00 N 017:16:00 E
+DP 50:10:59 N 017:02:54 E
+DP 50:16:56 N 017:05:21 E
+DP 50:21:32 N 017:03:46 E
+*
+*
+AC R
+AN LK TRA52 Svitavy (136.175 Praha Info E, 119.375 Ostrava Radar, 127.35 Brno Radar, ACC Praha)
+AH FL245
+AL 5000ft MSL
+DP 49:52:15 N 016:18:48 E
+DP 49:50:27 N 016:22:59 E
+DP 49:42:32 N 016:33:06 E
+DP 49:34:42 N 016:11:22 E
+DP 49:46:09 N 015:50:59 E
+DP 49:50:39 N 015:42:30 E
+DP 49:52:15 N 016:18:48 E
+*
+*
+AC R
+AN LK TRA54 Znojmo (136.175 Praha Info E, 127.35 Brno Radar, ACC Praha)
+AH FL125
+AL 1000ft AGL
+DP 49:08:17 N 015:52:50 E
+DP 48:53:07 N 016:24:00 E
+DP 48:47:36 N 016:15:27 E
+DP 48:48:57 N 016:10:52 E
+DP 49:01:44 N 015:43:38 E
+DP 49:08:17 N 015:52:50 E
+*
+*
+AC R
+AN LK TRA55 Boskovice (136.175 Praha Info E, 127.35 Brno Radar, ACC Praha)
+AH FL245
+AL 5000ft MSL
+DP 49:40:49 N 016:37:38 E
+DP 49:29:36 N 016:52:36 E
+DP 49:19:42 N 016:55:03 E
+DP 49:28:11 N 016:08:29 E
+DP 49:29:29 N 016:10:34 E
+DP 49:40:49 N 016:37:38 E
+*
+*
+AC R
+AN LK TRA56 Bydzov (136.175 Praha Info E, 119.375 Ostrava Radar, ACC Praha)
+AH FL125
+AL 1000ft AGL
+DP 50:18:25 N 015:44:32 E
+DP 50:08:48 N 015:44:25 E
+DP 50:09:07 N 015:22:52 E
+DP 50:11:09 N 015:22:56 E
+DP 50:18:40 N 015:23:08 E
+DP 50:18:25 N 015:44:32 E
+*
+*
+AC R
+AN LK TRA57 Rychnov (136.175 Praha Info E, 119.375 Ostrava Radar, ACC Praha)
+AH FL125
+AL 3000ft MSL
+DP 50:16:37 N 015:55:45 E
+DP 50:16:26 N 016:12:28 E
+DP 50:06:32 N 016:21:59 E
+DP 50:08:15 N 015:58:05 E
+DP 50:16:37 N 015:55:45 E
+*
+*
+AC R
+AN LK TRA58 Zdar (136.175 Praha Info E, 127.35 Brno Radar, ACC Praha)
+AH FL245
+AL 1000ft AGL
+DP 49:46:09 N 015:50:59 E
+DP 49:34:42 N 016:11:22 E
+DP 49:28:47 N 016:01:00 E
+DP 49:36:33 N 015:39:26 E
+DP 49:40:51 N 015:44:35 E
+DP 49:46:09 N 015:50:59 E
+*
+*
+AC R
+AN LK TRA61 Milovice (133.075 TWR Vodochody, 136.175 Praha Info E, 119.375 Ostrava Radar)
+AH FL95
+AL GND
+V X=50:18:51 N 015:09:34 E
+DC 5.5 *NM
+*
+*
+AC R
+AN LK TRA62 Vodochody (133.075 TWR Vodochody, 136.175 Praha Info E, 119.375 Ostrava Radar, ACC Praha)
+AT 50:21:00 N 015:09:00 E
+AH FL245
+AL 3000ft MSL
+DP 50:28:35 N 015:10:11 E
+DP 50:23:06 N 015:23:16 E
+DP 50:11:09 N 015:22:56 E
+DP 50:11:09 N 015:03:24 E
+V X=50:05:45 N 014:15:56 E *OKL
+V D=-
+DB 50:11:08 N 014:58:39 E, 50:14:09 N 014:57:29 E
+DP 50:28:34 N 015:00:04 E
+DP 50:28:35 N 015:10:11 E
+*
+*
+AC R
+AN LK TRA64 Holice (ACC Praha)
+AH FL245
+AL FL125
+DP 50:23:06 N 015:23:16 E
+DP 50:08:15 N 015:58:05 E
+DP 50:06:32 N 016:21:59 E
+DP 49:52:15 N 016:18:48 E
+DP 49:50:39 N 015:42:30 E
+DP 49:55:48 N 015:35:12 E
+DP 50:03:23 N 015:24:26 E
+DP 50:09:07 N 015:22:52 E
+DP 50:11:09 N 015:22:56 E
+DP 50:23:06 N 015:23:16 E
+*
+*
+AC R
+AN LK TRA65 Caslav (ACC Praha)
+AH FL245
+AL FL125
+DP 50:11:09 N 015:22:56 E
+DP 50:09:07 N 015:22:52 E
+DP 50:03:23 N 015:24:26 E
+DP 49:55:48 N 015:35:12 E
+DP 49:50:39 N 015:42:30 E
+DP 49:46:09 N 015:50:59 E
+DP 49:40:51 N 015:44:35 E
+DP 49:36:33 N 015:39:26 E
+DP 49:50:06 N 015:07:55 E
+DP 49:57:59 N 015:02:53 E
+DP 50:11:09 N 015:03:24 E
+DP 50:11:09 N 015:22:56 E
+*
+*
+AC R
+AN LK TRA66 Hlinsko (ACC Praha)
+AH FL245
+AL FL95
+DP 49:52:15 N 016:18:48 E
+DP 49:50:27 N 016:22:59 E
+DP 49:42:32 N 016:33:06 E
+DP 49:40:49 N 016:37:38 E
+DP 49:29:29 N 016:10:34 E
+DP 49:28:11 N 016:08:29 E
+DP 49:28:47 N 016:01:00 E
+DP 49:36:33 N 015:39:26 E
+DP 49:50:39 N 015:42:30 E
+DP 49:52:15 N 016:18:48 E
+*
+*
+AC R
+AN LK TRA67 Sumperk (136.175 Praha Info E, 119.375 Ostrava Radar, ACC Praha)
+AH FL245
+AL FL95
+DP 50:10:59 N 017:02:54 E
+DP 49:59:00 N 017:16:00 E
+DP 49:46:36 N 017:32:28 E
+DP 49:44:32 N 017:26:36 E
+DP 49:37:30 N 017:24:21 E
+DP 49:35:59 N 017:23:51 E
+DP 49:34:01 N 017:17:24 E
+DP 49:34:18 N 017:10:34 E
+DP 49:29:19 N 016:57:37 E
+DP 49:29:36 N 016:52:36 E
+DP 49:40:49 N 016:37:38 E
+DP 49:42:32 N 016:33:06 E
+DP 49:50:27 N 016:22:59 E
+DP 49:52:15 N 016:18:48 E
+DP 50:06:32 N 016:21:59 E
+DP 50:09:54 N 016:27:12 E
+DP 50:02:18 N 016:41:51 E
+DP 50:10:59 N 017:02:54 E
+*
+*
+AC R
+AN LK TRA70 Paka (ACC Praha)
+AH FL660
+AL FL125
+DP 50:43:35 N 015:30:18 E
+DP 50:32:21 N 016:02:28 E
+DP 50:31:54 N 016:08:56 E
+DP 50:26:31 N 016:05:46 E
+DP 50:21:32 N 016:10:18 E
+DP 50:09:54 N 016:27:12 E
+DP 50:06:32 N 016:21:59 E
+DP 50:08:15 N 015:58:05 E
+DP 50:23:06 N 015:23:16 E
+DP 50:28:35 N 015:10:11 E
+DP 50:34:00 N 015:02:57 E
+DP 50:36:32 N 015:05:43 E
+DP 50:43:35 N 015:30:18 E
+*
+*
+AC R
+AN LK TRA71 Smidary (127,65 MAPP Pardubice, 136.175 Praha Info E, 119.375 Ostrava Radar)
+AH 1000ft AGL
+AL GND
+DP 50:17:31 N 015:28:37 E
+DP 50:15:36 N 015:42:52 E
+DP 50:13:25 N 015:43:55 E
+DP 50:08:54 N 015:38:31 E
+DP 50:09:03 N 015:27:33 E
+DP 50:17:31 N 015:28:37 E
+*
+*
+AC R
+AN LK TRA72 Opocno (127,65 MAPP Pardubice, 136.175 Praha Info E, 119.375 Ostrava Radar)
+AH 3000ft MSL
+AL GND
+DP 50:16:05 N 016:06:49 E
+DP 50:09:43 N 016:14:13 E
+DP 50:08:55 N 016:04:33 E
+DP 50:12:02 N 015:59:28 E
+DP 50:16:05 N 016:06:49 E
+*
+*
+AC R
+AN LK TRA73 Borohradek (127,65 MAPP Pardubice, 136.175 Praha Info E)
+AH 1000ft AGL
+AL GND
+DP 50:07:10 N 016:04:05 E
+DP 50:05:51 N 016:17:47 E
+DP 50:00:12 N 016:16:54 E
+DP 50:01:10 N 016:04:51 E
+DP 50:07:10 N 016:04:05 E
+*
+*
+AC R
+AN LK TRA74 Habry (ACC Praha)
+AH FL660
+AL FL245
+DP 49:57:59 N 015:02:53 E
+DP 49:58:34 N 015:17:43 E
+DP 49:40:51 N 015:44:35 E
+DP 49:36:33 N 015:39:26 E
+DP 49:50:06 N 015:07:55 E
+DP 49:57:59 N 015:02:53 E
+*
+*
+AC R
+AN LK TRA76 Blatna (118.65 K.Vary Radar, 126.1 Praha Info W)
+AH FL75
+AL 1000ft AGL
+DP 49:41:57 N 014:13:40 E
+DP 49:38:28 N 014:18:04 E
+DP 49:19:57 N 013:53:57 E
+DP 49:27:53 N 013:40:59 E
+DP 49:41:57 N 014:13:40 E
+*
+*
+AC R
+AN LK TRA77 Milevsko (118.65 K.Vary Radar, 126.1 Praha Info W, ACC Praha)
+AH FL245
+AL 1000ft AGL
+DP 49:38:28 N 014:18:04 E
+DP 49:23:41 N 014:36:43 E
+DP 49:13:39 N 014:21:29 E
+DP 49:07:32 N 014:12:09 E
+DP 49:19:57 N 013:53:57 E
+DP 49:38:28 N 014:18:04 E
+*
+*
+AC R
+AN LK TRA78 Veseli (118.65 K.Vary Radar, 126.1 Praha Info W, ACC Praha)
+AH FL245
+AL 1000ft AGL
+DP 49:23:41 N 014:36:43 E
+DP 49:09:58 N 014:53:47 E
+DP 49:03:07 N 014:50:25 E
+DP 48:59:06 N 014:40:57 E
+DP 49:13:39 N 014:21:29 E
+DP 49:23:41 N 014:36:43 E
+*
+*
+AC R
+AN LK TRA79 Hosin (118.65 K.Vary Radar, 126.1 Praha Info W, ACC Praha)
+AH FL245
+AL FL75
+DP 49:13:39 N 014:21:29 E
+DP 48:59:06 N 014:40:57 E
+DP 49:03:07 N 014:50:25 E
+DP 48:51:04 N 014:44:33 E
+DP 49:07:32 N 014:12:09 E
+DP 49:13:39 N 014:21:29 E
+*
+*
+AC R
+AN LK TRA80 Netolice (ACC Praha)
+AH FL245
+AL FL95
+DP 49:07:32 N 014:12:09 E
+DP 48:51:04 N 014:44:33 E
+DP 48:48:33 N 014:16:17 E
+DP 48:55:00 N 014:07:57 E
+DP 49:07:32 N 014:12:09 E
+*
+*
+AC R
+AN LK TRA81 Volyne (ACC Praha)
+AH FL245
+AL FL95
+DP 49:19:57 N 013:53:57 E
+DP 49:07:32 N 014:12:09 E
+DP 48:55:00 N 014:07:57 E
+DP 48:54:42 N 013:53:34 E
+DP 49:03:13 N 013:33:40 E
+DP 49:19:57 N 013:53:57 E
+*
+*
+AC R
+AN LK TRA82 Trest (136.175 Praha Info E, 127.35 Brno Radar)
+AH 1000ft AGL
+AL 300ft AGL
+DP 49:23:20 N 015:32:26 E
+DP 49:20:42 N 015:41:51 E
+DP 49:16:27 N 015:26:44 E
+DP 49:18:13 N 015:26:37 E
+DP 49:23:20 N 015:32:26 E
+*
+*
+AC R
+AN LK TRA83 Okrisky (136.175 Praha Info E, 127.35 Brno Radar)
+AH 1000ft AGL
+AL 300ft AGL
+DP 49:20:42 N 015:41:51 E
+DP 49:17:53 N 015:52:01 E
+DP 49:11:09 N 015:46:54 E
+DP 49:08:17 N 015:52:50 E
+DP 49:01:44 N 015:43:38 E
+DP 49:06:53 N 015:32:04 E
+DP 49:11:06 N 015:27:05 E
+DP 49:16:27 N 015:26:44 E
+DP 49:20:42 N 015:41:51 E
+*
+*
+AC R
+AN LK TRA84 Unanov (136.175 Praha Info E, 127.35 Brno Radar)
+AH 1000ft AGL
+AL 300ft AGL
+DP 49:03:36 N 016:02:32 E
+DP 48:56:58 N 016:16:09 E
+DP 48:51:09 N 016:20:56 E
+DP 48:47:36 N 016:15:27 E
+DP 48:48:57 N 016:10:52 E
+DP 48:55:51 N 015:56:15 E
+DP 49:00:22 N 015:59:55 E
+DP 49:03:36 N 016:02:32 E
+*
+*
+AC R
+AN LK TRA85 Brtnice (136.175 Praha Info E, 127.35 Brno Radar)
+AH FL125
+*
+AL 1000ft AGL
+DP 49:23:20 N 015:32:26 E
+DP 49:20:42 N 015:41:51 E
+DP 49:17:53 N 015:52:01 E
+DP 49:11:09 N 015:46:54 E
+DP 49:08:17 N 015:52:50 E
+DP 49:01:44 N 015:43:38 E
+DP 49:06:53 N 015:32:04 E
+DP 49:11:06 N 015:27:05 E
+DP 49:16:27 N 015:26:44 E
+DP 49:18:13 N 015:26:37 E
+DP 49:23:20 N 015:32:26 E
+*
+*
+AC R
+AN LK TRA86 Trebic (ACC Praha, 127.35 Brno Radar)
+AH FL245
+AL FL125
+DP 49:23:42 N 015:26:16 E
+DP 49:23:20 N 015:32:26 E
+DP 49:20:42 N 015:41:51 E
+DP 49:17:53 N 015:52:01 E
+DP 49:13:40 N 016:08:51 E
+DP 48:53:57 N 016:25:13 E
+DP 48:53:07 N 016:24:00 E
+DP 48:51:09 N 016:20:56 E
+DP 48:47:36 N 016:15:27 E
+DP 48:48:57 N 016:10:52 E
+DP 48:55:51 N 015:56:15 E
+DP 49:01:44 N 015:43:38 E
+DP 49:06:53 N 015:32:04 E
+DP 49:11:06 N 015:27:05 E
+DP 49:16:27 N 015:26:44 E
+DP 49:18:13 N 015:26:37 E
+DP 49:23:42 N 015:26:16 E
+*
+*
+AC R
+AN LK TRA87 Mikulovice (ACC Praha)
+AH FL305
+*
+AL FL245
+DP 49:00:22 N 015:59:55 E
+DP 48:56:58 N 016:16:09 E
+DP 48:53:07 N 016:24:00 E
+DP 48:51:09 N 016:20:56 E
+DP 48:47:36 N 016:15:27 E
+DP 48:48:57 N 016:10:52 E
+DP 48:55:51 N 015:56:15 E
+DP 49:00:22 N 015:59:55 E
+*
+*
+AC R
+AN LK TRA88 Merklin (118.65 K.Vary Radar, 126.1 Praha Info W)
+AH FL95
+*
+AL 4000ft MSL
+DP 49:40:36 N 013:22:47 E
+DP 49:35:05 N 013:32:11 E
+DP 49:31:14 N 013:30:08 E
+DP 49:33:45 N 013:11:56 E
+DP 49:39:15 N 013:12:20 E
+DP 49:40:36 N 013:22:47 E
+* End of CzTRA <<<<<<<<<<<<<<<<<<<<                                            *
+* Start of CzTSA airspace<<<<<<<<<<<<<<<<<<<<                                  *
+*
+*
+*Setting colour and line of R airspace
+AC R
+SP 0,2,0,127,0
+SB -1,-1,-1
+*
+*
+AC R
+AN LK TSA20 Olesna (136.175 Praha Info E)
+AH 1000ft AGL
+AL 300ft AGL
+DP 49:50:18 N 015:37:24 E
+DP 49:47:11 N 015:49:03 E
+DP 49:33:37 N 016:13:16 E
+DP 49:30:39 N 016:06:28 E
+DP 49:44:43 N 015:42:18 E
+DP 49:46:39 N 015:31:14 E
+DP 49:50:18 N 015:37:24 E
+*
+*
+AC R
+AN LK TSA21 Merin (136.175 Praha Info E)
+AH 1000ft AGL
+AL 300ft AGL
+DP 49:33:37 N 016:13:16 E
+DP 49:30:08 N 016:19:26 E
+DP 49:27:16 N 016:12:13 E
+DP 49:24:12 N 016:04:36 E
+DP 49:18:53 N 015:57:19 E
+DP 49:17:03 N 015:54:59 E
+DP 49:19:23 N 015:46:39 E
+DP 49:30:39 N 016:06:28 E
+DP 49:33:37 N 016:13:16 E
+*
+*
+AC R
+AN LK TSA22 Opatov (136.175 Praha Info E)
+*
+AT 49:07:00 N 015:22:00 E
+AH 1000ft AGL
+AL 300ft AGL
+DP 49:19:23 N 015:46:39 E
+DP 49:17:03 N 015:54:59 E
+DP 49:14:49 N 015:52:06 E
+DP 49:08:24 N 015:41:45 E
+DP 49:02:45 N 015:05:56 E
+DP 49:03:06 N 014:45:14 E
+DP 49:06:59 N 014:46:37 E
+DP 49:06:41 N 014:52:10 E
+DP 49:06:07 N 015:03:05 E
+DP 49:11:30 N 015:33:09 E
+DP 49:19:23 N 015:46:39 E
+*
+*
+AC R
+AN LK TSA24 Brezova (136.175 Praha Info E)
+AT 49:41:00 N 016:40:00 E
+AH 1000ft AGL
+AL 300ft AGL
+DP 49:45:17 N 016:40:48 E
+DP 49:42:26 N 017:23:28 E
+DP 49:44:32 N 017:26:36 E
+DP 49:37:30 N 017:24:21 E
+DP 49:39:58 N 016:45:08 E
+DP 49:30:08 N 016:19:26 E
+DP 49:27:16 N 016:12:13 E
+DP 49:30:39 N 016:06:28 E
+DP 49:33:37 N 016:13:16 E
+DP 49:45:17 N 016:40:48 E
+*
+*
+AC R
+AN LK TSA26 Pravonin (136.175 Praha Info E)
+AH 1000ft AGL
+AL 300ft AGL
+DP 49:57:33 N 015:11:57 E
+DP 49:56:06 N 015:12:05 E
+DP 49:53:55 N 015:15:12 E
+DP 49:50:36 N 015:07:58 E
+DP 49:37:13 N 015:03:21 E
+DP 49:30:46 N 014:41:35 E
+DP 49:27:49 N 014:24:03 E
+DP 49:30:42 N 014:25:10 E
+DP 49:33:27 N 014:40:06 E
+DP 49:40:04 N 014:58:39 E
+DP 49:52:40 N 015:03:20 E
+DP 49:57:33 N 015:11:57 E
+*
+*
+AC R
+AN LK TSA27 Kamenice (136.175 Praha Info E)
+AH 1000ft AGL
+AL 300ft AGL
+DP 49:50:18 N 015:37:24 E
+DP 49:45:21 N 015:38:54 E
+DP 49:39:55 N 015:33:47 E
+DP 49:37:26 N 015:27:40 E
+DP 49:31:04 N 015:27:12 E
+DP 49:21:58 N 015:16:36 E
+DP 49:14:11 N 014:55:19 E
+DP 49:09:58 N 014:53:47 E
+DP 49:06:41 N 014:52:10 E
+DP 49:06:59 N 014:46:37 E
+DP 49:15:51 N 014:49:49 E
+DP 49:24:45 N 015:14:28 E
+DP 49:32:15 N 015:22:13 E
+DP 49:39:34 N 015:22:44 E
+DP 49:43:14 N 015:31:16 E
+DP 49:46:39 N 015:31:14 E
+DP 49:50:18 N 015:37:24 E
+* End of CzTSA <<<<<<<<<<<<<<<<<<<<                                            *
+* Start of CzD airspace<<<<<<<<<<<<<<<<<<<<                                    *
+*
+*
+*Setting colour and line of Danger (Q) airspace
+AC Q
+SP 0,2,127,0,127
+SB -1,-1,-1
+*
+*
+AC Q
+AN LK D1 Kralice
+AH 1000ft AGL
+AL GND
+V X=49:13:08 N 016:12:51 E
+DC 0.8 *NM
+*
+AC Q
+AN LK D2 Kourim
+AH 1000ft AGL
+AL GND
+V X=50:01:01 N 014:55:55 E
+DC 0.8 *NM
+*
+AC Q
+AN LK D3 Breclav
+AH 1000ft AGL
+AL GND
+V X=48:46:51 N 016:56:13 E
+DC 0.8 *NM
+*
+AC Q
+AN LK D4 Hostim
+AH 1000ft AGL
+AL GND
+V X=49:00:22 N 015:52:39 E
+DC 0.8 *NM
+*
+AC Q
+AN LK D5 Veseli nad Luznici
+AH 1000ft AGL
+AL GND
+V X=49:12:35 N 014:40:57 E
+DC 0.8 *NM
+*
+AC Q
+AN LK D6 Strazovice
+AH 1000ft AGL
+AL GND
+V X=49:22:57 N 013:34:45 E
+DC 0.8 *NM
+*
+AC Q
+AN LK D7 Straziste
+AH FL90
+AL GND
+V X=50:36:33 N 014:50:34 E
+DC 1.35 *NM
+* End of CzD <<<<<<<<<<<<<<<<<<<<                                              *
+* Start of CzP airspace<<<<<<<<<<<<<<<<<<<<                                    *
+*
+*
+*Setting colour and line of P airspace
+AC P
+SP 0,2,255,0,0
+SB -1,-1,-1
+*
+*
+AC P
+AN LK P1 Praha Hrad
+AH FL60
+AL GND
+V X=50:05:27 N 014:24:02 E
+DC 0.6 *NM
+*
+*
+AC P
+AN LK P2 Temelin
+AH 5000ft MSL
+AL GND
+V X=49:10:49 N 014:22:32 E
+DC 1.1 *NM
+*
+*
+AC P
+AN LK P4 Vlasim
+AH 5000ft MSL
+AL GND
+DP 49:42:24 N 014:53:57 E
+DP 49:41:21 N 014:58:45 E
+DP 49:39:41 N 014:55:55 E
+DP 49:42:24 N 014:53:57 E
+*
+*
+AC P
+AN LK P5 Prcice
+AH 5000ft MSL
+AL GND
+V X=49:35:34 N 014:31:24 E
+DC 1.5 *NM
+*
+*
+AC P
+AN LK P6 Bohdanec
+AH 4000ft MSL
+AL GND
+DP 50:05:09 N 015:40:04 E
+DP 50:05:10 N 015:45:38 E
+DP 50:02:26 N 015:43:44 E
+DP 50:03:21 N 015:40:17 E
+DP 50:05:09 N 015:40:04 E
+*
+*
+AC P
+AN LK P7 Policka
+AH 5000ft MSL
+AL GND
+V X=49:40:46 N 016:16:40 E
+DC 0.8 *NM
+*
+*
+AC P
+AN LK P8 Most
+AH 4000ft MSL
+AL GND
+V X=50:33:48 N 013:36:12 E
+DC 1.35 *NM
+*
+*
+AC P
+AN LK P9 Dukovany
+AH 5000ft MSL
+AL GND
+V X=49:05:09 N 016:08:45 E
+DC 1.1 *NM
+*
+*
+AC P
+AN LK P10 Usti nad Labem
+AH 4000ft MSL
+AL GND
+V X=50:39:23 N 014:01:13 E
+DC 0.5 *NM
+*
+*
+AC P
+AN LK P11 Neratovice
+AH 2000ft MSL
+AL GND
+V X=50:16:30 N 014:31:10 E
+DC 0.8 *NM
+*
+*
+AC P
+AN LK P12 Rez
+AH 2000ft MSL
+AL GND
+V X=50:10:45 N 014:21:49 E
+DC 0.8 *NM
+* End of CzP <<<<<<<<<<<<<<<<<<<<                                              *
+* Start of CzR airspace<<<<<<<<<<<<<<<<<<<<                                    *
+*
+*
+*Setting colour and line of R airspace
+AC R
+SP 0,2,0,127,0
+SB -1,-1,-1
+*
+*
+AC R
+AN LK R1 Boletice (126.1 Praha Info W, 118.65 K.Vary Radar)
+AH FL410
+AL GND
+DP 48:55:00 N 014:07:57 E
+DP 48:48:33 N 014:16:17 E
+DP 48:46:21 N 014:01:57 E
+DP 48:54:42 N 013:53:34 E
+DP 48:55:00 N 014:07:57 E
+*
+*
+AC R
+AN LK R2 Brezina (127.35 Brno Radar)
+AH FL410
+AL GND
+DP 49:29:36 N 016:52:36 E
+DP 49:29:19 N 016:57:37 E
+DP 49:23:16 N 017:04:02 E
+DP 49:19:32 N 017:01:49 E
+DP 49:19:42 N 016:55:03 E
+DP 49:29:36 N 016:52:36 E
+*
+*
+AC R
+AN LK R3A Libava (119.375 Ostrava Radar)
+AH FL410
+AL GND
+DP 49:45:48 N 017:40:54 E
+DP 49:42:17 N 017:43:21 E
+DP 49:38:59 N 017:38:18 E
+DP 49:36:17 N 017:32:16 E
+DP 49:34:41 N 017:29:00 E
+DP 49:35:59 N 017:23:51 E
+DP 49:37:30 N 017:24:21 E
+DP 49:44:32 N 017:26:36 E
+DP 49:46:36 N 017:32:28 E
+DP 49:45:48 N 017:40:54 E
+*
+*
+AC R
+AN LK R3B Libava (119.375 Ostrava Radar)
+AH FL410
+AL GND
+DP 49:38:59 N 017:38:18 E
+DP 49:34:14 N 017:37:41 E
+DP 49:33:23 N 017:32:40 E
+DP 49:33:25 N 017:31:51 E
+DP 49:34:41 N 017:29:00 E
+DP 49:36:17 N 017:32:16 E
+DP 49:38:59 N 017:38:18 E
+*
+*
+AC R
+AN LK R4 Hradiste (126.1 Praha Info W)
+AH FL410
+AL GND
+DP 50:21:05 N 013:13:48 E
+DP 50:16:40 N 013:14:07 E
+DP 50:12:52 N 013:15:50 E
+DP 50:10:34 N 013:07:17 E
+DP 50:12:00 N 013:00:17 E
+DP 50:15:42 N 012:59:48 E
+DP 50:20:11 N 013:03:00 E
+DP 50:21:45 N 013:06:13 E
+DP 50:21:05 N 013:13:48 E
+*
+*
+AC R
+AN LK R5A Brdy (126.1 Praha Info W, 118.65 K.Vary Radar)
+AH FL410
+AL GND
+DP 49:44:40 N 013:45:13 E *NW okraj Strasice
+DP 49:39:05 N 013:55:04 E
+DP 49:36:54 N 013:49:32 E
+DP 49:37:21 N 013:41:32 E
+DP 49:42:55 N 013:41:21 E
+DP 49:44:40 N 013:45:13 E *NW okraj Strasice
+*
+*
+AC R
+AN LK R5B Brdy (126.1 Praha Info W, 118.65 K.Vary Radar)
+AH FL410
+AL GND
+DP 49:47:37 N 013:59:04 E *N okraj Jince
+DP 49:46:12 N 014:00:57 E
+DP 49:39:05 N 013:55:04 E
+DP 49:44:40 N 013:45:13 E *NW okraj Strasice
+DP 49:47:37 N 013:59:04 E *N okraj Jince
+*
+*
+AC R
+AN LK R5C Brdy (126.1 Praha Info W, 118.65 K.Vary Radar)
+AH FL410
+AL GND
+DP 49:49:43 N 013:56:19 E
+DP 49:47:37 N 013:59:04 E *N okraj Jince
+DP 49:44:40 N 013:45:13 E *NW okraj Strasice
+DP 49:49:43 N 013:56:19 E
+*
+*
+AC R
+AN LK R6 Prostejov (127.35 Brno Radar)
+AT 49:28:00 N 017:08:00 E
+AH FL95
+AL GND
+V X=49:26:52 N 017:08:01 E
+DC 2.7 *NM
+*
+*
+AC R
+AN LK R9 Praha (120.525 Praha Radar, 124.675 MAPP Kbely)
+AH 5000ft MSL
+AL GND
+V X=50:04:52 N 014:27:04 E
+DC 2 *NM
+* End of CzR <<<<<<<<<<<<<<<<<<<<                                              *

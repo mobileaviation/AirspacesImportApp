@@ -1,0 +1,4111 @@
+*$DATE_RELEASED 05/2015          
+*                                
+*                                
+********************************************************************************
+*                                                                              *
+*                            AIRSPACE OF SWITZERLAND                           *
+*                         OPTIMIZED FOR GLIDER ACTIVITY                        *
+*                                                                              *
+*                     Special Use Airspace v2015-03 / Rev 0                    *
+*                                                                              *
+*                         - Effective 03 MAR 2015 -                            *
+*                            Dated 27 February 2015                            *
+*                                                                              *
+*                                                                              *
+*                 >>>>> UNOFFICIAL, USE AT YOUR OWN RISK <<<<<                 *
+*                                                                              *
+*                NOT to be used as a primary navigational aid.                 *
+*          ALWAYS refer to current charts for definitive information.          *
+*                                                                              *
+*                                                                              *
+*           This file is provided free of charge with no warrantees,           *
+*             expressed or implied. USER ASSUMES ALL RISK OF USE.              *
+*                                                                              *
+*           This file can be modified or distributed by any person             *
+*                      without asking for permission                           *
+*                                                                              *
+*              Distribution by commercial companies not allowed.               *
+*                                                                              *
+*            Courtesy of Reinhold Mueller : reinhold.mueller@gmx.ch            *
+*                                                                              *
+********************************************************************************
+*  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+**
+*##    (CLASS D) ALPNACH CTLZ   ###
+AC D
+SB 0,255,0
+AN CTR ALPNACH (HX): 128.475     
+AL SFC         
+AH FL 130   
+DP 47:00:37 N   008:18:33 E 
+DP 46:55:47 N   008:20:27 E 
+DP 46:53:01 N   008:16:23 E 
+DP 46:53:24 N   008:14:30 E 
+DP 46:55:24 N   008:13:25 E 
+DP 46:58:15 N   008:15:07 E
+DP 47:00:25 N   008:18:16 E
+*
+*##    (CLASS D) ALPNACH MTCA SCTR 2   ###
+AC D
+SB 0,255,0
+AN Alpnach TMA2: 119.62      
+AL 2300 ft MSL    
+AH FL 130   
+DP 46:55:00 N   008:13:38 E
+DP 46:53:24 N   008:14:30 E
+DP 46:53:05 N   008:16:01 E 
+DP 46:48:34 N   008:11:51 E 
+DP 46:50:33 N   008:07:58 E 
+*
+*##    (CLASS D) ALPNACH MTCA SCTR 4   ###
+AC D
+SB 0,255,0
+AN Alpnach TMA4: 119.62      
+AL 5900 ft MSL    
+AH FL 130   
+DP 46:50:33 N   008:07:58 E 
+DP 46:48:34 N   008:11:51 E 
+DP 46:43:07 N   008:06:51 E 
+DP 46:45:42 N   008:01:49 E 
+*
+*
+****************************************************
+*
+*##    (CLASS D) BUOCHS CTLZ   ###
+AC D
+SB 0,255,0
+AN CTR BUOCHS (HX): 119.625     
+AL SFC         
+AH FL 130   
+DP 47:03:00 N   008:28:20 E
+DP 46:58:56 N   008:30:22 E 
+DP 46:57:46 N   008:30:42 E
+DP 46:55:47 N   008:20:27 E 
+DP 47:00:37 N   008:18:33 E 
+DP 47:01:50 N   008:20:18 E
+DP 47:02:35 N   008:25:30 E
+*
+*
+*##    (CLASS D) BUOCHS MTCA SCTR 1   ###
+*AC D
+*SB 0,255,0
+*AN Buochs TMA1: 119.625     
+*AL 4000 ft MSL    
+*AH FL 90    
+*DP 47:02:55 N   008:36:05 E 
+*DP 46:59:21 N   008:37:37 E 
+*DP 46:58:29 N   008:30:30 E
+*DP 46:58:56 N   008:30:22 E
+*DP 47:01:08 N   008:29:16 E 
+*
+*##    (CLASS D) BUOCHS MTCA SCTR 5   ###
+AC D
+SB 0,255,0
+AN Buochs TMA5: 119.625      
+AL 5900 ft MSL    
+AH FL 130   
+DP 46:57:20 N   008:14:35 E
+DP 46:55:24 N   008:13:25 E
+DP 46:53:56 N   008:14:13 E 
+DP 46:50:21 N   008:03:56 E 
+DP 46:54:19 N   008:01:29 E 
+*
+*##    (CLASS D) BUOCHS MTCA SCTR 6   ###
+*AC D
+*SB 0,255,0
+*AN Buochs TMA6: 119.625      
+*AL 11000 ft MSL   
+*AH FL 130   
+*DP 46:45:42 N   008:01:49 E 
+*DP 46:43:07 N   008:06:51 E 
+*DP 46:38:54 N   008:03:00 E 
+*DP 46:41:56 N   007:57:04 E 
+*
+*
+****************************************************
+*
+*##    (CLASS E) BASEL   ###
+AC E
+SB 0,255,0
+AN CTR Basel: 123.325     
+AL 1000 ft AGL    
+AH 2500 ft AGL     
+DP 47:50:11 N   007:33:39 E 
+DP 47:35:10 N   007:45:20 E 
+DP 47:34:00 N   007:41:00 E 
+DP 47:46:00 N   007:32:00 E 
+DP 47:48:49 N   007:32:37 E 
+*
+*
+*##    (CLASS D) BALE/MULHOUSE TCA PART 1   ###
+AC D
+SB 0,255,0
+AN Basel TMA1: 119.35      
+AL 1000 ft AGL    
+AH FL 145   
+DP 47:48:49 N   007:32:37 E 
+DP 47:46:00 N   007:32:00 E 
+DP 47:34:00 N   007:41:00 E 
+DP 47:33:20 N   007:40:54 E 
+DP 47:34:39 N   007:24:56 E 
+V D=+
+V X=47:37:58 N   007:29:58 E 
+DB 47:28:55 N   007:23:42 E , 47:45:37 N   007:20:26 E 
+V D=-
+V X=47:55:27 N   007:23:03 E 
+DB 47:45:37 N   007:20:26 E , 47:45:28 N   007:22:30 E 
+DP 47:45:28 N   007:22:30 E 
+DP 47:46:00 N   007:23:00 E 
+*
+*##    (CLASS D) BALE/MULHOUSE TCA PART 2   ###
+AC D
+SB 0,255,0
+AN Basel TMA2: 119.35      
+AL 1000 ft AGL    
+AH 5500 ft MSL    
+DP 47:34:39 N   007:24:56 E 
+DP 47:33:20 N   007:40:54 E 
+DP 47:34:00 N   007:41:00 E
+DP 47:33:12 N   007:40:49 E
+V X=47:35:21 N   007:31:45 E
+DB 47:33:12 N   007:40:49 E , 47:29:03 N   007:29:25 E
+DP 47:29:03 N   007:29:25 E
+DP 47:28:45 N   007:28:35 E
+DP 47:29:15 N   007:27:43 E
+DP 47:29:45 N   007:26:06 E
+DP 47:28:54 N   007:25:22 E
+DP 47:28:14 N   007:27:24 E
+DP 47:27:37 N   007:26:27 E
+DP 47:27:30 N   007:25:41 E 
+DP 47:27:13 N   007:25:46 E
+DP 47:26:58 N   007:25:29 E
+DP 47:26:38 N   007:25:12 E
+DP 47:26:23 N   007:24:24 E
+DP 47:26:09 N   007:23:58 E 
+DP 47:25:56 N   007:23:04 E
+*
+*
+*##    (CLASS D) BALE/MULHOUSE TCA PART 3   ###
+AC D
+SB 0,255,0
+AN Basel TMA3: 119.35      
+AL 3000 ft MSL    
+AH FL 145   
+DP 47:44:16 N   007:01:48 E 
+DP 47:44:10 N   007:04:00 E 
+V D=-
+V X=47:55:13 N   007:24:32 E 
+DB 47:46:20 N   007:17:45 E , 47:45:37 N   007:20:26 E 
+V D=-
+V X=47:37:57 N   007:29:53 E 
+DB 47:45:37 N   007:20:26 E , 47:28:55 N   007:23:42 E 
+DP 47:28:55 N   007:23:42 E 
+**************************
+DP 47:25:56 N   007:23:04 E
+DP 47:26:03 N   007:21:18 E
+DP 47:26:25 N   007:20:06 E
+DP 47:26:16 N   007:18:15 E
+DP 47:26:00 N   007:17:46 E
+DP 47:26:05 N   007:17:04 E
+DP 47:25:30 N   007:15:36 E 
+**************************
+DP 47:25:28 N   007:15:38 E 
+V D=+
+V X=47:37:58 N   007:29:58 E 
+DB 47:26:25 N   007:05:48 E , 47:44:16 N   007:01:48 E 
+*
+*
+*##    (CLASS D) BALE/MULHOUSE TCA PART 4   ###
+AC D
+SB 0,255,0
+AN Basel TMA4: 119.35      
+AL 5000 ft MSL    
+AH FL 145   
+DP 47:44:41 N   006:54:14 E 
+V D=-
+V X=47:37:57 N   007:29:53 E 
+DB 47:44:16 N   007:01:48 E , 47:26:25 N   007:05:48 E 
+DP 47:26:25 N   007:05:48 E 
+DP 47:27:01 N   007:00:00 E 
+V D=+
+V X=47:37:58 N   007:29:58 E 
+DB 47:27:22 N   006:56:27 E , 47:44:41 N   006:54:14 E 
+*
+*
+*##    (CLASS D) BALE/MULHOUSE TCA PART 5   ###
+AC D
+SB 0,255,0
+AN Basel TMA5: 119.35      
+AL 5000 ft MSL    
+AH FL 145     
+DP 47:45:00 N   006:48:30 E 
+V D=-
+V X=47:37:57 N   007:29:53 E 
+DB 47:44:41 N   006:54:14 E , 47:27:22 N   006:56:27 E 
+DP 47:27:22 N   006:56:27 E 
+DP 47:29:20 N   006:36:50 E 
+DP 47:39:00 N   006:39:00 E 
+*
+*##    (CLASS D) BALE/MULHOUSE TCA PART 6   ###
+AC D
+SB 0,255,0
+AN Basel TMA6: 119.35      
+AL FL 095    
+AH FL 145   
+DP 47:50:00 N   006:48:30 E 
+DP 47:45:00 N   006:48:30 E 
+DP 47:39:00 N   006:39:00 E 
+DP 47:29:20 N   006:36:50 E 
+DP 47:32:00 N   006:20:00 E 
+DP 47:35:00 N   006:20:41 E 
+DP 47:54:00 N   006:25:00 E 
+*
+*##    (CLASS D) BALE/MULHOUSE TCA PART 7   ###
+AC D
+SB 0,255,0
+AN Basel TMA7: 119.35      
+AL FL 115   
+AH FL 145   
+DP 47:32:00 N   006:20:00 E 
+DP 47:29:20 N   006:36:50 E 
+DP 47:27:01 N   007:00:00 E 
+DP 47:26:53 N   006:58:09 E
+DP 47:26:14 N   006:57:54 E
+DP 47:26:01 N   006:56:24 E
+DP 47:24:28 N   006:56:17 E
+DP 47:24:22 N   006:54:54 E
+DP 47:23:15 N   006:54:51 E
+DP 47:22:31 N   006:53:09 E
+DP 47:21:15 N   006:52:47 E
+DP 47:21:37 N   006:54:12 E
+DP 47:21:22 N   006:55:16 E
+DP 47:21:52 N   006:59:37 E
+DP 47:22:18 N   007:00:34 E
+DP 47:22:09 N   007:02:02 E
+DP 47:20:35 N   007:03:48 E
+DP 47:19:36 N   007:02:39 E
+DP 47:19:15 N   007:00:00 E 
+DP 47:18:00 N   006:39:00 E 
+*
+*
+*##    (CLASS D) BALE MULHOUSE CTLZ   ###
+AC D
+SB 0,255,0
+AN Basel-CTR: 118.3       
+AL SFC         
+AH 1000 ft AGL     
+V D=+
+V X=47:35:24 N   007:31:45 E 
+DB 47:34:08 N   007:41:10 E , 47:41:22 N   007:35:36 E 
+DP 47:41:22 N   007:35:36 E 
+*DP 47:40:04 N   007:36:24 E 
+*
+*
+*##    (CLASS C) BALE/MULHOUSE - STUTTGART TCA NORTH   ###
+AC E
+SB 0,150,255
+AN Basel TMA N: 128.95      
+AL 2500 ft AGL    
+AH FL 100   
+DP 48:05:00 N   007:34:39 E 
+DP 48:06:00 N   007:58:00 E 
+DP 47:41:49 N   007:44:58 E 
+DP 47:56:00 N   007:35:00 E 
+DP 48:00:00 N   007:36:00 E 
+DP 48:02:00 N   007:34:00 E 
+*
+*##    (CLASS C) BALE/MULHOUSE - STUTTGART TCA SE   ###
+AC C
+SB 0,150,255
+AN Basel TMA SE: 128.95      
+AL 2500 ft AGL    
+AH FL 115   
+DP 47:41:49 N   007:44:58 E 
+DP 47:35:12 N   007:45:19 E 
+DP 47:50:11 N   007:33:39 E 
+DP 47:52:59 N   007:33:55 E 
+DP 47:56:00 N   007:35:00 E 
+*
+*##    (CLASS C) BALE/MULHOUSE - STUTTGART TCA SW PT 1   ###
+AC C
+SB 0,150,255
+AN Basel TMA SW1: 128.95      
+AL 1000 ft AGL    
+AH FL 115   
+DP 47:50:11 N   007:33:39 E 
+DP 47:44:37 N   007:38:00 E 
+DP 47:40:04 N   007:36:24 E 
+DP 47:46:00 N   007:32:00 E 
+DP 47:48:49 N   007:32:37 E 
+*
+*##    (CLASS C) BALE/MULHOUSE - STUTTGART TCA SW PT 2   ###
+AC C
+SB 0,150,255
+AN Basel TMA SW2: 128.95    
+AL 1000 ft AGL    
+AH FL 115   
+DP 47:44:37 N   007:38:00 E 
+DP 47:35:12 N   007:45:19 E 
+DP 47:34:00 N   007:41:00 E 
+DP 47:34:00 N   007:41:00 E 
+DP 47:40:04 N   007:36:24 E
+*
+*
+*##    (CLASS C) Basel3 TMA oberhalb Dittingen W ###
+AC D
+SB 0,255,0
+AN Basel TMA3: 119.35      
+AL 5000 ft MSL    
+AH FL 145 
+DP 47:25:30 N   007:15:36 E 
+DP 47:26:05 N   007:17:04 E
+DP 47:26:00 N   007:17:46 E
+DP 47:26:16 N   007:18:15 E
+DP 47:26:25 N   007:20:06 E
+DP 47:26:03 N   007:21:18 E
+DP 47:25:56 N   007:23:04 E
+DP 47:24:45 N   007:22:48 E
+*
+*
+*
+*##    (CLASS C) Dittingen W ###
+AC D
+SB 0,150,255
+AN T75 Dittingen West
+AL 3000 ft MSL        
+AH 5000 ft MSL 
+DP 47:25:30 N   007:15:36 E 
+DP 47:26:05 N   007:17:04 E
+DP 47:26:00 N   007:17:46 E
+DP 47:26:16 N   007:18:15 E
+DP 47:26:25 N   007:20:06 E
+DP 47:26:03 N   007:21:18 E
+DP 47:25:56 N   007:23:04 E
+DP 47:24:45 N   007:22:48 E
+*
+*
+*
+*
+*##    (CLASS C) Basel2 TMA oberhalb Dittingen W ###
+AC D
+SB 0,150,255
+AN Basel TMA2 
+AL 5000 ft MSS       
+AH 5500 ft MSL 
+DP 47:27:30 N   007:25:41 E 
+DP 47:27:37 N   007:26:27 E
+V X=47:26:18 N   007:29:28 E 
+* radius 1.35 nm
+DB 47:27:39 N   007:29:21 E  , 47:26:48 N   007:31:19 E
+DP 47:26:48 N   007:31:19 E 
+DP 47:26:06 N   007:31:44 E 
+DP 47:23:43 N   007:32:32 E
+DP 47:24:45 N   007:22:48 E
+DP 47:25:56 N   007:23:04 E
+DP 47:26:09 N   007:23:58 E
+DP 47:26:23 N   007:24:24 E
+DP 47:26:38 N   007:25:12 E
+DP 47:26:58 N   007:25:29 E
+DP 47:27:13 N   007:25:46 E
+*
+*
+*##    (CLASS C) Dittingen W ###
+AC D
+SB 0,150,255
+AN T75 Dittingen West
+AL 1000 ft AGL         
+AH 5000 ft MSL 
+DP 47:27:30 N   007:25:41 E 
+DP 47:27:37 N   007:26:27 E
+V X=47:26:18 N   007:29:28 E 
+* radius 1.35 nm
+DB 47:27:39 N   007:29:21 E  , 47:26:48 N   007:31:19 E
+DP 47:26:48 N   007:31:19 E 
+DP 47:26:06 N   007:31:44 E 
+DP 47:23:43 N   007:32:32 E
+DP 47:24:45 N   007:22:48 E
+DP 47:25:56 N   007:23:04 E
+DP 47:26:09 N   007:23:58 E 
+DP 47:26:23 N   007:24:24 E
+DP 47:26:38 N   007:25:12 E
+DP 47:26:58 N   007:25:29 E
+DP 47:27:13 N   007:25:46 E
+*
+*
+*##    (CLASS D) Dittingen E ###
+AC D
+SB 0,150,255
+AN T76 Dittingen Ost
+AL 1000 ft AGL        
+AH 5000 ft MSL   
+DP 47:26:06 N   007:31:44 E 
+DP 47:27:00 N   007:39:00 E 
+DP 47:28:58 N   007:44:25 E 
+DP 47:25:52 N   007:46:41 E
+DP 47:23:00 N   007:39:30 E
+DP 47:23:43 N   007:32:32 E 
+*
+*
+*##    (CLASS D) Basel TMA2 ###
+AC D
+SB 0,150,255
+AN Basel TMA2
+AL 1000 ft AGL        
+AH 5500 ft MSL   
+DP 47:27:37 N   007:26:27 E
+V X=47:26:18 N   007:29:28 E 
+* radius 1.35 nm
+DB 47:27:39 N   007:29:21 E, 47:26:48 N   007:31:19 E 
+DP 47:26:48 N   007:31:19 E
+DP 47:26:06 N   007:31:44 E
+DP 47:23:39 N   007:32:33 E
+DP 47:23:24 N   007:34:49 E
+DP 47:23:00 N   007:39:30 E
+DP 47:25:52 N   007:46:41 E
+DP 47:34:00 N   007:41:00 E 
+DP 47:33:12 N   007:40:49 E
+V X=47:35:21 N   007:31:45 E
+DB 47:33:12 N   007:40:49 E , 47:29:03 N   007:29:25 E
+DP 47:29:03 N   007:29:25 E
+DP 47:28:45 N   007:28:35 E
+DP 47:29:15 N   007:27:43 E
+DP 47:29:45 N   007:26:06 E
+DP 47:28:54 N   007:25:22 E
+DP 47:28:14 N   007:27:24 E
+DP 47:27:37 N   007:26:27 E
+DP 47:27:39 N   007:29:21 E
+*
+**
+****************************************************
+*
+*##    (CLASS D) BALE/MULHOUSE TCA PART 1   ###
+AC D
+SB 0,255,0
+AN Basel TMA-T1 (HX): 134.675      
+AL 5700 ft MSL    
+AH FL 100   
+DP 47:25:52 N   007:46:41 E 
+DP 47:19:12 N   007:51:31 E 
+DP 47:17:28 N   007:48:42 E 
+DP 47:19:05 N   007:26:21 E
+DP 47:24:44 N   007:22:28 E
+DP 47:23:00 N   007:39:30 E
+*
+AC E
+SB 0,255,0
+AN Basel TMA-T1 (HX): 134.675      
+AL 5200 ft MSL    
+AH 5700 ft MSL   
+DP 47:25:52 N   007:46:41 E 
+DP 47:19:12 N   007:51:31 E 
+DP 47:17:28 N   007:48:42 E 
+DP 47:19:05 N   007:26:21 E
+DP 47:24:44 N   007:22:28 E
+DP 47:23:00 N   007:39:30 E
+*
+*
+*##    (CLASS D) BALE/MULHOUSE TCA PART 2   ###
+AC D
+SB 0,255,0
+AN Basel TMA-T2 (HX): 134.675      
+AL FL 85    
+AH FL 100   
+DP 47:24:44 N   007:22:28 E 
+DP 47:19:05 N   007:26:21 E 
+DP 47:20:05 N   007:12:06 E 
+DP 47:21:38 N   007:06:45 E
+DP 47:23:28 N   007:02:40 E
+DP 47:26:36 N   007:03:42 E
+*
+AC E
+SB 0,255,0
+AN Basel TMA-T2 (HX): 134.675     
+AL 6500 ft MSL    
+AH FL 85   
+DP 47:24:44 N   007:22:28 E 
+DP 47:19:05 N   007:26:21 E 
+DP 47:20:05 N   007:12:06 E 
+DP 47:21:38 N   007:06:45 E
+DP 47:23:28 N   007:02:40 E
+DP 47:26:36 N   007:03:42 E
+*
+*
+*##    (CLASS D) BALE/MULHOUSE TCA PART 3   ###
+AC D
+SB 0,255,0
+AN Basel TMA-T3 (HX): 134.675      
+AL 5700 ft MSL    
+AH FL 100   
+DP 47:17:28 N   007:48:42 E 
+DP 47:14:41 N   007:44:11 E 
+DP 47:12:48 N   007:36:40 E 
+DP 47:15:03 N   007:29:07 E
+DP 47:19:05 N   007:26:21 E
+*
+AC E
+SB 0,255,0
+AN Basel TMA-T3 (HX): 134.675      
+AL 5200 ft MSL    
+AH 5700 ft MSL   
+DP 47:17:28 N   007:48:42 E 
+DP 47:14:41 N   007:44:11 E 
+DP 47:12:48 N   007:36:40 E 
+DP 47:15:03 N   007:29:07 E
+DP 47:19:05 N   007:26:21 E
+*
+*
+****************************************************
+*
+*##    (CLASS D) BERN CTLZ   ###
+AC D
+SB 0,255,0
+AN CTR Bern (HX) : 121.025     
+AL SFC         
+AH 5000 ft MSL    
+DP 47:04:26 N   007:28:03 E 
+V D=+
+V X=46:55:09 N   007:29:32 E 
+* radius 5.02 nm
+DB 46:58:16 N   007:35:13 E , 46:52:00 N   007:23:51 E 
+DP 46:52:00 N   007:23:51 E 
+DP 46:58:10 N   007:16:35 E 
+*
+*##    (CLASS D) BERN TCA SCTR 1   ###
+AC D
+SB 0,255,0
+AN Bern TMA1 (HX): 127.325     
+AL 3500 ft MSL    
+AH FL 100   
+V D=+
+V X=47:03:32 N   007:19:41 E 
+* radius 5.02 nm
+DB 47:08:00 N   007:23:01 E , 47:06:41 N   007:25:25 E 
+DP 47:06:41 N   007:25:25 E 
+V D=+
+V X=46:55:09 N   007:29:32 E 
+* radius 5.02 nm
+DB 46:58:18 N   007:35:15 E , 46:52:00 N   007:23:50 E 
+DP 46:52:00 N   007:23:50 E 
+V D=+
+V X=47:03:32 N   007:19:41 E 
+* radius 5.02 nm
+DB 47:00:23 N   007:13:58 E , 47:07:28 N   007:15:07 E 
+DP 47:07:28 N   007:15:07 E 
+*
+*##    (CLASS D) BERN TCA SCTR 2   ###
+AC D
+SB 0,255,0
+AN Bern TMA2 (HX): 127.325     
+AL 5500 ft MSL    
+AH FL 100   
+DP 47:08:39 N   007:32:29 E 
+DP 46:58:47 N   007:44:02 E 
+V D=-
+V X=46:55:09 N   007:29:32 E 
+* radius 5.02 nm
+DB 46:54:32 N   007:36:48 E , 46:58:18 N   007:35:15 E 
+DP 46:58:18 N   007:35:15 E 
+V D=-
+V X=47:03:32 N   007:19:41 E 
+* radius 5.02 nm
+DB 47:06:41 N   007:25:25 E , 47:08:00 N   007:23:01 E 
+DP 47:08:00 N   007:23:01 E 
+*
+*
+****************************************************
+*
+*##    (CLASS D) GENEVA CTLZ   ###
+AC D
+SB 0,255,0
+AN CTR GVA: 118.700     
+AL SFC         
+AH 4000 ft MSL    
+DP 46:22:04 N   006:11:53 E 
+V D=-
+V X=46:09:40 N   005:59:43 E 
+* radius 3.02 nm
+DB 46:11:49 N   005:56:41 E , 46:07:30 N   006:02:45 E 
+DP 46:07:26 N   006:02:36 E 
+V D=-
+V X=46:19:53 N   006:14:55 E 
+* radius 3.02 nm
+DB 46:17:43 N   006:17:57 E , 46:22:02 N   006:11:55 E 
+**
+*##    (CLASS C) GENEVA TCA SCTR 1   ###
+AC C
+SB 0,150,255
+AN GVA TMA1: 131.325     
+AL 3500 ft MSL    
+AH FL 195   
+DP 46:31:42 N   006:23:16 E 
+DP 46:22:03 N   006:33:04 E 
+DP 45:58:23 N   005:50:28 E 
+DP 45:59:58 N   005:48:14 E 
+DP 46:05:08 N   005:47:03 E 
+DP 46:07:02 N   005:49:04 E 
+DP 46:23:38 N   006:06:39 E 
+*
+*##    (CLASS E) GENEVA TCA SCTR 1   ###
+AC E
+SB 0,150,255
+AN GVA TMA1: 131.325     
+AH 3500 ft MSL    
+AL 1000 ft AGL  
+DP 46:31:42 N   006:23:16 E 
+DP 46:22:04 N   006:33:04 E 
+DP 45:58:23 N   005:50:28 E 
+DP 45:59:58 N   005:48:14 E 
+DP 46:05:08 N   005:47:03 E 
+DP 46:07:02 N   005:49:03 E 
+DP 46:23:38 N   006:06:39 E 
+*
+*##    (CLASS C) GENEVA TCA SCTR 2   ###
+AC C
+SB 0,150,255
+AN GVA TMA2: 131.325     
+AL 5500 ft MSL    
+AH FL 195   
+DP 46:34:55 N   006:29:57 E 
+DP 46:24:54 N   006:39:59 E
+DP 46:18:17 N   006:30:34 E 
+DP 46:02:56 N   006:09:33 E 
+V D=+
+V X=46:03:03 N   005:47:12 E 
+* radius 9.017 nm
+DB 45:55:41 N   005:54:39 E , 46:10:24 N   005:39:42 E 
+DP 46:10:24 N   005:39:42 E 
+DP 46:10:59 N   005:40:52 E 
+DP 46:07:02 N   005:49:04 E 
+DP 46:05:08 N   005:47:03 E 
+DP 45:59:58 N   005:48:14 E 
+DP 45:58:23 N   005:50:28 E 
+DP 46:22:03 N   006:33:04 E 
+DP 46:31:42 N   006:23:16 E 
+*
+*##    (CLASS E) GENEVA TCA SCTR 2   ###
+AC E
+SB 0,150,255
+AN GVA TMA2: 131.325     
+AH 5500 ft MSL    
+AL 1000 ft AGL   
+DP 46:34:55 N   006:29:57 E 
+DP 46:24:54 N   006:39:59 E
+DP 46:18:17 N   006:30:34 E 
+DP 46:02:56 N   006:09:33 E 
+V D=+
+V X=46:03:03 N   005:47:12 E 
+* radius 9.017 nm
+DB 45:55:41 N   005:54:39 E , 46:10:24 N   005:39:42 E 
+DP 46:10:24 N   005:39:42 E 
+DP 46:10:59 N   005:40:52 E 
+DP 46:07:02 N   005:49:04 E 
+DP 46:05:08 N   005:47:03 E 
+DP 45:59:58 N   005:48:14 E 
+DP 45:58:23 N   005:50:28 E 
+DP 46:22:03 N   006:33:04 E 
+DP 46:31:42 N   006:23:16 E 
+*
+*##    (CLASS C) GENEVA TCA SCTR 3   ###
+AC C
+SB 0,150,255
+AN GVA TMA3: 131.325     
+AL 6500 ft MSL    
+AH FL 195   
+DP 46:34:55 N   006:29:57 E 
+DP 46:31:42 N   006:23:16 E 
+DP 46:23:38 N   006:06:39 E 
+DP 46:07:02 N   005:49:04 E 
+DP 46:10:59 N   005:40:52 E 
+DP 46:14:32 N   005:48:04 E 
+DP 46:22:29 N   006:02:03 E 
+DP 46:24:40 N   006:05:17 E
+DP 46:34:23 N   006:19:35 E 
+*
+*##    (CLASS E) GENEVA TCA SCTR 3   ###
+AC E
+SB 0,150,255
+AN GVA TMA3: 131.325     
+AH 6500 ft MSL    
+AL 1000 ft AGL   
+DP 46:34:55 N   006:29:57 E 
+DP 46:31:42 N   006:23:16 E 
+DP 46:23:38 N   006:06:39 E 
+DP 46:07:02 N   005:49:04 E 
+DP 46:10:59 N   005:40:52 E 
+DP 46:14:32 N   005:48:04 E 
+DP 46:22:29 N   006:02:03 E 
+DP 46:24:40 N   006:05:17 E 
+DP 46:34:23 N   006:19:35 E 
+*
+*##    (CLASS C) GENEVA TCA SCTR 4   ###
+AC C
+AN GVA TMA4: 131.325     
+AH FL 195
+AL FL 85
+DP 46:28:38 N 005:36:22 E
+DP 46:30:30 N 005:35:10 E
+DP 46:30:00 N 005:53:26 E
+DP 46:34:34 N 006:06:39 E
+* swiss border start
+DP 46:32:50 N 006:09:17 E
+DP 46:28:00 N 006:04:27 E
+* swiss border end
+DP 46:27:13 N 006:04:28 E
+DP 46:27:05 N 006:04:42 E
+DP 46:22:22 N 005:57:47 E
+DP 46:18:44 N 005:44:36 E
+*
+AC C
+AN St Claude Nord: 124.750
+AH FL 85
+AL FL 75
+DP 46:28:38 N 005:36:22 E
+DP 46:30:30 N 005:35:10 E
+DP 46:30:00 N 005:53:26 E
+DP 46:34:34 N 006:06:39 E
+* swiss border start
+DP 46:32:50 N 006:09:17 E
+DP 46:28:00 N 006:04:27 E
+* swiss border end
+DP 46:27:13 N 006:04:28 E
+DP 46:27:05 N 006:04:42 E
+DP 46:22:22 N 005:57:47 E
+DP 46:18:44 N 005:44:36 E
+*
+AC C
+AN GVA TMA4: 131.325 
+AH FL 195
+AL FL 85
+DP 46:15:16 N 005:47:28 E
+DP 46:18:44 N 005:44:36 E
+DP 46:22:22 N 005:57:47 E
+*
+AC C
+AN St Claude Sud: 119.175
+AH FL 85
+AL FL 75
+DP 46:15:16 N 005:47:28 E
+DP 46:18:44 N 005:44:36 E
+DP 46:22:22 N 005:57:47 E
+*
+AC C
+AN GVA TMA4: 131.325     
+AH FL 195
+AL FL 85
+DP 46:34:34 N 006:06:39 E
+DP 46:38:23 N 006:12:37 E
+DP 46:34:23 N 006:19:35 E
+DP 46:22:29 N 006:02:04 E
+DP 46:24:56 N 006:03:50 E
+DP 46:26:14 N 006:04:58 E
+DP 46:27:05 N 006:04:42 E
+DP 46:27:13 N 006:04:28 E
+DP 46:28:00 N 006:04:27 E
+DP 46:32:50 N 006:09:17 E
+DP 46:34:34 N 006:06:39 E
+*
+AC C
+AN T81 Le Brassus: 124.750
+AH FL 85
+AL FL 75
+DP 46:34:34 N 006:06:39 E
+DP 46:38:23 N 006:12:37 E
+DP 46:34:23 N 006:19:35 E
+DP 46:24:40 N 006:05:17 E
+* swiss border start
+DP 46:24:58 N 006:03:48 E
+DP 46:26:14 N 006:04:58 E
+DP 46:27:05 N 006:04:42 E
+DP 46:27:13 N 006:04:28 E
+DP 46:28:00 N 006:04:27 E
+DP 46:32:50 N 006:09:17 E
+* swiss border end
+DP 46:34:34 N 006:06:39 E
+*
+AC C
+AN GVA TMA4: 131.325     
+AH FL 195
+AL FL 095
+DP 46:38:23 N 006:12:37 E
+DP 46:41:00 N 006:16:30 E
+DP 46:46:04 N 006:26:24 E
+DP 46:44:00 N 006:33:26 E
+DP 46:34:23 N 006:19:35 E
+*
+AC C
+AN T80 Vallorbe: 124.750
+AH FL 95
+AL FL 75
+DP 46:38:23 N 006:12:37 E
+DP 46:41:00 N 006:16:30 E
+DP 46:46:04 N 006:26:24 E
+DP 46:44:00 N 006:33:26 E
+DP 46:34:23 N 006:19:35 E
+*
+*
+AC C
+AN GVA TMA4: 131.325     
+AH FL 195
+AL FL 75
+DP 46:15:16 N 005:47:28 E
+DP 46:22:22 N 005:57:47 E
+DP 46:27:05 N 006:04:42 E
+DP 46:26:14 N 006:04:58 E
+DP 46:24:56 N 006:03:50 E
+DP 46:22:29 N 006:02:03 E
+DP 46:14:32 N 005:48:04 E
+*
+*
+*
+*##    (CLASS C) GENEVA TCA SCTR 4.1   ###
+AC C
+AN GVA TMA4.1: 131.325     
+AH FL 85
+AL FL 75
+DP 46:28:38 N 005:36:22 E
+DP 46:30:30 N 005:35:10 E
+DP 46:30:00 N 005:53:26 E
+DP 46:34:34 N 006:06:39 E
+* swiss border star
+DP 46:32:50 N 006:09:17 E
+DP 46:28:00 N 006:04:27 E
+* swiss border end
+DP 46:27:13 N 006:04:28 E
+DP 46:27:05 N 006:04:42 E
+DP 46:22:22 N 005:57:47 E
+DP 46:18:44 N 005:44:36 E
+*
+*##    (CLASS C) GENEVA TCA SCTR 5   ###
+AC C
+SB 0,150,255
+AN GVA TMA5: 131.325     
+AL FL 75    
+AH FL 195   
+DP 46:44:00 N   006:33:26 E 
+DP 46:40:36 N   006:45:02 E 
+DP 46:39:26 N   006:45:13 E 
+DP 46:32:45 N   006:54:02 E 
+DP 46:28:09 N   006:48:05 E 
+DP 46:26:14 N   006:41:53 E 
+DP 46:24:54 N   006:40:00 E 
+DP 46:34:55 N   006:29:57 E 
+DP 46:34:23 N   006:19:35 E 
+*
+*##    (CLASS C) GENEVA TCA SCTR 6   ###
+AC C
+SB 0,150,255
+AN GVA TMA6: 131.325     
+AL FL 85    
+AH FL 195   
+DP 46:28:09 N   006:48:05 E
+DP 46:25:51 N   006:48:10 E
+****** border begin
+DP 46:25:40 N   006:49:15 E
+DP 46:23:36 N   006:48:12 E
+****** border end
+DP 46:22:40 N   006:48:17 E
+DP 46:21:31 N   006:48:19 E 
+DP 46:10:24 N   006:25:00 E 
+DP 45:59:16 N   006:14:18 E 
+DP 46:02:56 N   006:09:33 E
+DP 46:18:17 N   006:30:34 E 
+DP 46:24:54 N   006:39:59 E 
+DP 46:26:14 N   006:41:53 E 
+*
+*##    (CLASS C) GENEVA TCA SCTR 7   ###
+AC C
+SB 0,150,255
+AN GVA TMA7: 131.325     
+AL FL 105   
+AH FL 195   
+DP 46:21:31 N   006:48:19 E 
+DP 46:19:14 N   006:48:25 E
+****** border begin
+DP 46:19:03 N   006:49:06 E
+DP 46:18:29 N   006:49:25 E
+DP 46:18:01 N   006:50:41 E
+DP 46:17:37 N   006:51:04 E
+DP 46:15:29 N   006:51:18 E
+****** border end
+DP 46:15:27 N   006:51:16 E 
+DP 46:04:36 N   006:28:46 E 
+DP 45:52:22 N   006:16:25 E 
+DP 45:55:07 N   006:12:15 E 
+DP 45:58:25 N   006:15:24 E 
+DP 45:59:16 N   006:14:18 E 
+DP 46:10:24 N   006:25:00 E 
+*
+*
+*##    (CLASS C) GENEVA TCA SCTR 8 NEW  ###
+AC C
+SB 0,150,255
+AN GVA TMA8: 131.325     
+AL FL 95    
+AH FL 195   
+DP 45:55:41 N   005:54:39 E 
+DP 46:02:56 N   006:09:33 E 
+DP 45:59:16 N   006:14:18 E 
+DP 45:58:25 N   006:15:24 E 
+DP 45:55:07 N   006:12:15 E 
+DP 45:55:56 N   006:11:01 E 
+DP 45:52:25 N   006:07:45 E
+V D=-
+V X=45:48:55 N   005:52:36 E 
+* radius 2.7 nm
+DB 45:51:20 N   005:54:19 E , 45:50:59 N   005:50:06 E
+DP 45:50:59 N   005:50:06 E 
+DP 45:49:44 N   005:34:53 E 
+V D=-
+V X=46:03:03 N   005:47:12 E 
+* radius 9.017 nm
+DB 45:55:41 N   005:39:46 E , 45:55:41 N   005:54:39 E 
+DP 45:55:41 N   005:54:39 E 
+*
+*
+*##    (CLASS C) GENEVA TCA SCTR 9   ###
+AC C
+SB 0,150,255
+AN GVA TMA9: 131.325     
+AH FL 195   
+AL FL 115    
+DP 45:51:20 N   005:54:19 E
+DP 45:52:25 N   006:07:45 E 
+DP 45:50:38 N   006:06:05 E 
+DP 45:37:14 N   006:05:16 E 
+DP 45:41:20 N   005:28:00 E 
+DP 45:49:44 N   005:34:53 E
+V D=+
+V X=45:48:55 N   005:52:36 E 
+* radius 2.7 nm
+DB 45:50:59 N   005:50:06 E , 45:51:20 N   005:54:19 E
+DP 45:51:20 N   005:54:19 E 
+*
+*
+*##    (CLASS E) GENEVA TCA SCTR 9   ###
+AC E
+SB 0,150,255
+AN GVA TMA9: 131.325     
+AH FL 115    
+AL FL 95    
+DP 45:51:20 N   005:54:19 E
+DP 45:52:25 N   006:07:45 E 
+DP 45:50:38 N   006:06:05 E 
+DP 45:37:14 N   006:05:16 E 
+DP 45:41:20 N   005:28:00 E 
+DP 45:49:44 N   005:34:53 E
+V D=+
+V X=45:48:55 N   005:52:36 E 
+* radius 2.7 nm
+DB 45:50:59 N   005:50:06 E , 45:51:20 N   005:54:19 E
+DP 45:51:20 N   005:54:19 E
+*
+*
+** Secteur OYONNAX Nord **
+AC W
+AN Oyonnax Nord 124.750
+AH 8500 ft MSL
+AL 7500 ft MSL
+DP 46:21:48 N 005:24:28 E
+DP 46:28:38 N 005:36:22 E
+DP 46:18:44 N 005:44:36 E
+DP 46:14:14 N 005:34:35 E
+*
+*
+** Secteur OYONNAX Sud **
+AC W
+AN LF-R135 Oyonnax Sud 119.175
+AH 8500 ft MSL
+AL 7500 ft MSL
+DP 46:18:44 N 005:44:36 E
+DP 46:16:10 N 005:46:43 E
+DP 46:08:54 N 005:36:03 E
+DP 46:09:13 N 005:34:25 E
+DP 46:14:14 N 005:34:35 E
+*
+*
+****************************************************
+*
+*##    (CLASS D) GRENCHEN CTLZ 1   ###
+AC D
+SB 0,255,0
+AN CTR Grenchen (HX): 120.1       
+AL SFC         
+AH 4500 ft MSL    
+V D=+
+V X=47:11:32 N   007:31:52 E 
+* radius 1.24 nm
+DB 47:13:05 N   007:31:32 E , 47:11:13 N   007:34:10 E 
+DP 47:11:13 N   007:34:10 E 
+DP 47:08:02 N   007:23:23 E
+V D=+
+V X=47:09:18 N   007:22:02 E 
+* radius 1.24 nm
+DB 47:07:58 N   007:21:00 E , 47:10:03 N   007:19:58 E 
+DP 47:10:03 N   007:19:58 E 
+DP 47:11:15 N   007:23:08 E
+*
+* 
+****************************************************
+*
+*##    (CLASS E) LES EPLATURES CTLZ   ###
+AC D
+SB 0,255,0
+AN CTR LesEplatures (HX): 118.125     
+AL SFC         
+AH 6500 ft AMSL    
+DP 47:00:51 N   006:38:53 E
+*Beginn Schweizer Grenze
+DP 47:01:19 N   006:39:12 E
+DP 47:01:39 N   006:39:34 E
+DP 47:01:54 N   006:40:08 E
+DP 47:02:05 N   006:40:28 E
+DP 47:02:16 N   006:41:10 E
+DP 47:02:14 N   006:41:44 E
+DP 47:02:39 N   006:42:20 E
+DP 47:03:06 N   006:43:12 E
+DP 47:03:12 N   006:42:47 E
+*Ende Schweizer Grenze 
+DP 47:03:27 N   006:42:31 E 
+DP 47:03:47 N   006:42:43 E 
+DP 47:07:31 N   006:49:40 E 
+DP 47:10:44 N   006:56:02 E 
+DP 47:08:08 N   006:58:27 E 
+DP 47:06:00 N   006:52:15 E 
+DP 47:01:47 N   006:47:30 E 
+DP 46:58:51 N   006:43:11 E
+*
+*
+****************************************************
+*
+*##    (CLASS D) LOCARNO CTLZ   ###
+AC D
+SB 0,255,0
+AN CTR Locarno (HX): 134.825     
+AL SFC         
+AH FL 130   
+V D=+
+V X=46:09:53 N   008:56:09 E 
+* radius 0.97 nm
+DB 46:10:48 N   008:56:34 E , 46:08:55 N   008:56:12 E 
+DP 46:08:55 N   008:56:12 E 
+V D=+
+V X=46:09:46 N   008:50:13 E 
+* radius 0.97 nm
+DB 46:08:47 N   008:50:16 E , 46:10:44 N   008:50:16 E 
+DP 46:10:44 N   008:50:11 E 
+*
+*##    (CLASS D) LOCARNO MTCA SCTR 1   ###
+AC D
+SB 0,255,0
+AN Locarno TMA1: 134.825     
+AL 2000 ft MSL
+AH FL 115   
+V D=-
+V X=46:09:53 N   008:56:09 E 
+* radius 0.97 nm
+DB 46:08:58 N   008:56:37 E, 46:10:51 N   008:56:07 E
+DP 46:10:51 N   008:56:07 E 
+DP 46:12:02 N   009:01:42 E 
+DP 46:09:33 N   009:02:17 E 
+DP 46:08:57 N   008:58:05 E 
+DP 46:08:55 N   008:56:12 E
+*
+*##    (CLASS D) LOCARNO MTCA SCTR 2   ###
+AC D
+SB 0,255,0
+AN Locarno TMA2: 134.825     
+AL 1650 ft MSL
+AH FL 115 
+V D=-
+V X=46:09:46 N   008:50:13 E 
+* radius 0.97 nm
+DB 46:10:44 N   008:50:11 E , 46:08:47 N   008:50:16 E
+DP 46:08:47 N   008:50:16 E 
+DP 46:08:38 N   008:43:49 E 
+DP 46:11:36 N   008:44:08 E 
+*
+*##    (CLASS D) LOCARNO MTCA SCTR 3   ###
+AC D
+SB 0,255,0
+AN Locarno TMA3: 134.825     
+AL 5500 ft MSL
+AH FL 115   
+DP 46:12:02 N   009:01:42 E 
+DP 46:13:01 N   009:06:22 E 
+DP 46:10:14 N   009:06:57 E 
+DP 46:09:33 N   009:02:17 E 
+*
+*##    (CLASS D) LOCARNO MTCA SCTR 4   ###
+AC D
+SB 0,255,0
+AN Locarno TMA4: 134.825     
+AL 5000 ft MSL
+AH FL 115   
+DP 46:11:36 N   008:44:08 E 
+DP 46:08:38 N   008:43:49 E 
+DP 46:08:32 N   008:38:57 E 
+DP 46:12:15 N   008:39:23 E 
+*
+*##    (CLASS D) LOCARNO MTCA SCTR 5   ###
+AC D
+SB 0,255,0
+AN Locarno TMA5: 134.825     
+AL 9500 ft MSL
+AH FL 115   
+DP 46:13:01 N   009:06:22 E 
+DP 46:14:47 N   009:14:56 E 
+DP 46:14:00 N   009:14:47 E
+DP 46:14:00 N   009:14:09 E
+DP 46:13:43 N   009:13:17 E
+DP 46:13:25 N   009:13:21 E
+DP 46:12:51 N   009:13:09 E
+DP 46:12:40 N   009:13:00 E
+DP 46:12:29 N   009:12:08 E
+DP 46:11:45 N   009:11:51 E
+DP 46:11:30 N   009:11:43 E
+DP 46:11:13 N   009:11:52 E
+DP 46:11:03 N   009:11:43 E
+DP 46:10:46 N   009:11:38 E 
+DP 46:10:14 N   009:06:57 E 
+*
+*##    (CLASS D) LOCARNO MTCA SCTR 6   ###
+AC D
+SB 0,255,0
+AN Locarno TMA6: 134.825     
+AL 8900 ft MSL
+AH FL 115   
+DP 46:12:15 N   008:39:23 E 
+DP 46:08:32 N   008:38:57 E 
+DP 46:08:28 N   008:35:48 E 
+DP 46:09:20 N   008:36:10 E
+DP 46:09:23 N   008:35:19 E
+DP 46:09:47 N   008:35:04 E
+DP 46:09:43 N   008:34:39 E
+DP 46:10:00 N   008:34:22 E
+DP 46:10:35 N   008:34:12 E
+DP 46:11:03 N   008:33:47 E
+DP 46:11:11 N   008:33:16 E
+DP 46:11:30 N   008:33:13 E
+DP 46:11:52 N   008:32:27 E
+DP 46:12:31 N   008:32:05 E
+DP 46:13:06 N   008:32:00 E
+DP 46:13:19 N   008:31:18 E
+DP 46:13:11 N   008:31:00 E
+DP 46:13:31 N   008:30:11 E
+*
+*
+****************************************************
+*
+*##    (CLASS D) LUGANO CTLZ   ###
+AC D
+SB 0,255,0
+AN CTR Lugano (HX): 120.250     
+AL SFC         
+AH 6500 ft MSL    
+V D=+
+V X=46:02:26 N   008:57:10 E 
+* radius 2.16 nm
+DB 46:03:43 N   008:54:41 E , 46:01:21 N   008:59:51 E 
+DP 46:01:21 N   008:59:51 E 
+V D=+
+V X=45:54:15 N   008:49:29 E 
+* radius 2.70 nm
+DB 45:52:31 N   008:52:27 E , 45:55:51 N   008:46:22 E
+DP 45:55:51 N   008:46:22 E 
+*
+*
+****************************************************
+*
+*##    (CLASS D) MEIRINGEN CTLZ   ###
+AC D
+SB 0,255,0
+AN CTR Meiringen (HX): 130.15      
+AL SFC         
+AH FL 130   
+V D=+
+V X=46:43:31 N   008:11:09 E 
+* radius 1.76 nm
+DB 46:45:13 N   008:11:50 E , 46:41:50 N   008:10:28 E 
+DP 46:41:50 N   008:10:28 E 
+DP 46:43:10 N   008:02:15 E 
+DP 46:40:24 N   007:56:31 E 
+DP 46:44:08 N   007:55:13 E 
+DP 46:47:16 N   008:00:53 E 
+DP 46:47:16 N   008:02:28 E
+*
+*##    (CLASS D) MEIRINGEN MTCA SCTR 1   ###
+AC D
+SB 0,255,0
+AN Meiringen TMA1: 130.15      
+AL 5300 ft MSL
+AH FL 130 
+V D=-
+V X=46:43:31 N   008:11:09 E 
+* radius 1.76 nm
+DB 46:42:01 N   008:12:28 E, 46:44:45 N   008:12:59 E   
+DP 46:44:45 N   008:12:59 E 
+DP 46:43:14 N   008:23:30 E 
+DP 46:39:28 N   008:21:51 E 
+DP 46:42:01 N   008:12:28 E 
+*
+*##    (CLASS D) MEIRINGEN MTCA SCTR 2   ###
+AC D
+SB 0,255,0
+AN Meiringen TMA2: 130.15      
+AL 7400 ft MSL
+AH FL 130   
+DP 46:45:23 N   007:57:30 E 
+DP 46:44:08 N   007:55:13 E 
+DP 46:41:50 N   007:56:01 E 
+DP 46:41:29 N   007:54:13 E 
+DP 46:45:08 N   007:53:13 E 
+*
+*##    (CLASS D) MEIRINGEN MTCA SCTR 3   ###
+AC D
+SB 0,255,0
+AN Meiringen TMA3: 130.15      
+AL 8600 ft MSL
+AH FL 130   
+DP 46:45:08 N   007:53:13 E 
+DP 46:41:29 N   007:54:13 E 
+DP 46:40:01 N   007:46:56 E 
+DP 46:44:41 N   007:45:39 E 
+*
+*
+****************************************************
+*
+*##    FIZ Samedan   ###
+AC UKN
+SB 0,255,0
+AN FIZ Samedan: 135.32       
+AL SFC         
+AH 10000 ft MSL
+V D=+
+V X=46:32:04 N   009:53:02 E 
+* radius 2.70 nm
+DB 46:34:46 N   009:53:01 E , 46:33:23 N   009:56:27 E 
+DP 46:33:23 N   009:56:27 E
+DP 46:32:35 N   009:55:59 E
+V D=+
+V X=46:32:04 N   009:53:02 E 
+* radius 2.70 nm
+DB 46:29:23 N   009:52:36 E , 46:31:15 N   009:49:18 E 
+DP 46:31:15 N   009:49:18 E 
+*
+*
+****************************************************
+*
+*##    (CLASS D) SION CTLZ   ###
+AC D
+SB 0,255,0
+AN CTR Sion CTR (HX): 118.275     
+AL SFC         
+AH FL 130   
+DP 46:16:41 N   007:26:05 E 
+DP 46:14:00 N   007:28:02 E 
+DP 46:12:04 N   007:23:51 E 
+V D=+
+V X=46:11:54 N   007:13:45 E 
+* radius 1.62 nm
+DB 46:10:20 N   007:14:21 E , 46:13:27 N   007:13:04 E 
+DP 46:13:27 N   007:13:04 E 
+DP 46:15:06 N   007:20:51 E 
+*
+*##    (CLASS D) SION TCA SCTR 1   ###
+AC D
+SB 0,255,0
+AN Sion TMA1: 118.275     
+AL 3000 ft MSL
+AH FL 130   
+DP 46:18:33 N   007:30:53 E 
+DP 46:17:46 N   007:28:37 E
+DP 46:16:41 N   007:26:05 E
+DP 46:14:00 N   007:28:02 E 
+DP 46:14:44 N   007:30:17 E
+DP 46:15:25 N   007:33:09 E 
+*
+*##    (CLASS D) SION TCA SCTR 2   ###
+AC D
+SB 0,255,0
+AN Sion TMA2: 118.275     
+AL 6000 ft MSL
+AH FL 130   
+DP 46:21:36 N   007:39:58 E
+DP 46:18:33 N   007:30:53 E 
+DP 46:15:25 N   007:33:09 E 
+DP 46:17:36 N   007:42:16 E 
+*
+*##    (CLASS D) SION TCA SCTR 3   ###
+AC D
+SB 0,255,0
+AN Sion TMA3: 118.275     
+AL 10000 ft MSL
+AH FL 130   
+DP 46:23:44 N   007:46:13 E
+DP 46:21:36 N   007:39:58 E
+DP 46:17:36 N   007:42:16 E 
+DP 46:19:15 N   007:49:11 E 
+*
+*
+****************************************************
+*
+*##    (CLASS D) ST GALLEN ALTENRHEIN CTLZ   ###
+AC D
+SB 0,255,0
+AN CTR StGallen (HX): 118.650     
+AL SFC         
+AH 5500 ft MSL
+DP 47:33:08 N   009:31:28 E
+DP 47:32:31 N   009:33:16 E
+V D=+
+V X=47:29:40 N   009:37:08 E 
+* radius 1.90 nm
+DB 47:31:31 N   009:37:50 E , 47:27:46 N   009:37:13 E
+DP 47:27:46 N   009:37:13 E
+DP 47:28:40 N   009:23:09 E
+DP 47:31:13 N   009:23:36 E
+DP 47:33:29 N   009:26:51 E
+DP 47:33:08 N   009:31:28 E
+*
+*
+*##    (CLASS D) LSZR   ###
+AC D
+SB 0,255,0
+AN TMA LSZR     
+AL 3500 ft MSL
+AH 5500 ft MSL
+DP 47:28:40 N   009:23:09 E 
+DP 47:29:09 N   009:19:14 E 
+DP 47:32:06 N   009:19:56 E 
+DP 47:31:38 N   009:24:12 E
+DP 47:31:13 N   009:23:36 E
+****************************************************
+*
+*##    (CLASS D) ZURICH CTLZ 1   ###
+AC D
+SB 0,255,0
+AN CTR ZRH: 118.1       
+AH 4500 ft MSL
+AL SFC
+V D=+
+V X=47:27:36 N   008:33:02 E 
+* radius 8.97 nm
+DB 47:27:41 N   008:19:48 E , 47:24:38 N   008:45:30 E 
+DP 47:24:38 N   008:45:30 E 
+DP 47:22:31 N   008:39:41 E 
+DP 47:21:06 N   008:20:25 E 
+*
+*##    (CLASS D) ZURICH CTLZ 2   ###
+AC D
+SB 0,255,0
+AN CTR ZRH-TEMP: 118.1       
+AH 5500 ft MSL
+AL SFC   
+DP 47:23:04 N   008:41:11 E 
+DP 47:14:54 N   008:47:34 E 
+DP 47:14:12 N   008:37:08 E 
+DP 47:21:57 N   008:31:49 E 
+DP 47:22:31 N   008:39:41 E 
+*
+*
+*##    (CLASS C) ZURICH TCA SCTR 1   ###
+AC C
+SB 0,150,255
+AN ZRH TMA1: 127.750       
+AH FL 195
+AL 3000 ft MSL
+DP 47:38:55 N   008:12:24 E
+DP 47:40:23 N   008:16:36 E
+************** Beginn Bohlhof ********************
+DP 47:40:45 N   008:20:15 E
+DP 47:39:09 N   008:20:13 E
+V D=-
+V X=47:39:02 N   008:23:01 E
+* radius 1.89 nm
+DB 47:39:09 N   008:20:13 E , 47:39:06 N 008:25:49 E
+DP 47:39:06 N   008:25:49 E
+DP 47:41:20 N   008:25:51 E
+************** Ende Bohlhof **********************
+DP 47:41:32 N   008:27:50 E
+DP 47:40:45 N   008:31:47 E
+DP 47:40:18 N   008:32:04 E
+DP 47:40:31 N   008:34:56 E 
+DP 47:41:35 N   008:38:31 E
+V D=-
+V X=47:27:36 N   008:33:02 E 
+* radius 8.97 nm
+DB  47:32:06 N   008:44:29 E , 47:27:41 N   008:19:48 E
+DP 47:27:41 N   008:19:48 E
+DP 47:26:49 N   008:17:51 E
+*
+*
+*##    (CLASS C) ZURICH TCA SCTR 1 OBERHALB SH SÜD 1 ###
+AC C
+SB 0,150,255
+AN ZRH TMA1: 127.750       
+AH FL 195
+AL 5500 ft MSL
+DP 47:40:45 N   008:31:47 E
+DP 47:40:39 N   008:32:09 E
+DP 47:41:35 N   008:38:31 E
+DP 47:40:31 N   008:34:56 E
+DP 47:40:18 N   008:32:04 E  
+**
+*##    (CLASS C) ZURICH TCA SCTR 1 SH SÜD 1 ###
+AC C
+SB 0,150,255
+AN T71 SH-S: 124.7       
+AH 5500 ft MSL
+AL 3000 ft MSL
+DP 47:40:45 N   008:31:47 E
+DP 47:40:39 N   008:32:09 E
+DP 47:41:35 N   008:38:31 E
+DP 47:40:31 N   008:34:56 E
+DP 47:40:18 N   008:32:04 E 
+*
+*
+*##    (CLASS C) ZURICH TCA SCTR 1 OBERHALB BOHLHOF ###
+AC C
+SB 0,150,225
+AN ZRH TMA1: 127.750
+AH FL 195
+AL 3500 ft MSL
+DP 47:41:20 N 008:25:51 E
+DP 47:39:06 N 008:25:49 E
+V D=+
+V X=47:39:02 N 008:23:01 E
+* radius 1.89 nm
+DB 47:39:06 N 008:25:49 E, 47:39:09 N 008:20:13 E
+DP 47:39:09 N 008:20:13 E
+DP 47:40:45 N 008:20:15 E
+DP 47:41:20 N 008:25:51 E 
+*
+*
+*##    (CLASS C) ZURICH TCA SCTR 1 BOHLHOF ###
+AC C
+SB 0,150,225
+AN T72 Bohlhof : 124.7
+AH 3500 ft MSL
+AL 3000 ft MSL
+DP 47:41:20 N 008:25:51 E
+DP 47:39:06 N 008:25:49 E
+V D=+
+V X=47:39:02 N 008:23:01 E
+* radius 1.89 nm
+DB 47:39:06 N 008:25:49 E, 47:39:09 N 008:20:13 E
+DP 47:39:09 N 008:20:13 E
+DP 47:40:45 N 008:20:15 E
+DP 47:41:20 N 008:25:51 E 
+*
+*
+*##    (CLASS C) ZURICH TCA SCTR 2   ###
+AC C
+SB 0,150,255
+AN ZRH TMA2-NORD: 127.750
+AT 47:42:45 N   008:20:30 E      
+AH FL 195  
+AL 4500 ft MSL
+DP 47:46:11 N   008:28:21 E 
+DP 47:41:57 N   008:31:01 E
+DP 47:40:45 N   008:31:47 E
+DP 47:41:32 N   008:27:50 E
+DP 47:40:23 N   008:16:36 E
+DP 47:38:54 N   008:12:23 E 
+DP 47:40:53 N   008:11:30 E 
+DP 47:46:04 N   008:25:06 E 
+*
+*
+*##    (CLASS C) ZURICH TCA SCTR 2.1 OST   ###
+AC C
+SB 0,150,255
+AN ZRH TMA2-NORD: 127.750
+AT 47:42:45 N   008:20:30 E      
+AH FL 195  
+AL 6500 ft MSL
+DP 47:46:24 N   008:35:30 E 
+DP 47:42:33 N   008:37:55 E
+DP 47:41:57 N   008:31:01 E 
+DP 47:46:11 N   008:28:21 E  
+*
+*
+*##    (CLASS C) ZURICH TCA SCTR 2.1 SH NORD 1 ###
+AC C
+SB 0,150,255
+AN SH-NW: 124.7
+AT 47:44:00 N   008:37:30 E       
+AH 6500 ft MSL
+AL 4500 ft MSL
+DP 47:46:24 N   008:35:30 E 
+DP 47:42:33 N   008:37:55 E
+DP 47:41:57 N   008:31:01 E 
+DP 47:46:11 N   008:28:21 E 
+*
+*
+*##    (CLASS C) ZURICH TCA SCTR 2 OBERHALB SH SÜD 1 ###
+AC C
+SB 0,150,255
+AN ZRH TMA2: 127.750
+AH FL 195
+AL 5500 ft MSL
+DP 47:41:57 N   008:31:01 E
+DP 47:40:45 N   008:31:47 E
+DP 47:40:39 N   008:32:09 E
+DP 47:41:35 N   008:38:31 E
+DP 47:42:33 N   008:37:55 E 
+*
+*##    (CLASS C) ZURICH TCA SCTR 2 SH SÜD 1 ###
+AC C
+SB 0,150,255
+AN T71 SH-S: 124.7
+AH 5500 ft MSL
+AL 4500 ft MSL
+DP 47:41:57 N   008:31:01 E
+DP 47:40:45 N   008:31:47 E
+DP 47:40:39 N   008:32:09 E
+DP 47:41:35 N   008:38:31 E
+DP 47:42:33 N   008:37:55 E 
+*
+*
+*##    (CLASS C) ZURICH TCA SCTR 3  ###
+AC C
+SB 0,150,255
+AN ZRH TMA3: 127.750
+AT 47:32:00 N   008:50:00 E     
+AH FL 195  
+AL 5500 ft MSL
+DP 47:44:17 N   008:47:06 E 
+DP 47:43:59 N   008:52:49 E 
+DP 47:32:38 N   008:55:12 E 
+DP 47:35:32 N   008:49:04 E 
+DP 47:35:41 N   008:42:16 E
+DP 47:41:35 N   008:38:31 E
+DP 47:42:33 N   008:37:55 E
+*
+*
+*##    (CLASS C) ZURICH TCA SCTR 3 NORD   ###
+AC C
+SB 0,150,255
+AN ZRH TMA3: 127.750
+AT 47:45:20 N   008:49:30 E 
+AH FL 195
+AL 6500 ft MSL
+DP 47:46:24 N   008:35:30 E 
+DP 47:46:55 N   008:52:12 E 
+DP 47:43:59 N   008:52:49 E 
+DP 47:44:17 N   008:47:06 E
+DP 47:42:33 N   008:37:55 E 
+*
+*
+*##    (CLASS C) ZURICH TCA SCTR 3.1 OBERHALB SH NORD 1 ###
+AC C
+SB 0,150,255
+AN T70 SH-NO: 124.7       
+AT 47:45:00 N   008:49:30 E
+AH 6500 ft MSL
+AL 5500 ft MSL
+DP 47:46:55 N   008:52:12 E 
+DP 47:43:59 N   008:52:49 E 
+DP 47:44:17 N   008:47:06 E 
+DP 47:42:33 N   008:37:55 E
+DP 47:46:24 N   008:35:30 E 
+*
+*
+*
+**##    (CLASS C) ZURICH TCA SCTR 4A   ###
+AC C
+SB 0,150,255
+AN ZRH TMA4A: 127.750
+AT 47:31:20 N   008:50:00 E  
+AH FL 195
+AL 4500 ft MSL
+DP 47:29:54 N   008:54:28 E 
+V D=-
+V X=47:27:36 N   008:33:02 E 
+* radius 8.97 nm
+DB 47:30:00 N   008:45:46 E , 47:32:06 N   008:44:29 E 
+DP 47:32:06 N   008:44:28 E 
+DP 47:35:41 N   008:42:16 E
+DP 47:35:32 N   008:49:04 E 
+DP 47:34:20 N   008:51:35 E
+DP 47:32:19 N   008:47:50 E
+DP 47:30:58 N   008:48:29 E
+DP 47:31:01 N   008:49:52 E
+DP 47:30:21 N   008:54:35 E
+DP 47:29:31 N   009:00:19 E
+DP 47:26:13 N   009:00:41 E
+DP 47:23:47 N   008:59:47 E
+DP 47:22:45 N   008:52:36 E
+*
+*
+*##    (CLASS C) ZURICH TCA SCTR 4A OBERHALB WTHUR WEST ###
+AC C
+SB 0,150,255
+AN ZRH TMA4A: 127.750
+AH FL 195 
+AL 5500 ft MSL
+DP 47:34:20 N   008:51:35 E
+DP 47:32:38 N   008:55:12 E
+DP 47:30:21 N   008:54:35 E
+DP 47:31:01 N   008:49:52 E
+DP 47:30:58 N   008:48:29 E
+DP 47:32:19 N   008:47:50 E
+*
+*
+*
+*##    (CLASS C) ZURICH TCA SCTR 4A WTHUR WEST ###
+AC C
+SB 0,150,255
+AN T73 W'THUR-WEST: 124.7       
+AH 5500 ft MSL
+AL 4500 ft MSL
+DP 47:34:20 N   008:51:35 E
+DP 47:32:38 N   008:55:12 E
+DP 47:30:21 N   008:54:35 E
+DP 47:31:01 N   008:49:52 E
+DP 47:30:58 N   008:48:29 E
+DP 47:32:19 N   008:47:50 E
+*
+*
+*##    (CLASS C) ZURICH TCA SCTR 4A OBERHALB WTHUR OST ###
+AC C
+SB 0,150,255
+AN ZRH TMA4A: 127.750
+AH FL 195 
+AL 6500 ft MSL
+DP 47:32:38 N   008:55:12 E
+DP 47:32:17 N   009:00:00 E
+DP 47:29:31 N   009:00:19 E
+DP 47:30:21 N   008:54:35 E
+*
+*
+*##    (CLASS C) ZURICH TCA SCTR 4A WTHUR OST ###
+AC C
+SB 0,150,255
+AN T74 W'THUR-OST: 124.7
+AH 6500 ft MSL
+AL 4500 ft MSL
+DP 47:32:38 N   008:55:12 E
+DP 47:32:17 N   009:00:00 E
+DP 47:29:31 N   009:00:19 E
+DP 47:30:21 N   008:54:35 E
+*
+**
+**##    (CLASS C) ZURICH TCA SCTR 4B   ###
+AC C
+SB 0,150,255
+AN ZRH TMA4B: 127.750
+AT 47:31:20 N   008:50:00 E  
+AH FL 195
+AL 5500 ft MSL
+DP 47:28:56 N   009:04:24 E
+DP 47:22:40 N   009:03:23 E
+DP 47:21:08 N   008:56:38 E
+DP 47:20:51 N   008:48:55 E
+DP 47:20:33 N   008:41:00 E
+DP 47:19:53 N   008:33:14 E
+DP 47:18:11 N   008:22:40 E
+DP 47:21:57 N   008:31:49 E
+DP 47:22:31 N   008:39:41 E
+DP 47:23:04 N   008:41:11 E
+DP 47:22:45 N   008:52:36 E
+DP 47:23:47 N   008:59:47 E
+DP 47:26:13 N   009:00:41 E
+DP 47:29:31 N   009:00:19 E
+*
+*
+*##    (CLASS C) ZURICH TCA SCTR 4B OBERHALB WTHUR OST ###
+AC C
+SB 0,150,255
+AN ZRH TMA4B: 127.750
+AH FL 195 
+AL 6500 ft MSL
+DP 47:32:17 N   009:00:00 E
+DP 47:31:55 N   009:04:54 E
+DP 47:28:56 N   009:04:24 E
+DP 47:29:31 N   009:00:19 E
+*
+*##    (CLASS C) ZURICH TCA SCTR 4B WTHUR OST ###
+AC C
+SB 0,150,255
+AN T74 W'THUR-OST: 124.7
+AH 6500 ft MSL
+AL 5500 ft MSL
+DP 47:32:17 N   009:00:00 E
+DP 47:31:55 N   009:04:54 E
+DP 47:28:56 N   009:04:24 E
+DP 47:29:31 N   009:00:19 E
+*
+*
+*##    (CLASS C) ZURICH TCA SCTR 4B OBERHALB ALBIS ###
+AC C
+SB 0,150,255
+AN ZRH TMA4B: 127.750
+AH FL 195 
+AL 7500 ft MSL
+DP 47:18:11 N   008:22:40 E
+DP 47:19:53 N   008:33:14 E
+DP 47:15:25 N   008:36:18 E 
+DP 47:13:56 N   008:25:55 E
+*
+*
+*##    (CLASS C) ZURICH TCA SCTR 4B ALBIS ###
+AC C
+SB 0,150,255
+AN T77 ALBIS: 124.7
+AH 7500 ft MSL
+AL 5500 ft MSL
+DP 47:18:11 N   008:22:40 E
+DP 47:19:53 N   008:33:14 E
+DP 47:15:25 N   008:36:18 E 
+DP 47:13:56 N   008:25:55 E
+*
+*
+*##    (CLASS C) ZURICH TCA SCTR 4B OBERHALB BACHTEL WEST###
+AC C
+SB 0,150,255
+AN ZRH TMA4B: 127.750
+AH FL 195 
+AL 7500 ft MSL
+DP 47:19:53 N   008:33:14 E
+DP 47:20:33 N   008:41:00 E
+DP 47:20:51 N   008:48:55 E
+DP 47:16:22 N   008:46:47 E
+DP 47:16:35 N   008:44:29 E
+DP 47:15:25 N   008:36:18 E 
+*
+*
+*
+*##    (CLASS C) ZURICH TCA SCTR 4B BACHTEL WEST###
+AC C
+SB 0,150,255
+AN T78 BACHTEL-W: 124.7       
+AH 7500 ft MSL
+AL 5500 ft MSL
+DP 47:19:53 N   008:33:14 E
+DP 47:20:33 N   008:41:00 E
+DP 47:20:51 N   008:48:55 E
+DP 47:16:22 N   008:46:47 E
+DP 47:16:35 N   008:44:29 E
+DP 47:15:25 N   008:36:18 E 
+*
+*
+*
+*##    (CLASS C) ZURICH TCA SCTR 4B OBERHALB BACHTEL OST###
+AC C
+SB 0,150,255
+AN ZRH TMA4B: 127.750
+AH FL 195 
+AL 7500 ft MSL
+DP 47:20:51 N   008:48:55 E
+DP 47:21:08 N   008:56:38 E
+DP 47:15:37 N   008:55:04 E
+DP 47:16:22 N   008:46:47 E
+*
+*
+*
+*##    (CLASS C) ZURICH TCA SCTR 4B BACHTEL OST###
+AC C
+SB 0,150,255
+AN T79 BACHTEL-O: 124.7
+AH 7500 ft MSL
+AL 5500 ft MSL
+DP 47:20:51 N   008:48:55 E
+DP 47:21:08 N   008:56:38 E
+DP 47:15:37 N   008:55:04 E
+DP 47:16:22 N   008:46:47 E
+*
+*
+**##    (CLASS C) ZURICH TCA SCTR 4C   ###
+AC C
+SB 0,150,255
+AN ZRH TMA4C: 127.750
+AH FL 195
+AL 4500 ft MSL
+DP 47:24:38 N   008:45:30 E
+DP 47:23:04 N   008:41:11 E
+DP 47:22:31 N   008:39:41 E
+DP 47:21:57 N   008:31:49 E
+DP 47:18:11 N   008:22:40 E
+DP 47:17:21 N   008:20:31 E
+DP 47:23:52 N   008:11:18 E
+DP 47:26:49 N   008:17:51 E
+DP 47:27:41 N   008:19:48 E
+V D=+
+V X=47:27:36 N   008:33:02 E 
+* radius 8.97 nm
+DB  47:27:41 N   008:19:48 E , 47:24:38 N   008:45:30 E
+DP 47:24:38 N   008:45:30 E
+*
+*
+**
+*##    (CLASS C) ZURICH TCA SCTR 5   ###
+AC C
+SB 0,150,255
+AN ZRH TMA5: 127.750
+AT 47:28:50 N   008:50:40 E           
+AH FL 195
+AL 3500 ft MSL
+DP 47:29:54 N   008:54:28 E 
+DP 47:22:45 N   008:52:36 E 
+DP 47:23:04 N   008:41:11 E
+V D=-
+V X=47:27:36 N   008:33:02 E 
+* radius 8.97 nm
+DB 47:24:39 N   008:45:30 E , 47:30:00 N   008:45:46 E 
+DP 47:30:00 N   008:45:46 E 
+*
+*
+*##    (CLASS C) ZURICH TCA SCTR 6   ###
+AC C
+SB 0,150,255
+AN ZRH TMA6: 127.750
+AH FL 195
+AL 5500 ft MSL
+DP 47:40:53 N   008:11:30 E
+DP 47:26:49 N   008:17:51 E
+DP 47:23:52 N   008:11:18 E
+DP 47:17:21 N   008:20:31 E
+DP 47:14:43 N   008:13:47 E
+DP 47:22:15 N   008:04:56 E
+DP 47:30:36 N   008:00:00 E
+DP 47:38:34 N   008:00:00 E
+DP 47:42:15 N   008:10:53 E
+DP 47:45:45 N   008:15:45 E
+DP 47:46:04 N   008:25:06 E
+*
+*
+*
+*##    (CLASS C) ZURICH TCA SCTR 7   ###
+AC C
+SB 0,150,255
+AN ZRH TMA7: 127.750
+AH FL 195   
+AL 7500 ft MSL
+DP 47:18:11 N   008:22:40 E 
+DP 47:13:56 N   008:25:55 E 
+DP 47:11:55 N   008:11:56 E 
+DP 47:07:53 N   007:59:41 E 
+DP 47:08:55 N   007:58:56 E 
+DP 47:14:43 N   008:13:47 E
+DP 47:17:21 N   008:20:31 E 
+*
+*
+*##    (CLASS C) ZURICH TCA SCTR 8   ###
+AC C
+SB 0,150,255
+AN ZRH TMA8: 127.750
+AH FL 195
+AL 6500 ft MSL
+DP 47:38:34 N   008:00:00 E
+DP 47:30:36 N   008:00:00 E 
+DP 47:22:15 N   008:04:56 E 
+DP 47:14:43 N   008:13:47 E 
+DP 47:08:55 N   007:58:56 E 
+DP 47:19:12 N   007:51:31 E
+DP 47:25:52 N   007:46:41 E
+DP 47:32:24 N   007:41:56 E 
+*
+*
+*##    (CLASS C) ZURICH TCA SCTR 9   ###
+AC C
+SB 0,150,255
+AN ZRH TMA9: 127.750
+AH FL 195 
+AL 7500 ft MSL
+DP 47:51:58 N   008:24:26 E 
+DP 47:51:45 N   008:46:30 E 
+DP 47:46:04 N   008:25:07 E 
+DP 47:45:45 N   008:15:45 E 
+*
+*
+*##    (CLASS C) ZURICH TCA SCTR 10   ###
+AC C
+SB 0,150,255
+AN ZRH TMA10: 127.750
+AT 47:49:00 N   008:42:45 E   
+AH FL 195
+AL 6500 ft MSL
+DP 47:51:45 N   008:46:30 E 
+DP 47:46:55 N   008:52:12 E 
+DP 47:46:25 N   008:35:29 E
+DP 47:46:04 N   008:25:07 E 
+*
+*
+*##    (CLASS C) ZURICH TCA SCTR 11   ###
+AC C
+SB 0,150,255
+AN ZRH TMA11: 127.750
+AH FL 195
+AL 6500 ft MSL
+DP 47:46:55 N   008:52:12 E 
+DP 47:45:23 N   009:00:32 E
+DP 47:44:18 N   009:13:56 E 
+DP 47:35:21 N   009:13:56 E 
+DP 47:31:27 N   009:11:02 E 
+DP 47:22:16 N   009:10:44 E 
+DP 47:20:49 N   009:04:52 E 
+*DP 47:16:24 N   009:02:44 E
+*DP 47:15:19 N   008:58:21 E
+*DP 47:15:37 N   008:55:04 E
+DP 47:21:08 N   008:56:38 E
+DP 47:22:40 N   009:03:23 E
+DP 47:31:55 N   009:04:54 E
+DP 47:32:17 N   009:00:00 E
+DP 47:32:38 N   008:55:12 E
+*
+*
+*##    (CLASS C) ZURICH TCA SCTR 11 OBERHALB BACHTEL OST  ###
+AC C
+SB 0,150,255
+AN ZRH TMA11: 127.750
+AH FL 195
+AL 7500 ft MSL
+DP 47:20:49 N   009:04:52 E 
+DP 47:16:24 N   009:02:44 E 
+DP 47:15:19 N   008:58:21 E 
+DP 47:15:37 N   008:55:04 E
+DP 47:21:08 N   008:56:38 E
+*
+*##    (CLASS C) ZURICH TCA SCTR 11 BACHTEL OST  ###
+AC C
+SB 0,150,255
+AN T79 BACHTEL-O: 124.7       
+AH 7500 ft MSL
+AL 6500 ft MSL
+DP 47:20:49 N   009:04:52 E 
+DP 47:16:24 N   009:02:44 E 
+DP 47:15:19 N   008:58:21 E 
+DP 47:15:37 N   008:55:04 E
+DP 47:21:08 N   008:56:38 E
+*
+*
+*##    (CLASS C) ZURICH TCA SCTR 12   ###
+AC C
+SB 0,150,255
+AN ZRH TMA12: 127.750
+AH FL 195
+AL 8500 ft MSL
+DP 47:44:18 N   009:13:56 E 
+DP 47:43:20 N   009:25:38 E 
+DP 47:35:12 N   009:27:13 E 
+DP 47:35:21 N   009:13:56 E 
+*
+*
+*##    (CLASS C) ZURICH TCA SCTR 13   ###
+AC C
+SB 0,150,255
+AN ZRH TMA13: 127.750
+AH FL 195 
+AL 7500 ft MSL
+DP 47:35:21 N   009:13:56 E 
+DP 47:35:12 N   009:27:13 E 
+DP 47:23:46 N   009:16:52 E 
+DP 47:22:16 N   009:10:44 E 
+DP 47:31:27 N   009:11:02 E 
+*
+*##    (CLASS C) ZURICH TCA SCTR 14   ###
+AC C
+SB 0,150,255
+AN ZRH TMA14-TEMP: 127.750
+AH FL 195
+AL 5500 ft MSL
+DP 47:15:19 N   008:58:21 E 
+DP 47:11:43 N   008:53:41 E
+DP 47:08:41 N   008:29:32 E 
+DP 47:09:20 N   008:29:27 E
+DP 47:13:56 N   008:25:55 E
+DP 47:16:35 N   008:44:29 E 
+DP 47:15:37 N   008:55:04 E
+*
+*##    (CLASS C) ZURICH TCA SCTR 15   ###
+AC C
+SB 0,150,255
+AN ZRH TMA15-TEMP: 127.750
+AH FL 195   
+AL 7500 ft MSL
+DP 47:13:56 N   008:25:55 E 
+DP 47:11:55 N   008:11:56 E 
+DP 47:07:53 N   007:59:41 E 
+DP 47:08:18 N   008:22:14 E
+DP 47:08:41 N   008:29:32 E 
+DP 47:09:20 N   008:29:27 E
+*
+*
+****************************************************
+*
+*##    (CLASS D) DUBENDORF CTLZ   ###
+AC D
+SB 0,255,0
+AN CTR D'dorf (HX): 118.975     
+AH FL 95   
+AL SFC         
+DP 47:26:23 N   008:51:33 E
+DP 47:24:01 N   008:50:25 E
+DP 47:19:13 N   008:48:08 E 
+DP 47:16:23 N   008:46:48 E 
+DP 47:17:14 N   008:36:21 E 
+DP 47:22:01 N   008:32:35 E 
+DP 47:23:49 N   008:32:27 E 
+DP 47:28:27 N   008:41:58 E 
+DP 47:26:23 N   008:51:33 E 
+*
+*##    (CLASS D) DUBENDORF MTCA SCTR 1   ###
+AC D
+SB 0,255,0
+AN D'dorf TMA1 (HX): 118.975     
+AH FL 95   
+AL 3500 ft MSL    
+DP 47:22:57 N   008:55:12 E 
+DP 47:18:10 N   008:52:55 E 
+DP 47:19:13 N   008:48:08 E 
+DP 47:24:01 N   008:50:25 E 
+*
+*##    (CLASS E) DUBENDORF MTCA SCTR 2   ###
+AC D
+SB 0,255,0
+AN D'dorf TMA2 (HX): 118.975     
+AH FL 95   
+AL 5500 ft MSL    
+DP 47:20:49 N   009:04:53 E 
+DP 47:16:24 N   009:02:44 E 
+DP 47:16:11 N   009:01:52 E 
+DP 47:18:10 N   008:52:55 E
+DP 47:22:57 N   008:55:12 E 
+ *
+*
+****************************************************
+*
+*##    (CLASS D) EMMEN CTLZ 1   ###
+AC D
+SB 0,255,0
+AN Emmen CTR1 (HX): 120.42      
+AL SFC         
+AH FL 130   
+DP 47:11:31 N   008:21:30 E 
+DP 47:09:43 N   008:24:52 E
+DP 47:08:40 N   008:24:27 E
+DP 47:08:19 N   008:24:18 E 
+DP 47:01:30 N   008:16:38 E
+DP 47:00:50 N   008:15:52 E 
+DP 47:00:41 N   008:14:14 E 
+DP 47:02:17 N   008:11:09 E 
+DP 47:06:49 N   008:10:38 E 
+DP 47:11:02 N   008:15:44 E 
+*
+*##    (CLASS D) EMMEN CTLZ 2   ###
+AC D
+SB 0,255,0
+AN Emmen CTR2 (HX): 120.42      
+AL SFC         
+AH 4500 ft MSL   
+DP 47:01:30 N   008:16:38 E
+DP 47:08:19 N   008:24:18 E
+DP 47:08:40 N   008:24:27 E
+DP 47:06:05 N   008:29:28 E
+DP 47:02:35 N   008:25:30 E
+DP 47:01:50 N   008:20:18 E 
+DP 47:00:37 N   008:18:33 E 
+DP 47:00:25 N   008:18:16 E
+*
+*##    (CLASS D) EMMEN MTCA SCTR 1   ###
+AC D
+SB 0,255,0
+AN Emmen TMA1 (HX): 120.425     
+AL 2400 ft MSL    
+AH FL 80   
+DP 47:13:23 N   008:24:04 E 
+DP 47:11:16 N   008:28:04 E 
+DP 47:08:19 N   008:24:18 E
+DP 47:09:43 N   008:24:52 E 
+DP 47:11:15 N   008:22:01 E 
+*
+*##    (CLASS D) EMMEN MTCA SCTR 2   ###
+AC D
+SB 0,255,0
+AN Emmen TMA2 (HX): 120.425     
+AL 3800 ft MSL    
+AH FL 130   
+DP 47:02:03 N   008:11:36 E 
+DP 47:00:41 N   008:14:14 E
+DP 47:00:48 N   008:15:35 E 
+DP 46:57:14 N   008:12:18 E 
+DP 46:59:27 N   008:08:05 E 
+*
+*##    (CLASS D) EMMEN MTCA SCTR 3   ###
+AC D
+SB 0,255,0
+AN Emmen TMA3 (HX): 120.425     
+AL 3500 ft MSL    
+AH FL 80   
+DP 47:15:31 N   008:26:10 E 
+DP 47:13:11 N   008:30:32 E 
+DP 47:11:16 N   008:28:04 E 
+DP 47:13:23 N   008:24:04 E 
+*
+*##    (CLASS D) EMMEN MTCA SCTR 4   ###
+AC D
+SB 0,255,0
+AN Emmen TMA4 (HX): 120.425     
+AL 6700 ft MSL    
+AH FL 130   
+DP 46:59:27 N   008:08:05 E 
+DP 46:57:14 N   008:12:18 E 
+DP 46:54:15 N   008:09:33 E 
+DP 46:56:52 N   008:04:35 E 
+*
+*##    (CLASS E) EMMEN MTCA SCTR 5   ###
+AC D
+SB 0,255,0
+AN Emmen TMA5 (HX): 120.425     
+AL 4500 ft MSL    
+AH FL 80   
+DP 47:15:31 N   008:26:10 E 
+DP 47:19:10 N   008:29:41 E 
+DP 47:16:28 N   008:34:45 E 
+DP 47:13:11 N   008:30:32 E 
+*
+*##    (CLASS D) EMMEN MTCA SCTR 6   ###
+AC D
+SB 0,255,0
+AN Emmen TMA6 (HX): 120.425     
+AL 10000 ft MSL   
+AH FL 130   
+DP 46:56:52 N   008:04:35 E 
+DP 46:54:15 N   008:09:33 E 
+DP 46:50:21 N   008:05:59 E 
+DP 46:53:30 N   008:00:01 E 
+*
+*
+****************************************************
+*
+*##    (CLASS D) PAYERNE CTLZ   ###
+AC D
+SB 0,255,0
+AN CTR Payerne (HX): 128.67     
+AL SFC         
+AH FL 100   
+DP 46:56:22 N   006:59:31 E 
+DP 46:52:33 N   007:04:35 E 
+DP 46:44:08 N   006:51:13 E 
+DP 46:47:56 N   006:46:09 E 
+*
+*##    (CLASS D) PAYERNE MTCA SCTR 1   ###
+AC D
+SB 0,255,0
+AN Payerne TMA1: 128.67     
+AL 2300 ft MSL
+AH FL 100   
+DP 46:57:25 N   007:02:16 E 
+DP 46:54:45 N   007:05:41 E 
+DP 46:53:32 N   007:03:16 E 
+DP 46:55:53 N   007:00:09 E 
+*
+*##    (CLASS D) PAYERNE MTCA SCTR 2   ###
+AC D
+SB 0,255,0
+AN Payerne TMA2: 128.67     
+AL 2800 ft MSL
+AH FL 100   
+DP 46:47:09 N   006:47:11 E 
+DP 46:45:29 N   006:49:25 E 
+DP 46:42:49 N   006:46:25 E 
+DP 46:45:25 N   006:43:00 E 
+*
+*##    (CLASS D) PAYERNE MTCA SCTR 3   ###
+AC D
+SB 0,255,0
+AN Payerne TMA3: 128.67     
+AL 3100 ft MSL
+AH FL 100   
+DP 46:59:25 N   007:05:02 E 
+DP 46:56:23 N   007:08:57 E 
+DP 46:54:45 N   007:05:41 E 
+DP 46:57:25 N   007:02:16 E 
+*
+*##    (CLASS D) PAYERNE MTCA SCTR 5   ###
+AC D
+SB 0,255,0
+AN Payerne TMA5: 128.67     
+AL 4000 ft MSL
+AH FL 100
+DP 47:00:13 N   007:06:08 E 
+DP 46:57:01 N   007:10:13 E 
+DP 46:56:23 N   007:08:57 E 
+DP 46:59:25 N   007:05:02 E 
+*
+*##    (CLASS D) PAYERNE MTCA SCTR 6   ###
+AC D
+SB 0,255,0
+AN Payerne TMA6: 128.67     
+AL 4500 ft MSL
+AH FL 100   
+DP 46:45:25 N   006:43:00 E 
+DP 46:42:49 N   006:46:25 E 
+DP 46:40:51 N   006:44:12 E 
+DP 46:42:57 N   006:37:01 E 
+*
+*##    (CLASS E) PAYERNE MTCA SCTR 7   ###
+AC E
+SB 0,255,0
+AN Payerne TMA7: 128.67     
+AL 4000 ft MSL
+AH FL 100   
+DP 46:52:33 N   007:04:35 E 
+DP 46:53:32 N   007:03:16 E 
+DP 46:57:01 N   007:10:13 E 
+DP 47:00:13 N   007:06:08 E 
+V D=-
+V X=47:03:32 N   007:19:41 E 
+* radius 5.02 nm
+DB 47:04:52 N   007:12:37 E , 47:00:23 N   007:13:58 E 
+DP 47:00:23 N   007:13:58 E 
+DP 46:58:24 N   007:16:19 E 
+*
+*
+****************************************************
+*
+* Gefahrengebiete (werden mit "AC Q" gekennzeichnet)
+*
+AC Q
+SB 255,150,40
+AN LS-D5 Eriswil 135.475
+AH 5000 ft AMSL
+AL 3000 ft AMSL
+DP 47:05:27 N 008:04:47 E
+DP 47:08:08 N 007:53:47 E
+DP 47:06:59 N 007:41:17 E
+DP 47:03:35 N 007:38:25 E
+DP 46:56:17 N 007:46:56 E
+DP 46:57:07 N 008:01:18 E
+*
+AC Q
+SB 255,150,40
+AN LS-D7 Grandvillard: 135.475
+AH 9000 ft AMSL
+AL SFC
+DP 46:36:32 N 007:10:39 E
+DP 46:31:08 N 007:10:41 E
+DP 46:28:26 N 007:06:00 E
+DP 46:28:24 N 006:58:59 E
+DP 46:35:25 N 006:58:55 E
+DP 46:34:22 N 007:05:11 E
+*
+AC Q
+SB 255,150,40
+AN LS-D10 Breil/Brigels: 135.475
+AH 13000 ft AMSL
+AL 4000 ft AMSL
+V D=+
+V X=46:45:33 N 009:05:17 E
+DC 5.4
+*
+AC Q
+SB 255,150,40
+AN LS-D12 Sihltal
+AH 9850 ft AMSL
+AL SFC
+DP 47:02:55 N 008:53:16 E
+DP 46:59:55 N 008:51:26 E
+DP 46:59:55 N 008:50:16 E
+DP 47:03:15 N 008:50:16 E
+DP 47:03:25 N 008:51:06 E
+DP 47:03:25 N 008:52:36 E
+*
+AC Q
+SB 255,150,40
+AN LS-D14 Gasterntal
+AH 7200 ft AMSL
+AL SFC
+DP 46:28:15 N 007:43:36 E
+DP 46:25:25 N 007:41:26 E
+DP 46:26:55 N 007:37:56 E
+DP 46:28:05 N 007:38:56 E
+*
+AC Q
+SB 255,150,40
+AN LS-D15 Rossboden - Chur
+AH 6000 ft AMSL
+AL SFC
+DP 46:52:00 N 009:29:25 E
+DP 46:50:55 N 009:30:25 E
+DP 46:50:45 N 009:29:40 E
+DP 46:51:35 N 009:28:45 E
+*
+AC Q
+SB 255,150,40
+AN LS-D18 Thun
+AH 5000 ft AMSL
+AL SFC
+DP 46:45:36 N 007:36:26 E
+DP 46:43:01 N 007:34:10 E
+DP 46:44:06 N 007:32:36 E
+*
+AC Q
+SB 255,150,40
+AN LS-D19 Biere
+AH 6600 ft AMSL
+AL SFC
+DP 46:34:47 N 006:21:21 E
+DP 46:34:09 N 006:22:35 E
+DP 46:32:11 N 006:20:25 E
+DP 46:31:33 N 006:22:02 E
+DP 46:30:08 N 006:21:26 E
+DP 46:31:59 N 006:16:47 E
+*
+AC Q
+SB 255,150,40
+AN LS-D19A Biere
+AH 6600 ft AMSL
+AL SFC
+DP 46:35:43 N 006:22:54 E
+DP 46:35:21 N 006:23:55 E
+DP 46:34:09 N 006:22:35 E
+DP 46:34:47 N 006:21:21 E
+*
+*
+****************************************************
+*
+* Flugbeschränkungsgebiete (werden mit "AC R" gekennzeichnet)
+*
+*****************************************************
+*
+AC R
+SB 255,150,40
+AN LS-R2 Hohgant: 124.700
+AH FL 130
+AL FL 100
+DP 46:47:15 N 008:02:28 E
+DP 46:47:15 N 008:00:53 E
+DP 46:45:23 N 007:57:29 E
+DP 46:44:20 N 007:40:03 E
+DP 46:49:16 N 007:35:46 E
+DP 47:02:29 N 008:00:09 E
+DP 47:02:54 N 008:01:27 E
+DP 47:03:04 N 008:09:37 E
+DP 46:57:53 N 008:19:37 E
+DP 46:55:46 N 008:20:27 E
+DP 46:56:27 N 008:23:58 E
+DP 46:43:16 N 008:25:54 E
+*
+AC R
+SB 255,150,40
+AN LS-R3 Speer: 124.700
+AH FL 130
+AL FL 100
+DP 47:02:57 N 009:29:06 E
+DP 47:02:53 N 009:04:10 E
+DP 47:11:23 N 009:03:01 E
+DP 47:16:25 N 009:09:34 E
+DP 47:18:45 N 009:18:15 E
+DP 47:18:39 N 009:34:59 E
+DP 47:18:10 N 009:33:32 E
+DP 47:17:10 N 009:33:01 E
+DP 47:16:28 N 009:31:58 E
+DP 47:14:40 N 009:31:18 E
+DP 47:12:49 N 009:30:00 E
+DP 47:11:30 N 009:29:18 E
+DP 47:10:11 N 009:29:23 E
+DP 47:08:39 N 009:30:35 E
+DP 47:07:57 N 009:30:50 E
+DP 47:06:01 N 009:31:20 E
+DP 47:05:20 N 009:31:01 E
+*
+AC R
+SB 255,150,40
+AN LS-R4 Lac de Neuchâtel: 128.675
+AH 8900 ft MSL
+AL SFC
+DP 46:57:41 N 006:54:37 E
+DP 46:55:02 N 006:57:25 E
+DP 46:49:57 N 006:49:21 E
+DP 46:50:36 N 006:43:19 E
+*
+AC R
+SB 255,150,40
+AN LS-R4A Lac de Neuchâtel: 128.675
+AH 8900 ft MSL
+AL 5000 ft MSL
+DP 47:01:17 N 006:50:48 E
+DP 46:57:41 N 006:54:37 E
+DP 46:50:36 N 006:43:19 E
+DP 46:51:29 N 006:35:10 E
+*
+AC R
+SB 255,150,40
+AN LS-R6 Axalp: 135.475
+AH FL 130
+AL 6000 ft MSL
+DP 46:49:25 N 008:01:42 E
+DP 46:47:13 N 008:09:32 E
+DP 46:44:45 N 008:12:59 E
+V D=+
+V X=46:43:31 N 008:11:09 E
+* radius 3.40 km
+DB 46:44:45 N 008:12:59 E , 46:42:16 N 008:12:57 E
+DP 46:42:16 N 008:12:57 E
+DP 46:38:19 N 008:06:56 E
+DP 46:38:14 N 007:57:16 E
+DP 46:47:14 N 007:54:08 E
+DP 46:49:25 N 008:01:42 E
+*
+AC R
+SB 255,150,40
+AN LS-R8 Dammastock: 128.375
+AH 28000 ft MSL
+AL SFC
+DP 46:43:38 N 008:32:57 E
+DP 46:37:50 N 008:33:18 E
+DP 46:33:59 N 008:21:21 E
+DP 46:41:29 N 008:18:38 E
+DP 46:43:38 N 008:32:57 E
+*
+AC R
+SB 255,150,40
+AN LS-R8A Dammastock: 128.375
+AH 28000 ft MSL
+AL 9200 ft MSL
+DP 46:37:50 N 008:33:18 E
+DP 46:32:59 N 008:33:36 E
+DP 46:30:53 N 008:28:05 E
+DP 46:33:59 N 008:21:21 E
+*
+AC R
+SB 255,150,40
+AN LS-R9 Reckingen/Gluringen: 135.475
+AH 37750 ft MSL
+AL SFC
+DP 46:26:05 N   008:11:20 E
+DP 46:27:16 N   008:07:27 E
+DP 46:27:58 N   008:04:44 E
+DP 46:30:06 N   008:05:03 E
+DP 46:32:31 N   008:07:08 E
+DP 46:34:01 N   008:10:08 E
+DP 46:34:37 N   008:13:08 E
+DP 46:34:15 N   008:17:30 E
+DP 46:32:11 N   008:16:25 E
+DP 46:30:02 N   008:17:34 E
+*
+*
+AC R
+SB 255,150,40
+AN LS-R9A Reckingen/Gluringen: 135.475
+AH 37750 ft MSL
+AL 6000 ft MSL
+DP 46:30:02 N   008:17:34 E
+DP 46:29:52 N   008:17:39 E
+DP 46:28:16 N   008:19:56 E
+DP 46:26:31 N   008:20:13 E
+DP 46:23:12 N   008:12:39 E
+DP 46:26:00 N   008:11:34 E
+DP 46:26:05 N   008:11:20 E
+*
+AC R
+SB 255,150,40
+AN LS-R11 Zuoz/S-Chanf: 135.475
+AH 31500 ft MSL
+AL SFC
+DP 46:43:53 N 010:02:33 E
+DP 46:40:11 N 010:02:29 E
+DP 46:37:04 N 010:00:06 E
+DP 46:36:08 N 009:57:37 E
+DP 46:37:36 N 009:56:36 E
+DP 46:39:24 N 009:50:30 E
+V D=+
+V X=46:37:05 N 010:00:06 E
+* radius 13.00 km
+DB 46:39:24 N 009:50:30 E , 46:43:53 N 010:02:33 E
+DP 46:43:53 N 010:02:33 E
+*
+AC R
+SB 255,150,40
+AN LS-R11A Zuoz/S-Chanf: 135.475
+AH 31500 ft MSL
+AL 7000 ft MSL
+DP 46:40:11 N 010:02:29 E
+DP 46:36:17 N 010:02:25 E
+DP 46:34:28 N 010:04:43 E
+DP 46:32:04 N 010:02:46 E
+V D=+
+V X=46:37:16 N 010:00:12 E
+* radius 10.00 km
+DB 46:32:04 N 010:02:46 E , 46:32:35 N 009:55:59 E
+DP 46:32:35 N 009:55:59 E
+DP 46:35:47 N 009:57:51 E
+DP 46:36:08 N 009:57:37 E
+DP 46:37:04 N 010:00:06 E
+*
+AC R
+SB 255,150,40
+AN LS-R13 Axalp: 135.475
+AH FL 130
+AL 6000 ft MSL
+DP 46:41:11 N 007:40:49 E
+DP 46:33:27 N 007:50:07 E
+DP 46:35:24 N 008:07:05 E
+DP 46:46:18 N 008:16:17 E
+DP 46:54:49 N 007:56:02 E
+DP 46:48:04 N 007:49:31 E
+*
+AC R
+SB 255,150,40
+AN LS-R19 Biere: 126.35
+AH 6600 ft MSL
+AL 3500 ft MSL
+DP 46:34:47 N 006:21:21 E
+DP 46:34:09 N 006:22:35 E
+DP 46:32:11 N 006:20:25 E
+DP 46:31:33 N 006:22:02 E
+DP 46:30:08 N 006:21:26 E
+DP 46:31:59 N 006:16:47 E
+*
+AC R
+SB 255,150,40
+AN LS-R31 Emmen East: 120.425
+AH FL 85
+AL 5000 ft MSL
+DP 47:11:16 N 008:28:04 E
+DP 47:10:09 N 008:30:00 E
+DP 47:07:55 N 008:29:40 E
+DP 47:02:15 N 008:23:11 E
+DP 47:01:50 N 008:20:18 E
+DP 47:03:54 N 008:19:19 E
+DP 47:08:19 N 008:24:18 E
+*
+****************************************************
+*
+* Luftstrasse A9 und Trennung Alpen / Mittelland
+*
+AC C
+SB 125,0,0
+AN A9 1. Teil Luftstrasse
+AL FL 90
+AH FL 195
+DP 47:13:04 N 008:55:26 E
+DP 47:11:43 N 008:53:41 E
+DP 47:08:41 N 008:29:33 E
+DP 46:59:07 N 008:31:00 E
+DP 47:02:56 N 008:56:52 E
+*
+*
+AC C
+SB 125,0,0
+AN A9 2. Teil Luftstrasse
+AL FL 130
+AH FL 195
+DP 46:59:07 N 008:31:00 E
+DP 47:02:56 N 008:56:52 E
+DP 46:09:49 N 009:04:03 E
+DP 46:07:00 N 008:44:21 E
+DP 46:06:26 N 008:41:00 E
+DP 46:06:44 N 008:40:53 E
+DP 46:06:43 N 008:40:06 E
+DP 46:07:31 N 008:38:58 E
+DP 46:07:28 N 008:38:22 E
+*
+*
+****************************************************
+*
+* Trennung Alpen / Mittelland
+*
+AC C
+SP 1,1,255,0,0
+SB -1,-1,-1
+AN Alpen Mil off
+AL FL 150
+AH FL 195
+DP 46:22:02 N 006:48:18 E
+*
+DP 46:31:43 N 007:03:52 E
+*
+DP 47:02:29 N 008:00:10 E
+*
+DP 47:07:09 N 008:14:19 E
+*
+DP 47:08:18 N 008:22:14 E
+*
+DP 47:08:41 N 008:29:32 E
+*
+DP 47:11:43 N 008:53:41 E
+*
+DP 47:13:04 N 008:55:26 E
+*
+DP 47:15:19 N 008:58:21 E
+*
+DP 47:16:24 N 009:02:44 E
+*
+DP 47:20:49 N 009:04:52 E
+*
+DP 47:23:46 N 009:16:52 E
+*
+DP 47:23:36 N 009:39:55 E
+*
+DP 47:23:28 N 009:40:24 E
+*
+DP 47:22:32 N 009:40:24 E
+*
+DP 47:22:06 N 009:39:13 E
+*
+DP 47:22:06 N 009:37:40 E
+*
+DP 47:21:00 N 009:36:10 E
+*
+DP 47:19:17 N 009:35:33 E
+*
+DP 47:16:17 N 009:31:56 E
+*
+DP 47:14:43 N 009:33:59 E
+*
+DP 47:13:36 N 009:33:14 E
+*
+DP 47:13:15 N 009:34:18 E
+*
+DP 47:12:21 N 009:35:06 E
+*
+DP 47:10:26 N 009:34:29 E
+*
+DP 47:09:17 N 009:36:25 E
+*
+DP 47:05:41 N 009:38:21 E
+*
+DP 47:04:49 N 009:36:48 E
+*
+DP 47:03:46 N 009:36:29 E
+*
+DP 47:03:05 N 009:38:06 E
+*
+DP 47:03:38 N 009:38:58 E
+*
+DP 47:03:38 N 009:40:58 E
+*
+DP 47:02:21 N 009:47:01 E
+*
+DP 47:00:59 N 009:50:19 E
+*
+DP 47:01:17 N 009:53:07 E
+*
+DP 46:56:19 N 009:52:30 E
+*
+DP 46:53:49 N 010:01:01 E
+*
+DP 46:53:48 N 010:01:17 E
+*
+DP 46:50:36 N 010:06:24 E
+*
+DP 46:52:05 N 010:13:45 E
+*
+DP 46:56:12 N 010:14:49 E
+*
+DP 46:55:33 N 010:18:18 E
+*
+DP 46:59:22 N 010:21:06 E
+*
+DP 47:00:08 N 010:23:28 E
+*
+DP 46:58:51 N 010:25:39 E
+*
+DP 46:57:31 N 010:25:28 E
+*
+DP 46:56:24 N 010:29:28 E
+*
+DP 46:53:12 N 010:28:01 E
+*
+DP 46:51:40 N 010:28:24 E
+*
+DP 46:48:53 N 010:27:35 E
+*
+DP 46:47:13 N 010:25:39 E
+*
+DP 46:45:25 N 010:26:43 E
+*
+DP 46:44:03 N 010:24:21 E
+*
+DP 46:43:12 N 010:25:21 E
+*
+DP 46:41:11 N 010:23:21 E
+*
+DP 46:38:29 N 010:24:25 E
+*
+DP 46:38:40 N 010:27:17 E
+*
+DP 46:37:02 N 010:30:12 E
+*
+DP 46:34:49 N 010:29:05 E
+*
+DP 46:32:10 N 010:27:39 E
+*
+DP 46:33:09 N 010:25:24 E
+*
+DP 46:32:41 N 010:23:58 E
+*
+DP 46:33:19 N 010:21:59 E
+*
+DP 46:32:50 N 010:20:26 E
+*
+DP 46:32:53 N 010:18:16 E
+*
+DP 46:34:39 N 010:16:00 E
+*
+DP 46:34:29 N 010:15:05 E
+*
+DP 46:35:12 N 010:14:22 E
+*
+DP 46:36:42 N 010:15:56 E
+*
+DP 46:38:06 N 010:14:37 E
+*
+DP 46:37:10 N 010:12:58 E
+*
+DP 46:37:36 N 010:11:38 E
+*
+DP 46:36:19 N 010:07:57 E
+*
+DP 46:36:34 N 010:06:24 E
+*
+DP 46:34:51 N 010:05:20 E
+*
+DP 46:32:20 N 010:03:13 E
+*
+DP 46:30:09 N 010:02:47 E
+*
+DP 46:29:13 N 010:02:36 E
+*
+DP 46:28:06 N 010:03:13 E
+*
+DP 46:26:44 N 010:02:47 E
+*
+DP 46:25:37 N 010:03:50 E
+*
+DP 46:25:42 N 010:08:27 E
+*
+DP 46:24:43 N 010:09:57 E
+*
+DP 46:23:29 N 010:09:35 E
+*
+DP 46:22:09 N 010:07:57 E
+*
+DP 46:20:58 N 010:06:35 E
+*
+DP 46:19:07 N 010:07:16 E
+*
+DP 46:17:40 N 010:09:23 E
+*
+DP 46:15:34 N 010:10:53 E
+*
+DP 46:14:33 N 010:09:08 E
+*
+DP 46:13:44 N 010:07:20 E
+*
+DP 46:14:02 N 010:05:31 E
+*
+DP 46:13:16 N 010:04:28 E
+*
+DP 46:13:56 N 010:02:33 E
+*
+DP 46:15:29 N 010:03:39 E
+*
+DP 46:16:42 N 010:01:53 E
+*
+DP 46:17:47 N 009:59:32 E
+*
+DP 46:18:46 N 009:59:49 E
+*
+DP 46:19:41 N 009:59:05 E
+*
+DP 46:20:59 N 009:59:34 E
+*
+DP 46:21:57 N 009:57:57 E
+*
+DP 46:22:48 N 009:57:05 E
+*
+DP 46:22:27 N 009:55:29 E
+*
+DP 46:22:50 N 009:54:29 E
+*
+DP 46:21:46 N 009:50:26 E
+*
+DP 46:20:06 N 009:46:38 E
+*
+DP 46:21:08 N 009:44:42 E
+*
+DP 46:20:35 N 009:43:39 E
+*
+DP 46:19:07 N 009:43:35 E
+*
+DP 46:17:55 N 009:42:46 E
+*
+DP 46:18:08 N 009:41:05 E
+*
+DP 46:17:25 N 009:37:58 E
+*
+DP 46:18:08 N 009:33:07 E
+*
+DP 46:19:56 N 009:30:48 E
+*
+DP 46:21:39 N 009:30:00 E
+*
+DP 46:22:35 N 009:27:41 E
+*
+DP 46:23:47 N 009:28:10 E
+*
+DP 46:25:30 N 009:26:59 E
+*
+DP 46:29:34 N 009:27:56 E
+*
+DP 46:30:35 N 009:27:45 E
+*
+DP 46:29:41 N 009:25:57 E
+*
+DP 46:28:16 N 009:25:19 E
+*
+DP 46:28:34 N 009:23:16 E
+*
+DP 46:29:26 N 009:21:57 E
+*
+DP 46:30:37 N 009:22:12 E
+*
+DP 46:30:10 N 009:17:41 E
+*
+DP 46:29:01 N 009:16:27 E
+*
+DP 46:27:12 N 009:16:17 E
+*
+DP 46:26:36 N 009:14:43 E
+*
+DP 46:24:46 N 009:16:32 E
+*
+DP 46:21:51 N 009:16:43 E
+*
+DP 46:20:40 N 009:17:43 E
+*
+DP 46:19:07 N 009:17:21 E
+*
+DP 46:15:34 N 009:15:02 E
+*
+DP 46:13:52 N 009:14:43 E
+*
+DP 46:13:29 N 009:13:25 E
+*
+DP 46:12:40 N 009:13:00 E
+*
+DP 46:12:29 N 009:12:08 E
+*
+DP 46:11:45 N 009:11:51 E
+*
+DP 46:10:46 N 009:11:38 E
+*
+DP 46:10:09 N 009:09:25 E
+*
+DP 46:08:11 N 009:07:03 E
+*
+DP 46:07:07 N 009:04:23 E
+*
+DP 46:05:31 N 009:05:34 E
+*
+DP 46:04:07 N 009:04:56 E
+*
+DP 46:03:23 N 009:01:07 E
+*
+DP 46:01:46 N 009:00:35 E
+*
+DP 46:00:44 N 009:01:20 E
+*
+DP 46:00:11 N 009:01:42 E
+*
+DP 45:59:07 N 008:59:38 E
+*
+DP 45:57:29 N 009:00:57 E
+*
+DP 45:56:02 N 009:01:04 E
+*
+DP 45:55:46 N 009:03:08 E
+*
+DP 45:54:06 N 009:05:15 E
+*
+DP 45:52:57 N 009:04:38 E
+*
+DP 45:52:08 N 009:03:08 E
+*
+DP 45:49:25 N 009:01:45 E
+*
+DP 45:49:24 N 009:00:20 E
+*
+DP 45:50:26 N 008:59:38 E
+*
+DP 45:50:13 N 008:58:20 E
+*
+DP 45:50:44 N 008:56:39 E
+*
+DP 45:50:03 N 008:54:47 E
+*
+DP 45:51:32 N 008:55:17 E
+*
+DP 45:52:14 N 008:56:31 E
+*
+DP 45:53:59 N 008:54:58 E
+*
+DP 45:54:42 N 008:55:24 E
+*
+DP 45:56:15 N 008:53:42 E
+*
+DP 45:57:51 N 008:53:33 E
+*
+DP 45:58:20 N 008:51:35 E
+*
+DP 45:59:28 N 008:49:21 E
+*
+DP 45:59:32 N 008:47:21 E
+*
+DP 46:01:34 N 008:48:13 E
+*
+DP 46:02:14 N 008:49:38 E
+*
+DP 46:03:18 N 008:49:45 E
+*
+DP 46:03:45 N 008:51:00 E
+*
+DP 46:04:42 N 008:50:53 E
+*
+DP 46:06:09 N 008:48:23 E
+*
+DP 46:05:52 N 008:46:51 E
+*
+DP 46:07:24 N 008:44:37 E
+*
+DP 46:05:45 N 008:43:19 E
+*
+DP 46:06:07 N 008:41:00 E
+*
+DP 46:06:43 N 008:40:06 E
+*
+DP 46:07:31 N 008:38:58 E
+*
+DP 46:07:19 N 008:36:53 E
+*
+DP 46:08:39 N 008:35:40 E
+*
+DP 46:09:20 N 008:36:10 E
+*
+DP 46:09:23 N 008:35:19 E
+*
+DP 46:09:43 N 008:34:39 E
+*
+DP 46:10:35 N 008:34:12 E
+*
+DP 46:11:03 N 008:33:47 E
+*
+DP 46:11:30 N 008:33:13 E
+*
+DP 46:11:52 N 008:32:27 E
+*
+DP 46:12:31 N 008:32:05 E
+*
+DP 46:13:06 N 008:32:00 E
+*
+DP 46:13:11 N 008:31:00 E
+*
+DP 46:13:31 N 008:30:11 E
+*
+DP 46:13:59 N 008:28:37 E
+*
+DP 46:15:07 N 008:26:47 E
+*
+DP 46:16:26 N 008:27:10 E
+*
+DP 46:17:04 N 008:26:20 E
+*
+DP 46:17:55 N 008:25:57 E
+*
+DP 46:19:14 N 008:26:42 E
+*
+DP 46:20:00 N 008:27:47 E
+*
+DP 46:22:00 N 008:28:02 E
+*
+DP 46:23:51 N 008:27:57 E
+*
+DP 46:25:49 N 008:27:24 E
+*
+DP 46:26:49 N 008:27:54 E
+*
+DP 46:27:50 N 008:27:12 E
+*
+DP 46:27:25 N 008:23:47 E
+*
+DP 46:27:06 N 008:21:48 E
+*
+DP 46:25:44 N 008:20:01 E
+*
+DP 46:25:32 N 008:18:23 E
+*
+DP 46:24:37 N 008:17:28 E
+*
+DP 46:24:10 N 008:18:56 E
+*
+DP 46:22:44 N 008:18:53 E
+*
+DP 46:21:49 N 008:15:46 E
+*
+DP 46:20:29 N 008:15:01 E
+*
+DP 46:20:37 N 008:13:52 E
+*
+DP 46:18:28 N 008:12:27 E
+*
+DP 46:17:55 N 008:10:45 E
+*
+DP 46:18:17 N 008:08:32 E
+*
+DP 46:17:02 N 008:07:03 E
+*
+DP 46:15:42 N 008:04:58 E
+*
+DP 46:13:38 N 008:08:27 E
+*
+DP 46:10:51 N 008:09:57 E
+*
+DP 46:08:49 N 008:09:22 E
+*
+DP 46:08:14 N 008:07:15 E
+*
+DP 46:06:55 N 008:06:28 E
+*
+DP 46:06:15 N 008:02:11 E
+*
+DP 46:04:35 N 008:01:19 E
+*
+DP 46:02:59 N 008:02:01 E
+*
+DP 46:02:02 N 008:00:51 E
+*
+DP 46:00:57 N 008:00:46 E
+*
+DP 45:59:52 N 007:59:16 E
+*
+DP 45:59:49 N 007:54:40 E
+*
+DP 45:58:32 N 007:52:47 E
+*
+DP 45:55:43 N 007:52:47 E
+*
+DP 45:55:15 N 007:51:30 E
+*
+DP 45:55:41 N 007:49:33 E
+*
+DP 45:55:10 N 007:48:01 E
+*
+DP 45:56:34 N 007:45:01 E
+*
+DP 45:55:24 N 007:43:34 E
+*
+DP 45:56:58 N 007:42:47 E
+*
+DP 45:57:22 N 007:41:07 E
+*
+DP 45:58:44 N 007:39:50 E
+*
+DP 45:58:13 N 007:38:45 E
+*
+DP 45:58:23 N 007:35:08 E
+*
+DP 45:59:15 N 007:34:53 E
+*
+DP 45:59:15 N 007:32:56 E
+*
+DP 45:57:27 N 007:32:36 E
+*
+DP 45:57:54 N 007:30:09 E
+*
+DP 45:57:17 N 007:28:44 E
+*
+DP 45:56:07 N 007:28:29 E
+*
+DP 45:54:55 N 007:25:47 E
+*
+DP 45:53:51 N 007:23:15 E
+*
+DP 45:54:53 N 007:20:50 E
+*
+DP 45:54:39 N 007:19:53 E
+*
+DP 45:55:19 N 007:17:41 E
+*
+DP 45:53:28 N 007:15:31 E
+*
+DP 45:53:14 N 007:13:04 E
+*
+DP 45:51:28 N 007:11:39 E
+*
+DP 45:52:09 N 007:10:24 E
+*
+DP 45:52:52 N 007:09:22 E
+*
+DP 45:51:41 N 007:07:27 E
+*
+DP 45:51:38 N 007:06:05 E
+*
+DP 45:53:00 N 007:05:10 E
+*
+DP 45:56:09 N 007:02:08 E
+*
+DP 45:57:09 N 007:02:28 E
+*
+DP 45:58:01 N 007:00:21 E
+*
+DP 45:58:41 N 007:01:16 E
+*
+DP 45:59:49 N 007:00:38 E
+*
+DP 46:00:15 N 006:59:19 E
+*
+DP 46:01:30 N 006:58:14 E
+*
+DP 46:02:59 N 006:56:57 E
+*
+DP 46:04:11 N 006:55:59 E
+*
+DP 46:03:02 N 006:54:37 E
+*
+DP 46:02:31 N 006:53:32 E
+*
+DP 46:03:11 N 006:52:32 E
+*
+DP 46:04:38 N 006:53:12 E
+*
+DP 46:05:51 N 006:53:19 E
+*
+DP 46:07:27 N 006:53:52 E
+*
+DP 46:08:02 N 006:50:20 E
+*
+DP 46:08:13 N 006:47:58 E
+*
+DP 46:09:56 N 006:47:36 E
+*
+DP 46:10:59 N 006:48:35 E
+*
+DP 46:12:11 N 006:48:06 E
+*
+DP 46:13:50 N 006:49:08 E
+*
+DP 46:15:27 N 006:51:19 E
+*
+DP 46:15:29 N 006:51:18 E
+*
+DP 46:16:59 N 006:51:33 E
+*
+DP 46:18:29 N 006:49:25 E
+*
+DP 46:19:14 N 006:48:25 E
+*
+DP 46:22:02 N 006:48:18 E
+*
+*
+*
+AC C
+SP 1,1,255,0,0
+SB -1,-1,-1
+AN Alpen Mil on
+AL FL 130
+AH FL 195
+DP 46:22:02 N 006:48:18 E
+*
+DP 46:31:43 N 007:03:52 E
+*
+DP 47:02:29 N 008:00:10 E
+*
+DP 47:07:09 N 008:14:19 E
+*
+DP 47:08:18 N 008:22:14 E
+*
+DP 47:08:41 N 008:29:32 E
+*
+DP 47:11:43 N 008:53:41 E
+*
+DP 47:13:04 N 008:55:26 E
+*
+DP 47:15:19 N 008:58:21 E
+*
+DP 47:16:24 N 009:02:44 E
+*
+DP 47:20:49 N 009:04:52 E
+*
+DP 47:23:46 N 009:16:52 E
+*
+DP 47:23:36 N 009:39:55 E
+*
+DP 47:23:28 N 009:40:24 E
+*
+DP 47:22:32 N 009:40:24 E
+*
+DP 47:22:06 N 009:39:13 E
+*
+DP 47:22:06 N 009:37:40 E
+*
+DP 47:21:00 N 009:36:10 E
+*
+DP 47:19:17 N 009:35:33 E
+*
+DP 47:16:17 N 009:31:56 E
+*
+DP 47:14:43 N 009:33:59 E
+*
+DP 47:13:36 N 009:33:14 E
+*
+DP 47:13:15 N 009:34:18 E
+*
+DP 47:12:21 N 009:35:06 E
+*
+DP 47:10:26 N 009:34:29 E
+*
+DP 47:09:17 N 009:36:25 E
+*
+DP 47:05:41 N 009:38:21 E
+*
+DP 47:04:49 N 009:36:48 E
+*
+DP 47:03:46 N 009:36:29 E
+*
+DP 47:03:05 N 009:38:06 E
+*
+DP 47:03:38 N 009:38:58 E
+*
+DP 47:03:38 N 009:40:58 E
+*
+DP 47:02:21 N 009:47:01 E
+*
+DP 47:00:59 N 009:50:19 E
+*
+DP 47:01:17 N 009:53:07 E
+*
+DP 46:56:19 N 009:52:30 E
+*
+DP 46:53:49 N 010:01:01 E
+*
+DP 46:53:48 N 010:01:17 E
+*
+DP 46:50:36 N 010:06:24 E
+*
+DP 46:52:05 N 010:13:45 E
+*
+DP 46:56:12 N 010:14:49 E
+*
+DP 46:55:33 N 010:18:18 E
+*
+DP 46:59:22 N 010:21:06 E
+*
+DP 47:00:08 N 010:23:28 E
+*
+DP 46:58:51 N 010:25:39 E
+*
+DP 46:57:31 N 010:25:28 E
+*
+DP 46:56:24 N 010:29:28 E
+*
+DP 46:53:12 N 010:28:01 E
+*
+DP 46:51:40 N 010:28:24 E
+*
+DP 46:48:53 N 010:27:35 E
+*
+DP 46:47:13 N 010:25:39 E
+*
+DP 46:45:25 N 010:26:43 E
+*
+DP 46:44:03 N 010:24:21 E
+*
+DP 46:43:12 N 010:25:21 E
+*
+DP 46:41:11 N 010:23:21 E
+*
+DP 46:38:29 N 010:24:25 E
+*
+DP 46:38:40 N 010:27:17 E
+*
+DP 46:37:02 N 010:30:12 E
+*
+DP 46:34:49 N 010:29:05 E
+*
+DP 46:32:10 N 010:27:39 E
+*
+DP 46:33:09 N 010:25:24 E
+*
+DP 46:32:41 N 010:23:58 E
+*
+DP 46:33:19 N 010:21:59 E
+*
+DP 46:32:50 N 010:20:26 E
+*
+DP 46:32:53 N 010:18:16 E
+*
+DP 46:34:39 N 010:16:00 E
+*
+DP 46:34:29 N 010:15:05 E
+*
+DP 46:35:12 N 010:14:22 E
+*
+DP 46:36:42 N 010:15:56 E
+*
+DP 46:38:06 N 010:14:37 E
+*
+DP 46:37:10 N 010:12:58 E
+*
+DP 46:37:36 N 010:11:38 E
+*
+DP 46:36:19 N 010:07:57 E
+*
+DP 46:36:34 N 010:06:24 E
+*
+DP 46:34:51 N 010:05:20 E
+*
+DP 46:32:20 N 010:03:13 E
+*
+DP 46:30:09 N 010:02:47 E
+*
+DP 46:29:13 N 010:02:36 E
+*
+DP 46:28:06 N 010:03:13 E
+*
+DP 46:26:44 N 010:02:47 E
+*
+DP 46:25:37 N 010:03:50 E
+*
+DP 46:25:42 N 010:08:27 E
+*
+DP 46:24:43 N 010:09:57 E
+*
+DP 46:23:29 N 010:09:35 E
+*
+DP 46:22:09 N 010:07:57 E
+*
+DP 46:20:58 N 010:06:35 E
+*
+DP 46:19:07 N 010:07:16 E
+*
+DP 46:17:40 N 010:09:23 E
+*
+DP 46:15:34 N 010:10:53 E
+*
+DP 46:14:33 N 010:09:08 E
+*
+DP 46:13:44 N 010:07:20 E
+*
+DP 46:14:02 N 010:05:31 E
+*
+DP 46:13:16 N 010:04:28 E
+*
+DP 46:13:56 N 010:02:33 E
+*
+DP 46:15:29 N 010:03:39 E
+*
+DP 46:16:42 N 010:01:53 E
+*
+DP 46:17:47 N 009:59:32 E
+*
+DP 46:18:46 N 009:59:49 E
+*
+DP 46:19:41 N 009:59:05 E
+*
+DP 46:20:59 N 009:59:34 E
+*
+DP 46:21:57 N 009:57:57 E
+*
+DP 46:22:48 N 009:57:05 E
+*
+DP 46:22:27 N 009:55:29 E
+*
+DP 46:22:50 N 009:54:29 E
+*
+DP 46:21:46 N 009:50:26 E
+*
+DP 46:20:06 N 009:46:38 E
+*
+DP 46:21:08 N 009:44:42 E
+*
+DP 46:20:35 N 009:43:39 E
+*
+DP 46:19:07 N 009:43:35 E
+*
+DP 46:17:55 N 009:42:46 E
+*
+DP 46:18:08 N 009:41:05 E
+*
+DP 46:17:25 N 009:37:58 E
+*
+DP 46:18:08 N 009:33:07 E
+*
+DP 46:19:56 N 009:30:48 E
+*
+DP 46:21:39 N 009:30:00 E
+*
+DP 46:22:35 N 009:27:41 E
+*
+DP 46:23:47 N 009:28:10 E
+*
+DP 46:25:30 N 009:26:59 E
+*
+DP 46:29:34 N 009:27:56 E
+*
+DP 46:30:35 N 009:27:45 E
+*
+DP 46:29:41 N 009:25:57 E
+*
+DP 46:28:16 N 009:25:19 E
+*
+DP 46:28:34 N 009:23:16 E
+*
+DP 46:29:26 N 009:21:57 E
+*
+DP 46:30:37 N 009:22:12 E
+*
+DP 46:30:10 N 009:17:41 E
+*
+DP 46:29:01 N 009:16:27 E
+*
+DP 46:27:12 N 009:16:17 E
+*
+DP 46:26:36 N 009:14:43 E
+*
+DP 46:24:46 N 009:16:32 E
+*
+DP 46:21:51 N 009:16:43 E
+*
+DP 46:20:40 N 009:17:43 E
+*
+DP 46:19:07 N 009:17:21 E
+*
+DP 46:15:34 N 009:15:02 E
+*
+DP 46:13:52 N 009:14:43 E
+*
+DP 46:13:29 N 009:13:25 E
+*
+DP 46:12:40 N 009:13:00 E
+*
+DP 46:12:29 N 009:12:08 E
+*
+DP 46:11:45 N 009:11:51 E
+*
+DP 46:10:46 N 009:11:38 E
+*
+DP 46:10:09 N 009:09:25 E
+*
+DP 46:08:11 N 009:07:03 E
+*
+DP 46:07:07 N 009:04:23 E
+*
+DP 46:05:31 N 009:05:34 E
+*
+DP 46:04:07 N 009:04:56 E
+*
+DP 46:03:23 N 009:01:07 E
+*
+DP 46:01:46 N 009:00:35 E
+*
+DP 46:00:44 N 009:01:20 E
+*
+DP 46:00:11 N 009:01:42 E
+*
+DP 45:59:07 N 008:59:38 E
+*
+DP 45:57:29 N 009:00:57 E
+*
+DP 45:56:02 N 009:01:04 E
+*
+DP 45:55:46 N 009:03:08 E
+*
+DP 45:54:06 N 009:05:15 E
+*
+DP 45:52:57 N 009:04:38 E
+*
+DP 45:52:08 N 009:03:08 E
+*
+DP 45:49:25 N 009:01:45 E
+*
+DP 45:49:24 N 009:00:20 E
+*
+DP 45:50:26 N 008:59:38 E
+*
+DP 45:50:13 N 008:58:20 E
+*
+DP 45:50:44 N 008:56:39 E
+*
+DP 45:50:03 N 008:54:47 E
+*
+DP 45:51:32 N 008:55:17 E
+*
+DP 45:52:14 N 008:56:31 E
+*
+DP 45:53:59 N 008:54:58 E
+*
+DP 45:54:42 N 008:55:24 E
+*
+DP 45:56:15 N 008:53:42 E
+*
+DP 45:57:51 N 008:53:33 E
+*
+DP 45:58:20 N 008:51:35 E
+*
+DP 45:59:28 N 008:49:21 E
+*
+DP 45:59:32 N 008:47:21 E
+*
+DP 46:01:34 N 008:48:13 E
+*
+DP 46:02:14 N 008:49:38 E
+*
+DP 46:03:18 N 008:49:45 E
+*
+DP 46:03:45 N 008:51:00 E
+*
+DP 46:04:42 N 008:50:53 E
+*
+DP 46:06:09 N 008:48:23 E
+*
+DP 46:05:52 N 008:46:51 E
+*
+DP 46:07:24 N 008:44:37 E
+*
+DP 46:05:45 N 008:43:19 E
+*
+DP 46:06:07 N 008:41:00 E
+*
+DP 46:06:43 N 008:40:06 E
+*
+DP 46:07:31 N 008:38:58 E
+*
+DP 46:07:19 N 008:36:53 E
+*
+DP 46:08:39 N 008:35:40 E
+*
+DP 46:09:20 N 008:36:10 E
+*
+DP 46:09:23 N 008:35:19 E
+*
+DP 46:09:43 N 008:34:39 E
+*
+DP 46:10:35 N 008:34:12 E
+*
+DP 46:11:03 N 008:33:47 E
+*
+DP 46:11:30 N 008:33:13 E
+*
+DP 46:11:52 N 008:32:27 E
+*
+DP 46:12:31 N 008:32:05 E
+*
+DP 46:13:06 N 008:32:00 E
+*
+DP 46:13:11 N 008:31:00 E
+*
+DP 46:13:31 N 008:30:11 E
+*
+DP 46:13:59 N 008:28:37 E
+*
+DP 46:15:07 N 008:26:47 E
+*
+DP 46:16:26 N 008:27:10 E
+*
+DP 46:17:04 N 008:26:20 E
+*
+DP 46:17:55 N 008:25:57 E
+*
+DP 46:19:14 N 008:26:42 E
+*
+DP 46:20:00 N 008:27:47 E
+*
+DP 46:22:00 N 008:28:02 E
+*
+DP 46:23:51 N 008:27:57 E
+*
+DP 46:25:49 N 008:27:24 E
+*
+DP 46:26:49 N 008:27:54 E
+*
+DP 46:27:50 N 008:27:12 E
+*
+DP 46:27:25 N 008:23:47 E
+*
+DP 46:27:06 N 008:21:48 E
+*
+DP 46:25:44 N 008:20:01 E
+*
+DP 46:25:32 N 008:18:23 E
+*
+DP 46:24:37 N 008:17:28 E
+*
+DP 46:24:10 N 008:18:56 E
+*
+DP 46:22:44 N 008:18:53 E
+*
+DP 46:21:49 N 008:15:46 E
+*
+DP 46:20:29 N 008:15:01 E
+*
+DP 46:20:37 N 008:13:52 E
+*
+DP 46:18:28 N 008:12:27 E
+*
+DP 46:17:55 N 008:10:45 E
+*
+DP 46:18:17 N 008:08:32 E
+*
+DP 46:17:02 N 008:07:03 E
+*
+DP 46:15:42 N 008:04:58 E
+*
+DP 46:13:38 N 008:08:27 E
+*
+DP 46:10:51 N 008:09:57 E
+*
+DP 46:08:49 N 008:09:22 E
+*
+DP 46:08:14 N 008:07:15 E
+*
+DP 46:06:55 N 008:06:28 E
+*
+DP 46:06:15 N 008:02:11 E
+*
+DP 46:04:35 N 008:01:19 E
+*
+DP 46:02:59 N 008:02:01 E
+*
+DP 46:02:02 N 008:00:51 E
+*
+DP 46:00:57 N 008:00:46 E
+*
+DP 45:59:52 N 007:59:16 E
+*
+DP 45:59:49 N 007:54:40 E
+*
+DP 45:58:32 N 007:52:47 E
+*
+DP 45:55:43 N 007:52:47 E
+*
+DP 45:55:15 N 007:51:30 E
+*
+DP 45:55:41 N 007:49:33 E
+*
+DP 45:55:10 N 007:48:01 E
+*
+DP 45:56:34 N 007:45:01 E
+*
+DP 45:55:24 N 007:43:34 E
+*
+DP 45:56:58 N 007:42:47 E
+*
+DP 45:57:22 N 007:41:07 E
+*
+DP 45:58:44 N 007:39:50 E
+*
+DP 45:58:13 N 007:38:45 E
+*
+DP 45:58:23 N 007:35:08 E
+*
+DP 45:59:15 N 007:34:53 E
+*
+DP 45:59:15 N 007:32:56 E
+*
+DP 45:57:27 N 007:32:36 E
+*
+DP 45:57:54 N 007:30:09 E
+*
+DP 45:57:17 N 007:28:44 E
+*
+DP 45:56:07 N 007:28:29 E
+*
+DP 45:54:55 N 007:25:47 E
+*
+DP 45:53:51 N 007:23:15 E
+*
+DP 45:54:53 N 007:20:50 E
+*
+DP 45:54:39 N 007:19:53 E
+*
+DP 45:55:19 N 007:17:41 E
+*
+DP 45:53:28 N 007:15:31 E
+*
+DP 45:53:14 N 007:13:04 E
+*
+DP 45:51:28 N 007:11:39 E
+*
+DP 45:52:09 N 007:10:24 E
+*
+DP 45:52:52 N 007:09:22 E
+*
+DP 45:51:41 N 007:07:27 E
+*
+DP 45:51:38 N 007:06:05 E
+*
+DP 45:53:00 N 007:05:10 E
+*
+DP 45:56:09 N 007:02:08 E
+*
+DP 45:57:09 N 007:02:28 E
+*
+DP 45:58:01 N 007:00:21 E
+*
+DP 45:58:41 N 007:01:16 E
+*
+DP 45:59:49 N 007:00:38 E
+*
+DP 46:00:15 N 006:59:19 E
+*
+DP 46:01:30 N 006:58:14 E
+*
+DP 46:02:59 N 006:56:57 E
+*
+DP 46:04:11 N 006:55:59 E
+*
+DP 46:03:02 N 006:54:37 E
+*
+DP 46:02:31 N 006:53:32 E
+*
+DP 46:03:11 N 006:52:32 E
+*
+DP 46:04:38 N 006:53:12 E
+*
+DP 46:05:51 N 006:53:19 E
+*
+DP 46:07:27 N 006:53:52 E
+*
+DP 46:08:02 N 006:50:20 E
+*
+DP 46:08:13 N 006:47:58 E
+*
+DP 46:09:56 N 006:47:36 E
+*
+DP 46:10:59 N 006:48:35 E
+*
+DP 46:12:11 N 006:48:06 E
+*
+DP 46:13:50 N 006:49:08 E
+*
+DP 46:15:27 N 006:51:19 E
+*
+DP 46:15:29 N 006:51:18 E
+*
+DP 46:16:59 N 006:51:33 E
+*
+DP 46:18:29 N 006:49:25 E
+*
+DP 46:19:14 N 006:48:25 E
+*
+DP 46:22:02 N 006:48:18 E
+*
+*
+*
+AC C
+SP 1,1,255,0,0
+SB -1,-1,-1
+AN Mittelland/Jura 
+AL FL 100
+AH FL 195
+DP 46:22:02 N 006:48:18 E
+*
+DP 46:23:36 N 006:48:13 E
+*
+DP 46:25:41 N 006:49:15 E
+*
+DP 46:27:16 N 006:40:48 E
+*
+DP 46:27:27 N 006:31:07 E
+*
+DP 46:24:58 N 006:26:38 E
+*
+DP 46:24:17 N 006:20:00 E
+*
+DP 46:21:55 N 006:15:48 E
+*
+DP 46:18:48 N 006:13:11 E
+*
+DP 46:14:51 N 006:19:33 E
+*
+DP 46:07:42 N 006:07:56 E
+*
+DP 46:07:16 N 005:57:14 E
+*
+DP 46:11:45 N 005:57:06 E
+*
+DP 46:15:02 N 006:05:36 E
+*
+DP 46:21:59 N 006:09:00 E
+*
+DP 46:24:32 N 006:05:49 E
+*
+DP 46:24:56 N 006:03:51 E
+*
+DP 46:26:42 N 006:05:20 E
+*
+DP 46:27:17 N 006:04:30 E
+*
+DP 46:28:02 N 006:04:30 E
+*
+DP 46:32:50 N 006:09:17 E
+*
+DP 46:34:34 N 006:06:39 E
+*
+DP 46:38:23 N 006:12:37 E
+*
+DP 46:41:00 N 006:16:30 E
+*
+DP 46:46:04 N 006:26:24 E
+*
+DP 46:47:22 N 006:27:29 E
+*
+DP 46:48:10 N 006:26:08 E
+*
+DP 46:49:04 N 006:25:54 E
+*
+DP 46:51:07 N 006:27:35 E
+*
+DP 46:53:32 N 006:27:52 E
+*
+DP 46:55:49 N 006:25:20 E
+*
+DP 46:58:39 N 006:29:47 E
+*
+DP 47:00:10 N 006:37:08 E
+*
+DP 47:02:33 N 006:40:47 E
+*
+DP 47:05:12 N 006:42:16 E
+*
+DP 47:09:34 N 006:50:55 E
+*
+DP 47:10:23 N 006:50:20 E
+*
+DP 47:14:22 N 006:56:59 E
+*
+DP 47:17:33 N 006:56:35 E
+*
+DP 47:18:28 N 007:00:23 E
+*
+DP 47:20:03 N 007:00:25 E
+*
+DP 47:19:55 N 007:02:49 E
+*
+DP 47:22:04 N 007:02:39 E
+*
+DP 47:20:50 N 006:52:20 E
+*
+DP 47:22:35 N 006:53:06 E
+*
+DP 47:24:40 N 006:54:41 E
+*
+DP 47:24:39 N 006:56:07 E
+*
+DP 47:26:28 N 006:55:56 E
+*
+DP 47:27:20 N 006:59:44 E
+*
+DP 47:29:30 N 006:58:17 E
+*
+DP 47:30:42 N 007:01:28 E
+*
+DP 47:29:34 N 007:04:39 E
+*
+DP 47:30:30 N 007:07:50 E
+*
+DP 47:29:51 N 007:11:50 E
+*
+DP 47:26:46 N 007:10:25 E
+*
+DP 47:26:41 N 007:14:01 E
+*
+DP 47:25:30 N 007:15:36 E
+*
+DP 47:26:05 N 007:17:04 E
+*
+DP 47:26:00 N 007:17:46 E
+*
+DP 47:26:16 N 007:18:15 E
+*
+DP 47:26:25 N 007:20:06 E
+*
+DP 47:26:03 N 007:21:18 E
+*
+DP 47:25:56 N 007:23:04 E
+*
+DP 47:26:09 N 007:23:58 E
+*
+DP 47:26:38 N 007:25:12 E
+*
+DP 47:27:13 N 007:25:46 E
+*
+DP 47:27:30 N 007:25:41 E
+*
+DP 47:27:37 N 007:26:27 E
+*
+DP 47:28:13 N 007:27:24 E
+*
+DP 47:28:54 N 007:25:22 E
+*
+DP 47:29:45 N 007:26:06 E
+*
+DP 47:29:15 N 007:27:43 E
+*
+DP 47:28:45 N 007:28:35 E
+*
+DP 47:29:03 N 007:29:25 E
+*
+DP 47:29:33 N 007:28:42 E
+*
+DP 47:35:35 N 007:34:46 E
+*
+DP 47:35:58 N 007:39:31 E
+*
+DP 47:07:53 N 007:59:41 E
+*
+DP 47:11:56 N 008:11:58 E
+*
+DP 47:13:56 N 008:25:55 E
+*
+DP 47:16:34 N 008:44:25 E
+*
+DP 47:15:41 N 008:54:13 E
+*
+DP 47:15:19 N 008:58:21 E
+*
+DP 47:16:24 N 009:02:44 E
+*
+DP 47:20:49 N 009:04:52 E
+*
+DP 47:23:46 N 009:16:52 E
+*
+DP 47:35:12 N 009:27:13 E
+*
+DP 47:30:00 N 009:33:41 E
+*
+DP 47:23:36 N 009:39:55 E
+*
+DP 47:23:46 N 009:16:52 E
+*
+DP 47:20:49 N 009:04:52 E
+*
+DP 47:16:24 N 009:02:44 E
+*
+DP 47:15:19 N 008:58:21 E
+*
+DP 47:13:04 N 008:55:26 E
+*
+DP 47:11:43 N 008:53:41 E
+*
+DP 47:08:41 N 008:29:32 E
+*
+DP 47:08:18 N 008:22:14 E
+*
+DP 47:07:09 N 008:14:19 E
+*
+DP 47:02:29 N 008:00:10 E
+*
+DP 46:31:43 N 007:03:52 E
+*
+DP 46:22:02 N 006:48:18 E
+*
+*
+*
+****************************************************
+*
+*##    (CLASS D) FRIEDRICHSHAFEN CTR SWISS SCTR   ###
+AC D
+SB 0,255,0
+AN CTR F'HAFEN: 120.075
+AL GND    
+AH 4500 ft MSL
+DP 47:38:40 N   009:18:06 E 
+DP 47:35:12 N   009:27:13 E 
+DP 47:34:00 N   009:24:14 E 
+DP 47:37:43 N   009:15:41 E
+*
+**
+*##    (CLASS D) FRIEDRICHSHAFEN TMA SWISS SCTR   ###
+AC D
+SB 0,150,255
+AN F'HAFEN: 120.075
+AL 3500 ft MSL    
+AH 4500 ft MSL
+DP 47:37:43 N   009:15:41 E
+DP 47:34:00 N   009:24:14 E
+DP 47:32:16 N   009:19:56 E
+DP 47:37:18 N   009:14:37 E 
+*
+**********************************************************
+*
+*                                
+**Korrektur TMZ    ****          
+*                                
+*
+*
+*##    (CLASS E) FRIEDRICHSHAFEN TMZ Korrektur   ###
+AC TMZ
+SB 0,255,0
+AN F'HAFEN: 120.075
+AL 1000 ft AGL    
+AH 5000 ft MSL
+DP 47:34:00 N 009:45:00 E
+DP 47:32:04 N 009:44:12 E
+DP 47:32:37 N 009:33:11 E
+DP 47:33:08 N 009:31:28 E
+DP 47:33:14 N 009:29:38 E
+DP 47:35:12 N 009:27:13 E
+DP 47:36:34 N 009:30:36 E
+*
+*
+*
+AC C
+AN TMA SECTOR 1 MILANO
+AH FL195
+AL FL125
+DP 46:10:14 N 009:06:57 E
+DP 46:10:46 N 009:11:38 E
+DP 46:10:09 N 009:09:25 E
+DP 46:08:19 N 009:06:48 E
+DP 46:07:07 N 009:04:23 E
+DP 46:05:40 N 009:04:59 E
+DP 46:04:09 N 009:04:07 E
+DP 46:03:45 N 009:03:00 E
+DP 46:03:23 N 009:01:07 E
+DP 46:01:39 N 009:00:40 E
+DP 46:00:44 N 009:01:20 E
+DP 46:00:19 N 009:01:30 E
+DP 45:59:01 N 008:59:31 E
+DP 45:57:27 N 009:00:39 E
+DP 45:55:54 N 009:01:12 E
+DP 45:55:54 N 009:02:57 E
+DP 45:54:00 N 009:05:00 E
+DP 45:54:00 N 008:55:00 E
+DP 45:54:44 N 008:55:20 E
+DP 45:56:15 N 008:53:42 E
+DP 45:57:51 N 008:53:33 E
+DP 45:58:20 N 008:51:35 E
+DP 46:00:00 N 008:49:19 E
+DP 46:00:13 N 008:47:25 E
+DP 46:01:34 N 008:48:13 E
+DP 46:02:22 N 008:50:06 E
+DP 46:03:18 N 008:49:45 E
+DP 46:03:45 N 008:51:00 E
+DP 46:04:42 N 008:50:53 E
+DP 46:06:34 N 008:48:29 E
+DP 46:06:05 N 008:47:07 E
+DP 46:06:52 N 008:44:40 E
+DP 46:06:11 N 008:42:30 E
+DP 46:06:26 N 008:41:00 E
+*
+*
+AC C
+AN TMA SECTOR 3 MILANO
+AL FL105
+AH FL195
+DP 45:54:00 N 009:05:00 E
+DP 45:53:11 N 009:04:08 E
+DP 45:52:32 N 009:03:02 E
+DP 45:49:25 N 009:01:45 E
+DP 45:49:20 N 009:00:55 E
+DP 45:50:30 N 008:59:33 E
+DP 45:50:21 N 008:58:22 E
+DP 45:51:01 N 008:56:37 E
+DP 45:50:35 N 008:54:50 E
+DP 45:51:40 N 008:55:07 E
+DP 45:52:33 N 008:56:22 E
+DP 45:54:00 N 008:55:00 E

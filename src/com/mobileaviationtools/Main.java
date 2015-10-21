@@ -1,6 +1,7 @@
 package com.mobileaviationtools;
 
 import com.mobileaviationtools.AirspacesData.Airspaces;
+import com.mobileaviationtools.Links.LinksDataSource;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
@@ -18,10 +19,16 @@ public class Main {
 
             System.out.println("Connected to database");
 
-            Airspaces airspaces = new Airspaces();
+            //Airspaces airspaces = new Airspaces();
             //airspaces.OpenAipFile("openaip_airspace_netherlands_nl.aip");
 
-            airspaces.OpenOpenAirTextFile("EHv15_3c.txt");
+            //airspaces.OpenOpenAirTextFile("EHv15_3c.txt");
+
+            LinksDataSource linksDataSource = new LinksDataSource();
+            //linksDataSource.downloadTest();
+            linksDataSource.Open();
+            linksDataSource.downloadXsoarFiles();
+            linksDataSource.Close();
 
             conn.close();
 
