@@ -19,7 +19,9 @@ public class Main {
             System.out.println("Connected to database");
 
             Airspaces airspaces = new Airspaces();
-            airspaces.OpenAipFile("openaip_airspace_netherlands_nl.aip");
+            //airspaces.OpenAipFile("openaip_airspace_netherlands_nl.aip");
+
+            airspaces.OpenOpenAirTextFile("EHv15_3c.txt");
 
             conn.close();
 

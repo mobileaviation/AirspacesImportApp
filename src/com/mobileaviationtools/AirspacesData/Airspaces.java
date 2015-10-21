@@ -48,9 +48,11 @@ public class Airspaces extends ArrayList<Airspace> {
 
     public void OpenOpenAirTextFile(String filename)
     {
-        String _filename = "/sdcard/Download/airnavdb/" + filename;
+        String _filename = "C:\\Downloads\\openaip\\" + filename;
         String txt = readFromFile(_filename);
         readOpenAirText(txt);
+
+        insertIntoDatabase();
     }
 
 
@@ -88,15 +90,19 @@ public class Airspaces extends ArrayList<Airspace> {
                 //
 
                 if (l.startsWith("AC")) {
-                    if ((airspace != null) && (airspace.coordinates.size()>0) && !circle) airspace.coordinates.add(airspace.coordinates.get(0));
+                    if ((airspace != null) && (airspace.coordinates.size()>0) && !circle
+                            && !airspace.coordinates.get(0).equals(airspace.coordinates.get(airspace.coordinates.size()-1)))
+                        airspace.coordinates.add(airspace.coordinates.get(0));
                     airspace = new Airspace();
                     this.add(airspace);
+                    airspace.Version = "0";
+                    airspace.ID = 0;
                     airspace.Category = AirspaceCategory.valueOf(l.replace("AC ", ""));
                 }
                 if (l.startsWith("AN")) {
                     if (airspace != null) {
                         airspace.Name = l.replace("AN ", "");
-                        //Log.i(TAG, "Airspace: " + airspace.Name + " added Index: " + Integer.toString(this.size()-1) );
+                        System.out.println("Airspace: " + airspace.Name + " added Index: " + Integer.toString(this.size()-1) );
                     }
 
                 }
@@ -330,7 +336,7 @@ public class Airspaces extends ArrayList<Airspace> {
                         if (airspace != null) {
                             String p = "POLYGON ((" + parser.getText() + "))";
                             WKTReader r = new WKTReader();
-                            airspace.Geometry = r.read(p);
+                            airspace.setGeometry(r.read(p));
                         }
                     }
 

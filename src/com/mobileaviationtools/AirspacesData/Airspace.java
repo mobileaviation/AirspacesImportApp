@@ -2,6 +2,7 @@ package com.mobileaviationtools.AirspacesData;
 
 import com.vividsolutions.jts.geom.Coordinate;
 import com.vividsolutions.jts.geom.Geometry;
+import com.vividsolutions.jts.geom.GeometryFactory;
 
 import java.util.ArrayList;
 
@@ -25,6 +26,20 @@ public class Airspace {
     public Integer AltLimit_Bottom;
     public AltitudeUnit AltLimit_Bottom_Unit;
     public AltitudeReference AltLimit_Bottom_Ref;
-    public com.vividsolutions.jts.geom.Geometry Geometry;
+    private com.vividsolutions.jts.geom.Geometry Geometry;
     public ArrayList<Coordinate> coordinates;
+
+    public Geometry getGeometry()
+    {
+        if (Geometry == null) {
+            Coordinate[] c = coordinates.toArray(new Coordinate[coordinates.size()]);
+            Geometry = new GeometryFactory().createPolygon(c);
+        }
+        return Geometry;
+    }
+
+    public void setGeometry(Geometry geometry)
+    {
+        this.Geometry = geometry;
+    }
 }

@@ -60,7 +60,7 @@ public class AirspaceDataSource {
             pst.setLong(9, airspace.AltLimit_Bottom);
             pst.setString(10, airspace.AltLimit_Bottom_Unit.toString());
             pst.setString(11, airspace.AltLimit_Bottom_Ref.toString());
-            pst.setString(12, new WKTWriter().write(airspace.Geometry));
+            pst.setString(12, new WKTWriter().write(airspace.getGeometry()));
 
             pst.executeUpdate();
             pst.close();
