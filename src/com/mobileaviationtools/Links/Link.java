@@ -21,6 +21,10 @@ public class Link {
 
     public Integer ID;
     private String localFile;
+    public String getLocalFile()
+    {
+        return localFile;
+    }
     private String xsoarLink;
     public void setXsoarLink(String xsoarLink)
     {
@@ -57,13 +61,24 @@ public class Link {
         }
     }
 
-    public void downloadFile()
+    public void downloadFile(Boolean override)
     {
         if (downloadale)
-            try {
-                FileUtils.copyURLToFile(new URL(xsoarLink), new File(localFile));
-            } catch (IOException e) {
-                e.printStackTrace();
+            if ((new File(localFile).exists())) {
+                if (override) p_downloadFile();
             }
+            else
+            {
+                p_downloadFile();
+            }
+    }
+
+    private void p_downloadFile()
+    {
+        try {
+            FileUtils.copyURLToFile(new URL(xsoarLink), new File(localFile));
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
     }
 }

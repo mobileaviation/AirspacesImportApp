@@ -33,7 +33,7 @@ public class Airspaces extends ArrayList<Airspace> {
     public void OpenAipFile(String filename)
     {
         //String _filename = Environment.getExternalStorageDirectory().toString()+"/Download/" + filename;
-        String _filename = "C:\\Downloads\\openaip\\" + filename;
+        String _filename = filename;
         String XML = readFromFile( _filename);
 
         System.out.println("Read XML file: " + _filename);
@@ -42,22 +42,43 @@ public class Airspaces extends ArrayList<Airspace> {
 
 
 
-        insertIntoDatabase();
+        insertIntoDatabase(null);
         //Log.i(TAG, "AirspaceDataSource Insert Finished");
     }
 
     public void OpenOpenAirTextFile(String filename)
     {
-        String _filename = "C:\\Downloads\\openaip\\" + filename;
+        String _filename = filename;
         String txt = readFromFile(_filename);
         readOpenAirText(txt);
+    }
 
-        insertIntoDatabase();
+    public void insertIntoDatabase(AirspaceCategory category)
+    {
+        if (category != null) {
+            if (category.equals(AirspaceCategory.FIR))
+                p_insertIntoFir();
+            else
+                p_insertIntoDatabase();
+        } else
+            p_insertIntoDatabase();
     }
 
 
+    private void p_insertIntoFir()
+    {
+        AirspaceDataSource dataSource = new AirspaceDataSource();
+        dataSource.Open();
 
-    private void insertIntoDatabase()
+        for (Airspace airspace : this)
+        {
+            dataSource.insertFir(airspace);
+        }
+
+        dataSource.Close();
+    }
+
+    private void p_insertIntoDatabase()
     {
         AirspaceDataSource dataSource = new AirspaceDataSource();
         dataSource.Open();
@@ -97,7 +118,7 @@ public class Airspaces extends ArrayList<Airspace> {
                     this.add(airspace);
                     airspace.Version = "0";
                     airspace.ID = 0;
-                    airspace.Category = AirspaceCategory.valueOf(l.replace("AC ", ""));
+                    airspace.Category = AirspaceCategory.valueOf(l.replace("AC ", "").trim());
                 }
                 if (l.startsWith("AN")) {
                     if (airspace != null) {
@@ -140,10 +161,20 @@ public class Airspaces extends ArrayList<Airspace> {
                     circle = false;
                 }
                 if (l.startsWith("DC")) {
-                    String m = Helpers.findRegex("([0-9.]+\\w)|([0-9])", l);
-                    airspace.coordinates.addAll(GeometricHelpers.drawCircle(center, Double.valueOf(m)));
-                    circle = true;
+                    if (airspace != null) {
+                        String m = Helpers.findRegex("([0-9.]+\\w)|([0-9])", l);
+                        airspace.coordinates.addAll(GeometricHelpers.drawCircle(center, Double.valueOf(m)));
+                        circle = true;
+                    }
                 }
+                if (l.startsWith("SP"))
+                {
+                    if (airspace != null) {
+                        this.remove(airspace);
+                        airspace = null;
+                    }
+                }
+
             }
         }
         if ((airspace != null) && (airspace.coordinates.size()>0)) airspace.coordinates.add(airspace.coordinates.get(0));

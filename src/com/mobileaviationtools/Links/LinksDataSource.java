@@ -44,9 +44,9 @@ public class LinksDataSource {
         }
     }
 
-    public void downloadXsoarFiles()
+    public void downloadXsoarFiles(Boolean override)
     {
-        String q = "SELECT * FROM tbl_links;";
+        String q = "SELECT * FROM tbl_links WHERE enabled=TRUE;";
 
         PreparedStatement pst = null;
         try {
@@ -59,7 +59,7 @@ public class LinksDataSource {
                 l.readResultSet(set);
                 links.add(l);
 
-                l.downloadFile();
+                l.downloadFile(override);
 
                 System.out.println("Loaded: " + l.getXsoarLink());
             }
@@ -72,7 +72,8 @@ public class LinksDataSource {
     public void downloadTest()
     {
         try {
-            FileUtils.copyURLToFile(new URL("http://soaringweb.org/Airspace/BE/BELLUX_WEEK_140501.txt"), new File("C:\\Downloads\\openaip\\BELLUX_WEEK_140501.txt") );
+            FileUtils.copyURLToFile(new URL("http://www.openaip.net/system/files/airspaces/openaip_airspace_belgium_be.aip_1444791895"),
+                    new File("C:\\Downloads\\openaip\\openaip_airspace_belgium_be.aip") );
         } catch (IOException e) {
             e.printStackTrace();
         }

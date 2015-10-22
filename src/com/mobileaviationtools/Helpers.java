@@ -67,20 +67,21 @@ public class Helpers {
         l = l.trim();
 
         // 53:40:00 N 006:30:00 E
-        String[] loc = l.split(" ");
+        String[] loc = l.split("[NS]");
 
         LatLng latLng = null;
         String lat[] = loc[0].split(":");
         Double _lat = Double.valueOf(lat[0]) +
                 (Double.valueOf(lat[1]) / 60) +
                 (Double.valueOf(lat[2]) / 3600)
-                        * ((loc[1].equals("S")) ? -1 : 1);
-        String lon[] = loc[2].split(":");
+                        * ((l.contains("S")) ? -1 : 1);
+        String lon[] = loc[1].split(":");
+        lon[2] = findRegex("[0-9]", lon[2]);
 
         Double _lon = Double.valueOf(lon[0]) +
                 (Double.valueOf(lon[1]) / 60) +
                 (Double.valueOf(lon[2]) / 3600)
-                        * ((loc[1].equals("W")) ? -1 : 1);
+                        * ((l.contains("W")) ? -1 : 1);
         latLng = new LatLng(_lat,_lon);
 
         return latLng;

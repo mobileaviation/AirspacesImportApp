@@ -14,6 +14,7 @@ public enum AirspaceCategory {
     E,
     F,
     G,
+    GP,
     GLIDING,
     OTH,
     RESTRICTED,
