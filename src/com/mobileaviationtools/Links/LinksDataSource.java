@@ -87,6 +87,7 @@ public class LinksDataSource {
 //                countrycode text,
 //                openaiplink text,
 //                xsoarlink text,
+//                enabled boolean NOT NULL DEFAULT true,
 //                CONSTRAINT links_pkey PRIMARY KEY (id)
 //)
 //        WITH (

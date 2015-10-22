@@ -46,11 +46,11 @@ public class Airspaces extends ArrayList<Airspace> {
         //Log.i(TAG, "AirspaceDataSource Insert Finished");
     }
 
-    public void OpenOpenAirTextFile(String filename)
+    public void OpenOpenAirTextFile(String filename, String country)
     {
         String _filename = filename;
         String txt = readFromFile(_filename);
-        readOpenAirText(txt);
+        readOpenAirText(txt, country);
     }
 
     public void insertIntoDatabase(AirspaceCategory category)
@@ -91,13 +91,14 @@ public class Airspaces extends ArrayList<Airspace> {
         dataSource.Close();
     }
 
-    private void readOpenAirText(String text)
+    private void readOpenAirText(String text, String country)
     {
         String lines[] = text.split("\r\n");
         Airspace airspace = null;
         LatLng location = null;
         LatLng center = null;
         Boolean circle  = false;
+        Boolean newAirspace = false;
         for (String l : lines)
         {
 
@@ -115,15 +116,19 @@ public class Airspaces extends ArrayList<Airspace> {
                             && !airspace.coordinates.get(0).equals(airspace.coordinates.get(airspace.coordinates.size()-1)))
                         airspace.coordinates.add(airspace.coordinates.get(0));
                     airspace = new Airspace();
+                    airspace.Country = country;
+                    newAirspace = false;
                     this.add(airspace);
                     airspace.Version = "0";
                     airspace.ID = 0;
-                    airspace.Category = AirspaceCategory.valueOf(l.replace("AC ", "").trim());
+                    String c = l.replace("AC ", "").trim();
+                    airspace.Category = AirspaceCategory.valueOf(Helpers.findRegex("[A-Za-z]+\\w|[A-Za-z]",c));
                 }
                 if (l.startsWith("AN")) {
                     if (airspace != null) {
                         airspace.Name = l.replace("AN ", "");
-                        System.out.println("Airspace: " + airspace.Name + " added Index: " + Integer.toString(this.size()-1) );
+                        newAirspace = true;
+                        System.out.println("Airspace: " + airspace.Name + " added Index: " + Integer.toString(this.size()-1) + " Country: " + airspace.Country );
                     }
 
                 }
@@ -169,9 +174,15 @@ public class Airspaces extends ArrayList<Airspace> {
                 }
                 if (l.startsWith("SP"))
                 {
-                    if (airspace != null) {
-                        this.remove(airspace);
-                        airspace = null;
+                    // What if SP becomes before AN ??????????????
+
+                    // We need to check if the SP is just a pen setting which means this iy does not belong to a specific airspace
+                    // If it does not belong to an airspace than delete this airspace
+                    if (!newAirspace) {
+                        if (airspace != null) {
+                            this.remove(airspace);
+                            airspace = null;
+                        }
                     }
                 }
 

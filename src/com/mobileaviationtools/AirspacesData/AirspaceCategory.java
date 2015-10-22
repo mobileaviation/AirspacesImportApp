@@ -5,6 +5,7 @@ package com.mobileaviationtools.AirspacesData;
  */
 public enum AirspaceCategory {
     A,
+    AWY,
     B,
     C,
     CTR,
@@ -27,7 +28,8 @@ public enum AirspaceCategory {
     P,
     FIR,
     UIR,
-    RMZ;
+    RMZ,
+    Z;
 
     @Override
     public String toString() {

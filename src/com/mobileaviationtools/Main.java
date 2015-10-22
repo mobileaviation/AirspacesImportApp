@@ -22,7 +22,8 @@ public class Main {
 
             System.out.println("Connected to database");
 
-            //airspaces.OpenOpenAirTextFile("C:\\downloads\\openaip\\BELLUX_WEEK_140501.txt");
+            //Airspaces airspaces = new Airspaces();
+            //airspaces.OpenOpenAirTextFile("C:\\downloads\\openaip\\test.txt");
 
 
 //            for (Link link : linksDataSource.links)
@@ -68,7 +69,7 @@ public class Main {
         Airspaces airspaces = new Airspaces();
         for (Link link : links)
         {
-            airspaces.OpenOpenAirTextFile(link.getLocalFile());
+            airspaces.OpenOpenAirTextFile(link.getLocalFile(), link.country);
         }
 
         airspaces.insertIntoDatabase(AirspaceCategory.FIR);

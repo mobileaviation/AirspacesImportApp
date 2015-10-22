@@ -65,9 +65,11 @@ public class Helpers {
         l = l.replace("DB", "");
         l = l.replace("V X=", "");
         l = l.trim();
+        l = l.replace(":.", ":");
+        l = l.replace(".", ":");
 
         // 53:40:00 N 006:30:00 E
-        String[] loc = l.split("[NS]");
+        String[] loc = l.split("[NSns]");
 
         LatLng latLng = null;
         String lat[] = loc[0].split(":");
@@ -76,7 +78,7 @@ public class Helpers {
                 (Double.valueOf(lat[2]) / 3600)
                         * ((l.contains("S")) ? -1 : 1);
         String lon[] = loc[1].split(":");
-        lon[2] = findRegex("[0-9]", lon[2]);
+        lon[2] = findRegex("[0-9]+", lon[2]);
 
         Double _lon = Double.valueOf(lon[0]) +
                 (Double.valueOf(lon[1]) / 60) +
