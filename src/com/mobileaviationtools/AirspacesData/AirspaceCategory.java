@@ -22,6 +22,7 @@ public enum AirspaceCategory {
     R,
     TMA,
     TMZ,
+    TSA,
     WAVE,
     W,
     PROHIBITED,
@@ -29,7 +30,9 @@ public enum AirspaceCategory {
     FIR,
     UIR,
     RMZ,
-    Z;
+    Z,
+    ZP,
+    UKN;
 
     @Override
     public String toString() {

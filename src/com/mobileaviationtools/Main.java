@@ -23,12 +23,9 @@ public class Main {
             System.out.println("Connected to database");
 
             //Airspaces airspaces = new Airspaces();
-            //airspaces.OpenOpenAirTextFile("C:\\downloads\\openaip\\test.txt");
+            //airspaces.OpenOpenAirTextFile("C:\\downloads\\openaip\\test.txt", "Switserland");
 
 
-//            for (Link link : linksDataSource.links)
-//            {
-//            }
             ArrayList<Link> links = downloadXsourFiles();
             readFIRFromXsoarFiles(links);
 
@@ -72,6 +69,6 @@ public class Main {
             airspaces.OpenOpenAirTextFile(link.getLocalFile(), link.country);
         }
 
-        airspaces.insertIntoDatabase(AirspaceCategory.FIR);
+        airspaces.insertIntoDatabase(null);
     }
 }

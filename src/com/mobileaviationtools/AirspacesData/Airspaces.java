@@ -72,7 +72,8 @@ public class Airspaces extends ArrayList<Airspace> {
 
         for (Airspace airspace : this)
         {
-            dataSource.insertFir(airspace);
+            if (airspace.Category.equals(AirspaceCategory.FIR))
+                dataSource.insertFir(airspace);
         }
 
         dataSource.Close();
@@ -91,104 +92,112 @@ public class Airspaces extends ArrayList<Airspace> {
         dataSource.Close();
     }
 
+    public String lines[];
     private void readOpenAirText(String text, String country)
     {
-        String lines[] = text.split("\r\n");
-        Airspace airspace = null;
-        LatLng location = null;
-        LatLng center = null;
-        Boolean circle  = false;
-        Boolean newAirspace = false;
-        for (String l : lines)
-        {
+        try {
+            text = text.replace("\n", "\r\n");
+            lines = text.split("\r\n");
+            Airspace airspace = null;
+            LatLng location = null;
+            LatLng center = null;
+            Boolean circle  = false;
+            //Boolean newAirspace = false;
+            for (String l : lines)
+            {
 
-            if (!l.startsWith("*")) {
-                // Check is first char = * then discard this split[*]
-                // Read the first line for the Airspace Category (AC)
-                // Read the line with starts with AN, Following string is Name
-                // -- AH, unit (non if FT), top level limit, folowed by reference (MSL)
-                // -- AL, unit (non if FT), bottom level limit, folowed by reference (MSL)
+                if (!l.startsWith("*")) {
+                    // Check is first char = * then discard this split[*]
+                    // Read the first line for the Airspace Category (AC)
+                    // Read the line with starts with AN, Following string is Name
+                    // -- AH, unit (non if FT), top level limit, folowed by reference (MSL)
+                    // -- AL, unit (non if FT), bottom level limit, folowed by reference (MSL)
 
-                //
+                    //
 
-                if (l.startsWith("AC")) {
-                    if ((airspace != null) && (airspace.coordinates.size()>0) && !circle
-                            && !airspace.coordinates.get(0).equals(airspace.coordinates.get(airspace.coordinates.size()-1)))
-                        airspace.coordinates.add(airspace.coordinates.get(0));
-                    airspace = new Airspace();
-                    airspace.Country = country;
-                    newAirspace = false;
-                    this.add(airspace);
-                    airspace.Version = "0";
-                    airspace.ID = 0;
-                    String c = l.replace("AC ", "").trim();
-                    airspace.Category = AirspaceCategory.valueOf(Helpers.findRegex("[A-Za-z]+\\w|[A-Za-z]",c));
-                }
-                if (l.startsWith("AN")) {
-                    if (airspace != null) {
-                        airspace.Name = l.replace("AN ", "");
-                        newAirspace = true;
-                        System.out.println("Airspace: " + airspace.Name + " added Index: " + Integer.toString(this.size()-1) + " Country: " + airspace.Country );
-                    }
-
-                }
-                if (l.startsWith("AH")) {
-                    if (airspace != null) {
-                        airspace.AltLimit_Top = Integer.getInteger(Helpers.findRegex("\\d+", l), 0);
-                        String m = Helpers.findRegex("([MSL]+)|([FL]+)|([FT]+)|([SFC]+)|([UNLIM]+)|([AGL]+)", l);
-                        if (m.equals("UNLIM")) airspace.AltLimit_Top = 100000;
-                        airspace.AltLimit_Top_Ref = Helpers.parseReference(m);
-                        airspace.AltLimit_Top_Unit = Helpers.parseUnit(m);
-                    }
-                }
-                if (l.startsWith("AL")) {
-                    if (airspace != null) {
-                        airspace.AltLimit_Bottom = Integer.getInteger(Helpers.findRegex("\\d+", l), 0);
-                        String m = Helpers.findRegex("([MSL]+)|([FL]+)|([FT]+)|([SFC]+)|([UNLIM]+)|([AGL]+)", l);
-                        if (m.equals("UNLIM")) airspace.AltLimit_Top = 100000;
-                        airspace.AltLimit_Bottom_Ref = Helpers.parseReference(m);
-                        airspace.AltLimit_Bottom_Unit = Helpers.parseUnit(m);
-                    }
-                }
-                if (l.startsWith("V X")) {
-                    center = Helpers.parseOpenAirLocation(l);
-                }
-                if (l.startsWith("DB")) {
-                    String[] be = l.split(",");
-                    LatLng begin = Helpers.parseOpenAirLocation(be[0]);
-                    LatLng end = Helpers.parseOpenAirLocation(be[1]);
-                    airspace.coordinates.addAll(GeometricHelpers.drawArc(begin, end, center));
-                    circle = false;
-                }
-                if (l.startsWith("DP")) {
-                    location = Helpers.parseOpenAirLocation(l);
-                    airspace.coordinates.add(new Coordinate(location.longitude, location.latitude));
-                    circle = false;
-                }
-                if (l.startsWith("DC")) {
-                    if (airspace != null) {
-                        String m = Helpers.findRegex("([0-9.]+\\w)|([0-9])", l);
-                        airspace.coordinates.addAll(GeometricHelpers.drawCircle(center, Double.valueOf(m)));
-                        circle = true;
-                    }
-                }
-                if (l.startsWith("SP"))
-                {
-                    // What if SP becomes before AN ??????????????
-
-                    // We need to check if the SP is just a pen setting which means this iy does not belong to a specific airspace
-                    // If it does not belong to an airspace than delete this airspace
-                    if (!newAirspace) {
-                        if (airspace != null) {
+                    if (l.startsWith("AC")) {
+                        if ((airspace != null) && (airspace.coordinates.size()>3) && !circle
+                                && !airspace.coordinates.get(0).equals(airspace.coordinates.get(airspace.coordinates.size()-1)))
+                            airspace.coordinates.add(airspace.coordinates.get(0));
+                        if ((airspace != null) && (airspace.Name == null))
                             this.remove(airspace);
-                            airspace = null;
+                        airspace = new Airspace();
+                        airspace.Country = country;
+                        //newAirspace = false;
+                        this.add(airspace);
+                        airspace.Version = "0";
+                        airspace.ID = 0;
+                        String c = l.replace("AC ", "").trim();
+                        airspace.Category = AirspaceCategory.valueOf(Helpers.findRegex("[A-Za-z]+\\w|[A-Za-z]",c));
+                    }
+                    if (l.startsWith("AN")) {
+                        if (airspace != null) {
+                            airspace.Name = l.replace("AN ", "");
+                            //newAirspace = true;
+                            System.out.println("Airspace: " + airspace.Name + " added Index: " + Integer.toString(this.size()-1) + " Country: " + airspace.Country );
+                        }
+
+                    }
+                    if (l.startsWith("AH")) {
+                        if (airspace != null) {
+                            airspace.AltLimit_Top = Integer.getInteger(Helpers.findRegex("\\d+", l), 0);
+                            String m = Helpers.findRegex("([MSL]+)|([FL]+)|([FT]+)|([SFC]+)|([UNLIM]+)|([AGL]+)", l);
+                            if (m.equals("UNLIM")) airspace.AltLimit_Top = 100000;
+                            airspace.AltLimit_Top_Ref = Helpers.parseReference(m);
+                            airspace.AltLimit_Top_Unit = Helpers.parseUnit(m);
                         }
                     }
-                }
+                    if (l.startsWith("AL")) {
+                        if (airspace != null) {
+                            airspace.AltLimit_Bottom = Integer.getInteger(Helpers.findRegex("\\d+", l), 0);
+                            String m = Helpers.findRegex("([MSL]+)|([FL]+)|([FT]+)|([SFC]+)|([UNLIM]+)|([AGL]+)", l);
+                            if (m.equals("UNLIM")) airspace.AltLimit_Top = 100000;
+                            airspace.AltLimit_Bottom_Ref = Helpers.parseReference(m);
+                            airspace.AltLimit_Bottom_Unit = Helpers.parseUnit(m);
+                        }
+                    }
+                    if (l.startsWith("V X")) {
+                        center = Helpers.parseOpenAirLocation(l);
+                    }
+                    if (l.startsWith("DB")) {
+                        String[] be = l.split(",");
+                        LatLng begin = Helpers.parseOpenAirLocation(be[0]);
+                        LatLng end = Helpers.parseOpenAirLocation(be[1]);
+                        airspace.coordinates.addAll(GeometricHelpers.drawArc(begin, end, center));
+                        circle = false;
+                    }
+                    if (l.startsWith("DP")) {
+                        location = Helpers.parseOpenAirLocation(l);
+                        airspace.coordinates.add(new Coordinate(location.longitude, location.latitude));
+                        circle = false;
+                    }
+                    if (l.startsWith("DC")) {
+                        if (airspace != null) {
+                            String m = Helpers.findRegex("([0-9.]+\\w)|([0-9])", l);
+                            airspace.coordinates.addAll(GeometricHelpers.drawCircle(center, Double.valueOf(m)));
+                            circle = true;
+                        }
+                    }
+    //                if (l.startsWith("SP"))
+    //                {
+    //                    // What if SP becomes before AN ??????????????
+    //
+    //                    // We need to check if the SP is just a pen setting which means this iy does not belong to a specific airspace
+    //                    // If it does not belong to an airspace than delete this airspace
+    //                    if (!newAirspace) {
+    //                        if (airspace != null) {
+    //                            this.remove(airspace);
+    //                            airspace = null;
+    //                        }
+    //                    }
+    //                }
 
+                }
             }
+            if ((airspace != null) && (airspace.coordinates.size()>0)) airspace.coordinates.add(airspace.coordinates.get(0));
+        } catch (Exception e) {
+            e.printStackTrace();
         }
-        if ((airspace != null) && (airspace.coordinates.size()>0)) airspace.coordinates.add(airspace.coordinates.get(0));
     }
 
 //    public void TestDraw(GoogleMap map)
