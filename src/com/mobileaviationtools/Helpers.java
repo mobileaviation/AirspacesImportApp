@@ -60,6 +60,8 @@ public class Helpers {
 
     public static LatLng parseOpenAirLocation(String location)
     {
+        Remove all the text after the * sign
+
         // replace DP, DB, V X=
         String l = location.replace("DP", "");
         l = l.replace("DB", "");
@@ -73,16 +75,16 @@ public class Helpers {
 
         LatLng latLng = null;
         String lat[] = loc[0].split(":");
-        Double _lat = Double.valueOf(lat[0]) +
+        Double _lat = (Double.valueOf(lat[0]) +
                 (Double.valueOf(lat[1]) / 60) +
-                (Double.valueOf(lat[2]) / 3600)
+                (Double.valueOf(lat[2]) / 3600))
                         * ((l.contains("S")) ? -1 : 1);
         String lon[] = loc[1].split(":");
         lon[2] = findRegex("[0-9]+", lon[2]);
 
-        Double _lon = Double.valueOf(lon[0]) +
+        Double _lon = (Double.valueOf(lon[0]) +
                 (Double.valueOf(lon[1]) / 60) +
-                (Double.valueOf(lon[2]) / 3600)
+                (Double.valueOf(lon[2]) / 3600))
                         * ((l.contains("W")) ? -1 : 1);
         latLng = new LatLng(_lat,_lon);
 

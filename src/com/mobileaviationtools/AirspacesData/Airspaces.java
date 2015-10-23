@@ -121,6 +121,8 @@ public class Airspaces extends ArrayList<Airspace> {
                             airspace.coordinates.add(airspace.coordinates.get(0));
                         if ((airspace != null) && (airspace.Name == null))
                             this.remove(airspace);
+                        if ((airspace != null) && (airspace.coordinates.size()<4))
+                            this.remove(airspace);
                         airspace = new Airspace();
                         airspace.Country = country;
                         //newAirspace = false;
