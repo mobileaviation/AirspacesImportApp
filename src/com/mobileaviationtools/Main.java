@@ -22,13 +22,13 @@ public class Main {
 
             System.out.println("Connected to database");
 
-            Airspaces airspaces = new Airspaces();
-            airspaces.OpenOpenAirTextFile("C:\\downloads\\openaip\\IrelandSua2014.txt", "UK");
-            airspaces.insertIntoDatabase(null);
+            //Airspaces airspaces = new Airspaces();
+            //airspaces.OpenOpenAirTextFile("C:\\downloads\\openaip\\IrelandSua2014.txt", "UK");
+            //airspaces.insertIntoDatabase(null);
 
 
-            //ArrayList<Link> links = downloadXsourFiles();
-            //readFIRFromXsoarFiles(links);
+            ArrayList<Link> links = downloadXsourFiles();
+            readFIRFromXsoarFiles(links);
 
 //            readOpenaipTestFiles();
 

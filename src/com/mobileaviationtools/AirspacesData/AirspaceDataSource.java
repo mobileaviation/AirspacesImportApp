@@ -71,10 +71,10 @@ public class AirspaceDataSource {
             pst.setString(3, airspace.Category.toString());
             pst.setLong(4, airspace.ID);
             pst.setString(5, airspace.Country);
-            pst.setLong(6, airspace.AltLimit_Top);
+            pst.setLong(6, airspace.getAltLimit_Top());
             pst.setString(7, airspace.AltLimit_Top_Unit.toString());
             pst.setString(8, airspace.AltLimit_Top_Ref.toString());
-            pst.setLong(9, airspace.AltLimit_Bottom);
+            pst.setLong(9, airspace.getAltLimit_Bottom());
             pst.setString(10, airspace.AltLimit_Bottom_Unit.toString());
             pst.setString(11, airspace.AltLimit_Bottom_Ref.toString());
             pst.setString(12, new WKTWriter().write(airspace.getGeometry()));

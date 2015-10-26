@@ -60,7 +60,7 @@ public class Helpers {
 
     public static LatLng parseOpenAirLocation(String location)
     {
-        Remove all the text after the * sign
+        //Remove all the text after the * sign
 
         // replace DP, DB, V X=
         String l = location.replace("DP", "");
@@ -69,6 +69,7 @@ public class Helpers {
         l = l.trim();
         l = l.replace(":.", ":");
         l = l.replace(".", ":");
+        if (l.indexOf("*")>-1) l = l.substring(0, l.indexOf("*"));
 
         // 53:40:00 N 006:30:00 E
         String[] loc = l.split("[NSns]");
