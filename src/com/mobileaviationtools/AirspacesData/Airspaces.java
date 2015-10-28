@@ -321,6 +321,8 @@ public class Airspaces extends ArrayList<Airspace> {
                         readAltTop = true;
                         if (airspace != null) {
                             String a = parser.getAttributeValue(null, "REFERENCE");
+                            if (a.equals("")) airspace.AltLimit_Top_Ref = AltitudeReference.MSL;
+                            else
                             airspace.AltLimit_Top_Ref = AltitudeReference.valueOf(
                                     parser.getAttributeValue(null, "REFERENCE"));
                         }
@@ -330,6 +332,8 @@ public class Airspaces extends ArrayList<Airspace> {
                         readAltTop = false;
                         if (airspace != null) {
                             String a = parser.getAttributeValue(null, "REFERENCE");
+                            if (a.equals("")) airspace.AltLimit_Bottom_Ref = AltitudeReference.MSL;
+                            else
                             airspace.AltLimit_Bottom_Ref = AltitudeReference.valueOf(
                                     parser.getAttributeValue(null, "REFERENCE"));
                         }
@@ -387,7 +391,10 @@ public class Airspaces extends ArrayList<Airspace> {
                     if (name.equals("POLYGON"))
                     {
                         if (airspace != null) {
-                            String p = "POLYGON ((" + parser.getText() + "))";
+                            String pol = parser.getText();
+                            String pols[] = pol.split(",");
+                            if (!pols[0].trim().equals(pols[pols.length-1])) pol = pol + ", " + pols[0];
+                            String p = "POLYGON ((" + pol + "))";
                             WKTReader r = new WKTReader();
                             airspace.setGeometry(r.read(p));
                         }

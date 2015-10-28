@@ -14,4 +14,11 @@ public enum AltitudeReference {
     public String toString() {
         return super.toString();
     }
+
+//    @Override
+//    public AltitudeReference valueOf(String value)
+//    {
+//        if (value.equals("")) return MSL;
+//        else return super.valueOf(value);
+//    }
 }

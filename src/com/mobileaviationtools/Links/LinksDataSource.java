@@ -70,7 +70,8 @@ public class LinksDataSource {
     public void getOpenaipFilesFromDB()
     {
         String q = "SELECT * FROM tbl_links where openaiplink!='';";
-        String p = "C:\\Users\\Rob Verhoef.WIN7-ROBVERHOEF\\IdeaProjects\\AirspacesImportApp\\Openaip\\";
+        //String p = "C:\\Users\\Rob Verhoef.WIN7-ROBVERHOEF\\IdeaProjects\\AirspacesImportApp\\Openaip\\";
+        String p = "C:\\Users\\Rob Verhoef\\IdeaProjects\\AirspacesImportApp\\Openaip\\";
 
         getFilesFromDB(q, p, true);
     }
