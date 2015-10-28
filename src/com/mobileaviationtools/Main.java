@@ -1,10 +1,12 @@
 package com.mobileaviationtools;
 
+import com.mobileaviationtools.AirspacesData.Airspace;
 import com.mobileaviationtools.AirspacesData.AirspaceCategory;
 import com.mobileaviationtools.AirspacesData.Airspaces;
 import com.mobileaviationtools.Links.Link;
 import com.mobileaviationtools.Links.LinksDataSource;
 
+import java.io.File;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
@@ -27,8 +29,11 @@ public class Main {
             //airspaces.insertIntoDatabase(null);
 
 
-            ArrayList<Link> links = downloadXsourFiles();
-            readFIRFromXsoarFiles(links);
+            //ArrayList<Link> links = downloadXsourFiles();
+            //readFIRFromXsoarFiles(links);
+
+            ArrayList<Link> links = getOpenaipFiles();
+            readOpenaipFiles(links);
 
 //            readOpenaipTestFiles();
 
@@ -52,6 +57,16 @@ public class Main {
         airspaces.OpenAipFile("C:\\Downloads\\openaip\\openaip_airspace_belgium_be.aip");
     }
 
+    private static ArrayList<Link> getOpenaipFiles()
+    {
+        LinksDataSource linksDataSource = new LinksDataSource();
+        linksDataSource.Open();
+        linksDataSource.getOpenaipFilesFromDB();
+        linksDataSource.Close();
+
+        return linksDataSource.links;
+    }
+
     private static ArrayList<Link> downloadXsourFiles()
     {
         LinksDataSource linksDataSource = new LinksDataSource();
@@ -71,5 +86,19 @@ public class Main {
         }
 
         airspaces.insertIntoDatabase(null);
+    }
+
+    private static void readOpenaipFiles(ArrayList<Link> links)
+    {
+        Airspaces airspaces = new Airspaces();
+        for (Link link : links)
+        {
+            if (new File(link.getLocalFile()).exists()) {
+                System.out.println(link.getLocalFile() + " Found");
+                airspaces.OpenAipFile(link.getLocalFile());
+            }
+            else
+                System.out.println(link.getLocalFile() + " NOT Found");
+        }
     }
 }

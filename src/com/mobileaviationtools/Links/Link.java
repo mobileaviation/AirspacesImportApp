@@ -42,18 +42,37 @@ public class Link {
     {
         return xsoarLink;
     }
-    public String openaipLink;
+    private String openaipLink;
+    public void setOpenaipLink(String openaipLink)
+    {
+        this.openaipLink = openaipLink;
+        downloadale = (openaipLink!=null);
+
+        if (downloadale)
+        {
+            String s[] = openaipLink.split("/");
+            localFile = localPath + s[s.length-1];
+        }
+    }
+    public String getOpenaipLink()
+    {
+        return openaipLink;
+    }
+
     public String country;
     public String countryCode;
 
     private Boolean downloadale;
 
-    public void readResultSet(ResultSet resultSet)
+    public void readResultSet(ResultSet resultSet, Boolean openaip)
     {
         try {
             ID = resultSet.getInt("id");
-            setXsoarLink(resultSet.getString("xsoarlink"));
-            openaipLink = resultSet.getString("openaiplink");
+
+            if (!openaip) setXsoarLink(resultSet.getString("xsoarlink"));
+            else xsoarLink = resultSet.getString("xsoarlink");
+            if (openaip) setOpenaipLink(resultSet.getString("openaiplink"));
+                else openaipLink = resultSet.getString("openaiplink");
             country = resultSet.getString("country");
             countryCode = resultSet.getString("countrycode");
         } catch (SQLException e) {

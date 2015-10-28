@@ -1,7 +1,9 @@
 package com.mobileaviationtools.Links;
 
+import com.sun.org.apache.xpath.internal.operations.Bool;
 import org.apache.commons.io.FileUtils;
 
+import javax.print.DocFlavor;
 import java.io.File;
 import java.io.IOException;
 import java.net.URL;
@@ -44,9 +46,9 @@ public class LinksDataSource {
         }
     }
 
-    public void downloadXsoarFiles(Boolean override)
+    private void getFilesFromDB(String query, String path, Boolean openaip)
     {
-        String q = "SELECT * FROM tbl_links WHERE enabled=TRUE;";
+        String q = query;
 
         PreparedStatement pst = null;
         try {
@@ -55,17 +57,33 @@ public class LinksDataSource {
 
             while (set.next())
             {
-                Link l = new Link("C:\\Downloads\\openaip\\");
-                l.readResultSet(set);
+                Link l = new Link(path);
+                l.readResultSet(set, openaip);
                 links.add(l);
-
-                l.downloadFile(override);
-
-                System.out.println("Loaded: " + l.getXsoarLink());
             }
         }
         catch (SQLException e) {
-        e.printStackTrace();
+            e.printStackTrace();
+        }
+    }
+
+    public void getOpenaipFilesFromDB()
+    {
+        String q = "SELECT * FROM tbl_links where openaiplink!='';";
+        String p = "C:\\Users\\Rob Verhoef.WIN7-ROBVERHOEF\\IdeaProjects\\AirspacesImportApp\\Openaip\\";
+
+        getFilesFromDB(q, p, true);
+    }
+
+    public void downloadXsoarFiles(Boolean override)
+    {
+        String q = "SELECT * FROM tbl_links WHERE enabled=TRUE;";
+        String p = "C:\\Downloads\\openaip\\";
+        getFilesFromDB(q, p, false);
+
+        for (Link link : links)
+        {
+            link.downloadFile(override);
         }
     }
 
