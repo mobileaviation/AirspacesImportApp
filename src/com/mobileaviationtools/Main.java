@@ -14,6 +14,9 @@ import java.util.ArrayList;
 
 public class Main {
 
+    private static String OPENAIP_TABLE_NAME = "tbl_openaip_airspaces";
+    private static String OPENAIR_TABLE_NAME = "tbl_openair_airspaces";
+
     public static void main(String[] args) {
 	// write your code here
         try {
@@ -29,11 +32,11 @@ public class Main {
             //airspaces.insertIntoDatabase(null);
 
 
-            //ArrayList<Link> links = downloadXsourFiles();
-            //readFIRFromXsoarFiles(links);
+            ArrayList<Link> links = downloadXsourFiles();
+            readFIRFromXsoarFiles(links);
 
-            ArrayList<Link> links = getOpenaipFiles();
-            readOpenaipFiles(links);
+            //ArrayList<Link> links = getOpenaipFiles();
+            //readOpenaipFiles(links);
 
 //            readOpenaipTestFiles();
 
@@ -52,9 +55,9 @@ public class Main {
     private static void readOpenaipTestFiles()
     {
         Airspaces airspaces = new Airspaces();
-        airspaces.OpenAipFile("C:\\Downloads\\openaip\\openaip_airspace_netherlands_nl.aip");
-        airspaces.OpenAipFile("C:\\Downloads\\openaip\\openaip_airspace_germany_de.aip");
-        airspaces.OpenAipFile("C:\\Downloads\\openaip\\openaip_airspace_belgium_be.aip");
+        airspaces.OpenAipFile("C:\\Downloads\\openaip\\openaip_airspace_netherlands_nl.aip", OPENAIP_TABLE_NAME);
+        airspaces.OpenAipFile("C:\\Downloads\\openaip\\openaip_airspace_germany_de.aip", OPENAIP_TABLE_NAME);
+        airspaces.OpenAipFile("C:\\Downloads\\openaip\\openaip_airspace_belgium_be.aip", OPENAIP_TABLE_NAME);
     }
 
     private static ArrayList<Link> getOpenaipFiles()
@@ -85,7 +88,7 @@ public class Main {
             airspaces.OpenOpenAirTextFile(link.getLocalFile(), link.country);
         }
 
-        airspaces.insertIntoDatabase(null);
+        airspaces.insertIntoDatabase(null, OPENAIR_TABLE_NAME);
     }
 
     private static void readOpenaipFiles(ArrayList<Link> links)
@@ -95,7 +98,7 @@ public class Main {
         {
             if (new File(link.getLocalFile()).exists()) {
                 System.out.println(link.getLocalFile() + " Found");
-                airspaces.OpenAipFile(link.getLocalFile());
+                airspaces.OpenAipFile(link.getLocalFile(), OPENAIP_TABLE_NAME);
             }
             else
                 System.out.println(link.getLocalFile() + " NOT Found");

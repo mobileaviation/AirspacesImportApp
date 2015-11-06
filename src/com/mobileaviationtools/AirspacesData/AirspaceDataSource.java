@@ -38,10 +38,10 @@ public class AirspaceDataSource {
         }
     }
 
-    public Boolean checkAirspace(Airspace airspace)
+    public Boolean checkAirspace(Airspace airspace, String tablename)
     {
         Boolean ret = false;
-        String q = "SELECT id FROM tbl_airspaces WHERE airspace_id>0 AND airspace_id=?";
+        String q = "SELECT id FROM " + tablename + " WHERE airspace_id>0 AND airspace_id=?";
         PreparedStatement pst = null;
         try {
             pst = conn.prepareStatement(q);
@@ -55,11 +55,11 @@ public class AirspaceDataSource {
         return ret;
     }
 
-    public void insertAirspace(Airspace airspace)
+    public void insertAirspace(Airspace airspace, String tablename)
     {
-        if (checkAirspace(airspace)) return;
+        if (checkAirspace(airspace, tablename)) return;
 
-        String q = "INSERT INTO tbl_Airspaces (name, version, "
+        String q = "INSERT INTO " + tablename + " (name, version, "
                 + "category, airspace_id, country, altLimit_top, altlimit_top_unit, "
                 + "altlimit_top_ref, altlimit_bottom, altlimit_bottom_unit, "
                 + "altlimit_bottom_ref, geometry) VALUES (?,?,?,?,?,?,?,?,?,?,?, ST_GeomFromText(?))";

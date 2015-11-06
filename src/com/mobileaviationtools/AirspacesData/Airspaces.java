@@ -30,7 +30,7 @@ public class Airspaces extends ArrayList<Airspace> {
         this.add(airspace);
     }
 
-    public void OpenAipFile(String filename)
+    public void OpenAipFile(String filename, String tablename)
     {
         //String _filename = Environment.getExternalStorageDirectory().toString()+"/Download/" + filename;
         String _filename = filename;
@@ -42,7 +42,7 @@ public class Airspaces extends ArrayList<Airspace> {
 
 
 
-        insertIntoDatabase(null);
+        insertIntoDatabase(null, tablename);
         //Log.i(TAG, "AirspaceDataSource Insert Finished");
     }
 
@@ -53,15 +53,15 @@ public class Airspaces extends ArrayList<Airspace> {
         readOpenAirText(txt, country);
     }
 
-    public void insertIntoDatabase(AirspaceCategory category)
+    public void insertIntoDatabase(AirspaceCategory category, String tablename)
     {
         if (category != null) {
             if (category.equals(AirspaceCategory.FIR))
                 p_insertIntoFir();
             else
-                p_insertIntoDatabase();
+                p_insertIntoDatabase(tablename);
         } else
-            p_insertIntoDatabase();
+            p_insertIntoDatabase(tablename);
     }
 
 
@@ -79,14 +79,14 @@ public class Airspaces extends ArrayList<Airspace> {
         dataSource.Close();
     }
 
-    private void p_insertIntoDatabase()
+    private void p_insertIntoDatabase(String tablename)
     {
         AirspaceDataSource dataSource = new AirspaceDataSource();
         dataSource.Open();
 
         for (Airspace airspace : this)
         {
-            dataSource.insertAirspace(airspace);
+            dataSource.insertAirspace(airspace, tablename);
         }
 
         dataSource.Close();
