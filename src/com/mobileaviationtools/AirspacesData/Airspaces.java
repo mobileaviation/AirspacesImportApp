@@ -42,7 +42,7 @@ public class Airspaces extends ArrayList<Airspace> {
 
 
 
-        insertIntoDatabase(null, tablename);
+        //insertIntoDatabase(null, tablename);
         //Log.i(TAG, "AirspaceDataSource Insert Finished");
     }
 
