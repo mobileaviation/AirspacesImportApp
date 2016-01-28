@@ -4,7 +4,9 @@ import com.vividsolutions.jts.geom.Coordinate;
 import com.vividsolutions.jts.geom.Geometry;
 import com.vividsolutions.jts.geom.GeometryFactory;
 
+import java.lang.reflect.Array;
 import java.util.ArrayList;
+import java.util.Arrays;
 
 /**
  * Created by Rob Verhoef on 20-10-2015.
@@ -56,5 +58,6 @@ public class Airspace {
     public void setGeometry(Geometry geometry)
     {
         this.Geometry = geometry;
+        coordinates = new ArrayList<>(Arrays.asList(geometry.getCoordinates()));
     }
 }

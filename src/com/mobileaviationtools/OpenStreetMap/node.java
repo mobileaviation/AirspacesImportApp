@@ -58,7 +58,7 @@ public class node {
         element.setAttribute("changeset", changeset.toString());
         element.setAttribute("version", version.toString());
 
-        DateFormat df = new SimpleDateFormat("yyyy-MM-ddThh:mm:ssZ");
+        DateFormat df = new SimpleDateFormat("yyyy-MM-dd'T'hh:mm:ss'Z'");
         element.setAttribute("timestamp", df.format(timestamp));
 
         if (tags.size()>0) {

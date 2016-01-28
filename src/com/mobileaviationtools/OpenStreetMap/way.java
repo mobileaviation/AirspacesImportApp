@@ -15,7 +15,9 @@ public class way {
     public way(Document document)
     {
         nds = new ArrayList<nd>();
+        tags = new ArrayList<tag>();
         timestamp = new Date();
+        this.document = document;
     }
 
     private Document document;
@@ -31,7 +33,7 @@ public class way {
     private ArrayList<nd> nds;
     private ArrayList<tag> tags;
 
-    public void AddNd(Integer ref)
+    public void addNd(Integer ref)
     {
         nd _nd = new nd();
         _nd.ref = ref;
@@ -60,7 +62,7 @@ public class way {
         element.setAttribute("changeset", changeset.toString());
         element.setAttribute("version", version.toString());
 
-        DateFormat df = new SimpleDateFormat("yyyy-MM-ddThh:mm:ssZ");
+        DateFormat df = new SimpleDateFormat("yyyy-MM-dd'T'hh:mm:ss'Z'");
         element.setAttribute("timestamp", df.format(timestamp));
 
         if (nds.size()>0) {

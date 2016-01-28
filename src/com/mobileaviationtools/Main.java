@@ -5,7 +5,14 @@ import com.mobileaviationtools.AirspacesData.AirspaceCategory;
 import com.mobileaviationtools.AirspacesData.Airspaces;
 import com.mobileaviationtools.Links.Link;
 import com.mobileaviationtools.Links.LinksDataSource;
+import com.mobileaviationtools.OpenStreetMap.osm;
 
+import javax.xml.parsers.ParserConfigurationException;
+import javax.xml.transform.Transformer;
+import javax.xml.transform.TransformerException;
+import javax.xml.transform.TransformerFactory;
+import javax.xml.transform.dom.DOMSource;
+import javax.xml.transform.stream.StreamResult;
 import java.io.File;
 import java.sql.Connection;
 import java.sql.DriverManager;
@@ -19,35 +26,59 @@ public class Main {
 
     public static void main(String[] args) {
 	// write your code here
-        try {
-            Class.forName("org.postgresql.Driver");
+        //try {
+            //Class.forName("org.postgresql.Driver");
 
-            String url = "jdbc:postgresql://localhost:5432/airnav";
-            Connection conn = DriverManager.getConnection(url, "postgres", "ko218493");
+            //String url = "jdbc:postgresql://localhost:5432/airnav";
+            //Connection conn = DriverManager.getConnection(url, "postgres", "ko218493");
 
-            System.out.println("Connected to database");
+            //System.out.println("Connected to database");
 
             //Airspaces airspaces = new Airspaces();
             //airspaces.OpenOpenAirTextFile("C:\\downloads\\openaip\\IrelandSua2014.txt", "UK");
             //airspaces.insertIntoDatabase(null);
 
 
-            ArrayList<Link> links = downloadXsourFiles();
-            readFIRFromXsoarFiles(links);
+            //ArrayList<Link> links = downloadXsourFiles();
+            //readFIRFromXsoarFiles(links);
 
             //ArrayList<Link> links = getOpenaipFiles();
             //readOpenaipFiles(links);
 
 //            readOpenaipTestFiles();
 
-            conn.close();
+            //conn.close();
 
-            System.out.println("Disconnected!");
+          //  System.out.println("Disconnected!");
 
-        } catch (ClassNotFoundException e) {
+//        } catch (ClassNotFoundException e) {
+//            e.printStackTrace();
+//        } catch (SQLException e) {
+//            e.printStackTrace();
+//        }
+
+        System.out.println("OSM Export test");
+        Airspaces airspaces = new Airspaces();
+        airspaces.OpenAipFile("C:\\Downloads\\openaip\\openaip_airspace_netherlands_nl.aip", OPENAIP_TABLE_NAME);
+
+        try {
+
+            osm _osm = new osm();
+            _osm.createAirspaceOSM(airspaces);
+            TransformerFactory transformerFactory = TransformerFactory.newInstance();
+            Transformer transformer = transformerFactory.newTransformer();
+            DOMSource source = new DOMSource(_osm.document);
+            StreamResult result = new StreamResult(new File("C:\\test\\osm.xml"));
+            transformer.transform(source, result);
+
+            System.out.println("Dosument created");
+
+        } catch (ParserConfigurationException e) {
             e.printStackTrace();
-        } catch (SQLException e) {
-            e.printStackTrace();
+        }
+        catch (TransformerException te)
+        {
+            te.printStackTrace();
         }
 
     }
@@ -56,8 +87,8 @@ public class Main {
     {
         Airspaces airspaces = new Airspaces();
         airspaces.OpenAipFile("C:\\Downloads\\openaip\\openaip_airspace_netherlands_nl.aip", OPENAIP_TABLE_NAME);
-        airspaces.OpenAipFile("C:\\Downloads\\openaip\\openaip_airspace_germany_de.aip", OPENAIP_TABLE_NAME);
-        airspaces.OpenAipFile("C:\\Downloads\\openaip\\openaip_airspace_belgium_be.aip", OPENAIP_TABLE_NAME);
+        //airspaces.OpenAipFile("C:\\Downloads\\openaip\\openaip_airspace_germany_de.aip", OPENAIP_TABLE_NAME);
+        //airspaces.OpenAipFile("C:\\Downloads\\openaip\\openaip_airspace_belgium_be.aip", OPENAIP_TABLE_NAME);
     }
 
     private static ArrayList<Link> getOpenaipFiles()
