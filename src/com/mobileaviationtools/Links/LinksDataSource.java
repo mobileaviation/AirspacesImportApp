@@ -84,6 +84,7 @@ public class LinksDataSource {
 
         for (Link link : links)
         {
+            System.out.println(link.getXsoarLink());
             link.downloadFile(override);
         }
     }

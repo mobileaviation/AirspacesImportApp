@@ -1,8 +1,6 @@
 package com.mobileaviationtools;
 
-import com.mobileaviationtools.AirspacesData.Airspace;
-import com.mobileaviationtools.AirspacesData.AirspaceCategory;
-import com.mobileaviationtools.AirspacesData.Airspaces;
+import com.mobileaviationtools.AirspacesData.*;
 import com.mobileaviationtools.Links.Link;
 import com.mobileaviationtools.Links.LinksDataSource;
 import com.mobileaviationtools.OpenStreetMap.osm;
@@ -26,6 +24,19 @@ public class Main {
 
     public static void main(String[] args) {
 	// write your code here
+        AirspaceDataSource testSource = new AirspaceSQLITEDataSource();
+        testSource.Open();
+        testSource.createTables();
+
+        Airspaces airspaces = new Airspaces();
+        airspaces.OpenOpenAirTextFile("C:\\downloads\\openaip\\EHv16_3.txt", "NL");
+        airspaces.insertIntoDatabase(null, AirspaceDBHelper.AIRSPACES_TABLE_NAME, DatabaseType.SQLITE);
+
+
+        //System.out.println("Download XSoar Files");
+        //downloadXsourFiles();
+        //System.out.println("XSoar files downloaded");
+
         //try {
             //Class.forName("org.postgresql.Driver");
 
@@ -57,29 +68,29 @@ public class Main {
 //            e.printStackTrace();
 //        }
 
-        System.out.println("OSM Export test");
-        Airspaces airspaces = new Airspaces();
-        airspaces.OpenAipFile("C:\\Downloads\\openaip\\openaip_airspace_netherlands_nl.aip", OPENAIP_TABLE_NAME);
-
-        try {
-
-            osm _osm = new osm();
-            _osm.createAirspaceOSM(airspaces);
-            TransformerFactory transformerFactory = TransformerFactory.newInstance();
-            Transformer transformer = transformerFactory.newTransformer();
-            DOMSource source = new DOMSource(_osm.document);
-            StreamResult result = new StreamResult(new File("C:\\test\\osm.xml"));
-            transformer.transform(source, result);
-
-            System.out.println("Dosument created");
-
-        } catch (ParserConfigurationException e) {
-            e.printStackTrace();
-        }
-        catch (TransformerException te)
-        {
-            te.printStackTrace();
-        }
+//        System.out.println("OSM Export test");
+//        Airspaces airspaces = new Airspaces();
+//        airspaces.OpenAipFile("C:\\Downloads\\openaip\\openaip_airspace_netherlands_nl.aip", OPENAIP_TABLE_NAME);
+//
+//        try {
+//
+//            osm _osm = new osm();
+//            _osm.createAirspaceOSM(airspaces);
+//            TransformerFactory transformerFactory = TransformerFactory.newInstance();
+//            Transformer transformer = transformerFactory.newTransformer();
+//            DOMSource source = new DOMSource(_osm.document);
+//            StreamResult result = new StreamResult(new File("C:\\test\\osm.xml"));
+//            transformer.transform(source, result);
+//
+//            System.out.println("Dosument created");
+//
+//        } catch (ParserConfigurationException e) {
+//            e.printStackTrace();
+//        }
+//        catch (TransformerException te)
+//        {
+//            te.printStackTrace();
+//        }
 
     }
 
@@ -119,7 +130,7 @@ public class Main {
             airspaces.OpenOpenAirTextFile(link.getLocalFile(), link.country);
         }
 
-        airspaces.insertIntoDatabase(null, OPENAIR_TABLE_NAME);
+        airspaces.insertIntoDatabase(null, OPENAIR_TABLE_NAME, DatabaseType.POSTGRESQL);
     }
 
     private static void readOpenaipFiles(ArrayList<Link> links)

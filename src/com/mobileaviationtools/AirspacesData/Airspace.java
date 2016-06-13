@@ -50,9 +50,23 @@ public class Airspace {
     {
         if (Geometry == null) {
             Coordinate[] c = coordinates.toArray(new Coordinate[coordinates.size()]);
-            Geometry = new GeometryFactory().createPolygon(c);
+
+            try {
+                Geometry = new GeometryFactory().createPolygon(c);
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
         }
         return Geometry;
+    }
+
+    public Geometry getEnvelope()
+    {
+        if (Geometry == null) {
+            Coordinate[] c = coordinates.toArray(new Coordinate[coordinates.size()]);
+            Geometry = new GeometryFactory().createPolygon(c);
+        }
+        return Geometry.getEnvelope();
     }
 
     public void setGeometry(Geometry geometry)

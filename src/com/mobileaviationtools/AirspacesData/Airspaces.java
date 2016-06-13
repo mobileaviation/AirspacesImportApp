@@ -53,21 +53,24 @@ public class Airspaces extends ArrayList<Airspace> {
         readOpenAirText(txt, country);
     }
 
-    public void insertIntoDatabase(AirspaceCategory category, String tablename)
+    public void insertIntoDatabase(AirspaceCategory category, String tablename, DatabaseType databaseType)
     {
         if (category != null) {
             if (category.equals(AirspaceCategory.FIR))
                 p_insertIntoFir();
             else
-                p_insertIntoDatabase(tablename);
+                if (databaseType==DatabaseType.POSTGRESQL)
+                    p_insertIntoDatabase(tablename);
+                else i_insertIntoDatabase(tablename);
         } else
+        if (databaseType==DatabaseType.POSTGRESQL)
             p_insertIntoDatabase(tablename);
+        else i_insertIntoDatabase(tablename);
     }
-
 
     private void p_insertIntoFir()
     {
-        AirspaceDataSource dataSource = new AirspaceDataSource();
+        AirspaceDataSource dataSource = new AirspacePSQLDataSource();
         dataSource.Open();
 
         for (Airspace airspace : this)
@@ -81,7 +84,20 @@ public class Airspaces extends ArrayList<Airspace> {
 
     private void p_insertIntoDatabase(String tablename)
     {
-        AirspaceDataSource dataSource = new AirspaceDataSource();
+        AirspaceDataSource dataSource = new AirspacePSQLDataSource();
+        dataSource.Open();
+
+        for (Airspace airspace : this)
+        {
+            dataSource.insertAirspace(airspace, tablename);
+        }
+
+        dataSource.Close();
+    }
+
+    private void i_insertIntoDatabase(String tablename)
+    {
+        AirspaceDataSource dataSource = new AirspaceSQLITEDataSource();
         dataSource.Open();
 
         for (Airspace airspace : this)
@@ -96,8 +112,9 @@ public class Airspaces extends ArrayList<Airspace> {
     private void readOpenAirText(String text, String country)
     {
         try {
-            text = text.replace("\n", "\r\n");
-            lines = text.split("\r\n");
+            //text = text.replace("\n", "\r\n");
+            //lines = text.split("\r\n");
+            lines = text.split("(?=\\bAC)|(?=\\bAN)|(?=\\bAH)|(?=\\bAL)|(?=\\bAF)|(?=\\bAG)|(?=\\bDP)|(?=\\bDB)|(?=\\bDC)|(?=\\bV\\sX)");
             Airspace airspace = null;
             LatLng location = null;
             LatLng center = null;
@@ -142,8 +159,10 @@ public class Airspaces extends ArrayList<Airspace> {
                     }
                     if (l.startsWith("AH")) {
                         if (airspace != null) {
-                            airspace.AltLimit_Top = Integer.getInteger(Helpers.findRegex("\\d+", l), 0);
-                            String m = Helpers.findRegex("([MSL]+)|([FL]+)|([FT]+)|([SFC]+)|([UNLIM]+)|([AGL]+)", l);
+                            //String ss = Helpers.findRegex("\\d+", l);
+                            //Integer sss = Integer.parseInt(ss);
+                            airspace.AltLimit_Top = Integer.parseInt("0" + Helpers.findRegex("\\d+", l));
+                            String m = Helpers.findRegex("(\\bMSL)|(\\bFL)|(\\bFT)|(\\bSFC)|(\\bUNLIM)|(\\bAGL)", l);
                             if (m.equals("UNLIM")) airspace.AltLimit_Top = 100000;
                             airspace.AltLimit_Top_Ref = Helpers.parseReference(m);
                             airspace.AltLimit_Top_Unit = Helpers.parseUnit(m);
@@ -151,8 +170,8 @@ public class Airspaces extends ArrayList<Airspace> {
                     }
                     if (l.startsWith("AL")) {
                         if (airspace != null) {
-                            airspace.AltLimit_Bottom = Integer.getInteger(Helpers.findRegex("\\d+", l), 0);
-                            String m = Helpers.findRegex("([MSL]+)|([FL]+)|([FT]+)|([SFC]+)|([UNLIM]+)|([AGL]+)", l);
+                            airspace.AltLimit_Bottom = Integer.parseInt("0" + Helpers.findRegex("\\d+", l));
+                            String m = Helpers.findRegex("(\\bMSL)|(\\bFL)|(\\bFT)|(\\bSFC)|(\\bUNLIM)|(\\bAGL)|(\\bGND)", l);
                             if (m.equals("UNLIM")) airspace.AltLimit_Top = 100000;
                             airspace.AltLimit_Bottom_Ref = Helpers.parseReference(m);
                             airspace.AltLimit_Bottom_Unit = Helpers.parseUnit(m);
