@@ -1,5 +1,9 @@
 package com.mobileaviationtools.AirspacesData;
 
+import com.vividsolutions.jts.geom.Geometry;
+import com.vividsolutions.jts.io.ParseException;
+import com.vividsolutions.jts.io.WKBReader;
+import com.vividsolutions.jts.io.WKBWriter;
 import com.vividsolutions.jts.io.WKTWriter;
 
 import java.sql.Connection;
@@ -58,8 +62,20 @@ public class AirspaceSQLITEDataSource implements AirspaceDataSource {
             pst.setLong(9, airspace.AltLimit_Bottom);
             pst.setString(10, airspace.AltLimit_Bottom_Unit.toString());
             pst.setString(11, airspace.AltLimit_Bottom_Ref.toString());
-            pst.setString(12, new WKTWriter().write(airspace.getGeometry()));
-            pst.setString(13, new WKTWriter().write(airspace.getEnvelope()));
+//            byte[] geometry = new WKBWriter().write(airspace.getGeometry());
+//            Geometry g1;// = airspace.getGeometry();
+//            String gis;
+//            try {
+//                g1  = new WKBReader().read(geometry);
+//                gis = new WKTWriter().write(g1);
+//                int i = 0;
+//            } catch (Exception e) {
+//                e.printStackTrace();
+//            }
+            //pst.setString(12, new WKTWriter().write(airspace.getGeometry()));
+            pst.setBytes(12, new WKBWriter().write(airspace.getGeometry()));
+            //String evelope = new WKTWriter().write(airspace.getEnvelope());
+            pst.setBytes(13, new WKBWriter().write(airspace.getEnvelope()));
 
             pst.executeUpdate();
             pst.close();

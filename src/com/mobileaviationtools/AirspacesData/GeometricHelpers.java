@@ -75,7 +75,7 @@ public class GeometricHelpers {
         return list;
     }
 
-    public static ArrayList<Coordinate> drawArc(LatLng start, LatLng end, LatLng center)
+    public static ArrayList<Coordinate> drawArc(LatLng start, LatLng end, LatLng center, Boolean cw)
     {
         // Get Location class from LatLng Class
 

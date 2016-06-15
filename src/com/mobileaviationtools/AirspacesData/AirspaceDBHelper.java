@@ -43,8 +43,8 @@ public class AirspaceDBHelper {
             C_altLimit_bottom + " integer, " +
             C_altLimit_bottom_unit + " text, " +
             C_altLimit_bottom_ref + " text, " +
-            C_geometry + " text, " +
-            C_envelope + " text );";
+            C_geometry + " blob, " +
+            C_envelope + " blob );";
 
 //    public static final String AIRSPACES_ENVELOPE_INDEX = "create index envelope_index " +
 //            "on " + AIRSPACES_TABLE_NAME + " (" +

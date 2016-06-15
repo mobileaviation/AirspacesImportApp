@@ -114,11 +114,12 @@ public class Airspaces extends ArrayList<Airspace> {
         try {
             //text = text.replace("\n", "\r\n");
             //lines = text.split("\r\n");
-            lines = text.split("(?=\\bAC)|(?=\\bAN)|(?=\\bAH)|(?=\\bAL)|(?=\\bAF)|(?=\\bAG)|(?=\\bDP)|(?=\\bDB)|(?=\\bDC)|(?=\\bV\\sX)");
+            lines = text.split("(?=\\bAC)|(?=\\bAN)|(?=\\bAH)|(?=\\bAL)|(?=\\bAF)|(?=\\bAG)|(?=\\bDP)|(?=\\bDB)|(?=\\bDC)|(?=\\bV\\sX)|(?=\\bV\\sD)");
             Airspace airspace = null;
             LatLng location = null;
             LatLng center = null;
             Boolean circle  = false;
+            Boolean cw = false;
             //Boolean newAirspace = false;
             for (String l : lines)
             {
@@ -177,6 +178,10 @@ public class Airspaces extends ArrayList<Airspace> {
                             airspace.AltLimit_Bottom_Unit = Helpers.parseUnit(m);
                         }
                     }
+                    if (l.startsWith("V D")) {
+                        cw = (Helpers.findRegex("\\+", l).equals("+"));
+                        int i = 0;
+                    }
                     if (l.startsWith("V X")) {
                         center = Helpers.parseOpenAirLocation(l);
                     }
@@ -184,7 +189,7 @@ public class Airspaces extends ArrayList<Airspace> {
                         String[] be = l.split(",");
                         LatLng begin = Helpers.parseOpenAirLocation(be[0]);
                         LatLng end = Helpers.parseOpenAirLocation(be[1]);
-                        airspace.coordinates.addAll(GeometricHelpers.drawArc(begin, end, center));
+                        airspace.coordinates.addAll(GeometricHelpers.drawArc(begin, end, center, false));
                         circle = false;
                     }
                     if (l.startsWith("DP")) {

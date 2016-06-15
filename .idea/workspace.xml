@@ -7,13 +7,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e48e0e61-ea78-4a64-937f-b7eafc7736e2" name="Default" comment="">
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/mobileaviationtools/AirspacesData/AirspaceDataSource.java" afterPath="$PROJECT_DIR$/src/com/mobileaviationtools/AirspacesData/AirspacePSQLDataSource.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AirspacesImportApp.iml" afterPath="$PROJECT_DIR$/AirspacesImportApp.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/mobileaviationtools/AirspacesData/Airspace.java" afterPath="$PROJECT_DIR$/src/com/mobileaviationtools/AirspacesData/Airspace.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/mobileaviationtools/AirspacesData/AirspaceDBHelper.java" afterPath="$PROJECT_DIR$/src/com/mobileaviationtools/AirspacesData/AirspaceDBHelper.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/mobileaviationtools/AirspacesData/AirspaceSQLITEDataSource.java" afterPath="$PROJECT_DIR$/src/com/mobileaviationtools/AirspacesData/AirspaceSQLITEDataSource.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/mobileaviationtools/AirspacesData/Airspaces.java" afterPath="$PROJECT_DIR$/src/com/mobileaviationtools/AirspacesData/Airspaces.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/mobileaviationtools/Links/LinksDataSource.java" afterPath="$PROJECT_DIR$/src/com/mobileaviationtools/Links/LinksDataSource.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/mobileaviationtools/Main.java" afterPath="$PROJECT_DIR$/src/com/mobileaviationtools/Main.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/mobileaviationtools/AirspacesData/AltitudeReference.java" afterPath="$PROJECT_DIR$/src/com/mobileaviationtools/AirspacesData/AltitudeReference.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/mobileaviationtools/AirspacesData/GeometricHelpers.java" afterPath="$PROJECT_DIR$/src/com/mobileaviationtools/AirspacesData/GeometricHelpers.java" />
     </list>
     <ignored path="AirspacesImportApp.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -45,27 +43,37 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="MainActivity.java" pinned="false" current-in-tab="true">
+        <entry file="file://$USER_HOME$/Documents/GitHub/AltusMappingEngineAndroid/Lines/src/com/example/lines/MainActivity.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.36528927">
+              <caret line="36" column="21" selection-start-line="36" selection-start-column="8" selection-end-line="36" selection-end-column="21" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="AirspaceSQLITEDataSource.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/mobileaviationtools/AirspacesData/AirspaceSQLITEDataSource.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="53" column="47" selection-start-line="53" selection-start-column="47" selection-end-line="53" selection-end-column="47" />
+              <caret line="76" column="14" selection-start-line="76" selection-start-column="14" selection-end-line="76" selection-end-column="14" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#984#985#0" expanded="true" />
-                <element signature="e#1011#1012#0" expanded="true" />
-                <element signature="e#2613#2614#0" expanded="true" />
-                <element signature="e#2664#2665#0" expanded="true" />
+                <element signature="e#1166#1167#0" expanded="true" />
+                <element signature="e#1193#1194#0" expanded="true" />
+                <element signature="e#3360#3361#0" expanded="true" />
+                <element signature="e#3411#3412#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Airspaces.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Airspaces.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/mobileaviationtools/AirspacesData/Airspaces.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.30413222">
-              <caret line="180" column="65" selection-start-line="180" selection-start-column="65" selection-end-line="180" selection-end-column="65" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="27" column="4" selection-start-line="27" selection-start-column="4" selection-end-line="30" selection-end-column="5" />
               <folding>
                 <element signature="method#readOpenAipXML#0;class#Airspaces#0" expanded="false" />
                 <element signature="method#readFromFile#0;class#Airspaces#0" expanded="false" />
@@ -78,7 +86,7 @@
         <entry file="file://$PROJECT_DIR$/src/com/mobileaviationtools/AirspacesData/GeometricHelpers.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="69" column="0" selection-start-line="69" selection-start-column="0" selection-end-line="69" selection-end-column="0" />
+              <caret line="74" column="20" selection-start-line="74" selection-start-column="20" selection-end-line="74" selection-end-column="20" />
               <folding />
             </state>
           </provider>
@@ -89,16 +97,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
               <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AirspacePSQLDataSource.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/mobileaviationtools/AirspacesData/AirspacePSQLDataSource.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="121" column="9" selection-start-line="94" selection-start-column="8" selection-end-line="121" selection-end-column="9" />
               <folding />
             </state>
           </provider>
@@ -118,7 +116,7 @@
         <entry file="file://$PROJECT_DIR$/src/com/mobileaviationtools/AirspacesData/AirspaceDBHelper.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="18" column="47" selection-start-line="18" selection-start-column="47" selection-end-line="18" selection-end-column="47" />
+              <caret line="46" column="31" selection-start-line="46" selection-start-column="31" selection-end-line="46" selection-end-column="31" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -130,7 +128,7 @@
         <entry file="file://$PROJECT_DIR$/src/com/mobileaviationtools/AirspacesData/Airspace.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="56" column="36" selection-start-line="56" selection-start-column="36" selection-end-line="56" selection-end-column="36" />
+              <caret line="75" column="5" selection-start-line="14" selection-start-column="4" selection-end-line="75" selection-end-column="5" />
               <folding />
             </state>
           </provider>
@@ -158,13 +156,11 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/src/com/mobileaviationtools/AirspacesData/AltitudeUnit.java" />
-        <option value="$PROJECT_DIR$/src/com/mobileaviationtools/AirspacesData/GeometricHelpers.java" />
         <option value="$PROJECT_DIR$/src/com/mobileaviationtools/Classes/LatLng.java" />
         <option value="$PROJECT_DIR$/src/com/mobileaviationtools/AirspacesData/Database.java" />
         <option value="$PROJECT_DIR$/src/com/mobileaviationtools/AirspacesData/AirspaceCategory.java" />
         <option value="$PROJECT_DIR$/src/com/mobileaviationtools/Helpers.java" />
         <option value="$PROJECT_DIR$/src/com/mobileaviationtools/Links/Link.java" />
-        <option value="$PROJECT_DIR$/src/com/mobileaviationtools/AirspacesData/AltitudeReference.java" />
         <option value="$PROJECT_DIR$/src/com/mobileaviationtools/OpenStreetMap/tag.java" />
         <option value="$PROJECT_DIR$/src/com/mobileaviationtools/OpenStreetMap/nd.java" />
         <option value="$PROJECT_DIR$/src/com/mobileaviationtools/OpenStreetMap/way.java" />
@@ -174,11 +170,13 @@
         <option value="$PROJECT_DIR$/src/com/mobileaviationtools/AirspacesData/AirspaceDataSource.java" />
         <option value="$PROJECT_DIR$/src/com/mobileaviationtools/AirspacesData/AirspacePSQLDataSource.java" />
         <option value="$PROJECT_DIR$/src/com/mobileaviationtools/AirspacesData/DatabaseType.java" />
-        <option value="$PROJECT_DIR$/src/com/mobileaviationtools/AirspacesData/AirspaceDBHelper.java" />
         <option value="$PROJECT_DIR$/src/com/mobileaviationtools/Main.java" />
         <option value="$PROJECT_DIR$/src/com/mobileaviationtools/AirspacesData/Airspace.java" />
+        <option value="$PROJECT_DIR$/src/com/mobileaviationtools/AirspacesData/GeometricHelpers.java" />
         <option value="$PROJECT_DIR$/src/com/mobileaviationtools/AirspacesData/Airspaces.java" />
+        <option value="$PROJECT_DIR$/src/com/mobileaviationtools/AirspacesData/AirspaceDBHelper.java" />
         <option value="$PROJECT_DIR$/src/com/mobileaviationtools/AirspacesData/AirspaceSQLITEDataSource.java" />
+        <option value="$PROJECT_DIR$/src/com/mobileaviationtools/AirspacesData/AltitudeReference.java" />
       </list>
     </option>
   </component>
@@ -687,31 +685,37 @@
           <option name="timeStamp" value="39" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/com/mobileaviationtools/AirspacesData/Airspace.java</url>
-          <line>56</line>
+          <url>file://$PROJECT_DIR$/src/com/mobileaviationtools/AirspacesData/AirspaceSQLITEDataSource.java</url>
+          <line>79</line>
           <properties />
-          <option name="timeStamp" value="41" />
+          <option name="timeStamp" value="48" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/com/mobileaviationtools/AirspacesData/Airspaces.java</url>
-          <line>167</line>
+          <url>file://$PROJECT_DIR$/src/com/mobileaviationtools/AirspacesData/AirspaceSQLITEDataSource.java</url>
+          <line>69</line>
           <properties />
-          <option name="timeStamp" value="43" />
+          <option name="timeStamp" value="50" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/com/mobileaviationtools/AirspacesData/Airspaces.java</url>
-          <line>163</line>
+          <url>file://$PROJECT_DIR$/src/com/mobileaviationtools/AirspacesData/AirspaceSQLITEDataSource.java</url>
+          <line>72</line>
           <properties />
-          <option name="timeStamp" value="44" />
+          <option name="timeStamp" value="52" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/com/mobileaviationtools/AirspacesData/Airspaces.java</url>
-          <line>164</line>
+          <url>file://$PROJECT_DIR$/src/com/mobileaviationtools/AirspacesData/AirspaceSQLITEDataSource.java</url>
+          <line>68</line>
           <properties />
-          <option name="timeStamp" value="45" />
+          <option name="timeStamp" value="53" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/mobileaviationtools/AirspacesData/AirspaceSQLITEDataSource.java</url>
+          <line>70</line>
+          <properties />
+          <option name="timeStamp" value="54" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="46" />
+      <option name="time" value="55" />
     </breakpoint-manager>
     <watches-manager>
       <configuration name="Application">
@@ -724,14 +728,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/com/mobileaviationtools/AirspacesData/AirspacePSQLDataSource.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="57" column="49" selection-start-line="57" selection-start-column="49" selection-end-line="57" selection-end-column="49" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/mobileaviationtools/Helpers.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -945,21 +941,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/mobileaviationtools/AirspacesData/AltitudeUnit.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.26269317">
-          <caret line="7" column="6" selection-start-line="7" selection-start-column="6" selection-end-line="7" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/mobileaviationtools/AirspacesData/AltitudeReference.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.18763797">
-          <caret line="5" column="12" selection-start-line="5" selection-start-column="12" selection-end-line="5" selection-end-column="12" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/mobileaviationtools/OpenStreetMap/member.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1029,17 +1010,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/mobileaviationtools/AirspacesData/AirspaceCategory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="16" column="6" selection-start-line="16" selection-start-column="6" selection-end-line="16" selection-end-column="6" />
-          <folding>
-            <element signature="e#429#430#0" expanded="false" />
-            <element signature="e#468#469#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/mobileaviationtools/Links/Link.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1098,14 +1068,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/mobileaviationtools/AirspacesData/AirspaceDataSource.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="13" column="29" selection-start-line="13" selection-start-column="29" selection-end-line="13" selection-end-column="29" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/mobileaviationtools/AirspacesData/AirspacePSQLDataSource.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1122,32 +1084,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/mobileaviationtools/AirspacesData/AirspaceDBHelper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="18" column="47" selection-start-line="18" selection-start-column="47" selection-end-line="18" selection-end-column="47" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/mobileaviationtools/AirspacesData/Airspace.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="56" column="36" selection-start-line="56" selection-start-column="36" selection-end-line="56" selection-end-column="36" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/mobileaviationtools/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="31" column="0" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/mobileaviationtools/Helpers.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.49421486">
@@ -1159,33 +1095,102 @@
     <entry file="file://$PROJECT_DIR$/src/com/mobileaviationtools/AirspacesData/GeometricHelpers.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="69" column="0" selection-start-line="69" selection-start-column="0" selection-end-line="69" selection-end-column="0" />
+          <caret line="74" column="20" selection-start-line="74" selection-start-column="20" selection-end-line="74" selection-end-column="20" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/mobileaviationtools/AirspacesData/AirspaceDataSource.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="13" column="29" selection-start-line="13" selection-start-column="29" selection-end-line="13" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/mobileaviationtools/AirspacesData/AirspaceDBHelper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="46" column="31" selection-start-line="46" selection-start-column="31" selection-end-line="46" selection-end-column="31" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/mobileaviationtools/AirspacesData/AirspaceSQLITEDataSource.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="53" column="47" selection-start-line="53" selection-start-column="47" selection-end-line="53" selection-end-column="47" />
+          <caret line="76" column="14" selection-start-line="76" selection-start-column="14" selection-end-line="76" selection-end-column="14" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#984#985#0" expanded="true" />
-            <element signature="e#1011#1012#0" expanded="true" />
-            <element signature="e#2613#2614#0" expanded="true" />
-            <element signature="e#2664#2665#0" expanded="true" />
+            <element signature="e#1166#1167#0" expanded="true" />
+            <element signature="e#1193#1194#0" expanded="true" />
+            <element signature="e#3360#3361#0" expanded="true" />
+            <element signature="e#3411#3412#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/mobileaviationtools/AirspacesData/AirspaceCategory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.91570246">
+          <caret line="40" column="1" selection-start-line="5" selection-start-column="0" selection-end-line="40" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/mobileaviationtools/AirspacesData/AltitudeUnit.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.25289255">
+          <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/mobileaviationtools/AirspacesData/AltitudeReference.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.16859505">
+          <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="15" selection-end-column="5" />
+          <folding>
+            <element signature="e#316#317#0" expanded="true" />
+            <element signature="e#355#356#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/mobileaviationtools/AirspacesData/Airspace.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="75" column="5" selection-start-line="14" selection-start-column="4" selection-end-line="75" selection-end-column="5" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/mobileaviationtools/AirspacesData/Airspaces.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.30413222">
-          <caret line="180" column="65" selection-start-line="180" selection-start-column="65" selection-end-line="180" selection-end-column="65" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="27" column="4" selection-start-line="27" selection-start-column="4" selection-end-line="30" selection-end-column="5" />
           <folding>
             <element signature="method#readOpenAipXML#0;class#Airspaces#0" expanded="false" />
             <element signature="method#readFromFile#0;class#Airspaces#0" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/mobileaviationtools/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="31" column="0" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Documents/GitHub/AltusMappingEngineAndroid/Lines/src/com/example/lines/MainActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.36528927">
+          <caret line="36" column="21" selection-start-line="36" selection-start-column="8" selection-end-line="36" selection-end-column="21" />
+          <folding />
         </state>
       </provider>
     </entry>
