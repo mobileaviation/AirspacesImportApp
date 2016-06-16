@@ -91,16 +91,27 @@ public class GeometricHelpers {
         // So recalculate the angles
         // angles should all be positive
 
-        Double arcBegin = center.bearingTo(start) - 90;
-        Double arcEnd = center.bearingTo(end) - 90;
-        Double arcSize =  arcBegin - arcEnd;
-        if (arcSize>0) arcSize = arcSize - 360;
-        if (arcBegin<0) arcBegin = 360 - (arcBegin + 360); else arcBegin = 360 - arcBegin;
-        if (arcEnd<0) arcEnd = 360 - (arcEnd + 360); else arcEnd = 360 - arcEnd;
+        Double b = center.bearingTo(start);
+        Double e = center.bearingTo(end);
 
+        Double arcBegin = 360 - center.bearingTo(start) + 90;
+        Double arcEnd = 360 - center.bearingTo(end) + 90;
+        Double arcSize =  arcEnd - arcBegin;
+
+        if ((arcSize>0) && cw) arcSize = 360 - arcSize;
+        else
+        if ((arcSize<0) && cw) arcSize = -1 * arcSize;
+//        else
+//        if ((arcSize>0) && !cw) arcSize = arcSize;
+        else
+        if ((arcSize<0) && !cw) arcSize = 360 + arcSize;
+
+        //if (arcBegin<0) arcBegin = 360 - (arcBegin + 360); else arcBegin = 360 - arcBegin;
+        //if (arcEnd<0) arcEnd = 360 - (arcEnd + 360); else arcEnd = 360 - arcEnd;
 
         // if the size is positive this is an counterclockwise arc (positive)
         // if the size is negative this is an clockwise arc
+        //if (cw) arcSize = arcSize * -1;
 
         GeometricShapeFactory geometricShapeFactory = new GeometricShapeFactory();
         geometricShapeFactory.setCentre(new Coordinate(center.longitude, center.latitude));
@@ -110,13 +121,16 @@ public class GeometricHelpers {
 
         // because the arc is drawn counter clockwise the arcEnd is actually the startpoint
         Coordinate[] coordinates;
-        if (arcSize>0)
-            coordinates =  geometricShapeFactory.createArc(Math.toRadians(arcBegin) , Math.toRadians(arcSize)).getCoordinates();
+//        if (arcSize>0)
+//        //if (!cw)
+//            coordinates =  geometricShapeFactory.createArc(Math.toRadians(arcEnd) , Math.toRadians(arcSize)).getCoordinates();
+        if (cw)
+            coordinates =  geometricShapeFactory.createArc(Math.toRadians(arcEnd) , Math.toRadians(arcSize)).getCoordinates();
         else
-            coordinates = geometricShapeFactory.createArc(Math.toRadians(arcEnd), Math.toRadians(arcSize * -1)).getCoordinates();
+            coordinates = geometricShapeFactory.createArc(Math.toRadians(arcBegin), Math.toRadians(arcSize)).getCoordinates();
 
         ArrayList<Coordinate> list = new ArrayList<Coordinate>(Arrays.asList(coordinates));
-        Collections.reverse(list);
+        if (cw) Collections.reverse(list);
         return list;
     }
 }

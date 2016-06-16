@@ -119,7 +119,7 @@ public class Airspaces extends ArrayList<Airspace> {
             LatLng location = null;
             LatLng center = null;
             Boolean circle  = false;
-            Boolean cw = false;
+            Boolean cw = true;
             //Boolean newAirspace = false;
             for (String l : lines)
             {
@@ -143,6 +143,7 @@ public class Airspaces extends ArrayList<Airspace> {
                             this.remove(airspace);
                         airspace = new Airspace();
                         airspace.Country = country;
+                        cw = true;
                         //newAirspace = false;
                         this.add(airspace);
                         airspace.Version = "0";
@@ -189,7 +190,7 @@ public class Airspaces extends ArrayList<Airspace> {
                         String[] be = l.split(",");
                         LatLng begin = Helpers.parseOpenAirLocation(be[0]);
                         LatLng end = Helpers.parseOpenAirLocation(be[1]);
-                        airspace.coordinates.addAll(GeometricHelpers.drawArc(begin, end, center, false));
+                        airspace.coordinates.addAll(GeometricHelpers.drawArc(begin, end, center, cw));
                         circle = false;
                     }
                     if (l.startsWith("DP")) {
