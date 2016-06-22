@@ -30,6 +30,8 @@ public class Main {
 
         Airspaces airspaces = new Airspaces();
         airspaces.OpenOpenAirTextFile("C:\\downloads\\openaip\\EHv16_3.txt", "NL");
+        airspaces.OpenOpenAirTextFile("C:\\downloads\\openaip\\BELLUX_WEEK_140501.txt", "BE");
+        airspaces.OpenOpenAirTextFile("C:\\downloads\\openaip\\Germany_Week13_2016.txt", "DE");
         airspaces.insertIntoDatabase(null, AirspaceDBHelper.AIRSPACES_TABLE_NAME, DatabaseType.SQLITE);
 
 

@@ -133,7 +133,7 @@ public class Airspaces extends ArrayList<Airspace> {
 
                     //
 
-                    if (l.startsWith("AC")) {
+                    if (l.startsWith("AC ")) {
                         if ((airspace != null) && (airspace.coordinates.size()>3) && !circle
                                 && !airspace.coordinates.get(0).equals(airspace.coordinates.get(airspace.coordinates.size()-1)))
                             airspace.coordinates.add(airspace.coordinates.get(0));
@@ -151,7 +151,7 @@ public class Airspaces extends ArrayList<Airspace> {
                         String c = l.replace("AC ", "").trim();
                         airspace.Category = AirspaceCategory.valueOf(Helpers.findRegex("[A-Za-z]+\\w|[A-Za-z]",c));
                     }
-                    if (l.startsWith("AN")) {
+                    if (l.startsWith("AN ")) {
                         if (airspace != null) {
                             airspace.Name = l.replace("AN ", "");
                             //newAirspace = true;
@@ -170,7 +170,7 @@ public class Airspaces extends ArrayList<Airspace> {
                             airspace.AltLimit_Top_Unit = Helpers.parseUnit(m);
                         }
                     }
-                    if (l.startsWith("AL")) {
+                    if (l.startsWith("AL ")) {
                         if (airspace != null) {
                             airspace.AltLimit_Bottom = Integer.parseInt("0" + Helpers.findRegex("\\d+", l));
                             String m = Helpers.findRegex("(\\bMSL)|(\\bFL)|(\\bFT)|(\\bSFC)|(\\bUNLIM)|(\\bAGL)|(\\bGND)", l);
@@ -186,19 +186,19 @@ public class Airspaces extends ArrayList<Airspace> {
                     if (l.startsWith("V X")) {
                         center = Helpers.parseOpenAirLocation(l);
                     }
-                    if (l.startsWith("DB")) {
+                    if (l.startsWith("DB ")) {
                         String[] be = l.split(",");
                         LatLng begin = Helpers.parseOpenAirLocation(be[0]);
                         LatLng end = Helpers.parseOpenAirLocation(be[1]);
                         airspace.coordinates.addAll(GeometricHelpers.drawArc(begin, end, center, cw));
                         circle = false;
                     }
-                    if (l.startsWith("DP")) {
+                    if (l.startsWith("DP ")) {
                         location = Helpers.parseOpenAirLocation(l);
                         airspace.coordinates.add(new Coordinate(location.longitude, location.latitude));
                         circle = false;
                     }
-                    if (l.startsWith("DC")) {
+                    if (l.startsWith("DC ")) {
                         if (airspace != null) {
                             String m = Helpers.findRegex("([0-9.]+\\w)|([0-9])", l);
                             airspace.coordinates.addAll(GeometricHelpers.drawCircle(center, Double.valueOf(m)));

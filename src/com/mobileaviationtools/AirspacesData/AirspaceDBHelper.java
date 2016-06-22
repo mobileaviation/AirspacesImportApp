@@ -46,6 +46,11 @@ public class AirspaceDBHelper {
             C_geometry + " blob, " +
             C_envelope + " blob );";
 
+    public static final String AIRSPACES_COUNTRY_INDEX = "create index country_index " +
+            "on " + AIRSPACES_TABLE_NAME + " (" +
+            C_country +
+            ");";
+
 //    public static final String AIRSPACES_ENVELOPE_INDEX = "create index envelope_index " +
 //            "on " + AIRSPACES_TABLE_NAME + " (" +
 //            C_lat_top_left + "," + C_lon_top_left + "," + C_lat_bottom_right + "," + C_lot_bottom_right +
@@ -58,7 +63,8 @@ public class AirspaceDBHelper {
             statement.setQueryTimeout(30);
             statement.execute(AIRSPACES_TABLE);
             System.out.println("Airspaces table created");
-
+            statement.execute(AIRSPACES_COUNTRY_INDEX);
+            System.out.println("Airspaces country index created");
         } catch (SQLException e) {
             e.printStackTrace();
         }
