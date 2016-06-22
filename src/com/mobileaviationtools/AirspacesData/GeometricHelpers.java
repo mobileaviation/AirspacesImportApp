@@ -43,7 +43,7 @@ public class GeometricHelpers {
         geometricShapeFactory.setCentre(new Coordinate(center.longitude, center.latitude));
         geometricShapeFactory.setHeight(latTraveledDeg);
         geometricShapeFactory.setWidth(longTraveledDeg);
-        geometricShapeFactory.setNumPoints(15);
+        geometricShapeFactory.setNumPoints(50);
 
         // because the arc is drawn counter clockwise the arcEnd is actually the startpoint
 
@@ -66,7 +66,7 @@ public class GeometricHelpers {
         geometricShapeFactory.setCentre(new Coordinate(center.longitude, center.latitude));
         geometricShapeFactory.setHeight(latTraveledDeg);
         geometricShapeFactory.setWidth(longTraveledDeg);
-        geometricShapeFactory.setNumPoints(15);
+        geometricShapeFactory.setNumPoints(50);
 
         com.vividsolutions.jts.geom.Polygon coordinates;
         coordinates = geometricShapeFactory.createEllipse();
@@ -117,7 +117,7 @@ public class GeometricHelpers {
         geometricShapeFactory.setCentre(new Coordinate(center.longitude, center.latitude));
         geometricShapeFactory.setHeight(latTraveledDeg);
         geometricShapeFactory.setWidth(longTraveledDeg);
-        geometricShapeFactory.setNumPoints(15);
+        geometricShapeFactory.setNumPoints(50);
 
         // because the arc is drawn counter clockwise the arcEnd is actually the startpoint
         Coordinate[] coordinates;
