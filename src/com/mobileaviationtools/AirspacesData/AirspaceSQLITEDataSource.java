@@ -16,12 +16,24 @@ import java.sql.SQLException;
  */
 public class AirspaceSQLITEDataSource implements AirspaceDataSource {
     private Connection conn;
+    private String databaseName;
+
+    public AirspaceSQLITEDataSource()
+    {
+        databaseName = "airspaces.db.sqlite";
+    }
+
+    public void Open(String databaseName)
+    {
+        this.databaseName = databaseName;
+        Open();
+    }
 
     public void Open() {
         try {
             conn = null;
             Class.forName("org.sqlite.JDBC");
-            conn = DriverManager.getConnection("jdbc:sqlite:C:/Downloads/openaip/airspaces.db.sqlite");
+            conn = DriverManager.getConnection("jdbc:sqlite:C:/Downloads/openaip/" + databaseName);
 
             System.out.println("Connection to C:/Downloads/openaip/airspaces.db.sqlite is open");
 

@@ -2,6 +2,7 @@ package com.mobileaviationtools.AirspacesData;
 
 import com.mobileaviationtools.Classes.LatLng;
 import com.mobileaviationtools.Helpers;
+import com.sun.xml.internal.ws.api.ha.StickyFeature;
 import com.vividsolutions.jts.geom.Coordinate;
 import com.vividsolutions.jts.io.ParseException;
 import com.vividsolutions.jts.io.WKTReader;
@@ -53,7 +54,7 @@ public class Airspaces extends ArrayList<Airspace> {
         readOpenAirText(txt, country);
     }
 
-    public void insertIntoDatabase(AirspaceCategory category, String tablename, DatabaseType databaseType)
+    public void insertIntoDatabase(AirspaceCategory category, String tablename, DatabaseType databaseType, String databaseName)
     {
         if (category != null) {
             if (category.equals(AirspaceCategory.FIR))
@@ -61,11 +62,11 @@ public class Airspaces extends ArrayList<Airspace> {
             else
                 if (databaseType==DatabaseType.POSTGRESQL)
                     p_insertIntoDatabase(tablename);
-                else i_insertIntoDatabase(tablename);
+                else i_insertIntoDatabase(databaseName,tablename);
         } else
         if (databaseType==DatabaseType.POSTGRESQL)
             p_insertIntoDatabase(tablename);
-        else i_insertIntoDatabase(tablename);
+        else i_insertIntoDatabase(databaseName, tablename);
     }
 
     private void p_insertIntoFir()
@@ -95,10 +96,10 @@ public class Airspaces extends ArrayList<Airspace> {
         dataSource.Close();
     }
 
-    private void i_insertIntoDatabase(String tablename)
+    private void i_insertIntoDatabase(String databaseName, String tablename)
     {
         AirspaceDataSource dataSource = new AirspaceSQLITEDataSource();
-        dataSource.Open();
+        dataSource.Open(databaseName);
 
         for (Airspace airspace : this)
         {

@@ -7,6 +7,7 @@ import java.sql.Connection;
  */
 public interface AirspaceDataSource {
     public void Open();
+    public void Open(String databaseName);
     public void Close();
     public Boolean checkAirspace(Airspace airspace, String tablename);
     public void insertAirspace(Airspace airspace, String tablename);

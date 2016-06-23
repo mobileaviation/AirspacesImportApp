@@ -16,6 +16,11 @@ public class AirspacePSQLDataSource implements AirspaceDataSource {
 
     private Connection conn;
 
+    public void Open(String databaseName)
+    {
+        Open();
+    }
+
     public void Open()
     {
         try {

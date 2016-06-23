@@ -22,17 +22,32 @@ public class Main {
     private static String OPENAIP_TABLE_NAME = "tbl_openaip_airspaces";
     private static String OPENAIR_TABLE_NAME = "tbl_openair_airspaces";
 
+
     public static void main(String[] args) {
 	// write your code here
         AirspaceDataSource testSource = new AirspaceSQLITEDataSource();
-        testSource.Open();
+        String databaseName = "NL_airspaces.db.sqlite";
+        testSource.Open(databaseName);
         testSource.createTables();
-
         Airspaces airspaces = new Airspaces();
         airspaces.OpenOpenAirTextFile("C:\\downloads\\openaip\\EHv16_3.txt", "NL");
+        airspaces.insertIntoDatabase(null, AirspaceDBHelper.AIRSPACES_TABLE_NAME, DatabaseType.SQLITE, databaseName);
+
+        testSource = new AirspaceSQLITEDataSource();
+        databaseName = "BE_airspaces.db.sqlite";
+        testSource.Open(databaseName);
+        testSource.createTables();
+        airspaces = new Airspaces();
         airspaces.OpenOpenAirTextFile("C:\\downloads\\openaip\\BELLUX_WEEK_140501.txt", "BE");
+        airspaces.insertIntoDatabase(null, AirspaceDBHelper.AIRSPACES_TABLE_NAME, DatabaseType.SQLITE, databaseName);
+
+        testSource = new AirspaceSQLITEDataSource();
+        databaseName = "DE_airspaces.db.sqlite";
+        testSource.Open(databaseName);
+        testSource.createTables();
+        airspaces = new Airspaces();
         airspaces.OpenOpenAirTextFile("C:\\downloads\\openaip\\Germany_Week13_2016.txt", "DE");
-        airspaces.insertIntoDatabase(null, AirspaceDBHelper.AIRSPACES_TABLE_NAME, DatabaseType.SQLITE);
+        airspaces.insertIntoDatabase(null, AirspaceDBHelper.AIRSPACES_TABLE_NAME, DatabaseType.SQLITE, databaseName);
 
 
         //System.out.println("Download XSoar Files");
@@ -132,7 +147,7 @@ public class Main {
             airspaces.OpenOpenAirTextFile(link.getLocalFile(), link.country);
         }
 
-        airspaces.insertIntoDatabase(null, OPENAIR_TABLE_NAME, DatabaseType.POSTGRESQL);
+        airspaces.insertIntoDatabase(null, OPENAIR_TABLE_NAME, DatabaseType.POSTGRESQL, "");
     }
 
     private static void readOpenaipFiles(ArrayList<Link> links)
