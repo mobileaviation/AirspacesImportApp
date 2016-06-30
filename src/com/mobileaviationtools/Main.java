@@ -25,29 +25,32 @@ public class Main {
 
     public static void main(String[] args) {
 	// write your code here
-        AirspaceDataSource testSource = new AirspaceSQLITEDataSource();
+        //AirspaceDataSource testSource = new AirspaceSQLITEDataSource();
+        AirspaceDataSource testSource = new AirspacePSQLDataSource();
         String databaseName = "NL_airspaces.db.sqlite";
         testSource.Open(databaseName);
         testSource.createTables();
         Airspaces airspaces = new Airspaces();
         airspaces.OpenOpenAirTextFile("C:\\downloads\\openaip\\EHv16_3.txt", "NL");
-        airspaces.insertIntoDatabase(null, AirspaceDBHelper.AIRSPACES_TABLE_NAME, DatabaseType.SQLITE, databaseName);
+        airspaces.insertIntoDatabase(null, AirspaceDBHelper.AIRSPACES_TABLE_NAME, DatabaseType.POSTGRESQL, databaseName);
 
-        testSource = new AirspaceSQLITEDataSource();
+        //testSource = new AirspaceSQLITEDataSource();
+        testSource = new AirspacePSQLDataSource();
         databaseName = "BE_airspaces.db.sqlite";
         testSource.Open(databaseName);
         testSource.createTables();
         airspaces = new Airspaces();
         airspaces.OpenOpenAirTextFile("C:\\downloads\\openaip\\BELLUX_WEEK_140501.txt", "BE");
-        airspaces.insertIntoDatabase(null, AirspaceDBHelper.AIRSPACES_TABLE_NAME, DatabaseType.SQLITE, databaseName);
+        airspaces.insertIntoDatabase(null, AirspaceDBHelper.AIRSPACES_TABLE_NAME, DatabaseType.POSTGRESQL, databaseName);
 
-        testSource = new AirspaceSQLITEDataSource();
+        //testSource = new AirspaceSQLITEDataSource();
+        testSource = new AirspacePSQLDataSource();
         databaseName = "DE_airspaces.db.sqlite";
         testSource.Open(databaseName);
         testSource.createTables();
         airspaces = new Airspaces();
         airspaces.OpenOpenAirTextFile("C:\\downloads\\openaip\\Germany_Week13_2016.txt", "DE");
-        airspaces.insertIntoDatabase(null, AirspaceDBHelper.AIRSPACES_TABLE_NAME, DatabaseType.SQLITE, databaseName);
+        airspaces.insertIntoDatabase(null, AirspaceDBHelper.AIRSPACES_TABLE_NAME, DatabaseType.POSTGRESQL, databaseName);
 
 
         //System.out.println("Download XSoar Files");
