@@ -3,6 +3,7 @@ package com.mobileaviationtools.AirspacesData;
 import com.vividsolutions.jts.geom.Coordinate;
 import com.vividsolutions.jts.geom.Geometry;
 import com.vividsolutions.jts.geom.GeometryFactory;
+import com.vividsolutions.jts.geom.LineString;
 
 import java.lang.reflect.Array;
 import java.util.ArrayList;
@@ -44,6 +45,7 @@ public class Airspace {
     public AltitudeUnit AltLimit_Bottom_Unit;
     public AltitudeReference AltLimit_Bottom_Ref;
     private com.vividsolutions.jts.geom.Geometry Geometry;
+    private com.vividsolutions.jts.geom.LineString Line;
     public ArrayList<Coordinate> coordinates;
 
     public Geometry getGeometry()
@@ -58,6 +60,21 @@ public class Airspace {
             }
         }
         return Geometry;
+    }
+
+    public LineString getLine()
+    {
+        if (Line == null)
+        {
+            Coordinate[] c = coordinates.toArray(new Coordinate[coordinates.size()]);
+
+            try {
+                Line = new GeometryFactory().createLineString(c);
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
+        }
+        return Line;
     }
 
     public Geometry getEnvelope()

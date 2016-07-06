@@ -69,7 +69,7 @@ public class AirspacePSQLDataSource implements AirspaceDataSource {
         String q = "INSERT INTO " + tablename + " (name, version, "
                 + "category, airspace_id, country, altLimit_top, altlimit_top_unit, "
                 + "altlimit_top_ref, altlimit_bottom, altlimit_bottom_unit, "
-                + "altlimit_bottom_ref, geom) VALUES (?,?,?,?,?,?,?,?,?,?,?, ST_GeomFromText(?, 4326))";
+                + "altlimit_bottom_ref, geom, outlineFill) VALUES (?,?,?,?,?,?,?,?,?,?,?, ST_GeomFromText(?, 4326),?)";
                 //+ "altlimit_bottom_ref, geometry) VALUES (?,?,?,?,?,?,?,?,?,?,?,?)";
         PreparedStatement pst = null;
         try {
@@ -87,9 +87,19 @@ public class AirspacePSQLDataSource implements AirspaceDataSource {
                 pst.setLong(9, airspace.getAltLimit_Bottom());
                 pst.setString(10, airspace.AltLimit_Bottom_Unit.toString());
                 pst.setString(11, airspace.AltLimit_Bottom_Ref.toString());
-                pst.setString(12, new WKTWriter().write(airspace.getGeometry()));
+                pst.setString(12, new WKTWriter().write(airspace.getLine()));
+                pst.setBoolean(13, true);
+                //pst.setString(12, new WKTWriter().write(airspace.getGeometry()));
 
                 pst.executeUpdate();
+
+                if (airspace.Category == AirspaceCategory.CTR)
+                {
+                    pst.setString(12, new WKTWriter().write(airspace.getGeometry()));
+                    pst.setBoolean(13, false);
+                    pst.executeUpdate();
+                }
+
                 pst.close();
 
                 System.out.println("Inserted Airspace in database: " + airspace.Name);
@@ -106,7 +116,7 @@ public class AirspacePSQLDataSource implements AirspaceDataSource {
         String q = "INSERT INTO tbl_firs (name, version, "
                 + "category, airspace_id, country, altLimit_top, altlimit_top_unit, "
                 + "altlimit_top_ref, altlimit_bottom, altlimit_bottom_unit, "
-                + "altlimit_bottom_ref, geom) VALUES (?,?,?,?,?,?,?,?,?,?,?, ST_GeomFromText(?, 4326))";
+                + "altlimit_bottom_ref, geom, outlineFill) VALUES (?,?,?,?,?,?,?,?,?,?,?, ST_GeomFromText(?, 4326), ?)";
         PreparedStatement pst = null;
         try {
             pst = conn.prepareStatement(q);
@@ -121,7 +131,9 @@ public class AirspacePSQLDataSource implements AirspaceDataSource {
             pst.setLong(9, airspace.AltLimit_Bottom);
             pst.setString(10, airspace.AltLimit_Bottom_Unit.toString());
             pst.setString(11, airspace.AltLimit_Bottom_Ref.toString());
-            pst.setString(12, new WKTWriter().write(airspace.getGeometry()));
+            pst.setString(12, new WKTWriter().write(airspace.getLine()));
+            pst.setBoolean(13, true);
+            //pst.setString(12, new WKTWriter().write(airspace.getGeometry()));
 
             pst.executeUpdate();
             pst.close();
@@ -154,6 +166,7 @@ CREATE TABLE tbl_airspaces
                 altlimit_bottom_unit text,
                 altlimit_bottom_ref text,
                 geom geometry(Geometry, 4326),
+                outlineFill boolean,
                 CONSTRAINT airspaces_pkey PRIMARY KEY (id)
 )
         WITH (
@@ -179,6 +192,7 @@ CREATE TABLE tbl_firs
                 altlimit_bottom_unit text,
                 altlimit_bottom_ref text,
                 geom geometry(Geometry, 4326),
+                outlineFill boolean,
                 CONSTRAINT firs_pkey PRIMARY KEY (id)
 )
         WITH (
