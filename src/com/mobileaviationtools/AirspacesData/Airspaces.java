@@ -115,7 +115,7 @@ public class Airspaces extends ArrayList<Airspace> {
         try {
             //text = text.replace("\n", "\r\n");
             //lines = text.split("\r\n");
-            lines = text.split("(?=\\bAC)|(?=\\bAN)|(?=\\bAH)|(?=\\bAL)|(?=\\bAF)|(?=\\bAG)|(?=\\bDP)|(?=\\bDB)|(?=\\bDC)|(?=\\bV\\sX)|(?=\\bV\\sD)");
+            lines = text.split("(?=\\bAC)|(?=\\bAN)|(?=\\bAH)|(?=\\bAL)|(?=\\bAF)|(?=\\bAG)|(?=\\bDP)|(?=\\bDB)|(?=\\bDC)|(?=\\bV\\sX)|(?=\\bV\\sD)|(?=\\bDA)");
             Airspace airspace = null;
             LatLng location = null;
             LatLng center = null;
@@ -186,6 +186,15 @@ public class Airspaces extends ArrayList<Airspace> {
                     }
                     if (l.startsWith("V X")) {
                         center = Helpers.parseOpenAirLocation(l);
+                    }
+                    if (l.startsWith("DA "))
+                    {
+                        String[] be = l.split(",");
+                        Double begin = Double.valueOf(Helpers.findRegex("([0-9.]+\\w)|([0-9])", be[1]));
+                        Double end = Double.valueOf(Helpers.findRegex("([0-9.]+\\w)|([0-9])", be[2]));
+                        Double distance = Double.valueOf(Helpers.findRegex("([0-9.]+\\w)|([0-9])", be[0]));
+                        airspace.coordinates.addAll(GeometricHelpers.drawArc(begin, end, distance, center, cw));
+                        circle = false;
                     }
                     if (l.startsWith("DB ")) {
                         String[] be = l.split(",");

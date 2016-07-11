@@ -40,7 +40,7 @@ public class Main {
         testSource.Open(databaseName);
         testSource.createTables();
         airspaces = new Airspaces();
-        airspaces.OpenOpenAirTextFile("C:\\downloads\\openaip\\BELLUX_WEEK_140501.txt", "BE");
+        airspaces.OpenOpenAirTextFile("C:\\downloads\\openaip\\BELLUX_WEEK_160430.txt", "BE");
         airspaces.insertIntoDatabase(null, AirspaceDBHelper.AIRSPACES_TABLE_NAME, DatabaseType.POSTGRESQL, databaseName);
 
         //testSource = new AirspaceSQLITEDataSource();
