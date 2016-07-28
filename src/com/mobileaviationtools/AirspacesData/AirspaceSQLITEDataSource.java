@@ -1,5 +1,6 @@
 package com.mobileaviationtools.AirspacesData;
 
+import com.vividsolutions.jts.geom.Coordinate;
 import com.vividsolutions.jts.geom.Geometry;
 import com.vividsolutions.jts.io.ParseException;
 import com.vividsolutions.jts.io.WKBReader;
@@ -60,7 +61,9 @@ public class AirspaceSQLITEDataSource implements AirspaceDataSource {
             String q = "INSERT INTO " + tablename + " (name, version, "
                     + "category, airspace_id, country, altLimit_top, altlimit_top_unit, "
                     + "altlimit_top_ref, altlimit_bottom, altlimit_bottom_unit, "
-                    + "altlimit_bottom_ref, geometry, envelope) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?)";
+                    + "altlimit_bottom_ref, geometry, "
+                    + "lat_top_left, lon_top_left, lat_bottom_right, lot_bottom_right, "
+                    + "envelope) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)";
             PreparedStatement pst = null;
             try {
                 pst = conn.prepareStatement(q);
@@ -88,7 +91,16 @@ public class AirspaceSQLITEDataSource implements AirspaceDataSource {
                 //pst.setString(12, new WKTWriter().write(airspace.getGeometry()));
                 pst.setBytes(12, new WKBWriter().write(airspace.getGeometry()));
                 //String evelope = new WKTWriter().write(airspace.getEnvelope());
-                pst.setBytes(13, new WKBWriter().write(airspace.getEnvelope()));
+                Coordinate[] env = airspace.getEnvelope().getCoordinates();
+
+                // env[0] top-left
+                // env[1] bottom-right
+                pst.setDouble(13, env[0].y);
+                pst.setDouble(14, env[0].x);
+                pst.setDouble(15, env[2].y);
+                pst.setDouble(16, env[2].x);
+
+                pst.setBytes(17, new WKBWriter().write(airspace.getEnvelope()));
 
                 pst.executeUpdate();
                 pst.close();

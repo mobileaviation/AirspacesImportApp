@@ -1,5 +1,6 @@
 package com.mobileaviationtools;
 
+import com.mobileaviationtools.AirportData.Airports;
 import com.mobileaviationtools.AirspacesData.*;
 import com.mobileaviationtools.Links.Link;
 import com.mobileaviationtools.Links.LinksDataSource;
@@ -25,33 +26,41 @@ public class Main {
 
     public static void main(String[] args) {
 	// write your code here
-        //AirspaceDataSource testSource = new AirspaceSQLITEDataSource();
-        AirspaceDataSource testSource = new AirspacePSQLDataSource();
+
+        /* Dit is code voor het lezen van de airports CSV en polygons in postgresql
+        */
+        Airports airports = new Airports();
+        airports.importCSV("C:\\Downloads\\ourairports\\airports.csv");
+
+
+        /*  Dit is code voor het maken van de airspace mapping naar Postgresql
+        AirspaceDataSource testSource = new AirspaceSQLITEDataSource();
+        //AirspaceDataSource testSource = new AirspacePSQLDataSource();
         String databaseName = "NL_airspaces.db.sqlite";
         testSource.Open(databaseName);
         testSource.createTables();
         Airspaces airspaces = new Airspaces();
         airspaces.OpenOpenAirTextFile("C:\\downloads\\openaip\\EHv16_3.txt", "NL");
-        airspaces.insertIntoDatabase(null, AirspaceDBHelper.AIRSPACES_TABLE_NAME, DatabaseType.POSTGRESQL, databaseName);
+        airspaces.insertIntoDatabase(null, AirspaceDBHelper.AIRSPACES_TABLE_NAME, DatabaseType.SQLITE, databaseName);
 
-        //testSource = new AirspaceSQLITEDataSource();
-        testSource = new AirspacePSQLDataSource();
+        testSource = new AirspaceSQLITEDataSource();
+        //testSource = new AirspacePSQLDataSource();
         databaseName = "BE_airspaces.db.sqlite";
         testSource.Open(databaseName);
         testSource.createTables();
         airspaces = new Airspaces();
         airspaces.OpenOpenAirTextFile("C:\\downloads\\openaip\\BELLUX_WEEK_160430.txt", "BE");
-        airspaces.insertIntoDatabase(null, AirspaceDBHelper.AIRSPACES_TABLE_NAME, DatabaseType.POSTGRESQL, databaseName);
+        airspaces.insertIntoDatabase(null, AirspaceDBHelper.AIRSPACES_TABLE_NAME, DatabaseType.SQLITE, databaseName);
 
-        //testSource = new AirspaceSQLITEDataSource();
-        testSource = new AirspacePSQLDataSource();
+        testSource = new AirspaceSQLITEDataSource();
+        //testSource = new AirspacePSQLDataSource();
         databaseName = "DE_airspaces.db.sqlite";
         testSource.Open(databaseName);
         testSource.createTables();
         airspaces = new Airspaces();
         airspaces.OpenOpenAirTextFile("C:\\downloads\\openaip\\Germany_Week13_2016.txt", "DE");
-        airspaces.insertIntoDatabase(null, AirspaceDBHelper.AIRSPACES_TABLE_NAME, DatabaseType.POSTGRESQL, databaseName);
-
+        airspaces.insertIntoDatabase(null, AirspaceDBHelper.AIRSPACES_TABLE_NAME, DatabaseType.SQLITE, databaseName);
+        */
 
         //System.out.println("Download XSoar Files");
         //downloadXsourFiles();

@@ -35,7 +35,7 @@ public class Airspaces extends ArrayList<Airspace> {
     {
         //String _filename = Environment.getExternalStorageDirectory().toString()+"/Download/" + filename;
         String _filename = filename;
-        String XML = readFromFile( _filename);
+        String XML = Helpers.readFromFile( _filename);
 
         System.out.println("Read XML file: " + _filename);
         readOpenAipXML(XML);
@@ -50,7 +50,7 @@ public class Airspaces extends ArrayList<Airspace> {
     public void OpenOpenAirTextFile(String filename, String country)
     {
         String _filename = filename;
-        String txt = readFromFile(_filename);
+        String txt = Helpers.readFromFile(_filename);
         readOpenAirText(txt, country);
     }
 
@@ -453,28 +453,5 @@ public class Airspaces extends ArrayList<Airspace> {
         }
     }
 
-    private String readFromFile(String fileName) {
 
-        String ret = "";
-
-        try {
-            FileInputStream inputStream = new FileInputStream (new File(fileName));
-
-            if ( inputStream != null ) {
-                InputStreamReader inputStreamReader = new InputStreamReader(inputStream);
-
-                int size = inputStream.available();
-                char[] buffer = new char[size];
-
-                inputStreamReader.read(buffer);
-
-                inputStream.close();
-                ret = new String(buffer);
-            }
-        }catch (Exception e) {
-            e.printStackTrace();
-        }
-
-        return ret;
-    }
 }

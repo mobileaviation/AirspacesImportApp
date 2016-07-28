@@ -5,6 +5,9 @@ import com.mobileaviationtools.AirspacesData.AltitudeUnit;
 import com.mobileaviationtools.Classes.LatLng;
 import com.vividsolutions.jts.geom.Coordinate;
 
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.InputStreamReader;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
@@ -141,5 +144,30 @@ public class Helpers {
         if (value.equals("GND")|| value.equals("SFC")) return AltitudeReference.GND;
 
         return AltitudeReference.MSL;
+    }
+
+    public static String readFromFile(String fileName) {
+
+        String ret = "";
+
+        try {
+            FileInputStream inputStream = new FileInputStream (new File(fileName));
+
+            if ( inputStream != null ) {
+                InputStreamReader inputStreamReader = new InputStreamReader(inputStream);
+
+                int size = inputStream.available();
+                char[] buffer = new char[size];
+
+                inputStreamReader.read(buffer);
+
+                inputStream.close();
+                ret = new String(buffer);
+            }
+        }catch (Exception e) {
+            e.printStackTrace();
+        }
+
+        return ret;
     }
 }
