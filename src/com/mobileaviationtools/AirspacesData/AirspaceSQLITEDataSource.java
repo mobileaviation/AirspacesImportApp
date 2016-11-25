@@ -95,10 +95,10 @@ public class AirspaceSQLITEDataSource implements AirspaceDataSource {
 
                 // env[0] top-left
                 // env[1] bottom-right
-                pst.setDouble(13, env[0].y);
-                pst.setDouble(14, env[0].x);
-                pst.setDouble(15, env[2].y);
-                pst.setDouble(16, env[2].x);
+                pst.setDouble(13, env[1].y);
+                pst.setDouble(14, env[1].x);
+                pst.setDouble(15, env[3].y);
+                pst.setDouble(16, env[3].x);
 
                 pst.setBytes(17, new WKBWriter().write(airspace.getEnvelope()));
 

@@ -29,18 +29,19 @@ public class Main {
 
         /* Dit is code voor het lezen van de airports CSV en polygons in postgresql
         */
-        Airports airports = new Airports();
-        airports.importCSV("C:\\Downloads\\ourairports\\airports.csv");
+        //Airports airports = new Airports();
+        //airports.importCSV("C:\\Downloads\\ourairports\\airports.csv");
 
 
         /*  Dit is code voor het maken van de airspace mapping naar Postgresql
+        */
         AirspaceDataSource testSource = new AirspaceSQLITEDataSource();
         //AirspaceDataSource testSource = new AirspacePSQLDataSource();
         String databaseName = "NL_airspaces.db.sqlite";
         testSource.Open(databaseName);
         testSource.createTables();
         Airspaces airspaces = new Airspaces();
-        airspaces.OpenOpenAirTextFile("C:\\downloads\\openaip\\EHv16_3.txt", "NL");
+        airspaces.OpenOpenAirTextFile("C:\\downloads\\openaip\\EHv16_3a.txt", "NL");
         airspaces.insertIntoDatabase(null, AirspaceDBHelper.AIRSPACES_TABLE_NAME, DatabaseType.SQLITE, databaseName);
 
         testSource = new AirspaceSQLITEDataSource();
@@ -60,7 +61,7 @@ public class Main {
         airspaces = new Airspaces();
         airspaces.OpenOpenAirTextFile("C:\\downloads\\openaip\\Germany_Week13_2016.txt", "DE");
         airspaces.insertIntoDatabase(null, AirspaceDBHelper.AIRSPACES_TABLE_NAME, DatabaseType.SQLITE, databaseName);
-        */
+
 
         //System.out.println("Download XSoar Files");
         //downloadXsourFiles();
