@@ -115,7 +115,7 @@ public class Airspaces extends ArrayList<Airspace> {
         try {
             //text = text.replace("\n", "\r\n");
             //lines = text.split("\r\n");
-            lines = text.split("(?=\\bAC)|(?=\\bAN)|(?=\\bAH)|(?=\\bAL)|(?=\\bAF)|(?=\\bAG)|(?=\\bDP)|(?=\\bDB)|(?=\\bDC)|(?=\\bV\\sX)|(?=\\bV\\sD)|(?=\\bDA)");
+            lines = text.split("(?=\\bAC)|(?=\\bAN)|(?=\\bAH)|(?=\\bAL)|(?=\\bAF)|(?=\\bAG)|(?=\\bDP)|(?=\\bDB)|(?=\\bDC\\s[0-9]+(\\.\\d{1,2})?)|(?=\\bV\\sX)|(?=\\bV\\sD)|(?=\\bDA)");
             Airspace airspace = null;
             LatLng location = null;
             LatLng center = null;
@@ -211,8 +211,15 @@ public class Airspaces extends ArrayList<Airspace> {
                     if (l.startsWith("DC ")) {
                         if (airspace != null) {
                             String m = Helpers.findRegex("([0-9.]+\\w)|([0-9])", l);
-                            airspace.coordinates.addAll(GeometricHelpers.drawCircle(center, Double.valueOf(m)));
-                            circle = true;
+                            try {
+                                airspace.coordinates.addAll(GeometricHelpers.drawCircle(center, Double.valueOf(m)));
+                                circle = true;
+                            } catch (Exception e)
+                            {
+                                e.printStackTrace();
+                            }
+
+
                         }
                     }
     //                if (l.startsWith("SP"))

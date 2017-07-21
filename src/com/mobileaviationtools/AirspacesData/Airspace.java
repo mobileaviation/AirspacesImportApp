@@ -51,6 +51,10 @@ public class Airspace {
     public Geometry getGeometry()
     {
         if (Geometry == null) {
+            if (coordinates.size()==0)
+            {
+                int i=1;
+            }
             if ((coordinates.get(0).x != coordinates.get(coordinates.size()-1).x) ||
                     (coordinates.get(0).y != coordinates.get(coordinates.size()-1).y) )
             {

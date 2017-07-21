@@ -34,7 +34,7 @@ public class AirspaceSQLITEDataSource implements AirspaceDataSource {
         try {
             conn = null;
             Class.forName("org.sqlite.JDBC");
-            conn = DriverManager.getConnection("jdbc:sqlite:C:/Downloads/openaip/" + databaseName);
+            conn = DriverManager.getConnection("jdbc:sqlite:C:/Downloads/xSoar/" + databaseName);
 
             System.out.println("Connection to C:/Downloads/openaip/airspaces.db.sqlite is open");
 
