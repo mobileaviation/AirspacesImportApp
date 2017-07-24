@@ -26,8 +26,8 @@ public class AirspacePSQLDataSource implements AirspaceDataSource {
     {
         try {
             Class.forName("org.postgresql.Driver");
-            String url = "jdbc:postgresql://192.168.210.66:5432/metool";
-            conn = DriverManager.getConnection(url, "postgres", "postgres");
+            String url = "jdbc:postgresql://localhost:5432/airnav";
+            conn = DriverManager.getConnection(url, "postgres", "ko218493");
         } catch (ClassNotFoundException e) {
             e.printStackTrace();
         } catch (SQLException e) {
@@ -87,18 +87,18 @@ public class AirspacePSQLDataSource implements AirspaceDataSource {
                 pst.setLong(9, airspace.getAltLimit_Bottom());
                 pst.setString(10, airspace.AltLimit_Bottom_Unit.toString());
                 pst.setString(11, airspace.AltLimit_Bottom_Ref.toString());
-                pst.setString(12, new WKTWriter().write(airspace.getLine()));
+                //pst.setString(12, new WKTWriter().write(airspace.getLine()));
+                pst.setString(12, new WKTWriter().write(airspace.getGeometry()));
                 pst.setBoolean(13, true);
-                //pst.setString(12, new WKTWriter().write(airspace.getGeometry()));
 
                 pst.executeUpdate();
 
-                if (airspace.Category == AirspaceCategory.CTR)
-                {
-                    pst.setString(12, new WKTWriter().write(airspace.getGeometry()));
-                    pst.setBoolean(13, false);
-                    pst.executeUpdate();
-                }
+//                if (airspace.Category == AirspaceCategory.CTR)
+//                {
+//                    pst.setString(12, new WKTWriter().write(airspace.getGeometry()));
+//                    pst.setBoolean(13, false);
+//                    pst.executeUpdate();
+//                }
 
                 pst.close();
 

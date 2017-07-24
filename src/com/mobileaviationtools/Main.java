@@ -40,65 +40,28 @@ public class Main {
         */
 //        AirspaceDataSource testSource = new AirspaceSQLITEDataSource();
 //        //AirspaceDataSource testSource = new AirspacePSQLDataSource();
-//        String databaseName = "LT_airspaces.db.sqlite";
+//        String databaseName = "EE_airspaces.db.sqlite";
 //        testSource.Open(databaseName);
 //        testSource.createTables();
 //        Airspaces airspaces = new Airspaces();
-//        airspaces.OpenOpenAirTextFile("C:\\downloads\\xSoar\\LT_2012.txt", "LT");
+//        airspaces.OpenOpenAirTextFile("C:\\downloads\\xSoar\\Estonia_Airspace_June_2015.txt", "EE");
 //        airspaces.insertIntoDatabase(null, AirspaceDBHelper.AIRSPACES_TABLE_NAME, DatabaseType.SQLITE, databaseName);
 //        testSource.Close();
 
-//        testSource = new AirspaceSQLITEDataSource();
-//        //testSource = new AirspacePSQLDataSource();
-//        databaseName = "BE_airspaces.db.sqlite";
-//        testSource.Open(databaseName);
-//        testSource.createTables();
-//        airspaces = new Airspaces();
-//        airspaces.OpenOpenAirTextFile("C:\\downloads\\xSoar\\BELLUX_WEEK_170325b.txt", "BE");
-//        airspaces.insertIntoDatabase(null, AirspaceDBHelper.AIRSPACES_TABLE_NAME, DatabaseType.SQLITE, databaseName);
-//        testSource.Close();
-//
-//        testSource = new AirspaceSQLITEDataSource();
-//        //testSource = new AirspacePSQLDataSource();
-//        databaseName = "DE_airspaces.db.sqlite";
-//        testSource.Open(databaseName);
-//        testSource.createTables();
-//        airspaces = new Airspaces();
-//        airspaces.OpenOpenAirTextFile("C:\\downloads\\xSoar\\Germany_CW13_2017.txt", "DE");
-//        airspaces.insertIntoDatabase(null, AirspaceDBHelper.AIRSPACES_TABLE_NAME, DatabaseType.SQLITE, databaseName);
-//        testSource.Close();
-//
-//        testSource = new AirspaceSQLITEDataSource();
-//        //testSource = new AirspacePSQLDataSource();
-//        databaseName = "FR_airspaces.db.sqlite";
-//        testSource.Open(databaseName);
-//        testSource.createTables();
-//        airspaces = new Airspaces();
-//        airspaces.OpenOpenAirTextFile("C:\\downloads\\xSoar\\170622__AIRSPACE_FRANCE_1703a.txt", "FR");
-//        airspaces.insertIntoDatabase(null, AirspaceDBHelper.AIRSPACES_TABLE_NAME, DatabaseType.SQLITE, databaseName);
-//        testSource.Close();
-
-//        testSource = new AirspaceSQLITEDataSource();
-//        //testSource = new AirspacePSQLDataSource();
-//        databaseName = "US_airspaces.db.sqlite";
-//        testSource.Open(databaseName);
-//        testSource.createTables();
-//        airspaces = new Airspaces();
-//        airspaces.OpenOpenAirTextFile("C:\\downloads\\xSoar\\allusa.v17.06-22.1.txt", "US");
-//        airspaces.insertIntoDatabase(null, AirspaceDBHelper.AIRSPACES_TABLE_NAME, DatabaseType.SQLITE, databaseName);
-//        testSource.Close();
 
 
 
 
         for (Link link : links) {
-            AirspaceDataSource testSource = new AirspaceSQLITEDataSource();
+            //AirspaceDataSource testSource = new AirspaceSQLITEDataSource();
+            AirspaceDataSource testSource = new AirspacePSQLDataSource();
             String databaseName = link.countryCode + "_airspaces.db.sqlite";
             testSource.Open(databaseName);
             testSource.createTables();
             Airspaces airspaces = new Airspaces();
             airspaces.OpenOpenAirTextFile(link.getLocalFile(), link.countryCode);
-            airspaces.insertIntoDatabase(null, AirspaceDBHelper.AIRSPACES_TABLE_NAME, DatabaseType.SQLITE, databaseName);
+            //airspaces.insertIntoDatabase(null, AirspaceDBHelper.AIRSPACES_TABLE_NAME, DatabaseType.SQLITE, databaseName);
+            airspaces.insertIntoDatabase(null, OPENAIR_TABLE_NAME, DatabaseType.POSTGRESQL, databaseName);
             testSource.Close();
         }
 
