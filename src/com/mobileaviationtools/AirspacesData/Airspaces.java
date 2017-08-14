@@ -59,14 +59,18 @@ public class Airspaces extends ArrayList<Airspace> {
         if (category != null) {
             if (category.equals(AirspaceCategory.FIR))
                 p_insertIntoFir();
-            else
-                if (databaseType==DatabaseType.POSTGRESQL)
+            else {
+                if (databaseType == DatabaseType.POSTGRESQL)
                     p_insertIntoDatabase(tablename);
-                else i_insertIntoDatabase(databaseName,tablename);
-        } else
-        if (databaseType==DatabaseType.POSTGRESQL)
-            p_insertIntoDatabase(tablename);
-        else i_insertIntoDatabase(databaseName, tablename);
+                if (databaseType == DatabaseType.SQLITE)
+                    i_insertIntoDatabase(databaseName, tablename);
+            }
+        } else {
+            if (databaseType == DatabaseType.POSTGRESQL)
+                p_insertIntoDatabase(tablename);
+            if (databaseType == DatabaseType.SQLITE)
+                i_insertIntoDatabase(databaseName, tablename);
+        }
     }
 
     private void p_insertIntoFir()
@@ -107,6 +111,11 @@ public class Airspaces extends ArrayList<Airspace> {
         }
 
         dataSource.Close();
+    }
+
+    private void j_insertIntoGeoJson(String geoJsonFilename)
+    {
+
     }
 
     public String lines[];
@@ -247,96 +256,6 @@ public class Airspaces extends ArrayList<Airspace> {
         }
     }
 
-//    public void TestDraw(GoogleMap map)
-//    {
-//        Coordinate[] c1 = new Coordinate[14];
-//        List<Coordinate> list = new ArrayList<Coordinate>();
-//
-//        LatLng l = Helpers.parseOpenAirLocation("DP 53:40:00 N 006:30:00 E");
-//        list.add(new Coordinate(l.longitude, l.latitude));
-//        l = Helpers.parseOpenAirLocation("DP 53:38:00 N 006:35:00 E");
-//        list.add(new Coordinate(l.longitude, l.latitude));
-//        l = Helpers.parseOpenAirLocation("DP 53:31:00 N 006:41:00 E");
-//        list.add(new Coordinate(l.longitude, l.latitude));
-//        l = Helpers.parseOpenAirLocation("DP 53:30:15 N 006:44:30 E");
-//        list.add(new Coordinate(l.longitude, l.latitude));
-//        l = Helpers.parseOpenAirLocation("DP 53:24:37 N 006:36:30 E");
-//        list.add(new Coordinate(l.longitude, l.latitude));
-//        l = Helpers.parseOpenAirLocation("DP 53:12:25 N 006:09:33 E");
-//        list.add(new Coordinate(l.longitude, l.latitude));
-//        l = Helpers.parseOpenAirLocation("DP 52:48:03 N 005:17:11 E");
-//        list.add(new Coordinate(l.longitude, l.latitude));
-//        l = Helpers.parseOpenAirLocation("DP 52:45:54 N 004:56:22 E");
-//        list.add(new Coordinate(l.longitude, l.latitude));
-//        l = Helpers.parseOpenAirLocation("DP 52:43:30 N 004:33:40 E");
-//        list.add(new Coordinate(l.longitude, l.latitude));
-//        l = Helpers.parseOpenAirLocation("DP 52:45:25 N 004:28:03 E");
-//        list.add(new Coordinate(l.longitude, l.latitude));
-//        l = Helpers.parseOpenAirLocation("DP 52:48:19 N 004:21:00 E");
-//        list.add(new Coordinate(l.longitude, l.latitude));
-//        l = Helpers.parseOpenAirLocation("DP 53:05:00 N 004:21:00 E");
-//        list.add(new Coordinate(l.longitude, l.latitude));
-//        l = Helpers.parseOpenAirLocation("DP 53:06:10 N 004:30:56 E");
-//        list.add(new Coordinate(l.longitude, l.latitude));
-//        l = Helpers.parseOpenAirLocation("DP 53:09:17 N 004:40:28 E");
-//        list.add(new Coordinate(l.longitude, l.latitude));
-//
-//        LatLng center = Helpers.parseOpenAirLocation("V X=53:15:00 N 004:57:00 E");
-//        LatLng begin = Helpers.parseOpenAirLocation("DB 53:11:06 N 004:38:03 E");
-//        LatLng end = Helpers.parseOpenAirLocation("53:15:00 N 004:36:57 E");
-//        list.addAll(GeometricHelpers.drawArc(begin, end, center));
-//
-//        center = Helpers.parseOpenAirLocation("V X=53:15:00 N 004:57:00 E");
-//        begin = Helpers.parseOpenAirLocation("DB 53:15:00 N 004:43:38 E");
-//        end = Helpers.parseOpenAirLocation("53:19:30 N 004:45:59 E");
-//        list.addAll(GeometricHelpers.drawArc(begin, end, center));
-//
-//        center = Helpers.parseOpenAirLocation("V X=53:15:10 N 004:57:00 E");
-//        begin = Helpers.parseOpenAirLocation("DB 53:19:30 N 004:45:59 E");
-//        end = Helpers.parseOpenAirLocation("53:22:27 N 004:52:07 E");
-//        list.addAll(GeometricHelpers.drawArc(begin, end, center));
-//
-//        l = Helpers.parseOpenAirLocation("DP 53:26:20 N 005:09:40 E");
-//        list.add(new Coordinate(l.longitude, l.latitude));
-//        l = Helpers.parseOpenAirLocation("DP 53:26:30 N 005:10:30 E");
-//        list.add(new Coordinate(l.longitude, l.latitude));
-//        l = Helpers.parseOpenAirLocation("DP 53:30:00 N 005:34:00 E");
-//        list.add(new Coordinate(l.longitude, l.latitude));
-//
-//        list.add(list.get(0));
-//
-//        PolylineOptions o = new PolylineOptions();
-//        o.color(Color.RED);
-//        o.width(2);
-//        o.zIndex(1000);
-//        for (Coordinate coordinate : list)
-//        {
-//            LatLng p = new LatLng(coordinate.y, coordinate.x);
-//            o.add(p);
-//        }
-//
-//        Polyline p = map.addPolyline(o);
-//        p.setVisible(true);
-//        p.setZIndex(1000);
-//
-//    }
-//
-//    public void drawAirspace(Airspace airspace, GoogleMap map)
-//    {
-//        PolylineOptions o = new PolylineOptions();
-//        o.color(Color.RED);
-//        o.width(2);
-//        o.zIndex(1000);
-//        for (Coordinate coordinate : airspace.coordinates)
-//        {
-//            LatLng p = new LatLng(coordinate.y, coordinate.x);
-//            o.add(p);
-//        }
-//
-//        Polyline p = map.addPolyline(o);
-//        p.setVisible(true);
-//        p.setZIndex(1000);
-//    }
 
     private void readOpenAipXML(String xml)
     {

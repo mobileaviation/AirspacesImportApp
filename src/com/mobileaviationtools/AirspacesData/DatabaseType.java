@@ -5,5 +5,6 @@ package com.mobileaviationtools.AirspacesData;
  */
 public enum DatabaseType {
     POSTGRESQL,
-    SQLITE
+    SQLITE,
+    GEOJSON
 }

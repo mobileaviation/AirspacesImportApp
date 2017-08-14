@@ -38,15 +38,20 @@ public class Main {
 
         /*  Dit is code voor het maken van de airspace mapping naar Postgresql
         */
-//        AirspaceDataSource testSource = new AirspaceSQLITEDataSource();
-//        //AirspaceDataSource testSource = new AirspacePSQLDataSource();
-//        String databaseName = "EE_airspaces.db.sqlite";
-//        testSource.Open(databaseName);
-//        testSource.createTables();
-//        Airspaces airspaces = new Airspaces();
-//        airspaces.OpenOpenAirTextFile("C:\\downloads\\xSoar\\Estonia_Airspace_June_2015.txt", "EE");
-//        airspaces.insertIntoDatabase(null, AirspaceDBHelper.AIRSPACES_TABLE_NAME, DatabaseType.SQLITE, databaseName);
-//        testSource.Close();
+        //AirspaceDataSource testSource = new AirspaceSQLITEDataSource();
+        //AirspaceDataSource testSource = new AirspacePSQLDataSource();
+        //String databaseName = "NL_airspaces.db.sqlite";
+        //testSource.Open(databaseName);
+        //testSource.createTables();
+        //Airspaces airspacesJson = new Airspaces();
+        //airspacesJson.OpenOpenAirTextFile("C:\\downloads\\xSoar\\EHv17_3.txt", "NL");
+
+        //AirspaceGeoJsonSource airspaceGeoJsonSource = new AirspaceGeoJsonSource("NL", "C:\\downloads\\xSoar\\");
+        //airspaceGeoJsonSource.InsertAirspaces(airspacesJson);
+        //airspaceGeoJsonSource.SaveGeoJsonObjectToFile();
+
+        //airspaces.insertIntoDatabase(null, AirspaceDBHelper.AIRSPACES_TABLE_NAME, DatabaseType.SQLITE, databaseName);
+        //testSource.Close();
 
 
 
@@ -54,15 +59,19 @@ public class Main {
 
         for (Link link : links) {
             //AirspaceDataSource testSource = new AirspaceSQLITEDataSource();
-            AirspaceDataSource testSource = new AirspacePSQLDataSource();
-            String databaseName = link.countryCode + "_airspaces.db.sqlite";
-            testSource.Open(databaseName);
-            testSource.createTables();
+            //AirspaceDataSource testSource = new AirspacePSQLDataSource();
+            //String databaseName = link.countryCode + "_airspaces.db.sqlite";
+            //testSource.Open(databaseName);
+            //testSource.createTables();
             Airspaces airspaces = new Airspaces();
             airspaces.OpenOpenAirTextFile(link.getLocalFile(), link.countryCode);
+            AirspaceGeoJsonSource airspaceGeoJsonSource = new AirspaceGeoJsonSource(link.countryCode, "C:\\downloads\\xSoar\\");
+
+            airspaceGeoJsonSource.InsertAirspaces(airspaces);
+            airspaceGeoJsonSource.SaveGeoJsonObjectToFile();
             //airspaces.insertIntoDatabase(null, AirspaceDBHelper.AIRSPACES_TABLE_NAME, DatabaseType.SQLITE, databaseName);
-            airspaces.insertIntoDatabase(null, OPENAIR_TABLE_NAME, DatabaseType.POSTGRESQL, databaseName);
-            testSource.Close();
+            //airspaces.insertIntoDatabase(null, OPENAIR_TABLE_NAME, DatabaseType.POSTGRESQL, databaseName);
+            //testSource.Close();
         }
 
         //try {
