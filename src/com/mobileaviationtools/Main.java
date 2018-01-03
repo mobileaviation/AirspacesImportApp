@@ -56,6 +56,10 @@ public class Main {
 
 
 
+        AirspaceDataSource testSource = new AirspaceSQLITEDataSource();
+        String databaseName = "all_airspaces.db.sqlite";
+        testSource.Open(databaseName);
+        testSource.createTables();
 
         for (Link link : links) {
             //AirspaceDataSource testSource = new AirspaceSQLITEDataSource();
@@ -65,14 +69,16 @@ public class Main {
             //testSource.createTables();
             Airspaces airspaces = new Airspaces();
             airspaces.OpenOpenAirTextFile(link.getLocalFile(), link.countryCode);
-            AirspaceGeoJsonSource airspaceGeoJsonSource = new AirspaceGeoJsonSource(link.countryCode, "C:\\downloads\\xSoar\\");
+            //AirspaceGeoJsonSource airspaceGeoJsonSource = new AirspaceGeoJsonSource(link.countryCode, "C:\\downloads\\xSoar\\");
 
-            airspaceGeoJsonSource.InsertAirspaces(airspaces);
-            airspaceGeoJsonSource.SaveGeoJsonObjectToFile();
-            //airspaces.insertIntoDatabase(null, AirspaceDBHelper.AIRSPACES_TABLE_NAME, DatabaseType.SQLITE, databaseName);
+            //airspaceGeoJsonSource.InsertAirspaces(airspaces);
+            //airspaceGeoJsonSource.SaveGeoJsonObjectToFile();
+            airspaces.insertIntoDatabase(null, AirspaceDBHelper.AIRSPACES_TABLE_NAME, DatabaseType.SQLITE, databaseName);
             //airspaces.insertIntoDatabase(null, OPENAIR_TABLE_NAME, DatabaseType.POSTGRESQL, databaseName);
             //testSource.Close();
         }
+
+        testSource.Close();
 
         //try {
             //Class.forName("org.postgresql.Driver");
