@@ -94,7 +94,8 @@ public class Airspaces extends ArrayList<Airspace> {
 
         for (Airspace airspace : this)
         {
-            dataSource.insertAirspace(airspace, tablename);
+            if (!AirspaceCategory.doNotInsertSet().contains(airspace.Category))
+                dataSource.insertAirspace(airspace, tablename);
         }
 
         dataSource.Close();
@@ -107,7 +108,8 @@ public class Airspaces extends ArrayList<Airspace> {
 
         for (Airspace airspace : this)
         {
-            dataSource.insertAirspace(airspace, tablename);
+            if (!AirspaceCategory.doNotInsertSet().contains(airspace.Category))
+                dataSource.insertAirspace(airspace, tablename);
         }
 
         dataSource.Close();

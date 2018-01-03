@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="AirspacesImportApp">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/out/artifacts/AirspacesImportApp_jar/AirspacesImportApp.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
