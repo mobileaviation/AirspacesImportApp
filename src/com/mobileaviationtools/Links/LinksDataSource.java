@@ -46,7 +46,7 @@ public class LinksDataSource {
         }
     }
 
-    private void getFilesFromDB(String query, String path, Boolean openaip)
+    private void getFilesFromDB(String query, String path)
     {
         String q = query;
 
@@ -58,8 +58,8 @@ public class LinksDataSource {
             while (set.next())
             {
                 Link l = new Link(path);
-                l.readResultSet(set, openaip);
-                links.add(l);
+                l.readResultSet(set);
+                if (l.enabled || l.openaip_enabled) links.add(l);
             }
         }
         catch (SQLException e) {
@@ -73,14 +73,14 @@ public class LinksDataSource {
         String p = "C:\\Users\\Rob Verhoef.WIN7-ROBVERHOEF\\IdeaProjects\\AirspacesImportApp\\Openaip\\";
         //String p = "C:\\Users\\Rob Verhoef\\IdeaProjects\\AirspacesImportApp\\Openaip\\";
 
-        getFilesFromDB(q, p, true);
+        getFilesFromDB(q, p);
     }
 
     public void downloadXsoarFiles(Boolean override)
     {
-        String q = "SELECT * FROM tbl_links WHERE enabled=TRUE;";
+        String q = "SELECT * FROM tbl_links;";
         String p = "C:\\Downloads\\xSoar\\";
-        getFilesFromDB(q, p, false);
+        getFilesFromDB(q, p);
 
         for (Link link : links)
         {

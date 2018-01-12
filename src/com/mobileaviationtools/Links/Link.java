@@ -40,7 +40,7 @@ public class Link {
     }
     public String getXsoarLink()
     {
-        return xsoarLink;
+        return enabled ? xsoarLink : openaipLink;
     }
     private String openaipLink;
     public void setOpenaipLink(String openaipLink)
@@ -63,15 +63,19 @@ public class Link {
     public String countryCode;
 
     private Boolean downloadale;
+    public Boolean enabled;
+    public Boolean openaip_enabled;
 
-    public void readResultSet(ResultSet resultSet, Boolean openaip)
+    public void readResultSet(ResultSet resultSet)
     {
         try {
             ID = resultSet.getInt("id");
+            enabled = resultSet.getBoolean("enabled");
+            openaip_enabled = resultSet.getBoolean("openaip_enabled");
 
-            if (!openaip) setXsoarLink(resultSet.getString("xsoarlink"));
+            if (enabled) setXsoarLink(resultSet.getString("xsoarlink"));
             else xsoarLink = resultSet.getString("xsoarlink");
-            if (openaip) setOpenaipLink(resultSet.getString("openaiplink"));
+            if (openaip_enabled) setOpenaipLink(resultSet.getString("openaiplink"));
                 else openaipLink = resultSet.getString("openaiplink");
             country = resultSet.getString("country");
             countryCode = resultSet.getString("countrycode");

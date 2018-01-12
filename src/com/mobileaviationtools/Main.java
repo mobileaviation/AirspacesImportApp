@@ -68,7 +68,10 @@ public class Main {
             //testSource.Open(databaseName);
             //testSource.createTables();
             Airspaces airspaces = new Airspaces();
-            airspaces.OpenOpenAirTextFile(link.getLocalFile(), link.countryCode);
+            if (link.enabled)
+                airspaces.OpenOpenAirTextFile(link.getLocalFile(), link.countryCode);
+            if (link.openaip_enabled)
+                airspaces.OpenAipFile(link.getLocalFile(), link.countryCode);
             //AirspaceGeoJsonSource airspaceGeoJsonSource = new AirspaceGeoJsonSource(link.countryCode, "C:\\downloads\\xSoar\\");
 
             //airspaceGeoJsonSource.InsertAirspaces(airspaces);

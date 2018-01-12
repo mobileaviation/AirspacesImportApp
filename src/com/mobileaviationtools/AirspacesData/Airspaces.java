@@ -31,14 +31,14 @@ public class Airspaces extends ArrayList<Airspace> {
         this.add(airspace);
     }
 
-    public void OpenAipFile(String filename, String tablename)
+    public void OpenAipFile(String filename, String country)
     {
         //String _filename = Environment.getExternalStorageDirectory().toString()+"/Download/" + filename;
         String _filename = filename;
         String XML = Helpers.readFromFile( _filename);
 
         System.out.println("Read XML file: " + _filename);
-        readOpenAipXML(XML);
+        readOpenAipXML(XML, country);
         System.out.println("XML Read");
 
 
@@ -259,7 +259,7 @@ public class Airspaces extends ArrayList<Airspace> {
     }
 
 
-    private void readOpenAipXML(String xml)
+    private void readOpenAipXML(String xml, String country)
     {
 
         Airspace airspace = null;
@@ -279,6 +279,7 @@ public class Airspaces extends ArrayList<Airspace> {
                     name = parser.getName();
                     if (name.equals("ASP")) {
                         airspace = new Airspace();
+                        airspace.Country = country;
                         Add(airspace);
                         airspace.Category = AirspaceCategory.valueOf(parser.getAttributeValue(null, "CATEGORY"));
                     }
