@@ -76,9 +76,10 @@ public class LinksDataSource {
         getFilesFromDB(q, p);
     }
 
-    public void downloadXsoarFiles(Boolean override)
+    public void downloadFiles(Boolean override)
     {
         String q = "SELECT * FROM tbl_links;";
+        //String q = "SELECT * FROM tbl_links WHERE openaip_enabled=true";
         String p = "C:\\Downloads\\xSoar\\";
         getFilesFromDB(q, p);
 

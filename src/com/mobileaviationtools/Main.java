@@ -33,8 +33,8 @@ public class Main {
         //airports.importCSV("C:\\Downloads\\ourairports\\airports.csv");
 
         System.out.println("Download XSoar Files");
-        ArrayList<Link> links = downloadXsourFiles();
-        System.out.println("XSoar files downloaded");
+        ArrayList<Link> links = downloadFiles();
+        System.out.println("Airspace files downloaded");
 
         /*  Dit is code voor het maken van de airspace mapping naar Postgresql
         */
@@ -158,11 +158,11 @@ public class Main {
         return linksDataSource.links;
     }
 
-    private static ArrayList<Link> downloadXsourFiles()
+    private static ArrayList<Link> downloadFiles()
     {
         LinksDataSource linksDataSource = new LinksDataSource();
         linksDataSource.Open();
-        linksDataSource.downloadXsoarFiles(false);
+        linksDataSource.downloadFiles(false);
         linksDataSource.Close();
 
         return linksDataSource.links;

@@ -20,6 +20,7 @@ public class Link {
     private String localPath;
 
     public Integer ID;
+    public Integer openaip_Id;
     private String localFile;
     public String getLocalFile()
     {
@@ -45,7 +46,7 @@ public class Link {
     private String openaipLink;
     public void setOpenaipLink(String openaipLink)
     {
-        this.openaipLink = openaipLink;
+        this.openaipLink = openaipLink;// + "_" + openaip_Id.toString();
         downloadale = (openaipLink!=null);
 
         if (downloadale)
@@ -72,6 +73,7 @@ public class Link {
             ID = resultSet.getInt("id");
             enabled = resultSet.getBoolean("enabled");
             openaip_enabled = resultSet.getBoolean("openaip_enabled");
+            openaip_Id = resultSet.getInt("openaip_id");
 
             if (enabled) setXsoarLink(resultSet.getString("xsoarlink"));
             else xsoarLink = resultSet.getString("xsoarlink");
@@ -86,20 +88,23 @@ public class Link {
 
     public void downloadFile(Boolean override)
     {
+        String l = "";
+        if (enabled) l = xsoarLink;
+        if (openaip_enabled) l = openaipLink;
         if (downloadale)
             if ((new File(localFile).exists())) {
-                if (override) p_downloadFile();
+                if (override) p_downloadFile(l);
             }
             else
             {
-                p_downloadFile();
+                p_downloadFile(l);
             }
     }
 
-    private void p_downloadFile()
+    private void p_downloadFile(String _link)
     {
         try {
-            FileUtils.copyURLToFile(new URL(xsoarLink), new File(localFile));
+            FileUtils.copyURLToFile(new URL(_link), new File(localFile));
         } catch (IOException e) {
             e.printStackTrace();
         }
