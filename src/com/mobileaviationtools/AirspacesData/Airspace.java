@@ -48,6 +48,14 @@ public class Airspace {
     private com.vividsolutions.jts.geom.LineString Line;
     public ArrayList<Coordinate> coordinates;
 
+    public Boolean checkGeometry()
+    {
+        if (coordinates == null) return false;
+        if (coordinates.size()==0) return false;
+        if (coordinates.size()>0) return true;
+        return true;
+    }
+
     public Geometry getGeometry()
     {
         if (Geometry == null) {
