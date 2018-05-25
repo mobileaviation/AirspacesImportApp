@@ -18,6 +18,7 @@ import java.sql.SQLException;
 public class AirspaceSQLITEDataSource implements AirspaceDataSource {
     private Connection conn;
     private String databaseName;
+    private String PATH="C:/AirnavData/Airspaces/";
 
     public AirspaceSQLITEDataSource()
     {
@@ -34,9 +35,9 @@ public class AirspaceSQLITEDataSource implements AirspaceDataSource {
         try {
             conn = null;
             Class.forName("org.sqlite.JDBC");
-            conn = DriverManager.getConnection("jdbc:sqlite:C:/Downloads/xSoar/" + databaseName);
+            conn = DriverManager.getConnection("jdbc:sqlite:" + PATH + databaseName);
 
-            System.out.println("Connection to C:/Downloads/openaip/airspaces.db.sqlite is open");
+            System.out.println("Connection to C:/AirnavData/Airspaces/airspaces.db.sqlite is open");
 
         } catch (Exception e) {
             e.printStackTrace();

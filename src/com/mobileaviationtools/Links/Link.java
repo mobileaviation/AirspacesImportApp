@@ -69,8 +69,8 @@ public class Link {
         try {
             ID = resultSet.getInt("id");
 
-            if (!openaip) setXsoarLink(resultSet.getString("xsoarlink"));
-            else xsoarLink = resultSet.getString("xsoarlink");
+            if (!openaip) setXsoarLink(resultSet.getString("xsourlink"));
+            else xsoarLink = resultSet.getString("xsourlink");
             if (openaip) setOpenaipLink(resultSet.getString("openaiplink"));
                 else openaipLink = resultSet.getString("openaiplink");
             country = resultSet.getString("country");

@@ -20,6 +20,8 @@ public class LinksDataSource {
         links = new ArrayList<>();
     }
 
+    private String PATH="C:/AirnavData/Airspaces/";
+
     public ArrayList<Link> links;
 
     private Connection conn;
@@ -33,6 +35,20 @@ public class LinksDataSource {
         } catch (ClassNotFoundException e) {
             e.printStackTrace();
         } catch (SQLException e) {
+            e.printStackTrace();
+        }
+    }
+
+    public void OpenSQLite(String databaseName)
+    {
+        try {
+            conn = null;
+            Class.forName("org.sqlite.JDBC");
+            conn = DriverManager.getConnection("jdbc:sqlite:"+ PATH + databaseName);
+
+            System.out.println("Connection to " + PATH + databaseName + " is open");
+
+        } catch (Exception e) {
             e.printStackTrace();
         }
     }
@@ -70,7 +86,7 @@ public class LinksDataSource {
     public void getOpenaipFilesFromDB()
     {
         String q = "SELECT * FROM tbl_links where openaiplink!='';";
-        String p = "C:\\Users\\Rob Verhoef.WIN7-ROBVERHOEF\\IdeaProjects\\AirspacesImportApp\\Openaip\\";
+        String p = PATH;
         //String p = "C:\\Users\\Rob Verhoef\\IdeaProjects\\AirspacesImportApp\\Openaip\\";
 
         getFilesFromDB(q, p, true);
@@ -78,8 +94,8 @@ public class LinksDataSource {
 
     public void downloadXsoarFiles(Boolean override)
     {
-        String q = "SELECT * FROM tbl_links WHERE enabled=TRUE;";
-        String p = "C:\\Downloads\\xSoar\\";
+        String q = "SELECT * FROM tbl_links WHERE enabled='TRUE'";
+        String p = PATH;
         getFilesFromDB(q, p, false);
 
         for (Link link : links)
@@ -88,17 +104,6 @@ public class LinksDataSource {
             link.downloadFile(override);
         }
     }
-
-    public void downloadTest()
-    {
-        try {
-            FileUtils.copyURLToFile(new URL("http://www.openaip.net/system/files/airspaces/openaip_airspace_belgium_be.aip_1444791895"),
-                    new File("C:\\Downloads\\openaip\\openaip_airspace_belgium_be.aip") );
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-    }
-
 }
 //CREATE TABLE tbl_links
 //        (

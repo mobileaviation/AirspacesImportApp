@@ -54,6 +54,7 @@ public class Airspace {
             if (coordinates.size()==0)
             {
                 int i=1;
+                return null;
             }
             if ((coordinates.get(0).x != coordinates.get(coordinates.size()-1).x) ||
                     (coordinates.get(0).y != coordinates.get(coordinates.size()-1).y) )

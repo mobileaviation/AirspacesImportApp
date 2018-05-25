@@ -22,6 +22,7 @@ public class Main {
 
     private static String OPENAIP_TABLE_NAME = "tbl_openaip_airspaces";
     private static String OPENAIR_TABLE_NAME = "tbl_openair_airspaces";
+    private static String PATH = "C:\\AirnavData\\Airspaces\\";
 
 
     public static void main(String[] args) {
@@ -33,7 +34,7 @@ public class Main {
         //airports.importCSV("C:\\Downloads\\ourairports\\airports.csv");
 
         System.out.println("Download XSoar Files");
-        ArrayList<Link> links = downloadXsourFiles();
+        ArrayList<Link> links = downloadXsourFiles("airspaces_info.sqlite");
         System.out.println("XSoar files downloaded");
 
         /*  Dit is code voor het maken van de airspace mapping naar Postgresql
@@ -56,29 +57,37 @@ public class Main {
 
 
 
-        AirspaceDataSource testSource = new AirspaceSQLITEDataSource();
-        String databaseName = "all_airspaces.db.sqlite";
-        testSource.Open(databaseName);
-        testSource.createTables();
+//        AirspaceDataSource testSource = new AirspaceSQLITEDataSource();
+//        String databaseName = "all_airspaces.db.sqlite";
+//        testSource.Open(databaseName);
+//        testSource.createTables();
+
+        AirspaceJsonDataSource airspaceJsonDataSource = new AirspaceJsonDataSource(PATH + "airspaces.json");
+        airspaceJsonDataSource.Open();
 
         for (Link link : links) {
-            //AirspaceDataSource testSource = new AirspaceSQLITEDataSource();
-            //AirspaceDataSource testSource = new AirspacePSQLDataSource();
-            //String databaseName = link.countryCode + "_airspaces.db.sqlite";
-            //testSource.Open(databaseName);
-            //testSource.createTables();
+
             Airspaces airspaces = new Airspaces();
             airspaces.OpenOpenAirTextFile(link.getLocalFile(), link.countryCode);
-            //AirspaceGeoJsonSource airspaceGeoJsonSource = new AirspaceGeoJsonSource(link.countryCode, "C:\\downloads\\xSoar\\");
 
+            //airspaces.insertIntoDatabase(null, AirspaceDBHelper.AIRSPACES_TABLE_NAME, DatabaseType.SQLITE, databaseName);
+
+            //AirspaceGeoJsonSource airspaceGeoJsonSource = new AirspaceGeoJsonSource(link.countryCode, "C:\\downloads\\xSoar\\");
             //airspaceGeoJsonSource.InsertAirspaces(airspaces);
             //airspaceGeoJsonSource.SaveGeoJsonObjectToFile();
-            airspaces.insertIntoDatabase(null, AirspaceDBHelper.AIRSPACES_TABLE_NAME, DatabaseType.SQLITE, databaseName);
+
             //airspaces.insertIntoDatabase(null, OPENAIR_TABLE_NAME, DatabaseType.POSTGRESQL, databaseName);
-            //testSource.Close();
+
+            airspaceJsonDataSource.AddAirspaces(airspaces);
+            //airspaceJsonDataSource.Close();
+
+            System.out.println("Inserted airspace");
+
         }
 
-        testSource.Close();
+        airspaceJsonDataSource.Close();
+
+//        testSource.Close();
 
         //try {
             //Class.forName("org.postgresql.Driver");
@@ -155,10 +164,10 @@ public class Main {
         return linksDataSource.links;
     }
 
-    private static ArrayList<Link> downloadXsourFiles()
+    private static ArrayList<Link> downloadXsourFiles(String databasename)
     {
         LinksDataSource linksDataSource = new LinksDataSource();
-        linksDataSource.Open();
+        linksDataSource.OpenSQLite(databasename);
         linksDataSource.downloadXsoarFiles(false);
         linksDataSource.Close();
 
